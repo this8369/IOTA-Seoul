@@ -1,38 +1,305 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IOTA SEOUL</title>
+    <!-- 폰트 적용 (Noto Sans KR 및 Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* 배경 및 로고 배치 최적화 */
-        body {
-            background-color: #000000;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        // Noto Sans KR 추가, 애플 산돌고딕 및 시스템 폰트
+                        sans: ['"Noto Sans KR"', 'Inter', '-apple-system', 'BlinkMacSystemFont', '"Apple SD Gothic Neo"', '"Pretendard"', 'sans-serif'],
+                        menu: ['"Noto Sans KR"', 'Inter', '-apple-system', 'BlinkMacSystemFont', '"Apple SD Gothic Neo"', 'sans-serif']
+                    }
+                }
+            }
         }
+    </script>
+    <style>
+        /* 기본 리셋 및 스크롤 스냅 설정 */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        /* 스냅 컨테이너 */
+        .scroll-container {
+            width: 100%;
+            height: 100vh;
+            overflow-y: scroll;
+            /* 스크롤 스냅 기능 제거 */
+            scrollbar-width: none;
+            /* 파이어폭스 스크롤바 숨기기 */
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            display: none;
+            /* 크롬/사파리 스크롤바 숨기기 */
+        }
+
+        /* 각 페이지 섹션 */
+        .section {
+            width: 100%;
+            height: 1500px;
+            /* scroll-snap-align 제거 */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            /* 중앙 정렬에서 상단 기준 정렬로 변경하여 margin-top이 정확히 먹히도록 함 */
+            align-items: center;
+            position: relative;
+        }
+
+
 
         /* 로고 애니메이션 (미세한 페이드인) */
         .logo-fade {
             animation: fadeIn 2s ease-in-out;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.95); }
-            to { opacity: 1; transform: scale(1); }
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* 빈 첫 화면 대신 콘텐츠 섹션 공통 스타일 */
+        .content-section {
+            background-color: #ffffff;
+            color: #000000;
+            padding-left: 180px;
+            padding-right: 180px;
+            box-sizing: border-box;
+            justify-content: flex-start;
+            padding-top: 150px;
+        }
+
+        /* 이미지 컨테이너 (라운딩 제거, 가로폭 가득 차게) */
+        .full-image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            /* 라운딩 처리 제거 */
+            border-radius: 0;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            /* object-fit: cover 또는 contain 여부에 따라 조정 가능, 폭이 중요하므로 100% width 우선 */
+            height: auto;
+            display: block;
+        }
+
+        /* 반응형: 모바일에서는 좌우 마진 제거 */
+        @media (max-width: 768px) {
+            .content-section {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
         }
     </style>
 </head>
-<body>
 
-    <div class="logo-fade">
-        <img src="img/logo_white.png" alt="IOTA SEOUL Logo" class="w-64 md:w-80 h-auto">
+<body class="font-sans">
+
+    <!-- 헤더 영역 (블랙스톤 분위기: 흰색 배경, 검은 글씨, 스크롤 위로 시 팝업) -->
+    <!-- 맨 처음 나타날 때 자연스럽게 보이도록 살짝 지연된 트랜지션 적용 -->
+    <header id="main-header"
+        class="fixed top-0 left-0 w-full bg-white text-black z-50 transition-transform duration-300 transform translate-y-0 flex justify-between items-center px-6 md:px-[180px] py-[40px]">
+        <!-- 왼쪽 위 로고 텍스트 (임의) -->
+        <div class="text-xl font-medium tracking-wide">
+            IOTA Seoul
+        </div>
+
+        <!-- 오른쪽 영역: 메뉴 + 언어 변환기 -->
+        <div class="hidden md:flex items-center space-x-10">
+            <!-- 네비게이션 메뉴 (일반 굵기 normal, 16px 로 확장) -->
+            <nav class="flex space-x-8 text-[16px] font-normal text-gray-800">
+                <a href="#" class="hover:text-gray-500 transition-colors duration-200" data-en="Our Firm"
+                    data-kr="회사 소개">Our Firm</a>
+                <a href="#" class="hover:text-gray-500 transition-colors duration-200" data-en="Businesses"
+                    data-kr="사업 영역">Businesses</a>
+                <a href="#" class="hover:text-gray-500 transition-colors duration-200" data-en="Insights"
+                    data-kr="인사이트">Insights</a>
+                <a href="#" class="hover:text-gray-500 transition-colors duration-200" data-en="Careers"
+                    data-kr="채용 정보">Careers</a>
+                <a href="#" class="hover:text-gray-500 transition-colors duration-200" data-en="News"
+                    data-kr="새소식">News</a>
+            </nav>
+
+            <!-- 언어 변환 구분선 -->
+            <div class="w-px h-4 bg-gray-300"></div>
+
+            <!-- 한영 변환기 -->
+            <div class="flex items-center space-x-2 text-[14px] font-medium text-gray-800">
+                <button id="lang-btn-kr"
+                    class="hover:text-gray-500 transition-colors duration-200 text-gray-400 font-normal">KR</button>
+                <span class="text-gray-400 text-xs">/</span>
+                <button id="lang-btn-en"
+                    class="hover:text-gray-500 font-bold transition-colors duration-200 text-gray-800">EN</button>
+            </div>
+        </div>
+
+        <!-- 모바일 햄버거 메뉴 및 모바일 언어 변환기 -->
+        <div class="md:hidden flex items-center space-x-4">
+            <div class="text-[13px] font-medium text-gray-800 flex items-center space-x-1">
+                <button id="lang-btn-kr-mob" class="text-gray-500 font-normal">KR</button>
+                <span class="text-gray-400 text-xs">/</span>
+                <button id="lang-btn-en-mob" class="font-bold text-gray-800">EN</button>
+            </div>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </div>
+    </header>
+
+    <div class="scroll-container" id="scroll-container">
+
+        <!-- SECTION 1 (새로운 첫 화면: 상단 텍스트 + 풀 이미지 컷) -->
+        <section class="section content-section">
+            <!-- 텍스트 영역 (이미지 상단) -->
+            <div class="w-full flex flex-col md:flex-row justify-between items-start mb-12">
+                <!-- 큰 텍스트 (Sanomat Web 적용, New Heart of Seoul, 1.2배 상향) -->
+                <h1 class="text-4xl md:text-6xl lg:text-[72px] font-normal leading-tight text-black md:w-[45%]"
+                    style="font-family: 'Sanomat Web', serif;" data-en="New Heart of Seoul" data-kr="서울의 새로운 중심">New
+                    Heart of Seoul</h1>
+
+                <!-- 작은 텍스트 (가디언 산스 적용, 얇게 한 단계 낮추고 크기 1.4배 상향) -->
+                <div
+                    class="md:w-[calc(50%+20px)] mt-8 md:mt-0 text-[16px] md:text-[19px] font-normal text-black leading-relaxed space-y-6">
+                    <p data-en="IOTA Seoul is the next-generation landmark redefining the heart of Korea’s capital. Perfectly positioned between the iconic Namsan and Seoul Station, this architectural masterpiece seamlessly bridges Seoul’s rich heritage with its dynamic future."
+                        data-kr="IOTA Seoul은 대한민국의 심장을 새롭게 정의하는 차세대 랜드마크입니다. 상징적인 남산과 서울역 사이에 완벽하게 자리잡은 이 건축 명작은 서울의 풍부한 유산과 역동적인 미래를 매끄럽게 연결합니다.">
+                        IOTA Seoul is the next-generation landmark redefining the heart of Korea’s capital. Perfectly
+                        positioned between the iconic Namsan and Seoul Station, this architectural masterpiece
+                        seamlessly bridges Seoul’s rich heritage with its dynamic future.
+                    </p>
+                    <p data-en="Spanning an impressive 4,948,871 square feet, IOTA Seoul sets a new benchmark for cutting-edge business districts. Designed with state-of-the-art technology and sustainability at its core, it offers premium office spaces, Seoul’s largest integrated green space connected to Namsan, wellness-driven retail, and world-class cultural destinations."
+                        data-kr="무려 4,948,871 평방피트에 달하는 IOTA Seoul은 최첨단 비즈니스 지구의 새로운 기준을 제시합니다. 최첨단 기술과 지속 가능성을 핵심으로 설계되어 프리미엄 오피스 공간, 남산과 연결된 서울 최대 규모의 통합 녹지, 웰니스 중심의 리테일 및 세계적 수준의 문화 명소를 제공합니다.">
+                        Spanning an impressive 4,948,871 square feet, IOTA Seoul sets a new benchmark for cutting-edge
+                        business districts. Designed with state-of-the-art technology and sustainability at its core, it
+                        offers premium office spaces, Seoul’s largest integrated green space connected to Namsan,
+                        wellness-driven retail, and world-class cultural destinations.
+                    </p>
+                    <p data-en="More than just a development, IOTA Seoul is an evolution of urban living—a place where business, culture, and nature converge to inspire daily life."
+                        data-kr="단순한 개발을 넘어, IOTA Seoul은 도시 생활의 진화입니다—비즈니스, 문화, 그리고 자연이 융합되어 일상에 영감을 주는 공간입니다.">
+                        More than just a development, IOTA Seoul is an evolution of urban living—a place where business,
+                        culture, and nature converge to inspire daily life.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 하단 전체화면 이미지 레이아웃 -->
+            <div class="full-image-container relative">
+                <img src="img/iota_full.jpg" alt="IOTA Full Background" class="w-full h-auto block">
+            </div>
+        </section>
+
     </div>
 
+    <!-- 스크롤 감지에 따른 헤더 표시/숨김 스크립트 및 언어 변환 로직 -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // 헤더 스크롤 로직
+            const header = document.getElementById("main-header");
+            const scrollContainer = document.getElementById("scroll-container");
+            let lastScrollTop = 0;
+
+            scrollContainer.addEventListener("scroll", function () {
+                let st = scrollContainer.scrollTop;
+                if (st > lastScrollTop && st > 50) {
+                    header.style.transform = "translateY(-100%)";
+                } else {
+                    header.style.transform = "translateY(0)";
+                }
+                lastScrollTop = st;
+            }, { passive: true });
+
+            // 언어 변환 로직
+            const btnKr = document.getElementById("lang-btn-kr");
+            const btnEn = document.getElementById("lang-btn-en");
+            const btnKrMob = document.getElementById("lang-btn-kr-mob");
+            const btnEnMob = document.getElementById("lang-btn-en-mob");
+
+            const translatableElements = document.querySelectorAll("[data-en][data-kr]");
+
+            function switchLanguage(lang) {
+                if (lang === 'kr') {
+                    // 데스크탑 UI
+                    btnKr.classList.replace("text-gray-400", "text-gray-800");
+                    btnKr.classList.replace("font-normal", "font-bold");
+                    btnEn.classList.replace("text-gray-800", "text-gray-400");
+                    btnEn.classList.replace("font-bold", "font-normal");
+
+                    // 모바일 UI
+                    btnKrMob.classList.replace("text-gray-500", "text-gray-800");
+                    btnKrMob.classList.replace("font-normal", "font-bold");
+                    btnEnMob.classList.replace("text-gray-800", "text-gray-500");
+                    btnEnMob.classList.replace("font-bold", "font-normal");
+
+                    // 텍스트 변환
+                    translatableElements.forEach(el => {
+                        el.textContent = el.getAttribute("data-kr");
+                        // 한국어로 바뀔 때 폰트 굵기를 조금 조절할 수 있습니다 (Noto Sans KR 적용됨)
+                    });
+                } else {
+                    // 데스크탑 UI
+                    btnEn.classList.replace("text-gray-400", "text-gray-800");
+                    btnEn.classList.replace("font-normal", "font-bold");
+                    btnKr.classList.replace("text-gray-800", "text-gray-400");
+                    btnKr.classList.replace("font-bold", "font-normal");
+
+                    // 모바일 UI
+                    btnEnMob.classList.replace("text-gray-500", "text-gray-800");
+                    btnEnMob.classList.replace("font-normal", "font-bold");
+                    btnKrMob.classList.replace("text-gray-800", "text-gray-500");
+                    btnKrMob.classList.replace("font-bold", "font-normal");
+
+                    // 텍스트 변환
+                    translatableElements.forEach(el => {
+                        el.textContent = el.getAttribute("data-en");
+                    });
+                }
+            }
+
+            // 이벤트 리스너 등록
+            btnKr.addEventListener("click", () => switchLanguage('kr'));
+            btnEn.addEventListener("click", () => switchLanguage('en'));
+            btnKrMob.addEventListener("click", () => switchLanguage('kr'));
+            btnEnMob.addEventListener("click", () => switchLanguage('en'));
+
+            // 초기 언어 설정 (요청에 따라 기본을 EN으로 설정하거나, 브라우저 언어 감지 가능. 여기선 EN을 기본으로 설정)
+            switchLanguage('en');
+        });
+    </script>
 </body>
+
 </html>
