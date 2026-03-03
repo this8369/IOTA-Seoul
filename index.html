@@ -300,7 +300,8 @@
         </section>
 
         <!-- SECTION 2 (Main Content) -->
-        <section class="section content-section h-auto pb-[200px]" id="section2" style="padding-bottom: 200px;">
+        <section class="section content-section h-auto" id="section2"
+            style="min-height: auto !important; padding-bottom: 0; margin-bottom: 200px;">
             <!-- Header Spacer -->
             <div class="h-[100px] w-full invisible"></div>
 
@@ -336,11 +337,7 @@
         <!-- SECTION 3 (PROPERTY OVERVIEW - BLACK) -->
         <section class="section content-section bs-section-3 h-auto bg-black pt-[200px]" id="section3"
             style="padding-top: 200px;">
-            <div class="full-image-container relative">
-                <img src="img/iota_full_2.jpg" alt="IOTA Property Details"
-                    class="w-full h-auto block -mt-[30px] -mb-[10px] transform origin-center">
-            </div>
-            <div class="w-full text-white flex flex-col pt-[70px] pb-32 px-6 md:px-0">
+            <div class="w-full text-white flex flex-col pb-[90px] px-6 md:px-0">
                 <h2 class="text-[28px] md:text-[36px] font-bold tracking-[-0.02em] mb-[60px] bs-fade-up">
                     <span data-en="PROPERTY OVERVIEW" data-kr="PROPERTY OVERVIEW">PROPERTY OVERVIEW</span>
                 </h2>
@@ -428,8 +425,15 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <div class="w-full flex flex-col gap-y-[20px] pb-32">
+                <div class="full-image-container relative">
+                    <img src="img/iota_full_2.jpg" alt="IOTA Property Details"
+                        class="w-full h-auto block transform origin-center">
+                </div>
                 <!-- IOTA TWO -->
-                <div class="w-full mt-[90px] relative bs-fade-up delay-700 overflow-hidden group">
+                <div class="w-full relative bs-fade-up delay-700 overflow-hidden group">
                     <img src="img/iota2.jpg" alt="IOTA TWO"
                         class="w-full h-auto object-cover transform transition-transform duration-[2s] group-hover:scale-105">
                     <div
