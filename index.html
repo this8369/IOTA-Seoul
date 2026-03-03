@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IOTA SEOUL | 공식 홈페이지</title>
+    <title>IOTA SEOUL</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 배경 및 로고 배치 최적화 */
+        body {
+            background-color: #000000;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* 로고 애니메이션 (미세한 페이드인) */
+        .logo-fade {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-    <header class="bg-blue-900 text-white py-12 px-6 text-center">
-        <h1 class="text-4xl font-bold mb-2">IOTA SEOUL</h1>
-        <p class="text-lg opacity-80">미래 가치를 설계하는 IOTA SEOUL 프로젝트</p>
-    </header>
+<body>
 
-    <main class="max-w-4xl mx-auto my-10 px-6">
-        <section class="mb-12">
-            <h2 class="text-2xl font-semibold border-b-2 border-blue-900 pb-2 mb-4">프로젝트 개요</h2>
-            <p class="leading-relaxed">본 사이트는 <b>IOTA SEOUL</b>의 공식 데이터를 제공하며, GitHub 서버를 통해 운영됩니다.</p>
-        </section>
+    <div class="logo-fade">
+        <img src="logo_white.png" alt="IOTA SEOUL Logo" class="w-64 md:w-80 h-auto">
+    </div>
 
-        <section class="bg-white p-8 rounded-lg shadow-md border border-gray-200">
-            <h2 class="text-2xl font-semibold mb-6 text-blue-900">커뮤니티 및 문의 게시판</h2>
-            <div id="board-container" class="bg-gray-100 border-2 border-dashed border-gray-300 p-10 text-center rounded-md">
-                <p class="text-gray-500 mb-4 font-medium">게시판 기능을 연결할 준비가 되었습니다.</p>
-                <button class="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-800 transition">
-                    게시판 활성화 대기 중
-                </button>
-            </div>
-        </section>
-    </main>
-
-    <footer class="text-center py-10 border-t text-gray-500 text-sm">
-        &copy; 2026 IOTA SEOUL. Hosted by GitHub.
-    </footer>
 </body>
 </html>
