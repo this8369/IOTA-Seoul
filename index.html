@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IOTA SEOUL</title>
-    <!-- 폰트 적용 (Noto Sans KR 및 Inter) -->
+    <!-- 폰트 적용 (Pretendard & Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -18,9 +18,10 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        // Noto Sans KR 추가, 애플 산돌고딕 및 시스템 폰트
-                        sans: ['"Noto Sans KR"', 'Inter', '-apple-system', 'BlinkMacSystemFont', '"Apple SD Gothic Neo"', '"Pretendard"', 'sans-serif'],
-                        menu: ['"Noto Sans KR"', 'Inter', '-apple-system', 'BlinkMacSystemFont', '"Apple SD Gothic Neo"', 'sans-serif']
+                        // 모든 폰트를 Pretendard로 변경
+                        sans: ['"Pretendard Variable"', 'Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', '"Helvetica Neue"', '"Segoe UI"', '"Apple SD Gothic Neo"', '"Noto Sans KR"', '"Malgun Gothic"', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', 'sans-serif'],
+                        menu: ['"Pretendard Variable"', 'Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', '"Helvetica Neue"', '"Segoe UI"', '"Apple SD Gothic Neo"', '"Noto Sans KR"', '"Malgun Gothic"', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif']
                     }
                 }
             }
@@ -69,25 +70,7 @@
 
 
 
-        /* 로고 애니메이션 (미세한 페이드인) */
-        .logo-fade {
-            animation: fadeIn 2s ease-in-out;
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-        }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.95);
-            }
-
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
 
         /* 빈 첫 화면 대신 콘텐츠 섹션 공통 스타일 */
         .content-section {
@@ -97,7 +80,8 @@
             padding-right: 180px;
             box-sizing: border-box;
             justify-content: flex-start;
-            padding-top: 150px;
+            padding-top: 60px;
+            padding-bottom: 100px;
         }
 
         /* 이미지 컨테이너 (라운딩 제거, 가로폭 가득 차게) */
@@ -113,9 +97,111 @@
 
         .full-image-container img {
             width: 100%;
-            /* object-fit: cover 또는 contain 여부에 따라 조정 가능, 폭이 중요하므로 100% width 우선 */
             height: auto;
             display: block;
+        }
+
+        /* 로고 애니메이션 (미세한 페이드인) */
+        .logo-fade {
+            animation: fadeIn 2.5s ease-in-out forwards;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* -------------------------------------
+           SECTION 3 (Property Overview ANIMATION)
+        -------------------------------------- */
+        .bs-section-3 {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .bs-section-3 .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 1.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .bs-section-3.active .full-image-container img {
+            transform: scale(1.05);
+        }
+
+        .bs-fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1.2s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .bs-fade-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .bs-draw-line {
+            width: 0%;
+            transition: width 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .bs-draw-line.active {
+            width: 100%;
+        }
+
+        /* 딜레이 유틸리티 */
+        .delay-100 {
+            transition-delay: 100ms;
+        }
+
+        .delay-200 {
+            transition-delay: 200ms;
+        }
+
+        .delay-300 {
+            transition-delay: 300ms;
+        }
+
+        .delay-400 {
+            transition-delay: 400ms;
+        }
+
+        .delay-500 {
+            transition-delay: 500ms;
+        }
+
+        .delay-600 {
+            transition-delay: 600ms;
+        }
+
+        .delay-700 {
+            transition-delay: 700ms;
+        }
+
+        .delay-800 {
+            transition-delay: 800ms;
+        }
+
+        .delay-900 {
+            transition-delay: 900ms;
+        }
+
+        .delay-1000 {
+            transition-delay: 1000ms;
         }
 
         /* 반응형: 모바일에서는 좌우 마진 제거 */
@@ -131,11 +217,12 @@
 <body class="font-sans">
 
     <!-- 헤더 영역 (블랙스톤 분위기: 흰색 배경, 검은 글씨, 스크롤 위로 시 팝업) -->
-    <!-- 맨 처음 나타날 때 자연스럽게 보이도록 살짝 지연된 트랜지션 적용 -->
+    <!-- 초기 상태를 숨김 처리하고 트랜지션 시간 연장 -->
     <header id="main-header"
-        class="fixed top-0 left-0 w-full bg-white text-black z-50 transition-transform duration-300 transform translate-y-0 flex justify-between items-center px-6 md:px-[180px] py-[40px]">
+        class="fixed top-0 left-0 w-full bg-white text-black z-50 transition-transform duration-1000 transform flex justify-between items-center px-6 md:px-[180px] py-[35px]"
+        style="transform: translateY(-100%);">
         <!-- 왼쪽 위 로고 텍스트 (임의) -->
-        <div class="text-xl font-medium tracking-wide">
+        <div class="text-xl font-bold tracking-normal">
             IOTA Seoul
         </div>
 
@@ -155,25 +242,46 @@
                     data-kr="새소식">News</a>
             </nav>
 
-            <!-- 언어 변환 구분선 -->
+            <!-- 한영 변환 구분선 -->
             <div class="w-px h-4 bg-gray-300"></div>
 
-            <!-- 한영 변환기 -->
-            <div class="flex items-center space-x-2 text-[14px] font-medium text-gray-800">
-                <button id="lang-btn-kr"
-                    class="hover:text-gray-500 transition-colors duration-200 text-gray-400 font-normal">KR</button>
-                <span class="text-gray-400 text-xs">/</span>
-                <button id="lang-btn-en"
-                    class="hover:text-gray-500 font-bold transition-colors duration-200 text-gray-800">EN</button>
+            <!-- 데스크탑 한영 변환기 (드롭다운) -->
+            <div class="relative group text-[14px]">
+                <button
+                    class="flex items-center space-x-1 font-bold text-gray-800 hover:text-gray-500 transition-colors duration-200 focus:outline-none pb-2 -mb-2">
+                    <span id="current-lang-text">EN</span>
+                    <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div
+                    class="absolute right-0 mt-2 w-16 bg-white border border-gray-100 shadow-lg hidden group-hover:block py-1 z-50 rounded-sm">
+                    <button class="block w-full text-left px-3 py-1 text-[13px] hover:bg-gray-50 text-gray-600"
+                        onclick="switchLanguage('en')">EN</button>
+                    <button class="block w-full text-left px-3 py-1 text-[13px] hover:bg-gray-50 text-gray-600"
+                        onclick="switchLanguage('kr')">KR</button>
+                </div>
             </div>
         </div>
 
         <!-- 모바일 햄버거 메뉴 및 모바일 언어 변환기 -->
         <div class="md:hidden flex items-center space-x-4">
-            <div class="text-[13px] font-medium text-gray-800 flex items-center space-x-1">
-                <button id="lang-btn-kr-mob" class="text-gray-500 font-normal">KR</button>
-                <span class="text-gray-400 text-xs">/</span>
-                <button id="lang-btn-en-mob" class="font-bold text-gray-800">EN</button>
+            <!-- 모바일 한영 변환기 (드롭다운) -->
+            <div class="relative group text-[13px]">
+                <button
+                    class="flex items-center space-x-1 font-bold text-gray-800 hover:text-gray-500 transition-colors duration-200 focus:outline-none pb-2 -mb-2">
+                    <span id="current-lang-text-mob">EN</span>
+                    <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div
+                    class="absolute right-0 mt-2 w-16 bg-white border border-gray-100 shadow-lg hidden group-hover:block py-1 z-50 rounded-sm">
+                    <button class="block w-full text-left px-3 py-1 hover:bg-gray-50 text-gray-600"
+                        onclick="switchLanguage('en')">EN</button>
+                    <button class="block w-full text-left px-3 py-1 hover:bg-gray-50 text-gray-600"
+                        onclick="switchLanguage('kr')">KR</button>
+                </div>
             </div>
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16">
@@ -184,42 +292,227 @@
 
     <div class="scroll-container" id="scroll-container">
 
-        <!-- SECTION 1 (새로운 첫 화면: 상단 텍스트 + 풀 이미지 컷) -->
-        <section class="section content-section">
+        <!-- SECTION 1 (초기 진입 첫 화면: 검은 바탕의 중앙 로고 및 스크롤 바운스 화살표) -->
+        <section class="section min-h-screen bg-black flex flex-col items-center justify-center relative">
+            <!-- 로고 영역 -->
+            <div class="logo-fade w-full flex justify-center pb-20">
+                <img src="img/logo_white.png" alt="IOTA Logo" class="h-20 md:h-28 object-contain">
+            </div>
+
+            <!-- 스크롤 화살표 -->
+            <div id="scroll-arrow"
+                class="absolute bottom-12 left-1/2 transform -translate-x-1/2 opacity-0 transition-opacity duration-1000">
+                <svg class="w-8 h-8 text-white animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- SECTION 2 (기존 첫 화면: 상단 텍스트 + 풀 이미지 컷) -->
+        <section class="section content-section h-auto">
             <!-- 텍스트 영역 (이미지 상단) -->
-            <div class="w-full flex flex-col md:flex-row justify-between items-start mb-12">
-                <!-- 큰 텍스트 (Sanomat Web 적용, New Heart of Seoul, 1.2배 상향) -->
-                <h1 class="text-4xl md:text-6xl lg:text-[72px] font-normal leading-tight text-black md:w-[45%]"
-                    style="font-family: 'Sanomat Web', serif;" data-en="New Heart of Seoul" data-kr="서울의 새로운 중심">New
+            <div class="w-full px-6 md:px-0 flex flex-col md:flex-row justify-between items-center mb-12">
+                <!-- 큰 텍스트 (New Heart of Seoul, -5px 적용, 자간 -1 적용) -->
+                <h1 class="text-[31px] md:text-[55px] lg:text-[67px] font-bold leading-tight text-black md:w-[45%] tracking-[-1px]"
+                    data-en="New Heart of Seoul" data-kr="New Heart of Seoul">New
                     Heart of Seoul</h1>
 
-                <!-- 작은 텍스트 (가디언 산스 적용, 얇게 한 단계 낮추고 크기 1.4배 상향) -->
-                <div
-                    class="md:w-[calc(50%+20px)] mt-8 md:mt-0 text-[16px] md:text-[19px] font-normal text-black leading-relaxed space-y-6">
+                <!-- 작은 텍스트 -->
+                <div id="desc-text"
+                    class="font-inter md:w-[calc(50%+30px)] mt-8 md:mt-0 text-[14px] md:text-[17px] tracking-[-0.02em] font-light text-black leading-relaxed space-y-6">
                     <p data-en="IOTA Seoul is the next-generation landmark redefining the heart of Korea’s capital. Perfectly positioned between the iconic Namsan and Seoul Station, this architectural masterpiece seamlessly bridges Seoul’s rich heritage with its dynamic future."
-                        data-kr="IOTA Seoul은 대한민국의 심장을 새롭게 정의하는 차세대 랜드마크입니다. 상징적인 남산과 서울역 사이에 완벽하게 자리잡은 이 건축 명작은 서울의 풍부한 유산과 역동적인 미래를 매끄럽게 연결합니다.">
+                        data-kr="이오타 서울은 최첨단 오피스와 최고급 호텔, 프리미엄 주거가 결합된 연면적 14만 평 규모의 대규모 복합개발 프로젝트입니다. 남산의 광활한 녹지와 광역 교통의 허브인 서울역과 인접한 입지에 자리하며, 지속가능한 설계를 기반으로 문화·미식·리테일·엔터테인먼트가 유기적으로 어우러진 복합 환경을 구현합니다. 이를 통해 글로벌 기업과 인재들에게 비즈니스와 라이프스타일이 자연스럽게 연결되는 최적의 업무·생활 플랫폼을 제공합니다.">
                         IOTA Seoul is the next-generation landmark redefining the heart of Korea’s capital. Perfectly
                         positioned between the iconic Namsan and Seoul Station, this architectural masterpiece
                         seamlessly bridges Seoul’s rich heritage with its dynamic future.
                     </p>
                     <p data-en="Spanning an impressive 4,948,871 square feet, IOTA Seoul sets a new benchmark for cutting-edge business districts. Designed with state-of-the-art technology and sustainability at its core, it offers premium office spaces, Seoul’s largest integrated green space connected to Namsan, wellness-driven retail, and world-class cultural destinations."
-                        data-kr="무려 4,948,871 평방피트에 달하는 IOTA Seoul은 최첨단 비즈니스 지구의 새로운 기준을 제시합니다. 최첨단 기술과 지속 가능성을 핵심으로 설계되어 프리미엄 오피스 공간, 남산과 연결된 서울 최대 규모의 통합 녹지, 웰니스 중심의 리테일 및 세계적 수준의 문화 명소를 제공합니다.">
+                        data-kr="서울의 역사적 맥락과 미래 비전을 동시에 담아내는 상징적 랜드마크로서, IOTA 서울은 연중 다양한 프로그램과 공간 경험을 통해 방문객과 입주사, 지역사회에 새로운 활력을 제시할 것입니다. 궁극적으로 글로벌 오피스의 새로운 기준을 제시하는 복합 자산으로 자리매김할 것입니다.">
                         Spanning an impressive 4,948,871 square feet, IOTA Seoul sets a new benchmark for cutting-edge
                         business districts. Designed with state-of-the-art technology and sustainability at its core, it
                         offers premium office spaces, Seoul’s largest integrated green space connected to Namsan,
                         wellness-driven retail, and world-class cultural destinations.
-                    </p>
-                    <p data-en="More than just a development, IOTA Seoul is an evolution of urban living—a place where business, culture, and nature converge to inspire daily life."
-                        data-kr="단순한 개발을 넘어, IOTA Seoul은 도시 생활의 진화입니다—비즈니스, 문화, 그리고 자연이 융합되어 일상에 영감을 주는 공간입니다.">
-                        More than just a development, IOTA Seoul is an evolution of urban living—a place where business,
-                        culture, and nature converge to inspire daily life.
                     </p>
                 </div>
             </div>
 
             <!-- 하단 전체화면 이미지 레이아웃 -->
             <div class="full-image-container relative">
-                <img src="img/iota_full.jpg" alt="IOTA Full Background" class="w-full h-auto block">
+                <img src="img/iota_full.jpg" alt="IOTA Full Background"
+                    class="w-full h-auto block -mt-[30px] -mb-[10px] transform origin-center transition-transform duration-700 ease-out">
+            </div>
+        </section>
+
+        <!-- SECTION 3 (PROPERTY OVERVIEW) -->
+        <section class="section content-section bs-section-3 h-auto" id="section3">
+            <!-- 하단 전체화면 이미지 레이아웃 (Section 2와 동일 비율) -->
+            <div class="full-image-container relative">
+                <img src="img/iota_full_2.jpg" alt="IOTA Property Details"
+                    class="w-full h-auto block -mt-[30px] -mb-[10px] transform origin-center">
+            </div>
+
+            <!-- 텍스트 콘텐츠 (이미지 하단 배경) -->
+            <div class="w-full text-black flex flex-col pt-[76px] pb-32 px-6 md:px-0">
+
+                <h2 class="text-[28px] md:text-[36px] font-bold tracking-[-0.02em] mb-[60px] bs-fade-up">
+                    <span data-en="PROPERTY OVERVIEW" data-kr="PROPERTY OVERVIEW">PROPERTY OVERVIEW</span>
+                </h2>
+
+                <div class="flex flex-col md:flex-row md:justify-between w-full gap-y-[115px] md:gap-x-[63px]">
+
+                    <!-- IOTA ONE -->
+                    <div class="w-full md:w-[31%] bs-fade-up delay-100">
+                        <h3 class="text-[18px] md:text-[22px] font-bold mb-6 tracking-[-0.02em]">IOTA ONE
+                        </h3>
+                        <ul class="flex flex-col w-full font-inter text-[16px] md:text-[18px] tracking-[-0.02em]">
+                            <li class="relative pt-3 pb-3 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">GFA</span>
+                                <span class="font-light">281,547 m² <span class="text-[13px] text-gray-500 ml-1">(85,168
+                                        py)</span></span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-gray-200 bs-draw-line delay-300"></div>
+                            </li>
+                            <li class="relative pt-4 pb-3 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Total Floors</span>
+                                <span class="font-light">B10/34F</span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-gray-200 bs-draw-line delay-400"></div>
+                            </li>
+                            <li class="relative pt-4 pb-3 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Office Floor Area</span>
+                                <span class="font-light">3,798 m² <span class="text-[13px] text-gray-500 ml-1">(1,149
+                                        py)</span></span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-gray-200 bs-draw-line delay-500"></div>
+                            </li>
+                            <li class="relative pt-4 pb-3 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Office Floor Height</span>
+                                <span class="font-light">4.4m</span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-gray-200 bs-draw-line delay-600"></div>
+                            </li>
+                            <li class="relative pt-4 pb-3 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal" data-en="Office Ceiling Height"
+                                    data-kr="Office Celling Height">Office Ceiling Height</span>
+                                <span class="font-light">2.95m</span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-gray-200 bs-draw-line delay-700"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- IOTA HOTEL -->
+                    <div class="w-full md:w-[31%] bs-fade-up delay-300">
+                        <h3 class="text-[18px] md:text-[22px] font-bold mb-6 tracking-[-0.02em]">IOTA HOTEL
+                        </h3>
+                        <ul class="flex flex-col w-full font-inter text-[16px] md:text-[18px] tracking-[-0.02em]">
+                            <li class="relative pt-3 pb-3 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">GFA</span>
+                                <span class="font-light">57,435 m² <span class="text-[13px] text-gray-500 ml-1">(17,374
+                                        py)</span></span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-gray-200 bs-draw-line delay-500"></div>
+                            </li>
+                            <li class="relative pt-4 pb-3 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Total Floors</span>
+                                <span class="font-light">B10/39F</span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-gray-200 bs-draw-line delay-600"></div>
+                            </li>
+                            <li class="relative pt-4 pb-3 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Floor Height</span>
+                                <span class="font-light">3.3m</span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-gray-200 bs-draw-line delay-700"></div>
+                            </li>
+                            <li class="relative pt-4 pb-3 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal" data-en="Ceiling Height" data-kr="Celling Height">Ceiling
+                                    Height</span>
+                                <span class="font-light">2.6m</span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-gray-200 bs-draw-line delay-800"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- IOTA ONE & HOTEL -->
+                    <div class="w-full md:w-[31%] bs-fade-up delay-600">
+                        <h3 class="text-[18px] md:text-[22px] font-bold mb-6 tracking-[-0.02em]">IOTA ONE &
+                            HOTEL</h3>
+                        <ul class="flex flex-col w-full font-inter text-[16px] md:text-[18px] tracking-[-0.02em]">
+                            <li class="relative pt-3 pb-3 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Site Area</span>
+                                <span class="font-light">20,350 m² <span class="text-[13px] text-gray-500 ml-1">(6,156
+                                        py)</span></span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-gray-200 bs-draw-line delay-800"></div>
+                            </li>
+                            <li class="relative pt-4 pb-3 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Height of Building</span>
+                                <span class="font-light">143m</span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-gray-200 bs-draw-line delay-900"></div>
+                            </li>
+                            <li class="relative pt-4 pb-3 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Parking</span>
+                                <span class="font-light" data-en="2,232 spaces" data-kr="2,232대">2,232 spaces</span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-gray-200 bs-draw-line delay-1000"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- IOTA TWO (Full Width with Text Overlay on Top-Left) -->
+                <div class="w-full mt-[115px] relative bs-fade-up delay-700 overflow-hidden group">
+                    <!-- Background Image (Full Width within margins) -->
+                    <div class="w-full overflow-hidden">
+                        <img src="img/iota2.jpg" alt="IOTA TWO"
+                            class="w-full h-auto object-cover transform transition-transform duration-[2s] group-hover:scale-105">
+                    </div>
+
+                    <!-- Absolute Text Overlay (Top-Left Sky Area) -->
+                    <div
+                        class="absolute top-[5%] left-[5%] md:top-12 md:left-12 w-[80%] md:w-[320px] lg:w-[380px] text-black">
+                        <h3 class="text-[18px] md:text-[22px] font-bold mb-6 tracking-[-0.02em]">IOTA TWO</h3>
+                        <ul
+                            class="flex flex-col w-full font-inter text-[13px] md:text-[15px] tracking-[-0.03em] leading-tight">
+                            <li class="relative py-2 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">GFA</span>
+                                <span class="font-light">120,783 m² <span class="text-[11px] opacity-60 ml-1">(36,537
+                                        py)</span></span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-black/10 bs-draw-line delay-200"></div>
+                            </li>
+                            <li class="relative py-2 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Total Floors</span>
+                                <span class="font-light">B9/34F</span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-black/10 bs-draw-line delay-300"></div>
+                            </li>
+                            <li class="relative py-2 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Office Floor Area</span>
+                                <span class="font-light">1,901 m² <span class="text-[11px] opacity-60 ml-1">(575
+                                        py)</span></span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-black/10 bs-draw-line delay-400"></div>
+                            </li>
+                            <li class="relative py-2 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Office Floor Height</span>
+                                <span class="font-light">4.3m</span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-black/10 bs-draw-line delay-500"></div>
+                            </li>
+                            <li class="relative py-2 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Office Ceiling Height</span>
+                                <span class="font-light">2.95m</span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-black/10 bs-draw-line delay-600"></div>
+                            </li>
+                            <li class="relative py-2 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Site Area</span>
+                                <span class="font-light">7,200 m² <span class="text-[11px] opacity-60 ml-1">(2,178
+                                        py)</span></span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-black/10 bs-draw-line delay-700"></div>
+                            </li>
+                            <li class="relative py-2 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Height of Building</span>
+                                <span class="font-light">163m</span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-black/10 bs-draw-line delay-800"></div>
+                            </li>
+                            <li class="relative py-2 flex justify-between items-end overflow-hidden">
+                                <span class="font-normal">Parking</span>
+                                <span class="font-light">519</span>
+                                <div class="absolute bottom-0 left-0 h-[1px] bg-black/10 bs-draw-line delay-900"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -231,73 +524,100 @@
             // 헤더 스크롤 로직
             const header = document.getElementById("main-header");
             const scrollContainer = document.getElementById("scroll-container");
+            const scrollArrow = document.getElementById("scroll-arrow");
             let lastScrollTop = 0;
+
+            // 이미지 줌 효과를 위한 요소
+            const fullImage = document.querySelector('.full-image-container img');
+
+            // 추가: 인트로 애니메이션 후 헤더 숨김 유지 & 스크롤 화살표만 보이기
+            setTimeout(() => {
+                if (scrollArrow) scrollArrow.classList.remove('opacity-0');
+            }, 2000);
 
             scrollContainer.addEventListener("scroll", function () {
                 let st = scrollContainer.scrollTop;
-                if (st > lastScrollTop && st > 50) {
+
+                // 스크롤 줌 효과 (아주 약간 확대)
+                if (fullImage) {
+                    const zoomLevel = 1 + (st * 0.00005);
+                    fullImage.style.transform = `scale(${Math.min(zoomLevel, 1.05)})`;
+                }
+
+                // 첫 화면 최상단에서는 헤더를 무조건 숨김
+                if (st <= 50) {
                     header.style.transform = "translateY(-100%)";
-                } else {
-                    header.style.transform = "translateY(0)";
+                }
+                // 스크롤 방향 판별 (위로 올릴 때 헤더 노출, 아래로 내릴 때 숨김)
+                else {
+                    if (st < lastScrollTop) {
+                        // 위로 스크롤
+                        header.style.transform = "translateY(0)";
+                    } else if (st > lastScrollTop) {
+                        // 아래로 스크롤
+                        header.style.transform = "translateY(-100%)";
+                    }
                 }
                 lastScrollTop = st;
             }, { passive: true });
 
             // 언어 변환 로직
-            const btnKr = document.getElementById("lang-btn-kr");
-            const btnEn = document.getElementById("lang-btn-en");
-            const btnKrMob = document.getElementById("lang-btn-kr-mob");
-            const btnEnMob = document.getElementById("lang-btn-en-mob");
-
             const translatableElements = document.querySelectorAll("[data-en][data-kr]");
+            const labelDesktop = document.getElementById("current-lang-text");
+            const labelMobile = document.getElementById("current-lang-text-mob");
+            const descText = document.getElementById("desc-text");
 
-            function switchLanguage(lang) {
-                if (lang === 'kr') {
-                    // 데스크탑 UI
-                    btnKr.classList.replace("text-gray-400", "text-gray-800");
-                    btnKr.classList.replace("font-normal", "font-bold");
-                    btnEn.classList.replace("text-gray-800", "text-gray-400");
-                    btnEn.classList.replace("font-bold", "font-normal");
+            window.switchLanguage = function (lang) {
+                const label = lang === 'kr' ? 'KR' : 'EN';
+                if (labelDesktop) labelDesktop.textContent = label;
+                if (labelMobile) labelMobile.textContent = label;
 
-                    // 모바일 UI
-                    btnKrMob.classList.replace("text-gray-500", "text-gray-800");
-                    btnKrMob.classList.replace("font-normal", "font-bold");
-                    btnEnMob.classList.replace("text-gray-800", "text-gray-500");
-                    btnEnMob.classList.replace("font-bold", "font-normal");
-
-                    // 텍스트 변환
-                    translatableElements.forEach(el => {
-                        el.textContent = el.getAttribute("data-kr");
-                        // 한국어로 바뀔 때 폰트 굵기를 조금 조절할 수 있습니다 (Noto Sans KR 적용됨)
-                    });
-                } else {
-                    // 데스크탑 UI
-                    btnEn.classList.replace("text-gray-400", "text-gray-800");
-                    btnEn.classList.replace("font-normal", "font-bold");
-                    btnKr.classList.replace("text-gray-800", "text-gray-400");
-                    btnKr.classList.replace("font-bold", "font-normal");
-
-                    // 모바일 UI
-                    btnEnMob.classList.replace("text-gray-500", "text-gray-800");
-                    btnEnMob.classList.replace("font-normal", "font-bold");
-                    btnKrMob.classList.replace("text-gray-800", "text-gray-500");
-                    btnKrMob.classList.replace("font-bold", "font-normal");
-
-                    // 텍스트 변환
-                    translatableElements.forEach(el => {
-                        el.textContent = el.getAttribute("data-en");
-                    });
+                // 한글일 때 폰트를 한 단계 굵게 (font-normal)
+                if (descText) {
+                    if (lang === 'kr') {
+                        descText.classList.remove('font-light');
+                        descText.classList.add('font-normal');
+                    } else {
+                        descText.classList.remove('font-normal');
+                        descText.classList.add('font-light');
+                    }
                 }
-            }
 
-            // 이벤트 리스너 등록
-            btnKr.addEventListener("click", () => switchLanguage('kr'));
-            btnEn.addEventListener("click", () => switchLanguage('en'));
-            btnKrMob.addEventListener("click", () => switchLanguage('kr'));
-            btnEnMob.addEventListener("click", () => switchLanguage('en'));
+                // 텍스트 변환
+                translatableElements.forEach(el => {
+                    el.textContent = el.getAttribute(`data-${lang}`);
+                });
+            };
 
-            // 초기 언어 설정 (요청에 따라 기본을 EN으로 설정하거나, 브라우저 언어 감지 가능. 여기선 EN을 기본으로 설정)
+            // 초기 언어 설정
             switchLanguage('en');
+
+            // --- Section 3 Interaction Observer ---
+            const section3 = document.getElementById("section3");
+            const bsFadeUps = document.querySelectorAll(".bs-fade-up");
+            const bsDrawLines = document.querySelectorAll(".bs-draw-line");
+
+            if (section3) {
+                const s3Observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                        }
+                    });
+                }, { threshold: 0.1 });
+                s3Observer.observe(section3);
+
+                const elementObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                        }
+                    });
+                }, { threshold: 0.2 });
+
+                bsFadeUps.forEach(el => elementObserver.observe(el));
+                bsDrawLines.forEach(el => elementObserver.observe(el));
+            }
         });
     </script>
 </body>
