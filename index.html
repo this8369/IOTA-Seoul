@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
 
@@ -24,7 +26,9 @@
                     fontFamily: {
                         sans: ['"Pretendard Variable"', 'Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', '"Helvetica Neue"', '"Segoe UI"', '"Apple SD Gothic Neo"', '"Noto Sans KR"', '"Malgun Gothic"', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', 'sans-serif'],
                         menu: ['"Pretendard Variable"', 'Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', '"Helvetica Neue"', '"Segoe UI"', '"Apple SD Gothic Neo"', '"Noto Sans KR"', '"Malgun Gothic"', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', 'sans-serif'],
-                        inter: ['Inter', 'sans-serif']
+                        lemonde: ['"Le Monde Journal Std"', 'serif'],
+                        inter: ['Inter', 'sans-serif'],
+                        manrope: ['Manrope', 'sans-serif']
                     }
                 }
             }
@@ -224,6 +228,15 @@
             transform: translateY(0);
         }
 
+        .bs-scale-up {
+            transform: scale(0.95);
+            transition: transform 1.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .bs-scale-up.active {
+            transform: scale(1);
+        }
+
         .bs-draw-line {
             width: 0%;
             transition: width 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -231,6 +244,38 @@
 
         .bs-draw-line.active {
             width: 100%;
+        }
+
+        @keyframes arrow-retract-top {
+
+            0%,
+            100% {
+                transform: translate(-50%, 0);
+            }
+
+            50% {
+                transform: translate(-50%, 4px) scale(0.85);
+            }
+        }
+
+        @keyframes arrow-retract-bottom {
+
+            0%,
+            100% {
+                transform: translate(-50%, 0);
+            }
+
+            50% {
+                transform: translate(-50%, -4px) scale(0.85);
+            }
+        }
+
+        .animate-arrow-top {
+            animation: arrow-retract-top 1.5s ease-in-out infinite;
+        }
+
+        .animate-arrow-bottom {
+            animation: arrow-retract-bottom 1.5s ease-in-out infinite;
         }
 
         /* SECTION 4 Sequential Animations */
@@ -413,39 +458,54 @@
             <!-- Header Spacer -->
             <div class="h-[100px] w-full invisible"></div>
 
-            <div class="w-full px-6 md:px-0 flex flex-col md:flex-row justify-between items-center mb-12">
-                <h1 class="text-[31px] md:text-[55px] lg:text-[67px] font-bold leading-tight text-black md:w-[45%] tracking-[-1px]"
-                    data-en="New Heart of Seoul" data-kr="New Heart of Seoul">New Heart of Seoul</h1>
-                <div id="desc-text"
-                    class="font-inter md:w-[calc(50%+30px)] mt-8 md:mt-0 text-[14px] md:text-[17px] tracking-[-0.02em] font-light text-black leading-relaxed space-y-6">
-                    <p class="kr-target-text transition-all duration-300"
-                        data-en="IOTA Seoul is the next-generation landmark redefining the heart of Korea’s capital. Perfectly positioned between the iconic Namsan and Seoul Station, this architectural masterpiece seamlessly bridges Seoul’s rich heritage with its dynamic future."
-                        data-kr="이오타 서울은 최첨단 오피스와 최고급 호텔, 프리미엄 주거가 결합된 연면적 14만 평 규모의 대규모 복합개발 프로젝트입니다. 남산의 광활한 녹지와 광역 교통의 허브인 서울역과 인접한 입지에 자리하며, 지속가능한 설계를 기반으로 문화 매식 리테일 엔터테인먼트가 유기적으로 어우러진 복합 환경을 구현합니다. 이를 통해 글로벌 기업과 인재들에게 비즈니스와 라이프스타일이 자연스럽게 연결되는 최적의 업무 생활 플랫폼을 제공합니다.">
-                        IOTA Seoul is the next-generation landmark redefining the heart of Korea’s capital.
-                    </p>
-                    <p class="kr-target-text transition-all duration-300"
-                        data-en="Spanning an impressive 4,948,871 square feet, IOTA Seoul sets a new benchmark for cutting-edge business districts. Designed with state-of-the-art technology and sustainability at its core, it offers premium office spaces, Seoul’s largest integrated green space connected to Namsan, wellness-driven retail, and world-class cultural destinations."
-                        data-kr="서울의 역사적 맥락과 미래 비전을 동시에 담아내는 상징적 랜드마크로서, IOTA 서울은 연중 다양한 프로그램과 공간 경험을 통해 방문객과 입주사, 지역사회에 새로운 활력을 제시할 것입니다. 궁극적으로 글로벌 오피스의 새로운 기준을 제시하는 복합 자산으로 자리매김할 것입니다.">
-                        Spanning an impressive 4,948,871 square feet, IOTA Seoul sets a new benchmark.
-                    </p>
-                    <p class="en-only-text transition-all duration-300"
-                        data-en="More than just a development, IOTA Seoul is an evolution of urban living—a place where business, culture, and nature converge to inspire daily life."
-                        data-kr="">
-                        More than just a development, IOTA Seoul is an evolution of urban living—a place where business,
-                        culture, and nature converge to inspire daily life.
-                    </p>
+            <div class="w-full px-6 md:px-0 flex flex-col md:flex-row items-center mb-12">
+                <!-- Left: Title and Description -->
+                <div class="w-full md:w-[65%] flex flex-col items-start justify-start">
+                    <h1 class="text-[31px] md:text-[55px] lg:text-[67px] font-extrabold leading-tight text-black tracking-[-1px] font-manrope"
+                        data-en="New Heart of Seoul" data-kr="New Heart of Seoul">New Heart of Seoul</h1>
+                    <div id="desc-text"
+                        class="font-inter w-full mt-6 md:mt-8 text-[14px] md:text-[17px] tracking-[-0.02em] font-light text-black leading-relaxed space-y-6">
+                        <p class="kr-target-text transition-all duration-300"
+                            data-en="IOTA Seoul is the next-generation landmark redefining the heart of Korea’s capital. Perfectly positioned between the iconic Namsan and Seoul Station, this architectural masterpiece seamlessly bridges Seoul’s rich heritage with its dynamic future."
+                            data-kr="이오타 서울은 최첨단 오피스와 최고급 호텔, 프리미엄 주거가 결합된 연면적 14만 평 규모의 대규모 복합개발 프로젝트입니다. 남산의 광활한 녹지와 광역 교통의 허브인 서울역과 인접한 입지에 자리하며, 지속가능한 설계를 기반으로 문화 매식 리테일 엔터테인먼트가 유기적으로 어우러진 복합 환경을 구현합니다. 이를 통해 글로벌 기업과 인재들에게 비즈니스와 라이프스타일이 자연스럽게 연결되는 최적의 업무 생활 플랫폼을 제공합니다.">
+                            IOTA Seoul is the next-generation landmark redefining the heart of Korea’s capital.
+                        </p>
+                        <p class="kr-target-text transition-all duration-300"
+                            data-en="Spanning an impressive 4,948,871 square feet, IOTA Seoul sets a new benchmark for cutting-edge business districts. Designed with state-of-the-art technology and sustainability at its core, it offers premium office spaces, Seoul’s largest integrated green space connected to Namsan, wellness-driven retail, and world-class cultural destinations."
+                            data-kr="서울의 역사적 맥락과 미래 비전을 동시에 담아내는 상징적 랜드마크로서, IOTA 서울은 연중 다양한 프로그램과 공간 경험을 통해 방문객과 입주사, 지역사회에 새로운 활력을 제시할 것입니다. 궁극적으로 글로벌 오피스의 새로운 기준을 제시하는 복합 자산으로 자리매김할 것입니다.">
+                            Spanning an impressive 4,948,871 square feet, IOTA Seoul sets a new benchmark.
+                        </p>
+                        <p class="en-only-text transition-all duration-300"
+                            data-en="More than just a development, IOTA Seoul is an evolution of urban living—a place where business, culture, and nature converge to inspire daily life."
+                            data-kr="">
+                            More than just a development, IOTA Seoul is an evolution of urban living—a place where
+                            business,
+                            culture, and nature converge to inspire daily life.
+                        </p>
+                    </div>
+                </div>
+                <!-- Right: Stats -->
+                <div
+                    class="w-full md:w-[30%] flex flex-col justify-center items-center mt-12 md:mt-0 ml-auto font-inter">
+                    <div
+                        class="text-[50px] md:text-[65px] lg:text-[85px] xl:text-[105px] font-bold leading-none tracking-[-0.05em] flex items-baseline">
+                        459,765
+                        <span
+                            class="text-[24px] md:text-[32px] lg:text-[40px] tracking-tight ml-2 relative -top-[0.2em] font-normal">m²</span>
+                    </div>
+                    <div class="text-[16px] md:text-[20px] lg:text-[26px] font-medium tracking-[-0.02em] mt-2">
+                        Gross Floor Area
+                    </div>
                 </div>
             </div>
             <div class="w-full flex flex-col gap-[30px]">
-                <div class="full-image-container relative">
+                <div class="full-image-container relative overflow-hidden">
                     <img src="img/iota_full.jpg" alt="IOTA Full Background"
-                        class="w-full h-auto block transform origin-center transition-transform duration-700 ease-out"
-                        style="margin-top: -30px;">
+                        class="bs-scale-up w-full h-auto block origin-center" style="margin-top: -30px;">
                 </div>
-                <div class="full-image-container curtain-container">
-                    <div class="curtain-panel"></div>
+                <div class="full-image-container relative overflow-hidden">
                     <img src="img/iota_full_3.jpg" alt="IOTA Full Background 3"
-                        class="curtain-img w-full h-auto block transform origin-center transition-transform duration-700 ease-out">
+                        class="bs-scale-up w-full h-auto block origin-center">
                 </div>
             </div>
         </section>
@@ -454,7 +514,7 @@
         <section class="section content-section bs-section-3 h-auto bg-black pt-[200px]" id="section3"
             style="padding-top: 200px;">
             <div class="w-full text-white flex flex-col pb-[90px] px-6 md:px-0">
-                <h2 class="text-[28px] md:text-[36px] font-bold tracking-[-0.02em] mb-[60px] bs-fade-up">
+                <h2 class="text-[28px] md:text-[36px] font-extrabold tracking-normal mb-[60px] bs-fade-up font-manrope">
                     <span data-en="PROPERTY OVERVIEW" data-kr="PROPERTY OVERVIEW">PROPERTY OVERVIEW</span>
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-y-[115px] md:gap-x-[63px]">
@@ -592,17 +652,17 @@
                 </div>
             </div>
 
-            <div class="w-full flex flex-col gap-y-[20px] pb-[150px]">
+            <div class="w-full flex flex-col gap-y-[20px] pb-[100px]">
                 <div class="w-full flex flex-col gap-y-[20px]">
-                    <div class="full-image-container curtain-container overflow-hidden group">
-                        <div class="curtain-panel"></div>
+                    <div class="full-image-container relative overflow-hidden group">
                         <img src="img/iota_full_2.jpg" alt="IOTA Property Details"
-                            class="curtain-img w-full h-auto block transform origin-center transition-transform duration-[2s] group-hover:scale-105">
+                            class="w-full h-auto block transform origin-center transition-transform duration-[2s] group-hover:scale-105">
                     </div>
                     <!-- IOTA TWO -->
-                    <div class="w-full relative bs-fade-up delay-700 overflow-hidden group">
+                    <div class="w-full curtain-container relative bs-fade-up delay-700 overflow-hidden group">
+                        <div class="curtain-panel"></div>
                         <img src="img/iota2.jpg" alt="IOTA TWO"
-                            class="w-full h-auto object-cover transform transition-transform duration-[2s] group-hover:scale-105">
+                            class="curtain-img w-full h-auto object-cover transform transition-transform duration-[2s] group-hover:scale-105">
                     </div>
                 </div>
         </section>
@@ -616,7 +676,8 @@
             <div
                 class="w-full md:w-1/2 bg-[#1b2a1f] text-white flex flex-col justify-center px-8 md:px-12 lg:px-24 py-24 md:py-32 green-panel relative z-10">
                 <div class="max-w-2xl text-content-wrapper">
-                    <h2 class="text-[38px] md:text-[50px] font-bold mb-16 bs-fade-up delay-100">Brand Guidelines</h2>
+                    <h2 class="text-[38px] md:text-[50px] font-extrabold font-manrope mb-16 bs-fade-up delay-100">Brand
+                        Guidelines</h2>
                     <div class="space-y-12 text-[16px] md:text-[18px] leading-[1.8] font-inter">
                         <div class="font-light opacity-90 bs-fade-up delay-300"
                             data-en="The name “IOTA”, derived from the Greek numeral for 10, symbolizes completeness and integration—a number that encompasses all others.<br>It represents IGIS Asset Management’s ambition to unify its offerings—real estate products, services, and platforms—under a singular master brand.<br><br>The visual composition of the name, evoking both “10” and “IO,” reinforces the idea of wholeness and total value.<br>The horizontal and vertical strokes extending from the letter “I” symbolize the expansion of space, connectivity, and reach, mirroring IOTA’s vision of redefining urban experiences.<br><br>More than a development, IOTA is a future-ready ecosystem that seamlessly blends space, service, culture, and lifestyle into a platform of open-ended possibilities."
@@ -633,37 +694,32 @@
 
         <!-- SECTION 4.5 (MARQUEE) -->
         <section class="w-full bg-black text-white flex flex-col justify-center items-center overflow-hidden relative"
-            id="marquee-section" style="height: 1000px;">
-            <div class="w-full px-6 md:px-[60px] lg:px-[180px] text-left absolute top-[150px] lg:top-[200px] left-0">
-                <h2 class="text-[42px] md:text-[60px] font-bold tracking-[0.2em] text-gray-500 font-inter">LOCATION</h2>
-            </div>
-            <div class="w-full overflow-hidden whitespace-nowrap mt-[50px]">
-                <div class="animate-marquee items-center gap-x-20">
-                    <span
-                        class="text-[104px] md:text-[160px] lg:text-[224px] font-bold tracking-tighter text-white font-inter leading-none">The
-                        Nation's Ultimate Transit Hub - Unmatched, Unrivaled</span>
-                    <span
-                        class="text-[104px] md:text-[160px] lg:text-[224px] font-bold tracking-tighter text-white font-inter leading-none">The
-                        Nation's Ultimate Transit Hub - Unmatched, Unrivaled</span>
-                </div>
+            id="marquee-section" style="height: 1500px;">
+            <div class="w-full px-6 md:px-[60px] lg:px-[180px] text-left mb-[100px]">
+                <h2 class="text-[42px] md:text-[60px] font-extrabold tracking-normal text-gray-500 font-manrope">
+                    LOCATION
+                </h2>
+                <div class="text-[42px] md:text-[60px] font-extrabold text-white font-inter -mt-[10px] tracking-normal">
+                    서울의 중심,
+                    광역통근의 중심</div>
             </div>
         </section>
 
         <!-- SECTION 5 (SYBD) -->
-        <section class="section bg-white text-black relative" id="section5">
-            <div class="w-full relative h-auto lg:min-h-screen overflow-hidden flex flex-col lg:block"
+        <section class="w-full bg-white text-black relative" id="section5">
+            <div class="w-full relative h-auto lg:h-[100vh] overflow-hidden flex flex-col lg:block"
                 id="sybd-auto-container">
                 <!-- Foreground Layer: Text Content over Maps (Top on Mobile/iPad) -->
                 <div
                     class="w-full flex relative lg:absolute lg:top-0 lg:left-0 z-10 lg:h-full lg:pointer-events-none order-1 lg:order-none">
                     <div
-                        class="w-full lg:w-[50%] h-full flex flex-col justify-center px-6 md:px-[60px] lg:px-[180px] bg-transparent pointer-events-auto py-10 lg:py-0">
-                        <div class="font-bold text-[14px] md:text-[16px] text-gray-800 mb-2 font-inter tracking-tight">
+                        class="w-full lg:w-[50%] h-full flex flex-col justify-center px-6 md:px-[60px] lg:px-[180px] bg-transparent pointer-events-auto pt-[100px] lg:pt-0 pb-10 lg:pb-0">
+                        <div class="font-bold text-[20px] md:text-[22px] text-gray-800 mb-2 font-inter tracking-tight">
                             New Economy Cluster</div>
                         <h2
-                            class="text-[40px] md:text-[60px] lg:text-[84px] font-bold leading-none mb-10 text-black tracking-[-0.02em] font-inter">
+                            class="text-[40px] md:text-[60px] lg:text-[84px] font-extrabold leading-none mb-10 text-black tracking-[-0.02em] font-manrope">
                             SYBD <span
-                                class="text-[9px] md:text-[11px] font-normal text-gray-500 align-middle tracking-normal">*Seoul
+                                class="text-[11px] md:text-[13px] font-normal text-gray-500 align-middle tracking-normal">*Seoul
                                 Yongsan Business District</span>
                         </h2>
 
@@ -674,7 +730,7 @@
                                 글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상
                             </h3>
                             <div
-                                class="text-[14px] md:text-[16px] text-gray-500 mt-[10px] font-inter font-medium tracking-tight">
+                                class="text-[14px] md:text-[16px] text-black mt-[10px] font-inter font-bold tracking-tight">
                                 Seoul's Next Global Business Hub</div>
                         </div>
 
@@ -697,16 +753,16 @@
                         </div>
 
                         <!-- Chart Comparison -->
-                        <div class="w-full flex font-inter text-[11px] md:text-[12px] font-medium text-black tracking-tight justify-between items-stretch relative mt-4 mb-[30px] lg:mb-0"
-                            style="min-height: 250px;">
+                        <div
+                            class="w-full h-[280px] md:h-[340px] flex font-inter text-[11px] md:text-[12px] font-medium text-black tracking-tight justify-between items-stretch relative mt-4 mb-[70px] lg:mb-0">
                             <!-- Manhattan -->
                             <div class="w-[48%] flex flex-col items-center h-full">
                                 <div class="mb-3 text-[14px] md:text-[16px]">Manhattan</div>
                                 <div class="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal">Grand
                                     Central Station</div>
-                                <div class="w-px bg-black relative flex-grow my-1">
+                                <div class="w-px bg-black relative flex-[2] min-h-[40px] my-1">
                                     <div
-                                        class="absolute -top-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-b-[6px] border-l-transparent border-r-transparent border-b-black">
+                                        class="absolute -top-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-b-[6px] border-l-transparent border-r-transparent border-b-black animate-arrow-top">
                                     </div>
                                     <div
                                         class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 whitespace-nowrap text-center leading-[1.2] isolate before:absolute before:inset-0 before:bg-white before:opacity-80 before:-z-10 rounded">
@@ -715,13 +771,13 @@
                                 </div>
                                 <div class="bg-[#3A4A41] text-white px-2 py-2 w-full text-center tracking-normal">Penn
                                     Station</div>
-                                <div class="w-px bg-black relative flex-grow my-1">
+                                <div class="w-px bg-black relative flex-[1] min-h-[20px] my-1">
                                     <div
-                                        class="absolute -bottom-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-t-[6px] border-l-transparent border-r-transparent border-t-black">
+                                        class="absolute -bottom-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-t-[6px] border-l-transparent border-r-transparent border-t-black animate-arrow-bottom">
                                     </div>
                                 </div>
                                 <div
-                                    class="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal mt-auto">
+                                    class="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal mt-auto shrink-0">
                                     Hudson Yards Station</div>
                             </div>
 
@@ -730,12 +786,12 @@
                                 <div class="mb-3 text-[14px] md:text-[16px]">Seoul</div>
                                 <div class="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal">Seoul
                                     Station</div>
-                                <div class="w-px bg-black relative flex-grow my-1">
+                                <div class="w-px bg-black relative flex-[3] min-h-[80px] my-1">
                                     <div
-                                        class="absolute -top-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-b-[6px] border-l-transparent border-r-transparent border-b-black">
+                                        class="absolute -top-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-b-[6px] border-l-transparent border-r-transparent border-b-black animate-arrow-top">
                                     </div>
                                     <div
-                                        class="absolute -bottom-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-t-[6px] border-l-transparent border-r-transparent border-t-black">
+                                        class="absolute -bottom-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-t-[6px] border-l-transparent border-r-transparent border-t-black animate-arrow-bottom">
                                     </div>
                                     <div
                                         class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 whitespace-nowrap text-center leading-[1.2] isolate before:absolute before:inset-0 before:bg-white before:opacity-80 before:-z-10 rounded">
@@ -743,7 +799,7 @@
                                     </div>
                                 </div>
                                 <div
-                                    class="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal mt-auto">
+                                    class="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal mt-auto shrink-0">
                                     Yongsan Station</div>
                             </div>
                         </div>
@@ -755,13 +811,13 @@
                     class="w-full h-auto lg:h-full lg:absolute lg:top-0 lg:right-0 lg:w-[70%] z-0 relative order-2 lg:order-none overflow-hidden">
                     <!-- Base relative image to dictate full natural height when not absolute -->
                     <img src="img/sybd1.jpg" alt="SYBD Map 1"
-                        class="relative w-full h-auto lg:absolute lg:h-full lg:object-cover object-cover transition-opacity duration-1000 opacity-100 pointer-events-none lg:scale-90 lg:origin-right"
+                        class="relative w-full h-auto lg:absolute lg:h-full lg:object-cover object-cover opacity-100 pointer-events-none lg:origin-right"
                         id="sybd-img-1" style="object-position: right center;">
                     <img src="img/sybd2.jpg" alt="SYBD Map 2"
-                        class="absolute top-0 left-0 w-full h-full lg:object-cover object-cover transition-opacity duration-1000 opacity-0 pointer-events-none lg:scale-90 lg:origin-right"
+                        class="absolute top-0 left-0 w-full h-full lg:object-cover object-cover opacity-0 pointer-events-none lg:origin-right"
                         id="sybd-img-2" style="object-position: right center;">
                     <img src="img/sybd3.jpg" alt="SYBD Map 3"
-                        class="absolute top-0 left-0 w-full h-full lg:object-cover object-cover transition-opacity duration-1000 opacity-0 pointer-events-none lg:scale-90 lg:origin-right"
+                        class="absolute top-0 left-0 w-full h-full lg:object-cover object-cover opacity-0 pointer-events-none lg:origin-right"
                         id="sybd-img-3" style="object-position: right center;">
                 </div>
 
@@ -839,7 +895,7 @@
                         if (entry.isIntersecting) {
                             if (!sybdInterval && currentSybdImage < 3) {
                                 // Only run if we haven't reached the 3rd image
-                                sybdInterval = setInterval(switchSybdImage, 3000); // changes every 3 seconds
+                                sybdInterval = setInterval(switchSybdImage, 1500); // changes every 1.5 seconds
                             }
                         } else {
                             if (sybdInterval) {
@@ -887,7 +943,7 @@
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
             }, { threshold: 0.1 });
-            document.querySelectorAll("#section3, #section4, .bs-fade-up, .bs-draw-line, .curtain-container").forEach(el => observer.observe(el));
+            document.querySelectorAll("#section3, #section4, .bs-fade-up, .bs-draw-line, .curtain-container, .bs-scale-up").forEach(el => observer.observe(el));
         });
     </script>
 </body>
