@@ -3,12 +3,15 @@ import React, { useEffect, useRef } from 'react';
 export default function SectionGreenAmenity() {
     const sectionRef = useRef(null);
 
-    const [isVisible, setIsVisible] = React.useState(false);
+    const [stage, setStage] = React.useState(0);
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting) {
-                setIsVisible(true);
+                setStage(1);
+                setTimeout(() => {
+                    setStage(2);
+                }, 2400); // Increased wait time to ensure 4th box finishes entering (4 * 400 + 800)
                 observer.disconnect();
             }
         }, { threshold: 0.1 });
@@ -62,15 +65,14 @@ export default function SectionGreenAmenity() {
                             <div key={num} className="flex flex-col items-center">
                                 <div className="relative w-full aspect-[4/5] overflow-hidden mb-4 rounded-none">
                                     {/* Green Box */}
-                                    <div className={`amenity-green-box absolute inset-0 w-full h-full bg-[#3B7062] transition-all duration-[1600ms] ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}
-                                        style={{ transitionDelay: `${i * 400}ms` }}>
+                                    <div className={`amenity-green-box absolute inset-0 w-full h-full bg-[#3B7062] z-10 transition-transform ${stage === 0 ? 'translate-y-full duration-0' : stage === 1 ? 'translate-y-0 duration-[800ms] ease-out' : '-translate-y-full duration-[1600ms] ease-in'}`}
+                                        style={{ transitionDelay: `${i * 300}ms` }}>
                                     </div>
                                     {/* Image */}
                                     <img src={`./img/green_0${num}.png`} alt={`Green Amenity ${num}`}
-                                        className={`amenity-image absolute inset-0 w-full h-full object-cover transition-all duration-[1600ms] ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}
-                                        style={{ transitionDelay: `${3000 + i * 400}ms` }} />
+                                        className={`amenity-image absolute inset-0 w-full h-full object-cover z-0 ${stage >= 2 ? 'opacity-100' : 'opacity-0 duration-0'}`} />
                                 </div>
-                                <div className={`text-center transition-all duration-[1600ms] ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: `${4600 + i * 400}ms` }}>
+                                <div className={`text-center transition-all ${stage === 2 ? 'opacity-100 translate-y-0 duration-[1200ms] ease-out' : 'opacity-0 translate-y-4 duration-0'}`} style={{ transitionDelay: stage === 2 ? `${i * 300 + 400}ms` : '0ms' }}>
                                     <p className="text-[14px] md:text-[15px] font-medium text-black tracking-[-0.01em]"
                                         data-kr={items[i].kr}
                                         data-en={items[i].en}>

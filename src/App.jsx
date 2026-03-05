@@ -10,6 +10,7 @@ import Section6 from './components/Section6';
 import SectionSkyline from './components/SectionSkyline';
 import SectionGreen from './components/SectionGreen';
 import SectionGreenAmenity from './components/SectionGreenAmenity';
+import SectionNamsan from './components/SectionNamsan';
 import { useAnimations } from './hooks/useAnimations';
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
       <SectionSkyline />
       <SectionGreen />
       <SectionGreenAmenity />
+      <SectionNamsan />
     </div>
   );
 }
