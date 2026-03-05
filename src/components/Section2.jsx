@@ -53,7 +53,7 @@ export default function Section2() {
                     </div>
                     <div className="full-image-container relative overflow-hidden group">
                         <img src="./img/iota_full_3.jpg" alt="IOTA Full Background 3"
-                            className="bs-scale-up w-full h-[100vw] md:h-auto object-cover block origin-center transform transition-transform duration-[2s] group-hover:scale-105" />
+                            className="bs-scale-up w-full h-auto block origin-center transform transition-transform duration-[2s] group-hover:scale-105" />
                     </div>
                 </div>
             </div>

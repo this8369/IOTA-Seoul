@@ -185,20 +185,52 @@ export default function Section5() {
                     </div>
 
                     {/* Chart Comparison - Simplified for Mobile */}
-                    <div className="w-full flex font-inter text-[11px] font-medium text-black tracking-tight gap-4 mb-6">
-                        <div className="w-1/2 flex flex-col items-center">
-                            <div className="mb-2 text-[14px]">Manhattan</div>
-                            <div className="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal">Grand Central Station</div>
-                            <div className="w-px bg-black h-12 my-1 relative"></div>
-                            <div className="bg-[#3A4A41] text-white px-2 py-2 w-full text-center tracking-normal">Penn Station</div>
-                            <div className="w-px bg-black h-6 my-1 relative"></div>
-                            <div className="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal">Hudson Yards Station</div>
+                    <div className="w-full h-[240px] flex font-inter text-[11px] font-medium text-black tracking-tight justify-between items-stretch gap-4 mb-8">
+                        {/* Manhattan */}
+                        <div className="w-[48%] flex flex-col items-center h-full">
+                            <div className="mb-3 text-[14px]">Manhattan</div>
+                            <div className="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal">
+                                Grand Central</div>
+                            <div className="w-px bg-black relative flex-[2] min-h-[40px] my-1">
+                                <div
+                                    className="absolute -top-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-b-[6px] border-l-transparent border-r-transparent border-b-black animate-arrow-top">
+                                </div>
+                                <div
+                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 whitespace-nowrap text-center leading-[1.2] isolate before:absolute before:inset-0 before:bg-white before:opacity-80 before:-z-10 rounded">
+                                    3km<br /><span className="font-normal text-[10px]">(10,000 feet)</span>
+                                </div>
+                            </div>
+                            <div className="bg-[#3A4A41] text-white px-2 py-2 w-full text-center tracking-normal">
+                                Penn Station</div>
+                            <div className="w-px bg-black relative flex-[1] min-h-[20px] my-1">
+                                <div
+                                    className="absolute -bottom-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-t-[6px] border-l-transparent border-r-transparent border-t-black animate-arrow-bottom">
+                                </div>
+                            </div>
+                            <div
+                                className="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal mt-auto shrink-0">
+                                Hudson Yards</div>
                         </div>
-                        <div className="w-1/2 flex flex-col items-center">
-                            <div className="mb-2 text-[14px]">Seoul</div>
-                            <div className="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal">Seoul Station</div>
-                            <div className="w-px bg-black h-[104px] my-1 relative"></div>
-                            <div className="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal">Yongsan Station</div>
+                        {/* Seoul */}
+                        <div className="w-[48%] flex flex-col items-center h-full">
+                            <div className="mb-3 text-[14px]">Seoul</div>
+                            <div className="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal">
+                                Seoul Station</div>
+                            <div className="w-px bg-black relative flex-[3] min-h-[80px] my-1">
+                                <div
+                                    className="absolute -top-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-b-[6px] border-l-transparent border-r-transparent border-b-black animate-arrow-top">
+                                </div>
+                                <div
+                                    className="absolute -bottom-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-t-[6px] border-l-transparent border-r-transparent border-t-black animate-arrow-bottom">
+                                </div>
+                                <div
+                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 whitespace-nowrap text-center leading-[1.2] isolate before:absolute before:inset-0 before:bg-white before:opacity-80 before:-z-10 rounded">
+                                    2.7km<br /><span className="font-normal text-[10px]">(9,000 feet)</span>
+                                </div>
+                            </div>
+                            <div
+                                className="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal mt-auto shrink-0">
+                                Yongsan Station</div>
                         </div>
                     </div>
                 </div>

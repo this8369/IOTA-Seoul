@@ -5,9 +5,9 @@ export default function Section6() {
         <section
             className="section content-section w-full h-auto bg-black text-white relative flex flex-col pt-[100px] md:pt-[200px] pb-[100px] md:pb-[150px]"
             id="section6">
-            <div className="w-full max-w-[1700px] mx-auto">
+            <div className="w-full max-w-[1700px] mx-auto flex flex-col-reverse md:flex-col">
 
-                {/* BACKGROUND MAP (Image at top) */}
+                {/* BACKGROUND MAP (Image at top on PC, bottom on mobile) */}
                 <div className="w-full flex flex-col gap-[30px]">
                     <div className="full-image-container relative overflow-hidden group">
                         <img src="./img/gtx.jpg" alt="GTX Map"
