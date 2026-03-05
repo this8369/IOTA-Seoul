@@ -3,7 +3,7 @@ import React from 'react';
 export default function Section6() {
     return (
         <section
-            className="section content-section w-full h-auto bg-black text-white relative flex flex-col pt-[200px] pb-[100px] md:pb-[150px]"
+            className="section content-section w-full h-auto bg-black text-white relative flex flex-col pt-[100px] md:pt-[200px] pb-[100px] md:pb-[150px]"
             id="section6">
             <div className="w-full max-w-[1700px] mx-auto">
 

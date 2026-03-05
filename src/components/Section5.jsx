@@ -3,9 +3,9 @@ import React from 'react';
 export default function Section5() {
     return (
         <section className="w-full bg-white text-black relative" id="section5">
+            {/* --- DESKTOP VIEW (lg and up) --- */}
             {/* Container spanning 230vh to allow scroll room for the effect */}
-            <div className="w-full relative h-[230vh]" id="sybd-scroll-area">
-
+            <div className="hidden lg:block w-full relative h-[230vh]" id="sybd-scroll-area">
                 {/* STICKY BLOCK */}
                 <div className="w-full h-[100vh] sticky top-0 left-0 overflow-hidden bg-white flex flex-col lg:block">
 
@@ -142,7 +142,7 @@ export default function Section5() {
 
                     {/* RIGHT BACKGROUND MAPS */}
                     <div
-                        className="relative lg:absolute lg:top-0 right-0 w-full h-[40vh] lg:h-full z-10 lg:block pointer-events-none bs-slide-left delay-300 overflow-hidden">
+                        className="absolute top-0 right-0 w-full h-[40vh] lg:h-full z-10 lg:block pointer-events-none bs-slide-left delay-300 overflow-hidden">
                         <img src="./img/sybd3.jpg" alt="SYBD Map 3" id="sybd-img-3"
                             className="absolute top-0 right-0 w-full lg:w-[1400px] lg:max-w-none h-full object-cover object-[center_center] lg:object-[right_center] transition-opacity duration-1000 ease-in-out" />
                         <img src="./img/sybd4.jpg" alt="SYBD Map 4" id="sybd-img-4"
@@ -151,9 +151,101 @@ export default function Section5() {
 
                 </div>
 
-                {/* SCROLL TRIGGER: Placed exactly at 100vh down, so crossing it triggers the change */}
+                {/* SCROLL TRIGGER: Placed exactly at 100vh down */}
                 <div id="sybd-trigger" className="absolute top-[100vh] w-full h-[10px] pointer-events-none bg-transparent">
                 </div>
+            </div>
+
+            {/* --- MOBILE VIEW (below lg) --- */}
+            <div className="block lg:hidden w-full flex flex-col bg-white">
+
+                {/* STEP 1: SYBD Text & Image */}
+                <div className="w-full flex flex-col pt-16 px-6 md:px-12 bs-fade-up">
+                    <div className="font-bold text-[18px] text-gray-800 mb-2 font-inter tracking-tight">
+                        New Economy Cluster</div>
+                    <h2 className="text-[32px] md:text-[45px] font-extrabold leading-none mb-6 text-black tracking-[-0.02em] font-inter">
+                        SYBD <span className="text-[11px] md:text-[13px] font-normal text-gray-500 align-middle tracking-normal">*Seoul Yongsan Business District</span>
+                    </h2>
+                    <div className="mb-4">
+                        <h3 className="text-[16px] md:text-[20px] font-bold text-[#3B7062] tracking-[-0.02em]"
+                            data-kr="글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상"
+                            data-en="Becoming the New Business District for Global Talent and Innovative Companies">
+                            글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상
+                        </h3>
+                        <div className="text-[13px] text-black mt-[10px] font-inter font-bold tracking-tight">
+                            Seoul's Next Global Business Hub</div>
+                    </div>
+                    <div className="text-[13px] md:text-[15px] text-black leading-relaxed tracking-[-0.02em] mb-8 font-normal kr-target-text">
+                        <p className="kr-target-text transition-all duration-300"
+                            data-kr="서울역과 용산역을 잇는 교통의 결절지인 SYBD는 뉴욕의 그랜드 센트럴에서 허드슨 야드를 아우르는 글로벌 업무지구와 같이 서울의 차기 글로벌 비즈니스 허브로 도약할 것입니다."
+                            data-en="Connecting Seoul Station and Yongsan Station, SYBD (Seoul Yongsan Business District) is becoming the most desired retail and office locations within the city. Just as Hudson Yards extends from Grand Central Terminal in New York to form a world-class business cluster, SYBD is poised to become Seoul's next-generation global business hub, seamlessly integrating transit, commerce, and innovation.">
+                            서울역과 용산역을 잇는 교통의 결절지인 SYBD는 뉴욕의 그랜드 센트럴에서 허드슨 야드를 아우르는 글로벌 업무지구와 같이 서울의 차기 글로벌 비즈니스
+                            허브로 도약할 것입니다.
+                        </p>
+                    </div>
+
+                    {/* Chart Comparison - Simplified for Mobile */}
+                    <div className="w-full flex font-inter text-[11px] font-medium text-black tracking-tight gap-4 mb-6">
+                        <div className="w-1/2 flex flex-col items-center">
+                            <div className="mb-2 text-[14px]">Manhattan</div>
+                            <div className="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal">Grand Central Station</div>
+                            <div className="w-px bg-black h-12 my-1 relative"></div>
+                            <div className="bg-[#3A4A41] text-white px-2 py-2 w-full text-center tracking-normal">Penn Station</div>
+                            <div className="w-px bg-black h-6 my-1 relative"></div>
+                            <div className="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal">Hudson Yards Station</div>
+                        </div>
+                        <div className="w-1/2 flex flex-col items-center">
+                            <div className="mb-2 text-[14px]">Seoul</div>
+                            <div className="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal">Seoul Station</div>
+                            <div className="w-px bg-black h-[104px] my-1 relative"></div>
+                            <div className="bg-[#2B3531] text-white px-2 py-2 w-full text-center tracking-normal">Yongsan Station</div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Mobile Step 1 Image */}
+                <div className="w-full relative h-[60vh] md:h-[70vh]">
+                    <img src="./img/sybd3.jpg" alt="SYBD Map 3" className="w-full h-full object-cover object-[center_center]" />
+                </div>
+
+                {/* STEP 2: Korea's Central Station Text & Image */}
+                <div className="w-full flex flex-col pt-16 px-6 md:px-12 bs-fade-up">
+                    <div className="font-bold text-[18px] md:text-[22px] text-gray-800 mb-2 font-inter tracking-tight"
+                        data-kr="Unrivaled Accessibility" data-en="Unrivaled Accessibility">
+                        Unrivaled Accessibility</div>
+                    <h2 className="text-[32px] md:text-[45px] font-extrabold leading-[1.1] mb-4 text-black tracking-[-0.02em] font-inter">
+                        Korea's Central Station<br />and Mega Transport Hub
+                    </h2>
+                    <div className="mb-4">
+                        <h3 className="text-[16px] md:text-[20px] font-bold text-[#3B7062] tracking-[-0.02em] leading-snug"
+                            data-kr="국가중앙역 + 광역교통 중심지의 독보적 접근성 제공"
+                            data-en="The Nation's Ultimate Transit Hub - Unmatched, Unrivaled">
+                            The Nation's Ultimate Transit Hub - Unmatched, Unrivaled
+                        </h3>
+                    </div>
+                    <div className="text-[13px] md:text-[15px] font-medium text-black leading-relaxed tracking-[-0.02em] mb-6">
+                        <p className="kr-target-text transition-all duration-300"
+                            data-kr="서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 최적의 입지 조건을 갖추고 있습니다."
+                            data-en="Seoul Station is Korea's foremost transportation hub, directly connected to 11 transit lines, including KTX, airport rail, and multiple metro routes. Together with nearby Yongsan Station, it forms an exceptional multimodal infrastructure at the center of the capital. With the addition of GTX-A/B and the Shinbundang Line, the site offers 30-minute access to key southeastern districts such as Gangnam, Bundang, and Pangyo. It also enables direct connections to both Incheon and Gimpo International Airports, making it an ideal location for global innovation-driven enterprises.">
+                            서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />
+                            또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />
+                            인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 최적의 입지 조건을 갖추고 있습니다.
+                        </p>
+                    </div>
+                    <div className="w-full max-w-[300px] flex flex-col gap-2 mb-8">
+                        <img src="./img/airport.png" alt="Airports" className="w-full h-auto object-contain" />
+                        <div className="w-full flex gap-4">
+                            <div className="w-1/2 text-[12px] text-black font-medium tracking-tight">approx. 43 minutes.</div>
+                            <div className="w-1/2 text-[12px] text-black font-medium tracking-tight">approx. 22 minutes.</div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Mobile Step 2 Image */}
+                <div className="w-full relative h-[60vh] md:h-[70vh]">
+                    <img src="./img/sybd4.jpg" alt="SYBD Map 4" className="w-full h-full object-cover object-[center_center]" />
+                </div>
+
             </div>
         </section>
     );

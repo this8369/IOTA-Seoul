@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Section3() {
     return (
-        <section className="section content-section bs-section-3 h-auto bg-black pt-[200px]" id="section3" style={{ paddingTop: '200px' }}>
+        <section className="section content-section bs-section-3 h-auto bg-black pt-[100px] md:pt-[200px]" id="section3">
             <div className="w-full max-w-[1700px] mx-auto">
-                <div className="w-full text-white flex flex-col pb-[90px] px-6 md:px-0">
+                <div className="w-full text-white flex flex-col pb-[50px] md:pb-[90px] px-6 md:px-0">
                     <h2
                         className="text-[28px] md:text-[36px] font-extrabold tracking-normal mb-[60px] bs-fade-up font-inter">
                         <span data-en="PROPERTY OVERVIEW" data-kr="PROPERTY OVERVIEW">PROPERTY OVERVIEW</span>
@@ -171,7 +171,7 @@ export default function Section3() {
                     </div>
                 </div>
 
-                <div className="w-full flex flex-col gap-y-[20px] pb-[100px]">
+                <div className="w-full flex flex-col gap-y-[20px] pb-[50px] md:pb-[100px]">
                     <div className="w-full flex flex-col gap-y-[20px]">
                         <div className="full-image-container relative overflow-hidden group">
                             <img src="./img/iota_full_2.jpg" alt="IOTA Property Details"

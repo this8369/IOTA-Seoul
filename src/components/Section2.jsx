@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Section2() {
     return (
-        <section className="section content-section h-auto" id="section2" style={{ minHeight: 'auto', paddingBottom: '0', marginBottom: '200px' }}>
+        <section className="section content-section h-auto mb-[100px] md:mb-[200px] pt-[30px] md:pt-[60px]" id="section2" style={{ minHeight: 'auto', paddingBottom: '0' }}>
             {/* Header Spacer */}
-            <div className="h-[100px] w-full invisible"></div>
+            <div className="h-[50px] md:h-[100px] w-full invisible"></div>
             <div className="w-full max-w-[1700px] mx-auto">
                 <div className="w-full px-6 md:px-0 flex flex-col md:flex-row items-center mb-12">
                     {/* Left: Title and Description */}
@@ -49,11 +49,11 @@ export default function Section2() {
                 <div className="w-full flex flex-col gap-[30px]">
                     <div className="full-image-container relative overflow-hidden group">
                         <img src="./img/iota_full.jpg" alt="IOTA Full Background"
-                            className="bs-scale-up w-full h-auto block origin-center transform transition-transform duration-[2s] group-hover:scale-105" style={{ marginTop: '-30px' }} />
+                            className="bs-scale-up w-full h-[100vw] md:h-auto object-cover block origin-center transform transition-transform duration-[2s] group-hover:scale-105" style={{ marginTop: '-30px' }} />
                     </div>
                     <div className="full-image-container relative overflow-hidden group">
                         <img src="./img/iota_full_3.jpg" alt="IOTA Full Background 3"
-                            className="bs-scale-up w-full h-auto block origin-center transform transition-transform duration-[2s] group-hover:scale-105" />
+                            className="bs-scale-up w-full h-[100vw] md:h-auto object-cover block origin-center transform transition-transform duration-[2s] group-hover:scale-105" />
                     </div>
                 </div>
             </div>
