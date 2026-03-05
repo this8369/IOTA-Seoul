@@ -67,10 +67,10 @@ export default function SectionGreenAmenity() {
                                     </div>
                                     {/* Image */}
                                     <img src={`./img/green_0${num}.png`} alt={`Green Amenity ${num}`}
-                                        className={`amenity-image absolute inset-0 w-full h-full object-cover transition-all duration-[1600ms] ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}
-                                        style={{ transitionDelay: `${1600 + i * 400}ms` }} />
+                                        className={`amenity-image absolute inset-0 w-full h-full object-cover transition-all duration-[1600ms] ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}
+                                        style={{ transitionDelay: `${3000 + i * 400}ms` }} />
                                 </div>
-                                <div className={`text-center transition-all duration-[1600ms] ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: `${2000 + i * 400}ms` }}>
+                                <div className={`text-center transition-all duration-[1600ms] ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: `${4600 + i * 400}ms` }}>
                                     <p className="text-[14px] md:text-[15px] font-medium text-black tracking-[-0.01em]"
                                         data-kr={items[i].kr}
                                         data-en={items[i].en}>
