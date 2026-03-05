@@ -14,6 +14,7 @@ import SectionNamsan from './components/SectionNamsan';
 import SectionScale from './components/SectionScale';
 import SectionLargePlate from './components/SectionLargePlate';
 import SectionNextGen from './components/SectionNextGen';
+import SectionNextGenStandard from './components/SectionNextGenStandard';
 import { useAnimations } from './hooks/useAnimations';
 
 export default function App() {
@@ -36,6 +37,7 @@ export default function App() {
       <SectionScale />
       <SectionLargePlate />
       <SectionNextGen />
+      <SectionNextGenStandard />
     </div>
   );
 }
