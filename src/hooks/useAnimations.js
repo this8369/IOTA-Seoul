@@ -80,7 +80,7 @@ export function useAnimations() {
 
             if (greenArea && greenImg2) {
                 const rect = greenArea.getBoundingClientRect();
-                if (rect.top < - (window.innerHeight * 0.4)) {
+                if (rect.top < (window.innerHeight * 0.5)) {
                     greenImg2.style.opacity = '1';
                 } else {
                     greenImg2.style.opacity = '0';
