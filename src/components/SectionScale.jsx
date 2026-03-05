@@ -69,7 +69,7 @@ export default function SectionScale() {
                 {/* TEXT CONTENT */}
                 <div className="w-full max-w-[1200px] flex flex-col items-center text-center bs-fade-up delay-200">
 
-                    <h3 className="text-[32px] md:text-[45px] lg:text-[55px] font-extrabold text-white tracking-tight font-inter leading-tight"
+                    <h3 className="text-[32px] md:text-[45px] lg:text-[55px] font-extrabold text-white tracking-tight font-inter leading-tight mt-[30px]"
                         data-en="Iconic Trophy Asset in Seoul"
                         data-kr="도심 핵심지에서의 초대형 복합 사업">
                         Iconic Trophy Asset in Seoul
