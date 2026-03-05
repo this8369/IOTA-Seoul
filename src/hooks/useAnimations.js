@@ -103,7 +103,7 @@ export function useAnimations() {
             });
         }, { threshold: 0.1 });
 
-        const targets = document.querySelectorAll("#section3, #section4, #section6, .bs-fade-up, .bs-draw-line, .curtain-container, .bs-scale-up, .bs-slide-left");
+        const targets = document.querySelectorAll("#section3, #section4, #section6, .bs-fade-up, .bs-draw-line, .curtain-container, .bs-scale-up, .bs-slide-left, .bs-bounce-up");
         targets.forEach(el => observer.observe(el));
 
         return () => {

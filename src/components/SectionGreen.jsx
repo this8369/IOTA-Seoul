@@ -41,7 +41,7 @@ export default function SectionGreen() {
                         <div className="w-full xl:w-auto mt-16 xl:mt-0 flex flex-col md:flex-row items-center justify-center space-y-12 md:space-y-0 text-black font-inter self-center xl:self-center xl:ml-auto">
 
                             {/* Stat 1 */}
-                            <div className="flex flex-col items-center text-center px-4 md:px-12">
+                            <div className="flex flex-col items-center text-center px-4 md:px-12 bs-bounce-up delay-200">
                                 <div className="flex items-baseline mb-2">
                                     <span className="text-[55px] md:text-[65px] lg:text-[75px] leading-none font-bold tracking-[-0.03em]" data-en="710" data-kr="87만">710</span>
                                     <span className="text-[22px] md:text-[26px] lg:text-[30px] leading-none ml-2 tracking-[-0.02em]" data-en="AC" data-kr="평">AC</span>
@@ -53,7 +53,7 @@ export default function SectionGreen() {
                             <div className="hidden md:block w-[1px] h-[60px] bg-gray-300"></div>
 
                             {/* Stat 2 */}
-                            <div className="flex flex-col items-center text-center px-4 md:px-12 mt-8 md:mt-0">
+                            <div className="flex flex-col items-center text-center px-4 md:px-12 mt-8 md:mt-0 bs-bounce-up delay-400">
                                 <div className="flex items-baseline mb-2">
                                     <span className="text-[55px] md:text-[65px] lg:text-[75px] leading-none font-bold tracking-[-0.03em]" data-en="111,375" data-kr="3,130">111,375</span>
                                     <span className="text-[22px] md:text-[26px] lg:text-[30px] leading-none ml-2 tracking-[-0.02em]" data-en="SF" data-kr="평">SF</span>

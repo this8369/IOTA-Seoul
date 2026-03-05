@@ -33,11 +33,11 @@ export default function SectionScale() {
                 <div className="relative w-full max-w-[1000px] mx-auto mb-16 bs-fade-up delay-100">
                     <img src="./img/scale.jpg" alt="IOTA Seoul Scale" className="w-full h-auto object-cover rounded-sm brightness-75" />
 
-                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none p-4">
+                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none p-4 font-inter">
                         <div className="flex flex-row items-center justify-center gap-8 md:gap-16 lg:gap-24 text-white">
 
-                            <div className="flex flex-col items-center">
-                                <div className="flex items-baseline font-serif">
+                            <div className="flex flex-col items-center bs-bounce-up delay-300">
+                                <div className="flex items-baseline">
                                     <span className="text-[40px] md:text-[70px] lg:text-[90px] leading-none tracking-tight">459,765</span>
                                     <span className="text-[18px] md:text-[28px] lg:text-[36px] ml-1">m²</span>
                                 </div>
@@ -48,10 +48,10 @@ export default function SectionScale() {
                                 </div>
                             </div>
 
-                            <div className="w-px h-16 md:h-24 lg:h-32 bg-white/40"></div>
+                            <div className="w-px h-16 md:h-24 lg:h-32 bg-white/40 bs-fade-up delay-400"></div>
 
-                            <div className="flex flex-col items-center">
-                                <div className="flex items-baseline font-serif">
+                            <div className="flex flex-col items-center bs-bounce-up delay-500">
+                                <div className="flex items-baseline">
                                     <span className="text-[40px] md:text-[70px] lg:text-[90px] leading-none tracking-tight">27,537</span>
                                     <span className="text-[18px] md:text-[28px] lg:text-[36px] ml-1">m²</span>
                                 </div>
@@ -92,8 +92,31 @@ export default function SectionScale() {
                 </div>
 
                 {/* CBD ASSETS IMAGE */}
-                <div className="w-full mt-24 md:mt-32 bs-fade-up delay-300 bg-white p-4 md:p-8 lg:p-12 rounded-sm shadow-xl max-w-[1600px] mx-auto">
-                    <img src="./img/CBD_assets.jpg" alt="CBD Assets Comparison" className="w-full h-auto object-contain" />
+                <div className="w-full mt-24 md:mt-32 max-w-[800px] mx-auto flex flex-col bs-fade-up delay-300 pb-12">
+
+                    <div className="w-full flex justify-between items-end mb-4 px-2 space-x-2">
+                        <div className="flex flex-col text-left">
+                            <h4 className="font-bold text-white text-[16px] md:text-[20px] tracking-tight break-keep"
+                                data-kr="2025년 5월 현재 CBD 최대규모 자산 &amp; 2032년까지 개발예정 자산 규모 비교"
+                                data-en="Largest Asset in CBD as of May 2025 &amp; Comparison with Future Pipelines through 2032"
+                            >
+                                Largest Asset in CBD as of May 2025 &amp; Comparison with Future Pipelines through 2032
+                            </h4>
+                            <p className="text-[12px] md:text-[14px] text-gray-300 mt-1 kr-target-text leading-[1.3] md:leading-[1.4]"
+                                data-en="Scheduled for Completion in H1 2032<br/>As of May 2025, IOTA Seoul is the largest asset under development in the CBD, both in current and projected scale through 2032."
+                                data-kr="Scheduled for Completion in H1 2032<br/>As of May 2025, IOTA Seoul is the largest asset under development in the CBD, both in current and projected scale through 2032.">
+                                Scheduled for Completion in H1 2032<br className="hidden sm:block" />
+                                As of May 2025, IOTA Seoul is the largest asset under development in the CBD, both in current and projected scale through 2032.
+                            </p>
+                        </div>
+                        <div className="text-[12px] md:text-[14px] text-gray-300 mb-1 whitespace-nowrap mt-auto">
+                            (MSF)
+                        </div>
+                    </div>
+
+                    <div className="w-full bg-white p-4 md:p-6 lg:p-8 rounded-xl shadow-xl">
+                        <img src="./img/CBD_assets.jpg" alt="CBD Assets Comparison" className="w-full h-auto object-contain" />
+                    </div>
                 </div>
 
             </div>
