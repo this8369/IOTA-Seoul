@@ -8,6 +8,12 @@ export default function Header() {
     const switchLang = (newLang) => {
         setLang(newLang);
         setMobileMenuOpen(false);
+        // Keep header during programmatic language switch
+        window.isNavigating = true;
+        clearTimeout(window.navigatingTimeout);
+        window.navigatingTimeout = setTimeout(() => {
+            window.isNavigating = false;
+        }, 1500);
     };
 
     const handleScrollTo = (e, targetId) => {
