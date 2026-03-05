@@ -13,6 +13,14 @@ export default function Header() {
     const handleScrollTo = (e, targetId) => {
         e.preventDefault();
         setMobileMenuOpen(false);
+
+        // Keep header during programmatic scroll
+        window.isNavigating = true;
+        clearTimeout(window.navigatingTimeout);
+        window.navigatingTimeout = setTimeout(() => {
+            window.isNavigating = false;
+        }, 1500);
+
         if (targetId === 'top') {
             const scrollContainer = document.getElementById('scroll-container');
             if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
