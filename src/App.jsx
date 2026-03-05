@@ -8,6 +8,7 @@ import Section4 from './components/Section4';
 import Section5 from './components/Section5';
 import Section6 from './components/Section6';
 import SectionSkyline from './components/SectionSkyline';
+import SectionGreen from './components/SectionGreen';
 import { useAnimations } from './hooks/useAnimations';
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
       <Section5 />
       <Section6 />
       <SectionSkyline />
+      <SectionGreen />
     </div>
   );
 }

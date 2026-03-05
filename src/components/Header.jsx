@@ -41,8 +41,8 @@ export default function Header() {
                             <a href="#section2" onClick={(e) => handleScrollTo(e, 'section2')} className="hover:text-gray-500 transition-colors duration-200">
                                 Location
                             </a>
-                            <a href="#" className="hover:text-gray-500 transition-colors duration-200">
-                                Businesses
+                            <a href="#section-green" onClick={(e) => handleScrollTo(e, 'section-green')} className="hover:text-gray-500 transition-colors duration-200">
+                                Green
                             </a>
                             <a href="#" className="hover:text-gray-500 transition-colors duration-200">
                                 Insights
@@ -81,7 +81,7 @@ export default function Header() {
             <div id="mobile-menu"
                 className={`fixed top-[90px] left-0 w-full bg-white shadow-lg flex-col py-6 space-y-4 z-40 transition-transform md:hidden text-center justify-center items-center ${mobileMenuOpen ? 'flex' : 'hidden'}`}>
                 <a href="#section2" onClick={(e) => handleScrollTo(e, 'section2')} className="text-[16px] font-normal text-gray-800">Location</a>
-                <a href="#" className="text-[16px] font-normal text-gray-800">Businesses</a>
+                <a href="#section-green" onClick={(e) => handleScrollTo(e, 'section-green')} className="text-[16px] font-normal text-gray-800">Green</a>
                 <a href="#" className="text-[16px] font-normal text-gray-800">Insights</a>
                 <a href="#" className="text-[16px] font-normal text-gray-800">Careers</a>
                 <a href="#" className="text-[16px] font-normal text-gray-800">News</a>

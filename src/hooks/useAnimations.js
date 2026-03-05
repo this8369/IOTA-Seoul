@@ -73,6 +73,19 @@ export function useAnimations() {
                     if (img3) img3.style.opacity = '1';
                 }
             }
+
+            // Reliable Scroll Tracking for Green Section
+            const greenArea = document.getElementById('green-scroll-area');
+            const greenImg2 = document.getElementById('green-img-2');
+
+            if (greenArea && greenImg2) {
+                const rect = greenArea.getBoundingClientRect();
+                if (rect.top < - (window.innerHeight * 0.4)) {
+                    greenImg2.style.opacity = '1';
+                } else {
+                    greenImg2.style.opacity = '0';
+                }
+            }
         };
 
         if (scrollContainer) {
