@@ -29,9 +29,41 @@ export default function SectionScale() {
 
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-center">
 
-                {/* LARGE SCALE IMAGE */}
-                <div className="w-full max-w-[1000px] mx-auto mb-16 bs-fade-up delay-100">
-                    <img src="./img/scale.jpg" alt="IOTA Seoul Scale" className="w-full h-auto object-cover rounded-sm" />
+                {/* LARGE SCALE IMAGE WITH OVERLAY TEXT */}
+                <div className="relative w-full max-w-[1000px] mx-auto mb-16 bs-fade-up delay-100">
+                    <img src="./img/scale.jpg" alt="IOTA Seoul Scale" className="w-full h-auto object-cover rounded-sm brightness-75" />
+
+                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none p-4">
+                        <div className="flex flex-row items-center justify-center gap-8 md:gap-16 lg:gap-24 text-white">
+
+                            <div className="flex flex-col items-center">
+                                <div className="flex items-baseline font-serif">
+                                    <span className="text-[40px] md:text-[70px] lg:text-[90px] leading-none tracking-tight">459,765</span>
+                                    <span className="text-[18px] md:text-[28px] lg:text-[36px] ml-1">m²</span>
+                                </div>
+                                <div className="text-[15px] md:text-[20px] lg:text-[24px] font-medium tracking-tight mt-1 md:mt-3"
+                                    data-en="Gross Floor Area"
+                                    data-kr="Gross Floor Area">
+                                    Gross Floor Area
+                                </div>
+                            </div>
+
+                            <div className="w-px h-16 md:h-24 lg:h-32 bg-white/40"></div>
+
+                            <div className="flex flex-col items-center">
+                                <div className="flex items-baseline font-serif">
+                                    <span className="text-[40px] md:text-[70px] lg:text-[90px] leading-none tracking-tight">27,537</span>
+                                    <span className="text-[18px] md:text-[28px] lg:text-[36px] ml-1">m²</span>
+                                </div>
+                                <div className="text-[15px] md:text-[20px] lg:text-[24px] font-medium tracking-tight mt-1 md:mt-3"
+                                    data-en="Site Area"
+                                    data-kr="Site Area">
+                                    Site Area
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
                 {/* TEXT CONTENT */}
@@ -43,7 +75,7 @@ export default function SectionScale() {
                         Iconic Trophy Asset in Seoul
                     </h3>
 
-                    <h4 className="text-[18px] md:text-[22px] lg:text-[26px] font-medium text-gray-300 my-8 md:my-10 tracking-tight leading-snug kr-target-text"
+                    <h4 className="text-[18px] md:text-[22px] lg:text-[26px] font-medium text-gray-300 my-5 md:my-7 tracking-tight leading-snug kr-target-text"
                         data-en="A flagship trophy mixed-use asset in the heart of Seoul"
                         data-kr="A flagship trophy mixed-use asset in the heart of Seoul">
                         A flagship trophy mixed-use asset in the heart of Seoul
@@ -57,6 +89,11 @@ export default function SectionScale() {
                         </p>
                     </div>
 
+                </div>
+
+                {/* CBD ASSETS IMAGE */}
+                <div className="w-full mt-24 md:mt-32 bs-fade-up delay-300 bg-white p-4 md:p-8 lg:p-12 rounded-sm shadow-xl max-w-[1600px] mx-auto">
+                    <img src="./img/CBD_assets.jpg" alt="CBD Assets Comparison" className="w-full h-auto object-contain" />
                 </div>
 
             </div>
