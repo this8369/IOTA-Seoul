@@ -30,7 +30,7 @@ export default function Header() {
             <header id="main-header"
                 className="fixed top-0 left-0 w-full bg-white text-black z-50 py-[35px] transition-transform ease-in-out"
                 style={{ transform: 'translateY(-100%)' }}>
-                <div className="w-full max-w-[1600px] mx-auto px-6 md:px-0 flex justify-between items-center">
+                <div className="w-full max-w-[1600px] mx-auto px-6 xl:px-0 flex justify-between items-center">
                     <a href="#"
                         onClick={(e) => handleScrollTo(e, 'top')}
                         className="text-xl font-bold tracking-normal cursor-pointer hover:opacity-80 transition-opacity">
