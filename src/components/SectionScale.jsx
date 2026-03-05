@@ -29,41 +29,9 @@ export default function SectionScale() {
 
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-center">
 
-                {/* LARGE SCALE IMAGE WITH OVERLAY TEXT */}
-                <div className="relative w-full max-w-[1000px] mx-auto mb-16 bs-fade-up delay-100">
-                    <img src="./img/scale.jpg" alt="IOTA Seoul Scale" className="w-full h-auto object-cover rounded-sm brightness-75" />
-
-                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none p-4 font-inter">
-                        <div className="flex flex-row items-center justify-center gap-8 md:gap-16 lg:gap-24 text-white">
-
-                            <div className="flex flex-col items-center bs-bounce-up delay-300">
-                                <div className="flex items-baseline">
-                                    <span className="text-[40px] md:text-[70px] lg:text-[90px] leading-none tracking-tight font-bold">459,765</span>
-                                    <span className="text-[18px] md:text-[28px] lg:text-[36px] ml-1 font-bold">m²</span>
-                                </div>
-                                <div className="text-[15px] md:text-[20px] lg:text-[24px] font-bold tracking-tight mt-1 md:mt-3"
-                                    data-en="Gross Floor Area"
-                                    data-kr="Gross Floor Area">
-                                    Gross Floor Area
-                                </div>
-                            </div>
-
-                            <div className="w-px h-16 md:h-24 lg:h-32 bg-white/40 bs-fade-up delay-400"></div>
-
-                            <div className="flex flex-col items-center bs-bounce-up delay-500">
-                                <div className="flex items-baseline">
-                                    <span className="text-[40px] md:text-[70px] lg:text-[90px] leading-none tracking-tight font-bold">27,537</span>
-                                    <span className="text-[18px] md:text-[28px] lg:text-[36px] ml-1 font-bold">m²</span>
-                                </div>
-                                <div className="text-[15px] md:text-[20px] lg:text-[24px] font-bold tracking-tight mt-1 md:mt-3"
-                                    data-en="Site Area"
-                                    data-kr="Site Area">
-                                    Site Area
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                {/* LARGE SCALE IMAGE */}
+                <div className="w-full max-w-[1000px] mx-auto mb-16 bs-fade-up delay-100">
+                    <img src="./img/scale.jpg" alt="IOTA Seoul Scale" className="w-full h-auto object-cover rounded-none" />
                 </div>
 
                 {/* TEXT CONTENT */}
@@ -87,6 +55,39 @@ export default function SectionScale() {
                             data-en="IOTA Seoul is a massive mixed-use development, made up of 2 state-of-the-art, custom-designed office spaces and 1 ultra-luxury hotel (The Ritz-Carlton).">
                             IOTA Seoul is a massive mixed-use development, made up of 2 state-of-the-art, custom-designed office spaces and 1 ultra-luxury hotel (The Ritz-Carlton).
                         </p>
+                    </div>
+
+                    {/* STATS TEXT BLOCK MOVED DOWN */}
+                    <div className="w-full flex items-center justify-center mt-12 md:mt-16 font-inter text-white">
+                        <div className="flex flex-row items-center justify-center gap-8 md:gap-16 lg:gap-24">
+
+                            <div className="flex flex-col items-center bs-bounce-up delay-300">
+                                <div className="flex items-baseline">
+                                    <span className="text-[40px] md:text-[70px] lg:text-[90px] leading-none tracking-tight font-bold">459,765</span>
+                                    <span className="text-[18px] md:text-[28px] lg:text-[36px] ml-1 font-bold">m²</span>
+                                </div>
+                                <div className="text-[15px] md:text-[20px] lg:text-[24px] font-bold tracking-tight mt-1 md:mt-3 text-[#A3C9A8]"
+                                    data-en="Gross Floor Area"
+                                    data-kr="Gross Floor Area">
+                                    Gross Floor Area
+                                </div>
+                            </div>
+
+                            <div className="w-px h-16 md:h-24 lg:h-32 bg-gray-600 bs-fade-up delay-400"></div>
+
+                            <div className="flex flex-col items-center bs-bounce-up delay-500">
+                                <div className="flex items-baseline">
+                                    <span className="text-[40px] md:text-[70px] lg:text-[90px] leading-none tracking-tight font-bold">27,537</span>
+                                    <span className="text-[18px] md:text-[28px] lg:text-[36px] ml-1 font-bold">m²</span>
+                                </div>
+                                <div className="text-[15px] md:text-[20px] lg:text-[24px] font-bold tracking-tight mt-1 md:mt-3 text-[#A3C9A8]"
+                                    data-en="Site Area"
+                                    data-kr="Site Area">
+                                    Site Area
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -114,7 +115,7 @@ export default function SectionScale() {
                         </div>
                     </div>
 
-                    <div className="w-full bg-white p-4 md:p-6 lg:p-8 rounded-xl shadow-xl">
+                    <div className="w-full bg-white p-4 md:p-6 lg:p-8 rounded-none shadow-xl">
                         <img src="./img/CBD_assets.jpg" alt="CBD Assets Comparison" className="w-full h-auto object-contain" />
                     </div>
                 </div>
