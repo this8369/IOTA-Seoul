@@ -47,14 +47,14 @@ export default function SectionGreenAmenity() {
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-center">
 
                 {/* TEXT CONTENT */}
-                <div className="w-full flex flex-col mb-16 bs-fade-up text-left">
-                    <h2 className="text-[32px] md:text-[42px] lg:text-[50px] font-extrabold text-[#2F4F4F] mb-6 leading-tight tracking-[-0.02em] font-inter"
+                <div className="w-full flex flex-col mb-16 bs-fade-up items-center">
+                    <h2 className="text-[40px] md:text-[50px] lg:text-[59px] font-extrabold text-[#2F4F4F] mb-2 leading-tight tracking-[-0.02em] font-inter text-center"
                         data-en="Urban Office Meets Immersive Nature"
                         data-kr="Urban Office Meets Immersive Nature">
                         Urban Office Meets Immersive Nature
                     </h2>
 
-                    <h3 className="text-[18px] md:text-[22px] lg:text-[26px] font-bold text-[#3B7062] mb-6 tracking-tight leading-snug"
+                    <h3 className="text-[17px] md:text-[20px] lg:text-[22px] font-bold text-[#3B7062] mb-12 tracking-tight leading-snug text-center"
                         data-kr="서울에서 가장 큰 그린 어메니티"
                         data-en="Experience Seoul's Most Expansive Green Amenity">
                         Experience Seoul's Most Expansive Green Amenity
