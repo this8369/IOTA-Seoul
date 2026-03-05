@@ -267,7 +267,7 @@
     }
 
     .bs-zoom-slow {
-        animation: zoomSlow 30s linear infinite;
+        animation: zoomSlow 60s linear forwards;
         transform-origin: center center;
     }
 
@@ -276,12 +276,8 @@
             transform: scale(1);
         }
 
-        50% {
-            transform: scale(1.05);
-        }
-
         100% {
-            transform: scale(1);
+            transform: scale(1.3);
         }
     }
 
