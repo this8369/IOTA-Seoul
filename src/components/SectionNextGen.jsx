@@ -9,14 +9,14 @@ export default function SectionNextGen() {
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-center">
 
                 {/* TOP IMAGE */}
-                <div className="w-full max-w-[1000px] mx-auto mb-16 bs-fade-up">
+                <div className="w-full max-w-[700px] mx-auto mb-0 bs-fade-up">
                     <img src="./img/nextgenworkplace.jpg" alt="IOTA Seoul Next-Gen Workplace" className="w-full h-auto object-cover" />
                 </div>
 
                 {/* TEXT CONTENT - CENTER ALIGNED */}
                 <div className="w-full max-w-[1000px] flex flex-col items-center text-center bs-fade-up delay-200">
 
-                    <h2 className="text-[50px] md:text-[80px] lg:text-[100px] font-bold text-[#203225] leading-[0.9] tracking-tight mb-10 md:mb-16 font-inter"
+                    <h2 className="text-[50px] md:text-[80px] lg:text-[100px] font-bold text-[#203225] leading-[0.9] tracking-tight mt-[50px] mb-[50px] font-inter"
                         style={{ fontWeight: 'bold' }}>
                         Next-Gen<br />Workplace
                     </h2>
