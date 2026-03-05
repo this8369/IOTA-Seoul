@@ -50,19 +50,36 @@ export default function SectionGreenAmenity() {
                 </div>
 
                 {/* 4 IMAGES HORIZONTAL LAYOUT */}
-                <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
-                    {[1, 2, 3, 4].map((num, i) => (
-                        <div key={num} className="relative w-full aspect-[4/5] overflow-hidden rounded-lg">
-                            {/* Green Box */}
-                            <div className={`amenity-green-box absolute inset-0 w-full h-full bg-[#3B7062] transition-all duration-[800ms] ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}
-                                style={{ transitionDelay: `${i * 200}ms` }}>
+                <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
+                    {(() => {
+                        const items = [
+                            { en: "Namsan Connected to IOTA One Central Plaza", kr: "IOTA One 중앙광장과 연결된 남산" },
+                            { en: "IOTA Two Central Plaza", kr: "IOTA Two 중앙광장" },
+                            { en: "IOTA Two Roof-top Garden", kr: "IOTA Two Roof-top Garden" },
+                            { en: "IOTA One Central Plaza", kr: "IOTA One 중앙광장" }
+                        ];
+                        return [1, 2, 3, 4].map((num, i) => (
+                            <div key={num} className="flex flex-col items-center">
+                                <div className="relative w-full aspect-[4/5] overflow-hidden mb-4 rounded-none">
+                                    {/* Green Box */}
+                                    <div className={`amenity-green-box absolute inset-0 w-full h-full bg-[#3B7062] transition-all duration-[1600ms] ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}
+                                        style={{ transitionDelay: `${i * 400}ms` }}>
+                                    </div>
+                                    {/* Image */}
+                                    <img src={`./img/green_0${num}.png`} alt={`Green Amenity ${num}`}
+                                        className={`amenity-image absolute inset-0 w-full h-full object-cover transition-all duration-[1600ms] ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}
+                                        style={{ transitionDelay: `${1600 + i * 400}ms` }} />
+                                </div>
+                                <div className={`text-center transition-all duration-[1600ms] ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: `${2000 + i * 400}ms` }}>
+                                    <p className="text-[14px] md:text-[15px] font-medium text-black tracking-[-0.01em]"
+                                        data-kr={items[i].kr}
+                                        data-en={items[i].en}>
+                                        {items[i].en}
+                                    </p>
+                                </div>
                             </div>
-                            {/* Image */}
-                            <img src={`./img/green_0${num}.png`} alt={`Green Amenity ${num}`}
-                                className={`amenity-image absolute inset-0 w-full h-full object-cover transition-all duration-[800ms] ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}
-                                style={{ transitionDelay: `${800 + i * 200}ms` }} />
-                        </div>
-                    ))}
+                        ));
+                    })()}
                 </div>
 
             </div>
