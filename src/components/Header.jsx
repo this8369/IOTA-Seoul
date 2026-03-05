@@ -58,6 +58,9 @@ export default function Header() {
                             <a href="#section-green" onClick={(e) => handleScrollTo(e, 'section-green')} className="hover:text-gray-500 transition-colors duration-200">
                                 Green
                             </a>
+                            <a href="#section-scale" onClick={(e) => handleScrollTo(e, 'section-scale')} className="hover:text-gray-500 transition-colors duration-200">
+                                Scale
+                            </a>
                             <a href="#" className="hover:text-gray-500 transition-colors duration-200">
                                 Insights
                             </a>
