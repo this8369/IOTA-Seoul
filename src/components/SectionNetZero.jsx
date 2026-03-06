@@ -5,12 +5,12 @@ export default function SectionNetZero() {
     const { lang } = useLanguage();
 
     return (
-        <section className="section w-full h-auto bg-white pt-[60px] pb-[100px]" id="section-netzero">
+        <section className="section w-full h-auto bg-white pt-[160px] pb-[200px]" id="section-netzero">
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto pt-12 bs-fade-up">
 
                 {/* BIG ENGLISH TITLE (Center Aligned) */}
                 <div className="w-full text-center mb-16 bs-fade-up delay-100">
-                    <h2 className="text-[50px] md:text-[80px] lg:text-[100px] font-extrabold text-[#203225] tracking-tight leading-none font-inter">
+                    <h2 className="text-[50px] md:text-[80px] lg:text-[100px] font-extrabold tracking-tight leading-none font-inter text-gradient-wave">
                         Net-Zero Ready
                     </h2>
                 </div>

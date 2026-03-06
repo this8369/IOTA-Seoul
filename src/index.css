@@ -407,6 +407,29 @@
         transition-delay: 1000ms;
     }
 
+    .text-gradient-wave {
+        background: linear-gradient(to right, #1a65a4, #4B7053, #1a65a4, #4B7053);
+        background-size: 300% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textGradientWave 5s ease-in-out infinite;
+    }
+
+    @keyframes textGradientWave {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
     @media (max-width: 1600px) {
         .content-section {
             padding-left: 50px;
