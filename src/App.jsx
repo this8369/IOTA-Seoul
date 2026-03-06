@@ -22,6 +22,7 @@ import SectionNetZero from './components/SectionNetZero';
 import SectionRestroom from './components/SectionRestroom';
 import SectionElevator from './components/SectionElevator';
 import SectionHVAC from './components/SectionHVAC';
+import SectionDesign from './components/SectionDesign';
 import { useAnimations } from './hooks/useAnimations';
 
 export default function App() {
@@ -52,6 +53,7 @@ export default function App() {
       <SectionRestroom />
       <SectionElevator />
       <SectionHVAC />
+      <SectionDesign />
     </div>
   );
 }
