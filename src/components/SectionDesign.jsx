@@ -5,7 +5,7 @@ export default function SectionDesign() {
     const { lang } = useLanguage();
 
     return (
-        <section className="section w-full h-auto bg-black pt-[80px] md:pt-[120px] pb-[100px]" id="section-design">
+        <section className="section w-full h-auto bg-black pt-[80px] md:pt-[120px] pb-0" id="section-design">
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-center pt-12 bs-fade-up">
 
                 {/* TEXT AREA */}
