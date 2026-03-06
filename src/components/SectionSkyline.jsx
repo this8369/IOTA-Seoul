@@ -36,7 +36,7 @@ export default function SectionSkyline() {
             {/* Mobile Swipe Container (Native scroll only to avoid disappearance bug) */}
             <div
                 ref={scrollRef}
-                className="w-full relative overflow-x-auto overflow-y-hidden scrollbar-hide bs-fade-up delay-200 touch-pan-x"
+                className="w-full relative overflow-x-auto overflow-y-hidden scrollbar-hide bs-fade-up delay-200"
                 style={{ WebkitOverflowScrolling: 'touch' }}
             >
                 <div className="relative w-[1500px] lg:w-full mx-auto">
