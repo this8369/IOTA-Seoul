@@ -10,7 +10,7 @@ export default function SectionGreen() {
                         50% { transform: translateX(calc(-100% + 100vw)); }
                     }
                     .animate-pan-x-slow {
-                        animation: panXSlow 80s ease-in-out infinite;
+                        animation: panXSlow 40s ease-in-out infinite;
                     }
                 `}
             </style>
@@ -88,7 +88,7 @@ export default function SectionGreen() {
 
             {/* Mobile Panning Image - OUTSIDE padding wrapper to be full width */}
             <div className="md:hidden w-full relative overflow-x-auto overflow-y-hidden scrollbar-hide mt-4 bs-fade-up delay-200">
-                <div className="relative w-[1800px]">
+                <div className="relative w-[1400px]">
                     <img src="./img/namsan_map2.jpg" alt="Namsan Map Mobile" className="w-full h-auto object-cover animate-pan-x-slow" />
                 </div>
             </div>
