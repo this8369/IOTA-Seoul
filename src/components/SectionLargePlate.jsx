@@ -20,7 +20,7 @@ export default function SectionLargePlate() {
                             LARGE PLATE
                         </span>
 
-                        <h3 className="text-[28px] md:text-[40px] lg:text-[50px] font-bold text-[#1A2A3A] leading-tight tracking-tight mb-4 kr-target-text break-keep bs-fade-up delay-300"
+                        <h3 className="text-[28px] md:text-[40px] lg:text-[60px] font-bold text-[#1A2A3A] leading-tight tracking-tight mb-4 kr-target-text break-keep bs-fade-up delay-300"
                             style={{ fontWeight: 'bold' }}
                             data-en="The Most Spacious Floor Area in CBD"
                             data-kr="The Most Spacious Floor Area in CBD<br/><span class='text-[22px] md:text-[32px] lg:text-[40px] mt-2 md:mt-4 block tracking-[-0.03em]' style='font-weight: bold;'>서울 주요 업무 권역에서 가장 넓은 오피스 바닥에서 협업과 혁신 촉진</span>">
