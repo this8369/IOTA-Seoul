@@ -3,12 +3,33 @@ import React from 'react';
 export default function SectionNamsan() {
     return (
         <section className="section w-full h-auto bg-white pt-[50px] md:pt-[100px] pb-[100px]" id="section-namsan">
-            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-center">
+            <style>
+                {`
+                    @keyframes panX {
+                        0%, 100% { transform: translateX(0); }
+                        50% { transform: translateX(calc(-100% + 100vw)); }
+                    }
+                    .animate-pan-x {
+                        animation: panX 40s ease-in-out infinite;
+                    }
+                `}
+            </style>
 
-                {/* LARGE NAMSAN IMAGE */}
-                <div className="w-full mb-12 overflow-hidden bs-fade-up">
+            {/* LARGE IMAGE - FULL WIDTH ON MOBILE */}
+            <div className="w-full md:w-[calc(100%-100px)] max-w-[1600px] mx-auto mb-12 bs-fade-up">
+                {/* Desktop: namsan.jpg */}
+                <div className="hidden md:block w-full h-full overflow-hidden">
                     <img src="./img/namsan.jpg" alt="Namsan Autumn View" className="w-full h-auto object-cover bs-zoom-slow" />
                 </div>
+                {/* Mobile: namsan_map2.jpg */}
+                <div className="md:hidden w-full relative overflow-x-auto overflow-y-hidden scrollbar-hide">
+                    <div className="relative w-[1500px]">
+                        <img src="./img/namsan_map2.jpg" alt="Namsan Map" className="w-full h-auto object-cover animate-pan-x" />
+                    </div>
+                </div>
+            </div>
+
+            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-center">
 
                 {/* TWO COLUMN TEXT LAYOUT */}
                 <div className="w-full flex flex-col md:flex-row justify-between items-start gap-8 md:gap-16 bs-fade-up delay-200">

@@ -27,12 +27,12 @@ export default function SectionScale() {
                 </div>
             </div>
 
-            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-center">
+            {/* LARGE SCALE IMAGE (FULL WIDTH ON MOBILE) */}
+            <div className="w-full md:w-[calc(100%-100px)] max-w-[1000px] mx-auto mb-16 bs-fade-up delay-100">
+                <img src="./img/scale.jpg" alt="IOTA Seoul Scale" className="w-full h-auto object-cover rounded-none" />
+            </div>
 
-                {/* LARGE SCALE IMAGE */}
-                <div className="w-full max-w-[1000px] mx-auto mb-16 bs-fade-up delay-100">
-                    <img src="./img/scale.jpg" alt="IOTA Seoul Scale" className="w-full h-auto object-cover rounded-none" />
-                </div>
+            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-center">
 
                 {/* TEXT CONTENT */}
                 <div className="w-full max-w-[1200px] flex flex-col items-center text-center bs-fade-up delay-200">

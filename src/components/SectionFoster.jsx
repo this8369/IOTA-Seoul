@@ -33,33 +33,34 @@ export default function SectionFoster() {
                     </div>
                 </div>
 
-                {/* Video Container */}
-                <div className="w-full aspect-video relative bg-gray-900 group cursor-pointer overflow-hidden bs-fade-up delay-400" onClick={() => setIsPlaying(true)}>
-                    {!isPlaying ? (
-                        <>
-                            {/* We use the custom thumbnail image requested by user */}
-                            <img
-                                src="./img/foster+partners.jpg"
-                                alt="Foster + Partners Video"
-                                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-                            />
-                            {/* Overlay play button */}
-                            <div className="absolute bottom-6 right-6 md:bottom-12 md:right-12 w-14 h-14 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110 shadow-lg">
-                                <div className="w-0 h-0 border-t-[8px] border-b-[8px] border-l-[14px] md:border-t-[14px] md:border-b-[14px] md:border-l-[22px] border-t-transparent border-b-transparent border-l-black ml-1 md:ml-2"></div>
-                            </div>
-                        </>
-                    ) : (
-                        <iframe
-                            className="w-full h-full absolute top-0 left-0"
-                            src="https://www.youtube.com/embed/vuxdaHaYbtY?autoplay=1"
-                            title="Foster + Partners YouTube video"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen>
-                        </iframe>
-                    )}
-                </div>
-
             </div>
+
+            {/* Video Container (Full width on mobile) */}
+            <div className="w-full md:w-[calc(100%-100px)] max-w-[1600px] mx-auto aspect-video relative bg-gray-900 group cursor-pointer overflow-hidden bs-fade-up delay-400" onClick={() => setIsPlaying(true)}>
+                {!isPlaying ? (
+                    <>
+                        {/* We use the custom thumbnail image requested by user */}
+                        <img
+                            src="./img/foster+partners.jpg"
+                            alt="Foster + Partners Video"
+                            className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                        />
+                        {/* Overlay play button */}
+                        <div className="absolute bottom-6 right-6 md:bottom-12 md:right-12 w-14 h-14 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110 shadow-lg">
+                            <div className="w-0 h-0 border-t-[8px] border-b-[8px] border-l-[14px] md:border-t-[14px] md:border-b-[14px] md:border-l-[22px] border-t-transparent border-b-transparent border-l-black ml-1 md:ml-2"></div>
+                        </div>
+                    </>
+                ) : (
+                    <iframe
+                        className="w-full h-full absolute top-0 left-0"
+                        src="https://www.youtube.com/embed/vuxdaHaYbtY?autoplay=1"
+                        title="Foster + Partners YouTube video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen>
+                    </iframe>
+                )}
+            </div>
+
         </section>
     );
 }
