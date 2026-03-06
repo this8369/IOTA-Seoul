@@ -6,7 +6,7 @@ export default function SectionAIReady() {
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-center border-t-[1px] border-black pt-12">
 
                 {/* ANIMATED IMAGE AREA (PC Only Focus) */}
-                <div id="ai-scroll-area" className="hidden lg:block w-full relative h-[400vh] bs-fade-up">
+                <div id="ai-scroll-area" className="hidden lg:block w-full relative h-[300vh] bs-fade-up">
                     <div className="w-full h-[100vh] sticky top-0 left-0 flex flex-col justify-center overflow-hidden py-[5vh]">
 
                         {/* Title - right above the image */}
@@ -70,7 +70,7 @@ export default function SectionAIReady() {
                 </div>
 
                 {/* MOBILE ANIMATED IMAGE AREA (iPad & below) */}
-                <div id="ai-scroll-area-m" className="lg:hidden w-full relative h-[400vh] bs-fade-up delay-200">
+                <div id="ai-scroll-area-m" className="lg:hidden w-full relative h-[300vh] bs-fade-up delay-200">
                     <div className="w-full h-[100vh] sticky top-0 left-0 flex flex-col justify-center overflow-hidden py-[5vh]">
                         <div className="w-full mb-[20px] shrink-0 text-center">
                             <h2 className="text-[28px] md:text-[36px] font-extrabold text-black tracking-[-0.02em] font-inter leading-tight">

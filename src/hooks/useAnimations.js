@@ -105,12 +105,12 @@ export function useAnimations() {
                     if (rect.top <= 0 && rect.top >= -totalScrollLength) {
                         const scrollProgress = Math.abs(rect.top) / totalScrollLength;
                         // image 1 -> image 2 -> image 3
-                        if (scrollProgress > 0.15) {
+                        if (scrollProgress > 0.25) {
                             img2.style.opacity = '1';
                         } else {
                             img2.style.opacity = '0';
                         }
-                        if (scrollProgress > 0.35) {
+                        if (scrollProgress > 0.6) {
                             img3.style.opacity = '1';
                         } else {
                             img3.style.opacity = '0';
