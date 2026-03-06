@@ -17,6 +17,7 @@ import SectionNextGen from './components/SectionNextGen';
 import SectionNextGenStandard from './components/SectionNextGenStandard';
 import SectionAIReady from './components/SectionAIReady';
 import SectionAirQuality from './components/SectionAirQuality';
+import SectionSmartInterface from './components/SectionSmartInterface';
 import { useAnimations } from './hooks/useAnimations';
 
 export default function App() {
@@ -42,6 +43,7 @@ export default function App() {
       <SectionNextGenStandard />
       <SectionAIReady />
       <SectionAirQuality />
+      <SectionSmartInterface />
     </div>
   );
 }
