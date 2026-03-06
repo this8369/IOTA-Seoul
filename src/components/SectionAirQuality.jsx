@@ -6,9 +6,9 @@ export default function SectionAirQuality() {
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto border-t-[1px] border-black pt-12 bs-fade-up">
 
                 {/* Title */}
-                <div className="w-full text-center mb-8 bs-fade-up">
-                    <h2 className="text-[28px] md:text-[45px] lg:text-[54px] font-extrabold text-black tracking-tight font-inter leading-[1.15]">
-                        AI-Driven Indoor<br className="md:hidden" /> Air Quality Management
+                <div className="w-full text-center mb-12 bs-fade-up">
+                    <h2 className="text-[28px] md:text-[45px] lg:text-[54px] font-extrabold text-black tracking-tight font-inter leading-[1.3]">
+                        AI-Driven Indoor<br /><br />Air Quality Management
                     </h2>
                 </div>
 
@@ -28,19 +28,25 @@ export default function SectionAirQuality() {
                 <div className="w-full max-w-[800px] mx-auto flex flex-col items-center text-center bs-fade-up delay-200">
 
                     {/* Subtitles */}
-                    <h3 className="text-[20px] md:text-[24px] lg:text-[26px] font-bold text-[#1a65a4] tracking-[-0.03em] mb-3 leading-tight break-keep kr-target-text en-only-hide"
+                    <h3 className="text-[24px] md:text-[28px] lg:text-[30px] font-bold text-[#1a65a4] tracking-[-0.03em] mb-4 leading-tight break-keep kr-target-text en-only-hide"
                         data-kr="스마트 센싱으로 구현하는 청정하고 쾌적한 공간"
-                        data-en="">
+                        data-en="Achieving Continuous Clean Air and Optimal Comfort through Real-Time Sensing">
                         스마트 센싱으로 구현하는 청정하고 쾌적한 공간
                     </h3>
-                    <h4 className="text-[14px] md:text-[16px] lg:text-[18px] font-bold text-gray-700 tracking-[-0.01em] mb-8 font-inter kr-only-hide en-target-text"
+                    <h3 className="text-[24px] md:text-[28px] lg:text-[30px] font-bold text-[#1a65a4] tracking-[-0.01em] mb-4 leading-tight break-keep kr-only-hide en-target-text font-inter"
+                        data-kr="스마트 센싱으로 구현하는 청정하고 쾌적한 공간"
+                        data-en="Achieving Continuous Clean Air and Optimal Comfort through Real-Time Sensing">
+                        Achieving Continuous Clean Air and Optimal Comfort through Real-Time Sensing
+                    </h3>
+
+                    <h4 className="text-[18px] md:text-[20px] lg:text-[22px] font-bold text-gray-700 tracking-[-0.01em] mb-8 font-inter kr-target-text en-only-hide"
                         data-en="Achieving Continuous Clean Air and Optimal Comfort through Real-Time Sensing"
-                        data-kr="">
+                        data-kr="Achieving Continuous Clean Air and Optimal Comfort through Real-Time Sensing">
                         Achieving Continuous Clean Air and Optimal Comfort through Real-Time Sensing
                     </h4>
 
                     {/* KR Text */}
-                    <div className="w-full text-[13px] md:text-[14px] lg:text-[15px] font-medium text-black leading-[1.7] tracking-[-0.02em] break-keep kr-target-text en-only-hide flex flex-col items-center">
+                    <div className="w-full text-[17px] md:text-[18px] lg:text-[19px] font-medium text-black leading-[1.7] tracking-[-0.02em] break-keep kr-target-text en-only-hide flex flex-col items-center">
                         <p className="mb-2">
                             IOTA Seoul은 빌딩 내 전 구역의 공기질을 상시 모니터링하고, AI 알고리즘이 온도·습도·미세먼지·유해가스 등 실내 공기질 항목을 자동 제어합니다.
                         </p>
@@ -53,7 +59,7 @@ export default function SectionAirQuality() {
                     </div>
 
                     {/* EN Text */}
-                    <div className="w-full text-[12px] md:text-[13px] lg:text-[14px] font-normal text-gray-800 leading-[1.7] tracking-[-0.01em] font-inter kr-only-hide en-target-text flex flex-col items-center">
+                    <div className="w-full text-[16px] md:text-[17px] lg:text-[18px] font-normal text-gray-800 leading-[1.7] tracking-[-0.01em] font-inter kr-only-hide en-target-text flex flex-col items-center">
                         <p className="mb-2">
                             IOTA Seoul continuously monitors air quality across all zones, with AI algorithms autonomously controlling temperature, humidity, fine dust, and harmful gases.
                         </p>
