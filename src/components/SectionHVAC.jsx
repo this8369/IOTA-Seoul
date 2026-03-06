@@ -34,7 +34,7 @@ export default function SectionHVAC() {
                 </div>
 
                 {/* DESCRIPTION TEXT AREA */}
-                <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center bs-fade-up delay-300">
+                <div className="w-full max-w-[1400px] mx-auto flex flex-col items-end bs-fade-up delay-300">
                     {lang === 'kr' ? (
                         <div className="w-full max-w-[700px] text-[15px] md:text-[16px] lg:text-[18px] font-medium text-[#222] leading-[1.8] tracking-[-0.02em] break-keep text-left">
                             <p className="mb-4">
