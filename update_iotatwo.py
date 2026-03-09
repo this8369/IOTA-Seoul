@@ -1,24 +1,12 @@
-import React from 'react';
-import { useLanguage } from '../context/LanguageContext';
-import HoverImage from './HoverImage';
+import re
 
-export default function SectionIotaTwo() {
-    const { lang } = useLanguage();
+with open('src/components/SectionIotaTwo.jsx', 'r', encoding='utf-8') as f:
+    content = f.read()
 
-    return (
-        <>
-            <section className="section w-full h-auto bg-white pt-[50px] md:pt-[100px] pb-[100px] md:pb-[150px]" id="section-iotatwo">
+# We need to replace everything starting from {/* First Item Area */} up to just before </section>
+pattern = r'({\/\* First Item Area \*\/}.*?)(\n\s*<\/section>)'
 
-                {/* Top Large Title */}
-                <div className="w-full flex justify-center py-[200px] md:py-[300px] bs-fade-up">
-                    <h1 className="text-[70px] sm:text-[100px] md:text-[180px] lg:text-[250px] 2xl:text-[350px] leading-none font-inter font-thin text-black tracking-[-0.03em] uppercase">
-                        IOTA Two
-                    </h1>
-                </div>
-
-                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-start">
-
-                    {/* First Item Area */}
+replacement = """{/* First Item Area */}
                     <div className="flex flex-col w-full bs-fade-up">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
@@ -116,9 +104,11 @@ export default function SectionIotaTwo() {
                     {/* Third Image Area */}
                     <HoverImage src="./img/iotatwo_03.jpg" alt="Corporate Multi-Use Arena" />
 
-                </div>
+                </div>"""
 
-            </section>
-        </>
-    );
-}
+new_content = re.sub(pattern, replacement + r'\2', content, flags=re.DOTALL)
+
+with open('src/components/SectionIotaTwo.jsx', 'w', encoding='utf-8') as f:
+    f.write(new_content)
+
+print('SectionIotaTwo.jsx updated.')
