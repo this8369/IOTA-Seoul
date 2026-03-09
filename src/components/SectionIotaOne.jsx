@@ -210,7 +210,7 @@ export default function SectionIotaOne() {
                     {/* Eighth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
-                            Core Access:<br className="md:hidden" /> 수직적 깊이감이 만든 정제된 입면
+                            Core Access:<br className="md:hidden" /> {lang === 'kr' ? "수직적 깊이감이 만든 정제된 입면" : "A Refined Façade Forged by Vertical Depth"}
                         </h2>
 
                         <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">

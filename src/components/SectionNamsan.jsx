@@ -8,7 +8,7 @@ export default function SectionNamsan() {
 
                 {/* LARGE NAMSAN IMAGE */}
                 <div className="w-full mb-12 overflow-hidden bs-fade-up">
-                    <HoverImage src="./img/namsan.jpg" alt="Namsan Autumn View" className="w-full h-auto object-cover bs-zoom-slow block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
+                    <HoverImage src="./img/namsan.jpg" alt="Namsan Autumn View" className="w-full h-auto object-cover block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
                 </div>
 
                 {/* TWO COLUMN TEXT LAYOUT */}
