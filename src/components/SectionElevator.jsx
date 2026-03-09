@@ -29,7 +29,7 @@ export default function SectionElevator() {
                                     차량·대형 장비 직입 가능한<br />국내 최대규모 엘리베이터
                                 </h2>
 
-                                <div className="text-[14px] md:text-[15px] lg:text-[17px] font-medium text-[#222] leading-[1.8] tracking-[-0.02em] break-keep">
+                                <div className="text-[14px] md:text-[17px] font-extralight text-[#222] leading-[1.8] tracking-[-0.02em] break-keep">
                                     <p className="mb-4">
                                         IOTA Two는 국내 최고 사양의 <span className="font-bold underline underline-offset-4 decoration-stone-300">초대형 화물 엘리베이터</span>를 갖추고 있습니다.<br className="hidden lg:block" />
                                         지하층부터 최상층 이벤트 스페이스까지 대형 전시물을 직접 운반할 수 있어, 대형 세단 공개 행사, 초대형 설치물 전시, 기술 데모, 럭셔리 제품 쇼케이스 등 프리미엄 이벤트 <span className="font-bold underline underline-offset-4 decoration-stone-300">운영이 가능합니다</span>.
@@ -48,7 +48,7 @@ export default function SectionElevator() {
                                     Korea's Largest Elevator with<br />Direct Vehicle & Heavy-Equipment Access
                                 </h2>
 
-                                <div className="text-[14px] md:text-[15px] lg:text-[16px] font-normal text-[#222] leading-[1.8] tracking-[-0.01em] font-inter">
+                                <div className="text-[14px] md:text-[17px] font-extralight text-[#222] leading-[1.8] tracking-[-0.01em] font-inter">
                                     <p className="mb-4">
                                         IOTA Two is equipped with Korea's highest-spec, <span className="font-bold">ultra-large</span> freight elevator.<br className="hidden lg:block" />
                                         It allows direct transport of large exhibits from the basement to the top-floor event space, enabling premium activations such as luxury sedan reveals, large-scale installations, technology demonstrations, and high-end product showcases.
