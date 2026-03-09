@@ -418,6 +418,15 @@
         animation: textGradientWave 5s ease-in-out infinite;
     }
 
+    .text-gradient-wave-nextgen {
+        background: linear-gradient(to right, #1a65a4, #4B7053, #b53c3c, #1a65a4);
+        background-size: 300% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textGradientWave 5s ease-in-out infinite;
+    }
+
     @keyframes textGradientWave {
         0% {
             background-position: 0% 50%;

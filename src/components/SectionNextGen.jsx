@@ -8,18 +8,21 @@ export default function SectionNextGen() {
 
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-center">
 
+                {/* BIG TITLE */}
+                <div className="w-full text-center bs-fade-up mt-[80px] mb-[40px] md:mt-[100px] md:mb-[60px]">
+                    <h2 className="text-[50px] md:text-[80px] lg:text-[100px] font-bold leading-[0.9] tracking-[-0.03em] font-inter text-gradient-wave-nextgen inline-block"
+                        style={{ fontWeight: 'bold' }}>
+                        Next-Gen<br />Workplace
+                    </h2>
+                </div>
+
                 {/* TOP IMAGE */}
-                <div className="w-full max-w-[700px] mx-auto mt-[100px] mb-0 bs-slide-right">
+                <div className="w-full max-w-[700px] mx-auto mb-[60px] md:mb-[80px] bs-slide-right delay-200">
                     <img src="./img/nextgenworkplace.jpg" alt="IOTA Seoul Next-Gen Workplace" className="w-full h-auto object-cover" />
                 </div>
 
                 {/* TEXT CONTENT - CENTER ALIGNED */}
                 <div className="w-full max-w-[1000px] flex flex-col items-center text-center">
-
-                    <h2 className="text-[50px] md:text-[80px] lg:text-[100px] font-bold text-[#203225] leading-[0.9] tracking-[-0.03em] mt-[80px] mb-[80px] font-inter bs-slide-left delay-200"
-                        style={{ fontWeight: 'bold' }}>
-                        Next-Gen<br />Workplace
-                    </h2>
 
                     <h3 className="text-[20px] md:text-[26px] lg:text-[32px] font-bold text-[#4B7053] leading-tight tracking-tight mb-4 md:mb-6 kr-target-text break-keep bs-fade-up delay-300"
                         style={{ fontWeight: 'bold' }}
