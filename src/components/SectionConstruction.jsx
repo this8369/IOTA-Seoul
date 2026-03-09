@@ -120,23 +120,32 @@ export default function SectionConstruction() {
             </div>
 
             {/* Reference Images Gallery */}
-            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto mt-10 md:mt-20 mb-20 bs-fade-up">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-[2px] md:gap-[4px]">
-                    {/* Image 1 - Left large column spanning 2 cols, 2 rows */}
-                    <div className="col-span-1 md:col-span-2 md:row-span-2 w-full h-[300px] md:h-auto relative group overflow-hidden">
+            <div className="w-full max-w-[1600px] mx-auto mt-10 md:mt-[80px] mb-[100px] md:mb-[150px] px-4 md:px-[50px] bs-fade-up">
+                <div className="flex flex-col md:flex-row gap-[4px] w-full">
+
+                    {/* Image 1 - Left large column */}
+                    <div className="w-full md:w-[50%] group overflow-hidden relative">
+                        {/* Natural height of the largest image will stretch the flex container in PC */}
                         <img src="./img/construct_reference01.jpg" alt="Construction Reference 1" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                     </div>
-                    {/* Image 2 - Right Top column spanning 2 cols */}
-                    <div className="col-span-1 md:col-span-2 w-full h-[200px] md:h-[350px] lg:h-[450px] relative group overflow-hidden">
-                        <img src="./img/construct_reference02.jpg" alt="Construction Reference 2" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
-                    </div>
-                    {/* Image 3 - Right Bottom Left */}
-                    <div className="col-span-1 md:col-span-1 w-full h-[200px] md:h-[350px] lg:h-[450px] relative group overflow-hidden">
-                        <img src="./img/construct_reference03.jpg" alt="Construction Reference 3" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
-                    </div>
-                    {/* Image 4 - Right Bottom Right */}
-                    <div className="col-span-1 md:col-span-1 w-full h-[200px] md:h-[350px] lg:h-[450px] relative group overflow-hidden">
-                        <img src="./img/construct_reference04.jpg" alt="Construction Reference 4" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+
+                    {/* Images 2, 3, 4 - Right Column */}
+                    <div className="w-full md:w-[50%] flex flex-col gap-[4px]">
+
+                        {/* Image 2 - Right Top */}
+                        <div className="w-full group overflow-hidden relative grow">
+                            <img src="./img/construct_reference02.jpg" alt="Construction Reference 2" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                        </div>
+
+                        {/* Images 3 & 4 - Right Bottom Split */}
+                        <div className="w-full flex flex-row gap-[4px] grow">
+                            <div className="w-[51%] group overflow-hidden relative">
+                                <img src="./img/construct_reference03.jpg" alt="Construction Reference 3" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                            </div>
+                            <div className="w-[49%] group overflow-hidden relative">
+                                <img src="./img/construct_reference04.jpg" alt="Construction Reference 4" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
