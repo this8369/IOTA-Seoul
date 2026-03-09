@@ -5,7 +5,7 @@ export default function SectionConstruction() {
     const { lang } = useLanguage();
 
     return (
-        <section className="section w-full h-auto bg-white" id="section-construction">
+        <section className="section w-full h-auto bg-black" id="section-construction">
 
             {/* Desktop / Large Screens Layout (lg and above) */}
             <div className="hidden lg:block relative w-full h-[100vh] min-h-[900px] max-h-[1400px]">
@@ -17,17 +17,17 @@ export default function SectionConstruction() {
 
                 {/* Text Overlay Box (Right side) */}
                 <div className="absolute right-0 top-0 bottom-0 w-[55%] flex flex-col justify-center pr-[5%] xl:pr-[10%] pl-8 z-10">
-                    <div className="w-full max-w-[800px] bs-fade-up delay-100">
-                        <h2 className="text-[36px] xl:text-[46px] font-bold text-black tracking-[-0.01em] leading-tight mb-6 font-inter break-keep">
+                    <div className="w-full max-w-[800px] bs-fade-up delay-100 p-8 rounded-lg bg-black/20 backdrop-blur-sm">
+                        <h2 className="text-[36px] xl:text-[46px] font-bold text-white tracking-[-0.01em] leading-tight mb-6 font-inter break-keep">
                             Global Top-Tier<br />Construction Company
                         </h2>
 
                         {lang === 'kr' ? (
                             <>
-                                <h3 className="text-[18px] xl:text-[22px] font-bold text-black tracking-[-0.01em] mb-6 break-keep">
+                                <h3 className="text-[18px] xl:text-[22px] font-bold text-white tracking-[-0.01em] mb-6 break-keep">
                                     국내 최상위 시공사 현대건설과 삼성물산의 시공
                                 </h3>
-                                <div className="text-[14px] xl:text-[17px] font-extralight text-gray-900 leading-[1.8] tracking-[-0.02em] break-keep mb-10 w-[90%]">
+                                <div className="text-[14px] xl:text-[17px] font-extralight text-stone-200 leading-[1.8] tracking-[-0.02em] break-keep mb-10 w-[90%]">
                                     <p className="mb-4">
                                         세계적인 랜드마크 프로젝트를 성공적으로 수행해 온 국내 최고 건설사인 현대건설과 삼성물산의 참여는, IOTA 서울을 단순한 오피스 복합시설을 넘어서는 상징적 자산으로 격상시킵니다.
                                     </p>
@@ -38,10 +38,10 @@ export default function SectionConstruction() {
                             </>
                         ) : (
                             <>
-                                <h3 className="text-[18px] xl:text-[22px] font-bold text-black tracking-[-0.01em] mb-6 font-inter leading-snug">
+                                <h3 className="text-[18px] xl:text-[22px] font-bold text-white tracking-[-0.01em] mb-6 font-inter leading-snug">
                                     Construction by Korea's Top-ranked Contractor :<br />Hyundai E&C, Samsung C&T
                                 </h3>
-                                <div className="text-[14px] xl:text-[17px] font-extralight text-gray-900 leading-[1.8] tracking-[-0.01em] font-inter mb-10 w-[90%]">
+                                <div className="text-[14px] xl:text-[17px] font-extralight text-stone-200 leading-[1.8] tracking-[-0.01em] font-inter mb-10 w-[90%]">
                                     <p className="mb-4">
                                         The involvement of Korea's two most prestigious construction firms — Hyundai Engineering & Construction and Samsung Construction & Trading — both renowned for delivering landmark projects worldwide, positions IOTA Seoul as more than just an office complex.
                                     </p>
@@ -57,7 +57,7 @@ export default function SectionConstruction() {
 
                         {/* overlay image layer */}
                         <div className="w-full mt-2 bs-fade-up delay-300">
-                            <img src="./img/hyundai&samsung.png" alt="Hyundai & Samsung Logos and Ranking" className="w-[100%] max-w-[700px] h-auto object-contain block" />
+                            <img src="./img/hyundai&samsung.png" alt="Hyundai & Samsung Logos and Ranking" className="w-[100%] max-w-[700px] h-auto object-contain block bg-white/90 p-4 rounded-sm" />
                         </div>
                     </div>
                 </div>
@@ -65,26 +65,25 @@ export default function SectionConstruction() {
 
 
             {/* Mobile / Tablet Layout (below lg) */}
-            <div className="block lg:hidden w-full flex flex-col pb-[100px] bg-white">
-
+            <div className="block lg:hidden w-full flex flex-col pt-0 pb-[80px] bg-black">
                 {/* Image Section */}
                 <div className="w-full h-[55vh] min-h-[400px] relative shrink-0">
                     <img src="./img/samsung_cnt.jpg" alt="Construction Background" className="absolute inset-0 w-full h-full object-cover object-bottom" />
                 </div>
 
                 {/* Text Section */}
-                <div className="w-full px-6 pt-[60px] flex flex-col bs-fade-up bg-white">
+                <div className="w-full px-6 pt-[60px] flex flex-col bs-fade-up bg-black">
                     <div className="w-full max-w-[1000px] mx-auto text-center md:text-left">
-                        <h2 className="text-[32px] md:text-[42px] font-bold text-black tracking-[-0.01em] leading-tight mb-6 font-inter break-keep">
+                        <h2 className="text-[32px] md:text-[42px] font-bold text-white tracking-[-0.01em] leading-tight mb-6 font-inter break-keep">
                             Global Top-Tier<br className="hidden md:block" />Construction Company
                         </h2>
 
                         {lang === 'kr' ? (
                             <>
-                                <h3 className="text-[17px] md:text-[20px] font-bold text-black tracking-[-0.01em] mb-6 break-keep">
+                                <h3 className="text-[17px] md:text-[20px] font-bold text-[#c0a888] tracking-[-0.01em] mb-6 break-keep">
                                     국내 최상위 시공사 현대건설과 삼성물산의 시공
                                 </h3>
-                                <div className="text-[14px] md:text-[17px] font-extralight text-gray-800 leading-[1.8] tracking-[-0.02em] break-keep mb-10 text-left">
+                                <div className="text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.02em] break-keep mb-10 text-left">
                                     <p className="mb-4">
                                         세계적인 랜드마크 프로젝트를 성공적으로 수행해 온 국내 최고 건설사인 현대건설과 삼성물산의 참여는, IOTA 서울을 단순한 오피스 복합시설을 넘어서는 상징적 자산으로 격상시킵니다.
                                     </p>
@@ -95,10 +94,10 @@ export default function SectionConstruction() {
                             </>
                         ) : (
                             <>
-                                <h3 className="text-[17px] md:text-[20px] font-bold text-black tracking-[-0.01em] mb-6 font-inter leading-snug">
+                                <h3 className="text-[17px] md:text-[20px] font-bold text-[#c0a888] tracking-[-0.01em] mb-6 font-inter leading-snug">
                                     Construction by Korea's Top-ranked Contractor :<br />Hyundai E&C, Samsung C&T
                                 </h3>
-                                <div className="text-[14px] md:text-[17px] font-extralight text-gray-800 leading-[1.8] tracking-[-0.01em] font-inter mb-10 text-left">
+                                <div className="text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 text-left">
                                     <p className="mb-4">
                                         The involvement of Korea's two most prestigious construction firms — Hyundai Engineering & Construction and Samsung Construction & Trading — both renowned for delivering landmark projects worldwide, positions IOTA Seoul as more than just an office complex.
                                     </p>
@@ -114,26 +113,30 @@ export default function SectionConstruction() {
 
                         {/* overlay image layer */}
                         <div className="w-full mx-auto mt-4 bs-fade-up">
-                            <img src="./img/hyundai&samsung.png" alt="Hyundai & Samsung Logos and Ranking" className="w-full h-auto object-contain block shadow-sm mx-auto" />
+                            <img src="./img/hyundai&samsung.png" alt="Hyundai & Samsung Logos and Ranking" className="w-full h-auto object-contain block bg-white/90 p-4 rounded-sm mx-auto" />
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* Reference Images Gallery */}
-            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto mt-4 md:mt-16 mb-20 bs-fade-up">
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                    <div className="w-full overflow-hidden group">
-                        <img src="./img/construct_reference01.jpg" alt="Construction Reference 1" className="w-full h-auto md:h-[250px] lg:h-[350px] object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto mt-10 md:mt-20 mb-20 bs-fade-up">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-[2px] md:gap-[4px]">
+                    {/* Image 1 - Left large column spanning 2 cols, 2 rows */}
+                    <div className="col-span-1 md:col-span-2 md:row-span-2 w-full h-[300px] md:h-auto relative group overflow-hidden">
+                        <img src="./img/construct_reference01.jpg" alt="Construction Reference 1" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                     </div>
-                    <div className="w-full overflow-hidden group">
-                        <img src="./img/construct_reference02.jpg" alt="Construction Reference 2" className="w-full h-auto md:h-[250px] lg:h-[350px] object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                    {/* Image 2 - Right Top column spanning 2 cols */}
+                    <div className="col-span-1 md:col-span-2 w-full h-[200px] md:h-[350px] lg:h-[450px] relative group overflow-hidden">
+                        <img src="./img/construct_reference02.jpg" alt="Construction Reference 2" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                     </div>
-                    <div className="w-full overflow-hidden group">
-                        <img src="./img/construct_reference03.jpg" alt="Construction Reference 3" className="w-full h-auto md:h-[250px] lg:h-[350px] object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                    {/* Image 3 - Right Bottom Left */}
+                    <div className="col-span-1 md:col-span-1 w-full h-[200px] md:h-[350px] lg:h-[450px] relative group overflow-hidden">
+                        <img src="./img/construct_reference03.jpg" alt="Construction Reference 3" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                     </div>
-                    <div className="w-full overflow-hidden group">
-                        <img src="./img/construct_reference04.jpg" alt="Construction Reference 4" className="w-full h-auto md:h-[250px] lg:h-[350px] object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                    {/* Image 4 - Right Bottom Right */}
+                    <div className="col-span-1 md:col-span-1 w-full h-[200px] md:h-[350px] lg:h-[450px] relative group overflow-hidden">
+                        <img src="./img/construct_reference04.jpg" alt="Construction Reference 4" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                     </div>
                 </div>
             </div>
