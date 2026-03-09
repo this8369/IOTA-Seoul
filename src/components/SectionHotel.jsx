@@ -9,7 +9,7 @@ export default function SectionHotel() {
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto">
                 <div className="flex flex-col-reverse md:flex-row justify-between items-start md:items-end mb-10 md:mb-14 gap-8 md:gap-0">
                     <div className="flex-1 w-full max-w-[1100px] bs-fade-up">
-                        <h2 className="text-[38px] md:text-[52px] font-inter font-medium text-black tracking-[-0.02em] leading-tight mb-8 break-keep">
+                        <h2 className="text-[38px] md:text-[52px] font-inter font-light text-black tracking-[-0.02em] leading-tight mb-8 break-keep">
                             Ultra-Luxury Hospitality Meets the Workplace
                         </h2>
 
