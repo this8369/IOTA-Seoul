@@ -138,20 +138,27 @@ export function useAnimations(currentPage) {
             scrollContainer.addEventListener("scroll", handleScroll, { passive: true });
         }
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('active');
-            });
-        }, { threshold: 0.1 });
+        let observer = null;
+        let observerTimeout = setTimeout(() => {
+            observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('active');
+                });
+            }, { threshold: 0.1 });
 
-        const targets = document.querySelectorAll("#section3, #section4, #section6, .bs-fade-up, .bs-draw-line, .curtain-container, .bs-scale-up, .bs-slide-left, .bs-slide-right, .bs-bounce-up");
-        targets.forEach(el => observer.observe(el));
+            const targets = document.querySelectorAll("#section3, #section4, #section6, .bs-fade-up, .bs-draw-line, .curtain-container, .bs-scale-up, .bs-slide-left, .bs-slide-right, .bs-bounce-up");
+            targets.forEach(el => observer.observe(el));
+
+            // Run handleScroll once manually to trigger immediate classes if needed
+            handleScroll();
+        }, 150);
 
         return () => {
             if (scrollContainer) {
                 scrollContainer.removeEventListener('scroll', handleScroll);
             }
-            observer.disconnect();
+            clearTimeout(observerTimeout);
+            if (observer) observer.disconnect();
         };
     }, [currentPage]);
 }
