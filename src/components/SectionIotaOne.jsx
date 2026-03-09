@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 const HoverImage = ({ src, alt, onClick }) => (
@@ -169,9 +170,9 @@ export default function SectionIotaOne() {
             </section>
 
             {/* Image Modal */}
-            {modalImage && (
+            {modalImage && createPortal(
                 <div
-                    className={`fixed inset-0 z-[100] flex ${isZoomed ? 'items-start justify-start overflow-auto p-0' : 'items-center justify-center p-4 md:p-10'} bg-black/95 cursor-zoom-out bs-fade-up`}
+                    className={`fixed inset-0 z-[99999] flex ${isZoomed ? 'items-start justify-start overflow-auto p-0' : 'items-center justify-center p-4 md:p-10'} bg-black/95 cursor-zoom-out bs-fade-up`}
                     onClick={() => { setModalImage(null); setIsZoomed(false); }}
                 >
                     <img
@@ -198,7 +199,8 @@ export default function SectionIotaOne() {
                             클릭 시 원본 해상도로 확대됩니다
                         </div>
                     )}
-                </div>
+                </div>,
+                document.body
             )}
         </>
     );
