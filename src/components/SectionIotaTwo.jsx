@@ -243,50 +243,50 @@ export default function SectionIotaTwo() {
                         </div>
                     </div>
 
-                    {/* Seventh Image Area with Desktop Overlay Text */}
-                    <div className="relative w-full mt-0 md:mt-32 bs-fade-up overflow-hidden">
-                        <HoverImage src="./img/iotatwo_09.jpg" alt="IOTA Two Main Lobby" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
-                        
-                        {/* Desktop Gradient Overlay (Optional for better contrast) */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none hidden md:block z-10"></div>
-                        
-                        {/* Desktop Text Overlay */}
-                        <div className="absolute bottom-10 left-10 lg:bottom-20 lg:left-24 z-20 text-white hidden md:flex flex-col max-w-[1200px] pointer-events-none pr-10">
-                            <h2 className="text-[40px] font-inter font-light tracking-[-0.03em] leading-[1.2] mb-8 break-keep">
-                                {lang === 'kr' ? (
-                                    <>IOTA Two 메인 로비: 도시의 흐름이 만나는 건물의 중심</>
-                                ) : (
-                                    <>IOTA Two Main Lobby: Where the City's Flow Meets Architecture</>
-                                )}
-                            </h2>
-
-                            <div className="w-full text-[17px] font-extralight text-stone-200 leading-[1.8] tracking-[-0.01em] font-inter">
-                                {lang === 'kr' ? (
-                                    <div className="break-keep">
-                                        <p className="mb-4 opacity-100">
-                                            IOTA Two의 메인로비는 외부 도시 레벨과 자연스럽게 연결되는 개방형 진입공간(Open Urban Lobby)으로 설계되었습니다.<br />
-                                            남산에서 내려오는 녹지와 서울역으로 이어지는 보행축이 내부로 스며들며, 실내에서도 자연과 도시의 흐름을 동시에 느낄 수 있는 공간적 연속성을 구현합니다.<br />
-                                            수직으로 확장된 천정고와 자연광, 그리고 그린 마감재의 조화는 입주자에게 도시 속에서도 여유와 품격을 동시에 경험하게 하는 환영의 공간을 완성합니다.
-                                        </p>
-                                    </div>
-                                ) : (
-                                    <div>
-                                        <p className="mb-4 opacity-100">
-                                            The Main Lobby of IOTA Two is conceived as an open urban gateway, seamlessly integrating the flow of the city into the architecture.<br />
-                                            Greenery descending from Namsan extends inward, merging with the pedestrian axis toward Seoul Station, creating a sense of spatial continuity between nature and the urban realm.<br />
-                                            The grand vertical height, natural light, and refined green finishes offer tenants a tranquil yet sophisticated arrival experience at the heart of the city.
-                                        </p>
-                                    </div>
-                                )}
-                            </div>
-                        </div>
+                    {/* Seventh Image Area */}
+                    <div className="w-full mt-0 md:mt-12 bs-fade-up">
+                        <HoverImage src="./img/iotatwo_09.jpg" alt="IOTA Two Main Lobby" />
                     </div>
 
                 </div>
 
-                {/* Full Width Image Area (iotatwo_10) */}
-                <div className="w-full mt-24 md:mt-32">
+                {/* Full Width Image Area (iotatwo_10) with Desktop Overlay Text */}
+                <div className="relative w-full mt-24 md:mt-32 bs-fade-up overflow-hidden">
                     <HoverImage src="./img/iotatwo_10.jpg" alt="Main Lobby View" className="w-full h-auto object-cover block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
+
+                    {/* Desktop Gradient Overlay (Optional for better contrast) */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none hidden md:block z-10"></div>
+
+                    {/* Desktop Text Overlay */}
+                    <div className="absolute bottom-10 left-10 lg:bottom-20 lg:left-24 z-20 text-white hidden md:flex flex-col max-w-[1200px] pointer-events-none pr-10">
+                        <h2 className="text-[40px] font-inter font-light tracking-[-0.03em] leading-[1.2] mb-8 break-keep">
+                            {lang === 'kr' ? (
+                                <>IOTA Two 메인 로비: 도시의 흐름이 만나는 건물의 중심</>
+                            ) : (
+                                <>IOTA Two Main Lobby: Where the City's Flow Meets Architecture</>
+                            )}
+                        </h2>
+
+                        <div className="w-full text-[17px] font-extralight text-stone-200 leading-[1.8] tracking-[-0.01em] font-inter">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4 opacity-100">
+                                        IOTA Two의 메인로비는 외부 도시 레벨과 자연스럽게 연결되는 개방형 진입공간(Open Urban Lobby)으로 설계되었습니다.<br />
+                                        남산에서 내려오는 녹지와 서울역으로 이어지는 보행축이 내부로 스며들며, 실내에서도 자연과 도시의 흐름을 동시에 느낄 수 있는 공간적 연속성을 구현합니다.<br />
+                                        수직으로 확장된 천정고와 자연광, 그리고 그린 마감재의 조화는 입주자에게 도시 속에서도 여유와 품격을 동시에 경험하게 하는 환영의 공간을 완성합니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4 opacity-100">
+                                        The Main Lobby of IOTA Two is conceived as an open urban gateway, seamlessly integrating the flow of the city into the architecture.<br />
+                                        Greenery descending from Namsan extends inward, merging with the pedestrian axis toward Seoul Station, creating a sense of spatial continuity between nature and the urban realm.<br />
+                                        The grand vertical height, natural light, and refined green finishes offer tenants a tranquil yet sophisticated arrival experience at the heart of the city.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
                 </div>
 
                 {/* Reopen restricted container */}
@@ -358,7 +358,7 @@ export default function SectionIotaTwo() {
                     {/* Ninth Image Area */}
                     <HoverImage src="./img/iotatwo_12.jpg" alt="Office Open Lounge" />
 
-                
+
 
                     {/* Tenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
@@ -393,8 +393,9 @@ export default function SectionIotaTwo() {
                     </div>
 
                     {/* Tenth Image Area (Width 800px) */}
-                    <div className="w-[800px] max-w-full mb-12 md:mb-24">
+                    <div className="w-[800px] max-w-full mb-12 md:mb-24 flex flex-col gap-8 md:gap-12">
                         <HoverImage src="./img/iotatwo_13.jpg" alt="Office Elevator Hall Focus" />
+                        <HoverImage src="./img/iotatwo_15.jpg" alt="Office Elevator Detail" />
                     </div>
 
                 </div>
@@ -406,7 +407,7 @@ export default function SectionIotaTwo() {
 
                 {/* Closing dummy div just for regex to match properly and structure consistency */}
                 <div className="hidden">
-</div>
+                </div>
 
             </section>
         </>

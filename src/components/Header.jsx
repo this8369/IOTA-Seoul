@@ -29,12 +29,12 @@ export default function Header() {
 
         if (targetId === 'top') {
             const scrollContainer = document.getElementById('scroll-container');
-            if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
-            else window.scrollTo({ top: 0, behavior: 'smooth' });
+            if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'auto' });
+            else window.scrollTo({ top: 0, behavior: 'auto' });
         } else {
             const target = document.getElementById(targetId);
             if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                target.scrollIntoView({ behavior: 'auto', block: 'start' });
             }
         }
     };

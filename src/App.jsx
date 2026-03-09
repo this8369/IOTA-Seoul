@@ -62,6 +62,9 @@ export default function App() {
       <SectionHotel />
       <SectionIotaOne />
       <SectionIotaTwo />
+      <div className="w-full relative">
+        <img src="./img/partnership.jpg" alt="Partnerships" className="w-full h-auto block" />
+      </div>
     </div>
   );
 }
