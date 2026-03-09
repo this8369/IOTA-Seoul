@@ -408,7 +408,7 @@ export default function SectionIotaTwo() {
                     </div>
 
                     {/* Image Area (iotatwo_14) - Header Width */}
-                    <div className="w-full mt-24 md:mt-32 pb-24 md:pb-32">
+                    <div className="w-full mt-24 md:mt-32">
                         <HoverImage src="./img/iotatwo_14.jpg" alt="Office Elevator Hall View" className="w-full h-auto object-cover block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
                     </div>
 
