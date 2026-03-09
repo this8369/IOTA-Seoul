@@ -6,9 +6,9 @@ import NewsDetail from './components/NewsDetail';
 import { useAnimations } from './hooks/useAnimations';
 
 export default function App() {
-  useAnimations();
-
   const [currentPage, setCurrentPage] = React.useState('home'); // 'home', 'news', 'news_detail'
+
+  useAnimations(currentPage);
   const [selectedArticle, setSelectedArticle] = React.useState(null);
 
   React.useEffect(() => {

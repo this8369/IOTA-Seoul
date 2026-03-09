@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export function useAnimations() {
+export function useAnimations(currentPage) {
     useEffect(() => {
         const header = document.getElementById("main-header");
         const scrollContainer = document.getElementById("scroll-container");
@@ -153,5 +153,5 @@ export function useAnimations() {
             }
             observer.disconnect();
         };
-    }, []);
+    }, [currentPage]);
 }
