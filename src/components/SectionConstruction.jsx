@@ -38,8 +38,8 @@ export default function SectionConstruction() {
                             </>
                         ) : (
                             <>
-                                <h3 className="text-[18px] xl:text-[22px] font-bold text-black tracking-[-0.01em] mb-6 font-inter">
-                                    Construction by Korea's Top-ranked Contractor : Hyundai E&C, Samsung C&T
+                                <h3 className="text-[18px] xl:text-[22px] font-bold text-black tracking-[-0.01em] mb-6 font-inter leading-snug">
+                                    Construction by Korea's Top-ranked Contractor :<br />Hyundai E&C, Samsung C&T
                                 </h3>
                                 <div className="text-[14px] xl:text-[17px] font-extralight text-gray-900 leading-[1.8] tracking-[-0.01em] font-inter mb-10 w-[90%]">
                                     <p className="mb-4">
@@ -95,8 +95,8 @@ export default function SectionConstruction() {
                             </>
                         ) : (
                             <>
-                                <h3 className="text-[17px] md:text-[20px] font-bold text-black tracking-[-0.01em] mb-6 font-inter">
-                                    Construction by Korea's Top-ranked Contractor : Hyundai E&C, Samsung C&T
+                                <h3 className="text-[17px] md:text-[20px] font-bold text-black tracking-[-0.01em] mb-6 font-inter leading-snug">
+                                    Construction by Korea's Top-ranked Contractor :<br />Hyundai E&C, Samsung C&T
                                 </h3>
                                 <div className="text-[14px] md:text-[17px] font-extralight text-gray-800 leading-[1.8] tracking-[-0.01em] font-inter mb-10 text-left">
                                     <p className="mb-4">
@@ -116,6 +116,24 @@ export default function SectionConstruction() {
                         <div className="w-full mx-auto mt-4 bs-fade-up">
                             <img src="./img/hyundai&samsung.png" alt="Hyundai & Samsung Logos and Ranking" className="w-full h-auto object-contain block shadow-sm mx-auto" />
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Reference Images Gallery */}
+            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto mt-4 md:mt-16 mb-20 bs-fade-up">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                    <div className="w-full overflow-hidden group">
+                        <img src="./img/construct_reference01.jpg" alt="Construction Reference 1" className="w-full h-auto md:h-[250px] lg:h-[350px] object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                    </div>
+                    <div className="w-full overflow-hidden group">
+                        <img src="./img/construct_reference02.jpg" alt="Construction Reference 2" className="w-full h-auto md:h-[250px] lg:h-[350px] object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                    </div>
+                    <div className="w-full overflow-hidden group">
+                        <img src="./img/construct_reference03.jpg" alt="Construction Reference 3" className="w-full h-auto md:h-[250px] lg:h-[350px] object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                    </div>
+                    <div className="w-full overflow-hidden group">
+                        <img src="./img/construct_reference04.jpg" alt="Construction Reference 4" className="w-full h-auto md:h-[250px] lg:h-[350px] object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                     </div>
                 </div>
             </div>
