@@ -50,7 +50,7 @@ export default function Section2() {
                 <div className="w-full flex flex-col gap-[10px] md:gap-[30px] mb-[10px] md:mb-0">
                     <div className="full-image-container w-full h-auto">
                         <HoverImage src="./img/iota_full.jpg" alt="IOTA Full Background"
-                            className="bs-scale-up w-full h-auto object-contain block origin-center" wrapperClassName="w-full relative overflow-hidden group cursor-pointer h-full" containerStyle={{ marginTop: '-30px' }} />
+                            className="bs-scale-up w-full h-auto object-contain block origin-center" wrapperClassName="w-full relative overflow-hidden group cursor-pointer h-full" style={{ marginTop: '-30px' }} />
                     </div>
                     <div className="full-image-container w-full h-auto">
                         <HoverImage src="./img/iota_full_3.jpg" alt="IOTA Full Background 3"

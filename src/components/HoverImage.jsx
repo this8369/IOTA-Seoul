@@ -39,7 +39,7 @@ export default function HoverImage({
                 />
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.5)_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
 
-                <div className="absolute top-4 right-4 md:top-8 md:right-8 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                <div className="absolute top-6 right-6 md:top-[50px] md:right-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                     <div className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full border border-white/50 bg-white/10 flex items-center justify-center transition-all duration-300 hover:bg-white hover:text-black hover:border-white text-white shadow-sm"
                         onClick={(e) => {
                             e.stopPropagation();
