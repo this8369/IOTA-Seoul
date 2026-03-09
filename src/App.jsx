@@ -62,7 +62,7 @@ export default function App() {
       <SectionHotel />
       <SectionIotaOne />
       <SectionIotaTwo />
-      <div className="w-full relative">
+      <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto relative mb-24 md:mb-32">
         <img src="./img/partnership.jpg" alt="Partnerships" className="w-full h-auto block" />
       </div>
     </div>

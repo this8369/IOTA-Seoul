@@ -339,17 +339,21 @@ export default function SectionIotaTwo() {
                         </div>
                     </div>
 
-                    {/* Tenth Image Area (Width 800px) */}
-                    <div className="w-[800px] max-w-full mb-12 md:mb-24 flex flex-col gap-8 md:gap-12">
-                        <HoverImage src="./img/iotatwo_13.jpg" alt="Office Elevator Hall Focus" />
-                        <HoverImage src="./img/iotatwo_15.jpg" alt="Office Elevator Detail" />
+                    {/* Tenth Image Area */}
+                    <div className="w-full flex md:mt-12 flex-col items-center gap-12 md:gap-24">
+                        <div className="w-full">
+                            <HoverImage src="./img/iotatwo_13.jpg" alt="Office Elevator Hall Focus" />
+                        </div>
+                        <div className="w-full max-w-[800px]">
+                            <HoverImage src="./img/iotatwo_15.jpg" alt="Office Elevator Detail" />
+                        </div>
                     </div>
 
-                </div>
+                    {/* Image Area (iotatwo_14) - Header Width */}
+                    <div className="w-full mt-24 md:mt-32 pb-24 md:pb-32">
+                        <HoverImage src="./img/iotatwo_14.jpg" alt="Office Elevator Hall View" className="w-full h-auto object-cover block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
+                    </div>
 
-                {/* Full Width Image Area (iotatwo_14) */}
-                <div className="w-full">
-                    <HoverImage src="./img/iotatwo_14.jpg" alt="Office Elevator Hall View" className="w-full h-auto object-cover block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
                 </div>
 
                 {/* Closing dummy div just for regex to match properly and structure consistency */}
