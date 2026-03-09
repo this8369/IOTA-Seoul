@@ -9,7 +9,7 @@ export default function SectionHotel() {
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto">
                 <div className="flex flex-col-reverse md:flex-row justify-between items-start md:items-end mb-10 md:mb-14 gap-8 md:gap-0">
                     <div className="flex-1 w-full max-w-[1100px] bs-fade-up">
-                        <h2 className="text-[32px] md:text-[46px] font-serif font-medium text-black tracking-[-0.01em] leading-tight mb-8 break-keep">
+                        <h2 className="text-[32px] md:text-[46px] font-inter font-medium text-black tracking-[-0.01em] leading-tight mb-8 break-keep">
                             Ultra-Luxury Hospitality Meets the Workplace
                         </h2>
 
@@ -49,7 +49,7 @@ export default function SectionHotel() {
                     <img
                         src="./img/ritzcarlton01.jpg"
                         alt="The Ritz-Carlton Residence"
-                        className="w-full h-auto object-cover block transform transition-transform duration-[2s] group-hover:scale-105"
+                        className="w-full aspect-square md:aspect-auto md:h-auto object-cover block transform transition-transform duration-[2s] group-hover:scale-105"
                     />
                     <div className="absolute bottom-2 right-4 md:bottom-4 md:right-4 z-10 text-[6px] md:text-[10px] text-white/90 font-inter tracking-[0.1em] text-right font-extralight drop-shadow-md">
                         THE RITZ-CARLTON RESIDENCES SOUTH BEACH_MIAMI
@@ -62,7 +62,7 @@ export default function SectionHotel() {
                         <img
                             src="./img/ritzcarlton02.jpg"
                             alt="The Ritz-Carlton Philadelphia"
-                            className="w-full h-auto object-cover block transform transition-transform duration-[2s] group-hover:scale-[1.03]"
+                            className="w-full aspect-square md:aspect-auto md:h-auto object-cover block transform transition-transform duration-[2s] group-hover:scale-[1.03]"
                         />
                     </div>
                     <div className="text-right mt-3 text-[9px] md:text-[11px] text-gray-500 font-inter tracking-[0.05em] uppercase font-light">
@@ -72,7 +72,7 @@ export default function SectionHotel() {
 
                 {/* Second Text Area */}
                 <div className="w-full mt-16 md:mt-20 flex flex-col items-center bs-fade-up">
-                    <img src="./img/logo_ritzcarlton.png" alt="The Ritz-Carlton Logo" className="w-[80px] md:w-[120px] mb-12 md:mb-16 object-contain" />
+                    <img src="./img/logo_ritzcarlton.png" alt="The Ritz-Carlton Logo" className="w-[120px] md:w-[160px] mb-12 md:mb-16 object-contain" />
 
                     <div className="w-full flex flex-col lg:flex-row justify-between items-start gap-8 md:gap-16">
                         {lang === 'kr' ? (
