@@ -13,7 +13,7 @@ export default function NewsList({ onSelectArticle }) {
                     News
                 </h1>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 gap-y-[80px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-[30px] gap-y-[80px]">
                     {newsData.map((news) => (
                         <div
                             key={news.id}
@@ -23,7 +23,7 @@ export default function NewsList({ onSelectArticle }) {
                             <h3 className="text-[21px] md:text-[23px] pr-5 leading-[1.4] text-[#222] font-inter font-normal tracking-[-0.01em] group-hover:text-blue-700 transition-colors duration-200">
                                 {news.title}
                             </h3>
-                            <p className="text-[12px] text-gray-400 mt-6 font-inter tracking-[0.02em]">
+                            <p className="text-[14px] md:text-[15px] text-[#333] mt-6 font-inter tracking-[0.02em] font-thin">
                                 {news.date}
                             </p>
                         </div>

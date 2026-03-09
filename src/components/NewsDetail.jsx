@@ -21,16 +21,16 @@ export default function NewsDetail({ article, onBack }) {
                     {article.title}
                 </h1>
 
-                <div className="flex flex-col md:flex-row items-start lg:gap-24 md:gap-12 gap-8">
+                <div className="w-full max-w-[900px] mx-auto flex flex-col md:flex-row items-start lg:gap-16 md:gap-12 gap-8">
                     {/* Left Column - Date */}
-                    <div className="w-full md:w-[200px] flex-shrink-0">
+                    <div className="w-full md:w-[150px] flex-shrink-0 mt-1">
                         <p className="text-[13px] font-bold text-black uppercase tracking-wider">
                             {article.date}
                         </p>
                     </div>
 
                     {/* Right Column - Content */}
-                    <div className="w-full max-w-[700px] flex flex-col gap-6">
+                    <div className="flex-1 flex flex-col gap-6">
                         {article.content.map((block, idx) => {
                             if (block.type === 'bullet') {
                                 return (
