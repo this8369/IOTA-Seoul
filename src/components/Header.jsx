@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
-export default function Header() {
+export default function Header({ onNavigateToNews, onNavigateToHome, currentPage }) {
     const { lang, setLang } = useLanguage();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -27,6 +27,23 @@ export default function Header() {
             window.isNavigating = false;
         }, 1500);
 
+        if (currentPage !== 'home') {
+            if (onNavigateToHome) onNavigateToHome();
+            setTimeout(() => {
+                if (targetId === 'top') {
+                    const scrollContainer = document.getElementById('scroll-container');
+                    if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'auto' });
+                    else window.scrollTo({ top: 0, behavior: 'auto' });
+                } else {
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'auto', block: 'start' });
+                    }
+                }
+            }, 100);
+            return;
+        }
+
         if (targetId === 'top') {
             const scrollContainer = document.getElementById('scroll-container');
             if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'auto' });
@@ -37,6 +54,12 @@ export default function Header() {
                 target.scrollIntoView({ behavior: 'auto', block: 'start' });
             }
         }
+    };
+
+    const handleNewsClick = (e) => {
+        e.preventDefault();
+        setMobileMenuOpen(false);
+        if (onNavigateToNews) onNavigateToNews();
     };
 
     return (
@@ -76,7 +99,7 @@ export default function Header() {
                             <a href="#section-iotatwo" onClick={(e) => handleScrollTo(e, 'section-iotatwo')} className="hover:text-gray-500 transition-colors duration-200">
                                 IOTA Two
                             </a>
-                            <a href="#" className="hover:text-gray-500 transition-colors duration-200">
+                            <a href="#" onClick={handleNewsClick} className={`${currentPage && currentPage.includes('news') ? 'text-black font-bold' : 'hover:text-gray-500'} transition-colors duration-200`}>
                                 News
                             </a>
                         </nav>
@@ -114,7 +137,7 @@ export default function Header() {
                 <a href="#section-hotel" onClick={(e) => handleScrollTo(e, 'section-hotel')} className="text-[16px] font-normal text-gray-800">Ritz-Carlton</a>
                 <a href="#section-iotaone" onClick={(e) => handleScrollTo(e, 'section-iotaone')} className="text-[16px] font-normal text-gray-800">IOTA One</a>
                 <a href="#section-iotatwo" onClick={(e) => handleScrollTo(e, 'section-iotatwo')} className="text-[16px] font-normal text-gray-800">IOTA Two</a>
-                <a href="#" className="text-[16px] font-normal text-gray-800">News</a>
+                <a href="#" onClick={handleNewsClick} className={`text-[16px] ${currentPage && currentPage.includes('news') ? 'font-bold' : 'font-normal'} text-gray-800`}>News</a>
                 <div className="flex space-x-6 pt-4 border-t border-gray-200 justify-center">
                     <button className="text-sm font-bold text-gray-800 hover:text-gray-500" onClick={() => switchLang('en')}>EN</button>
                     <button className="text-sm font-bold text-gray-800 hover:text-gray-500" onClick={() => switchLang('kr')}>KR</button>
