@@ -32,10 +32,10 @@ export default function SectionDesign() {
 
                 {/* --- ARCHITECTS SHOWCASE NEW SECTION --- */}
                 {/* 1. White Dividing Line */}
-                <div className="w-full h-[1px] bg-white/20 my-[80px] md:my-[120px]"></div>
+                <div className="w-full h-[1px] bg-white/20 mt-0 mb-[80px] md:mb-[120px]"></div>
 
                 {/* 2. Title & Intro */}
-                <div className="w-full max-w-[1400px] mx-auto flex flex-col items-start bs-fade-up">
+                <div className="w-full max-w-[1600px] mx-auto flex flex-col items-start bs-fade-up">
                     <h3 className="text-[28px] md:text-[38px] lg:text-[46px] font-bold text-white tracking-[-0.01em] leading-tight mb-4 font-inter break-keep">
                         Where Architectural Legends Shape the Future of Seoul
                     </h3>
@@ -75,7 +75,7 @@ export default function SectionDesign() {
                 </div>
 
                 {/* 3. Projects Rows Layout */}
-                <div className="w-full max-w-[1400px] mx-auto flex flex-col gap-12 md:gap-[100px] mt-[60px] md:mt-[100px] bs-fade-up delay-200">
+                <div className="w-full max-w-[1600px] mx-auto flex flex-col gap-12 md:gap-[100px] mt-[60px] md:mt-[100px] bs-fade-up delay-200">
 
                     {/* Foster + Partners Row */}
                     <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-8 md:gap-12 lg:gap-16">
@@ -85,7 +85,7 @@ export default function SectionDesign() {
                         </div>
                         {/* Right Content */}
                         <div className="w-full md:w-[40%] flex flex-col items-start md:pt-[2%]">
-                            <div className="bg-white/90 p-3 mb-6 rounded-sm">
+                            <div className="mb-6">
                                 <img src="./img/foster-partners.jpg" alt="Foster + Partners Logo" className="h-[25px] md:h-[35px] lg:h-[40px] object-contain block" />
                             </div>
                             {lang === 'kr' ? (
@@ -118,7 +118,7 @@ export default function SectionDesign() {
                         </div>
                         {/* Right Content */}
                         <div className="w-full md:w-[40%] flex flex-col items-start md:pt-[2%]">
-                            <div className="bg-white/90 p-3 mb-6 rounded-sm">
+                            <div className="mb-6">
                                 <img src="./img/som.jpg" alt="SOM Logo" className="h-[30px] md:h-[45px] lg:h-[50px] object-contain block" />
                             </div>
                             {lang === 'kr' ? (
