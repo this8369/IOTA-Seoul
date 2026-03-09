@@ -8,9 +8,9 @@ export default function NewsList({ onSelectArticle }) {
 
     return (
         <div className="w-full bg-white min-h-screen pt-[160px] pb-[100px]">
-            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1200px] mx-auto">
+            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto">
                 <h1 className="text-[40px] md:text-[50px] font-sans font-normal tracking-[-0.04em] text-black mb-[60px] md:mb-[100px]">
-                    All Releases
+                    News
                 </h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 gap-y-[80px]">
@@ -20,7 +20,7 @@ export default function NewsList({ onSelectArticle }) {
                             className="flex flex-col cursor-pointer group"
                             onClick={() => onSelectArticle(news)}
                         >
-                            <h3 className="text-[17px] md:text-[19px] leading-[1.4] text-[#222] font-inter font-normal tracking-[-0.01em] group-hover:text-blue-700 transition-colors duration-200">
+                            <h3 className="text-[21px] md:text-[23px] pr-5 leading-[1.4] text-[#222] font-inter font-normal tracking-[-0.01em] group-hover:text-blue-700 transition-colors duration-200">
                                 {news.title}
                             </h3>
                             <p className="text-[12px] text-gray-400 mt-6 font-inter tracking-[0.02em]">

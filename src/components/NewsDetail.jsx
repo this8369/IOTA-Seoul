@@ -9,12 +9,12 @@ export default function NewsDetail({ article, onBack }) {
 
     return (
         <div className="w-full bg-white min-h-screen pt-[160px] pb-[160px]">
-            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1200px] mx-auto">
+            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto">
                 <button
                     onClick={onBack}
                     className="text-gray-400 hover:text-black transition-colors duration-200 text-[13px] font-bold tracking-wider uppercase mb-12 inline-flex items-center gap-2"
                 >
-                    <span>←</span> Back to All Releases
+                    <span>←</span> Back to News
                 </button>
 
                 <h1 className="text-[32px] md:text-[52px] lg:text-[60px] font-sans font-normal text-black leading-[1.1] tracking-[-0.04em] text-center max-w-[900px] mx-auto mb-[80px] md:mb-[120px]">

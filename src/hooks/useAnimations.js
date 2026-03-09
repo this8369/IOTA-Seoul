@@ -24,8 +24,13 @@ export function useAnimations() {
                 scrollHideThreshold = st + 150;
             } else {
                 if (st <= 50) {
-                    header.style.transform = "translateY(-100%)";
-                    header.style.transitionDuration = "200ms";
+                    if (window.isNewsPage) {
+                        header.style.transform = "translateY(0)";
+                        header.style.transitionDuration = "200ms";
+                    } else {
+                        header.style.transform = "translateY(-100%)";
+                        header.style.transitionDuration = "200ms";
+                    }
                     scrollHideThreshold = st;
                 } else {
                     if (st < lastScrollTop) {

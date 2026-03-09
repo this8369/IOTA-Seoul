@@ -11,6 +11,10 @@ export default function App() {
   const [currentPage, setCurrentPage] = React.useState('home'); // 'home', 'news', 'news_detail'
   const [selectedArticle, setSelectedArticle] = React.useState(null);
 
+  React.useEffect(() => {
+    window.isNewsPage = currentPage !== 'home';
+  }, [currentPage]);
+
   const handleNavigateToNews = () => {
     setCurrentPage('news');
     setSelectedArticle(null);
