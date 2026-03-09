@@ -62,8 +62,10 @@ export default function App() {
       <SectionHotel />
       <SectionIotaOne />
       <SectionIotaTwo />
-      <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto relative mb-24 md:mb-32">
-        <img src="./img/partnership.jpg" alt="Partnerships" className="w-full h-auto block" />
+      <div className="w-full bg-[#424a4d] py-12 md:py-24 mt-24 md:mt-32">
+        <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto relative">
+          <img src="./img/partnership.jpg" alt="Partnerships" className="w-full h-auto block" />
+        </div>
       </div>
     </div>
   );
