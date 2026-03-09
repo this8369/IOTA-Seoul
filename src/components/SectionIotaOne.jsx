@@ -5,17 +5,25 @@ export default function SectionIotaOne() {
     const { lang } = useLanguage();
 
     return (
-        <section className="section w-full h-auto bg-black pt-[100px] md:pt-[150px] pb-[100px] md:pb-[150px]" id="section-iotaone">
+        <section className="section w-full h-auto bg-black pt-[50px] md:pt-[100px] pb-[100px] md:pb-[150px]" id="section-iotaone">
+
+            {/* Top Large Title */}
+            <div className="w-full flex justify-center py-[200px] md:py-[300px] bs-fade-up">
+                <h1 className="text-[60px] md:text-[80px] lg:text-[100px] font-inter font-thin text-white tracking-[-0.03em] uppercase">
+                    IOTA One
+                </h1>
+            </div>
+
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-start">
 
-                {/* Text Area */}
+                {/* First Item Area */}
                 <div className="flex flex-col w-full bs-fade-up">
-                    <h2 className="text-[22px] md:text-[42px] xl:text-[50px] font-inter font-bold text-white tracking-[-0.03em] leading-[1.15] mb-8 break-keep">
+                    <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
                         Central Plaza:<br />
                         A Grand Stage Between City and Nature
                     </h2>
 
-                    <div className="w-full max-w-[1000px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-12 md:mb-16">
+                    <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                         {lang === 'kr' ? (
                             <div className="break-keep">
                                 <p className="mb-4">
@@ -38,7 +46,7 @@ export default function SectionIotaOne() {
                     </div>
                 </div>
 
-                {/* Image Area */}
+                {/* First Image Area */}
                 <div className="w-full relative overflow-hidden group bs-fade-up delay-200">
                     <img
                         src="./img/iotaone_01.jpg"
@@ -49,11 +57,11 @@ export default function SectionIotaOne() {
 
                 {/* Second Item Area */}
                 <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                    <h2 className="text-[22px] md:text-[42px] xl:text-[50px] font-inter font-bold text-white tracking-[-0.03em] leading-[1.15] mb-8 break-keep">
+                    <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
                         Rooftop Garden:<br className="md:hidden" /> Nature at Your Office Doorstep
                     </h2>
 
-                    <div className="w-full max-w-[1000px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-12 md:mb-16">
+                    <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                         {lang === 'kr' ? (
                             <div className="break-keep">
                                 <p className="mb-4">
@@ -77,10 +85,64 @@ export default function SectionIotaOne() {
                 </div>
 
                 {/* Second Image Area */}
-                <div className="w-full relative overflow-hidden group bs-fade-up delay-200 mb-10 md:mb-0">
+                <div className="w-full relative overflow-hidden group bs-fade-up delay-200">
                     <img
                         src="./img/iotaone_02.jpg"
                         alt="Rooftop Garden"
+                        className="w-full aspect-[4/3] md:aspect-auto md:h-auto object-cover block transform transition-transform duration-[2s] group-hover:scale-[1.03]"
+                    />
+                </div>
+
+                {/* Third Item Area (Title Only) */}
+                <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                    <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        Rooftop Garden:<br className="md:hidden" /> Nature at Your Office Doorstep
+                    </h2>
+                </div>
+
+                {/* Third Image Area */}
+                <div className="w-full relative overflow-hidden group bs-fade-up delay-200">
+                    <img
+                        src="./img/iotaone_03.jpg"
+                        alt="Rooftop Garden View"
+                        className="w-full aspect-[4/3] md:aspect-auto md:h-auto object-cover block transform transition-transform duration-[2s] group-hover:scale-[1.03]"
+                    />
+                </div>
+
+                {/* Fourth Item Area (UAM) */}
+                <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                    <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        UAM Vertiport
+                    </h2>
+
+                    <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        {lang === 'kr' ? (
+                            <div className="break-keep">
+                                <p className="mb-4">
+                                    도심항공교통(UAM) 시대를 대비하여, 옥상에 UAM 이착륙이 가능한 헬리포트형 선착장을 선제적으로 설계하였습니다.<br className="hidden md:block" />향후 모빌리티 기술 발전과 함께 하늘길이 열리면, 이오타서울은 서울 도심에서 가장 빠르게 UAM 정류가 가능한 오피스로 기능하게 됩니다.
+                                </p>
+                                <p>
+                                    이는 비즈니스 속도와 연결성을 중시하는 글로벌 기업에게 탁월한 입지적 경쟁력이 될 것입니다.
+                                </p>
+                            </div>
+                        ) : (
+                            <div>
+                                <p className="mb-4">
+                                    IOTA One is future-proofed with a rooftop vertiport designed for next-generation Urban Air Mobility (UAM).<br className="hidden md:block" />Anticipating the rise of airborne transport, this infrastructure will enable IOTA Seoul to become one of the first business complexes in the city capable of supporting UAM operations.
+                                </p>
+                                <p>
+                                    As air mobility networks evolve, IOTA's early readiness offers unmatched value for future-focused enterprises seeking speed, accessibility, and connectivity at the highest level.
+                                </p>
+                            </div>
+                        )}
+                    </div>
+                </div>
+
+                {/* Fourth Image Area */}
+                <div className="w-full relative overflow-hidden group bs-fade-up delay-200 mb-10 md:mb-0">
+                    <img
+                        src="./img/iotaone_04.png"
+                        alt="UAM Vertiport"
                         className="w-full aspect-[4/3] md:aspect-auto md:h-auto object-cover block transform transition-transform duration-[2s] group-hover:scale-[1.03]"
                     />
                 </div>
