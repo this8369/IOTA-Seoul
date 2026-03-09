@@ -289,6 +289,32 @@ export default function SectionIotaOne() {
                     {/* Tenth Image Area */}
                     <HoverImage src="./img/iotaone_12.jpg" alt="Main Hotel Lobby" />
 
+                    {/* Eleventh Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            Hotel VIP Lounge:<br className="md:hidden" /> {lang === 'kr' ? "도심의 정점에서 누리는 프라이빗 럭셔리" : "Private Luxury at the Pinnacle of the City"}
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        IOTA 서울의 VIP 라운지는 남산의 파노라믹 뷰를 배경으로, IOTA 서울과 리츠칼튼이 추구하는 가장 세련된 형태의 환대를 구현한 공간입니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        The VIP Lounge at IOTA Seoul captures the essence of The Ritz-Carlton's refined hospitality, framed by panoramic views of Namsan and the evening skyline.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Eleventh Image Area */}
+                    <HoverImage src="./img/iotaone_13.jpg" alt="Hotel VIP Lounge" />
+
                 </div>
             </section>
         </>
