@@ -9,7 +9,7 @@ export default function NewsDetail({ article, onBack }) {
 
     return (
         <div className="w-full bg-white min-h-screen pt-[160px] pb-[160px]">
-            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto">
+            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[900px] mx-auto">
                 <button
                     onClick={onBack}
                     className="text-gray-400 hover:text-black transition-colors duration-200 text-[13px] font-bold tracking-wider uppercase mb-12 inline-flex items-center gap-2"
@@ -17,11 +17,11 @@ export default function NewsDetail({ article, onBack }) {
                     <span>←</span> Back to News
                 </button>
 
-                <h1 className="text-[32px] md:text-[52px] lg:text-[60px] font-sans font-normal text-black leading-[1.1] tracking-[-0.04em] text-center max-w-[900px] mx-auto mb-[80px] md:mb-[120px]">
+                <h1 className="text-[32px] md:text-[52px] lg:text-[60px] font-sans font-normal text-black leading-[1.1] tracking-[-0.04em] text-left w-full mb-[80px] md:mb-[120px]">
                     {article.title}
                 </h1>
 
-                <div className="w-full max-w-[900px] mx-auto flex flex-col md:flex-row items-start lg:gap-16 md:gap-12 gap-8">
+                <div className="w-full flex flex-col md:flex-row items-start lg:gap-16 md:gap-12 gap-8">
                     {/* Left Column - Date */}
                     <div className="w-full md:w-[150px] flex-shrink-0 mt-1">
                         <p className="text-[13px] font-bold text-black uppercase tracking-wider">
