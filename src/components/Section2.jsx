@@ -1,4 +1,5 @@
 import React from 'react';
+import HoverImage from './HoverImage';
 
 export default function Section2() {
     return (
@@ -47,13 +48,13 @@ export default function Section2() {
                     </div>
                 </div>
                 <div className="w-full flex flex-col gap-[10px] md:gap-[30px] mb-[10px] md:mb-0">
-                    <div className="full-image-container relative overflow-hidden group">
-                        <img src="./img/iota_full.jpg" alt="IOTA Full Background"
-                            className="bs-scale-up w-full h-[100vw] md:h-auto object-cover block origin-center transform transition-transform duration-[2s] group-hover:scale-105" style={{ marginTop: '-30px' }} />
+                    <div className="full-image-container w-full h-[100vw] md:h-auto">
+                        <HoverImage src="./img/iota_full.jpg" alt="IOTA Full Background"
+                            className="bs-scale-up w-full h-full object-cover block origin-center" wrapperClassName="w-full relative overflow-hidden group cursor-pointer h-full" containerStyle={{ marginTop: '-30px' }} />
                     </div>
-                    <div className="full-image-container relative overflow-hidden group">
-                        <img src="./img/iota_full_3.jpg" alt="IOTA Full Background 3"
-                            className="bs-scale-up w-full h-auto block origin-center transform transition-transform duration-[2s] group-hover:scale-105" />
+                    <div className="full-image-container w-full h-auto">
+                        <HoverImage src="./img/iota_full_3.jpg" alt="IOTA Full Background 3"
+                            className="bs-scale-up w-full h-full object-cover block origin-center" wrapperClassName="w-full relative overflow-hidden group cursor-pointer h-full" />
                     </div>
                 </div>
             </div>

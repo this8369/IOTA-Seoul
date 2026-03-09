@@ -1,4 +1,5 @@
 import React from 'react';
+import HoverImage from './HoverImage';
 
 export default function SectionGreen() {
     return (
@@ -80,8 +81,8 @@ export default function SectionGreen() {
                 <div id="green-scroll-area" className="hidden md:block w-full relative bs-fade-up delay-200 mt-4 h-auto min-h-[500px]">
                     <img src="./img/namsan_map1.jpg" alt="Namsan Map 1" id="green-img-1"
                         className="w-full h-auto object-contain transition-opacity duration-1000 ease-in-out" />
-                    <img src="./img/namsan_map2.jpg" alt="Namsan Map 2" id="green-img-2"
-                        className="absolute top-0 left-0 w-full h-full object-contain opacity-0 transition-opacity duration-1000 ease-in-out" />
+                    <HoverImage src="./img/namsan_map2.jpg" alt="Namsan Map 2" id="green-img-2"
+                        className="w-full h-full object-contain block" wrapperClassName="absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out group cursor-pointer" />
                 </div>
 
             </div>
@@ -89,7 +90,7 @@ export default function SectionGreen() {
             {/* Mobile Panning Image - OUTSIDE padding wrapper to be full width */}
             <div className="md:hidden w-full relative overflow-x-auto overflow-y-hidden scrollbar-hide mt-4 bs-fade-up delay-200">
                 <div className="relative w-[1400px]">
-                    <img src="./img/namsan_map2.jpg" alt="Namsan Map Mobile" className="w-full h-auto object-cover animate-pan-x-slow" />
+                    <HoverImage src="./img/namsan_map2.jpg" alt="Namsan Map Mobile" className="w-full h-auto object-cover animate-pan-x-slow block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
                 </div>
             </div>
 

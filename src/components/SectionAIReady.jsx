@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import HoverImage from './HoverImage';
 
 export default function SectionAIReady() {
     const { lang } = useLanguage();
@@ -25,8 +26,9 @@ export default function SectionAIReady() {
                                 className="absolute object-contain w-full h-full transition-opacity duration-1000 ease-in-out" />
                             <img src="./img/AI_ready_building02.jpg" alt="AI Ready 2" id="ai-img-2"
                                 className="absolute object-contain w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out" />
-                            <img src="./img/AI_ready_building03.jpg" alt="AI Ready 3" id="ai-img-3"
-                                className="absolute object-contain w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out" />
+                            <HoverImage src="./img/AI_ready_building03.jpg" alt="AI Ready 3" id="ai-img-3"
+                                className="object-contain w-full h-full block"
+                                wrapperClassName="absolute w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out group cursor-pointer" />
                         </div>
 
                         {/* BOTTOM TEXT CONTENT (Starts below image area) - exactly 30px top margin */}
@@ -88,8 +90,9 @@ export default function SectionAIReady() {
                                 className="absolute object-contain w-full h-full transition-opacity duration-1000 ease-in-out" />
                             <img src="./img/AI_ready_building_m_02.jpg" alt="AI Ready Mobile 2" id="ai-img-m-2"
                                 className="absolute object-contain w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out" />
-                            <img src="./img/AI_ready_building_m_03.jpg" alt="AI Ready Mobile 3" id="ai-img-m-3"
-                                className="absolute object-contain w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out" />
+                            <HoverImage src="./img/AI_ready_building_m_03.jpg" alt="AI Ready Mobile 3" id="ai-img-m-3"
+                                className="object-contain w-full h-full block"
+                                wrapperClassName="absolute w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out group cursor-pointer" />
                         </div>
 
                         <div className="w-full max-w-[1100px] mx-auto flex flex-col mt-[20px] shrink-0 text-left px-4 md:px-0">

@@ -1,4 +1,5 @@
 import React from 'react';
+import HoverImage from './HoverImage';
 
 export default function SectionScale() {
     return (
@@ -29,7 +30,7 @@ export default function SectionScale() {
 
             {/* LARGE SCALE IMAGE (FULL WIDTH ON MOBILE) */}
             <div className="w-full md:w-[calc(100%-100px)] max-w-[1000px] mx-auto mb-16 bs-fade-up delay-100">
-                <img src="./img/scale.jpg" alt="IOTA Seoul Scale" className="w-full h-auto object-cover rounded-none" />
+                <HoverImage src="./img/scale.jpg" alt="IOTA Seoul Scale" className="w-full h-auto object-cover rounded-none block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
             </div>
 
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-center">

@@ -1,4 +1,5 @@
 import React from 'react';
+import HoverImage from './HoverImage';
 
 export default function SectionLargePlate() {
     return (
@@ -7,7 +8,7 @@ export default function SectionLargePlate() {
 
                 {/* LARGE PLATE IMAGE */}
                 <div className="w-full max-w-[1400px] mx-auto mb-16 md:mb-20 bs-fade-up">
-                    <img src="./img/largeplate.jpg" alt="IOTA Seoul Large Plate" className="w-full h-auto object-cover" />
+                    <HoverImage src="./img/largeplate.jpg" alt="IOTA Seoul Large Plate" className="w-full h-auto object-cover block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
                 </div>
 
                 {/* TEXT CONTENT */}

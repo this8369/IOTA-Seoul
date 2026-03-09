@@ -1,4 +1,5 @@
 import React from 'react';
+import HoverImage from './HoverImage';
 
 export default function SectionNamsan() {
     return (
@@ -7,7 +8,7 @@ export default function SectionNamsan() {
 
                 {/* LARGE NAMSAN IMAGE */}
                 <div className="w-full mb-12 overflow-hidden bs-fade-up">
-                    <img src="./img/namsan.jpg" alt="Namsan Autumn View" className="w-full h-auto object-cover bs-zoom-slow" />
+                    <HoverImage src="./img/namsan.jpg" alt="Namsan Autumn View" className="w-full h-auto object-cover bs-zoom-slow block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
                 </div>
 
                 {/* TWO COLUMN TEXT LAYOUT */}
