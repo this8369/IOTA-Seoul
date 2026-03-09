@@ -17,7 +17,7 @@ export default function SectionConstruction() {
 
                 {/* Text Overlay Box (Right side) */}
                 <div className="absolute right-0 top-0 bottom-0 w-[55%] flex flex-col justify-center pr-[5%] xl:pr-[10%] pl-8 z-10">
-                    <div className="w-full max-w-[800px] bs-fade-up delay-100 p-8 rounded-lg bg-black/20 backdrop-blur-sm">
+                    <div className="w-full max-w-[800px] bs-fade-up delay-100">
                         <h2 className="text-[36px] xl:text-[46px] font-bold text-white tracking-[-0.01em] leading-tight mb-6 font-inter break-keep">
                             Global Top-Tier<br />Construction Company
                         </h2>
@@ -57,7 +57,7 @@ export default function SectionConstruction() {
 
                         {/* overlay image layer */}
                         <div className="w-full mt-2 bs-fade-up delay-300">
-                            <img src="./img/hyundai&samsung.png" alt="Hyundai & Samsung Logos and Ranking" className="w-[100%] max-w-[700px] h-auto object-contain block bg-white/90 p-4 rounded-sm" />
+                            <img src="./img/hyundai&samsung.png" alt="Hyundai & Samsung Logos and Ranking" className="w-[100%] max-w-[700px] h-auto object-contain block" />
                         </div>
                     </div>
                 </div>
@@ -113,37 +113,36 @@ export default function SectionConstruction() {
 
                         {/* overlay image layer */}
                         <div className="w-full mx-auto mt-4 bs-fade-up">
-                            <img src="./img/hyundai&samsung.png" alt="Hyundai & Samsung Logos and Ranking" className="w-full h-auto object-contain block bg-white/90 p-4 rounded-sm mx-auto" />
+                            <img src="./img/hyundai&samsung.png" alt="Hyundai & Samsung Logos and Ranking" className="w-full h-auto object-contain block mx-auto" />
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* Reference Images Gallery */}
-            <div className="w-full max-w-[1600px] mx-auto mt-10 md:mt-[80px] mb-[100px] md:mb-[150px] px-4 md:px-[50px] bs-fade-up">
-                <div className="flex flex-col md:flex-row gap-[4px] w-full">
+            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto mt-10 md:mt-20 mb-20 bs-fade-up">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-[4px] w-full">
 
-                    {/* Image 1 - Left large column */}
-                    <div className="w-full md:w-[50%] group overflow-hidden relative">
-                        {/* Natural height of the largest image will stretch the flex container in PC */}
-                        <img src="./img/construct_reference01.jpg" alt="Construction Reference 1" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                    {/* Image 1 - Left (Using its natural aspect ratio so it doesn't crop its width) */}
+                    <div className="w-full relative group overflow-hidden md:aspect-[2200/2630]">
+                        <img src="./img/construct_reference01.jpg" alt="Construction Reference 1" className="w-full h-auto md:absolute md:inset-0 md:h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                     </div>
 
                     {/* Images 2, 3, 4 - Right Column */}
-                    <div className="w-full md:w-[50%] flex flex-col gap-[4px]">
+                    <div className="w-full flex flex-col gap-[4px]">
 
                         {/* Image 2 - Right Top */}
-                        <div className="w-full group overflow-hidden relative grow">
-                            <img src="./img/construct_reference02.jpg" alt="Construction Reference 2" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                        <div className="w-full group overflow-hidden relative flex-1 min-h-[250px] md:min-h-0">
+                            <img src="./img/construct_reference02.jpg" alt="Construction Reference 2" className="absolute inset-0 w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                         </div>
 
                         {/* Images 3 & 4 - Right Bottom Split */}
-                        <div className="w-full flex flex-row gap-[4px] grow">
-                            <div className="w-[51%] group overflow-hidden relative">
-                                <img src="./img/construct_reference03.jpg" alt="Construction Reference 3" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                        <div className="w-full flex flex-row gap-[4px] flex-1 min-h-[250px] md:min-h-0">
+                            <div className="w-1/2 group overflow-hidden relative">
+                                <img src="./img/construct_reference03.jpg" alt="Construction Reference 3" className="absolute inset-0 w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                             </div>
-                            <div className="w-[49%] group overflow-hidden relative">
-                                <img src="./img/construct_reference04.jpg" alt="Construction Reference 4" className="w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                            <div className="w-1/2 group overflow-hidden relative">
+                                <img src="./img/construct_reference04.jpg" alt="Construction Reference 4" className="absolute inset-0 w-full h-full object-cover block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                             </div>
                         </div>
                     </div>
