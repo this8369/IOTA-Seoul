@@ -125,6 +125,114 @@ export default function SectionIotaOne() {
                     {/* Fourth Image Area */}
                     <HoverImage src="./img/iotaone_04.png" alt="UAM Vertiport" />
 
+                    {/* Fifth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            Hotel Podium Garden:<br className="md:hidden" /> A Private Oasis Framed by Namsan
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        이오타서울 호텔과 연결된 포디움 가든은 남산을 바로 마주한 조망과 고급 조경이 어우러진 야외 공간입니다.<br className="hidden md:block" />기업의 프라이빗 행사, 리셉션, 웨딩 등 다양한 이벤트가 가능한 서울 도심 내 보기 드문 고품격 오픈 스페이스로, 도시의 중심에서 자연과 함께하는 특별한 경험을 제공합니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        Directly connected to the IOTA Seoul hotel, the podium garden offers a rare outdoor setting with panoramic views of Namsan.<br className="hidden md:block" />Surrounded by lush landscaping, this open-air terrace provides a prestigious venue for corporate receptions, private events, and weddings.<br className="hidden md:block" />It is a seamless blend of nature and elegance—an exceptional place to host memorable occasions in the very heart of Seoul.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Fifth Image Area */}
+                    <HoverImage src="./img/iotaone_05.jpg" alt="Hotel Podium Garden" />
+
+                    {/* Sixth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            The Hotel Podium Garden at Dusk
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        IOTA 서울의 호텔 포디엄 가든은 남산 조망을 확보한 야외 공간으로, 호텔의 연회장 및 라운지와 직접 연결되어 프라이빗 이벤트, 리셉션, 웨딩 등 다양한 형태의 행사를 수용할 수 있도록 설계되었습니다.<br className="hidden md:block" />정제된 조명과 조경 디자인을 통해 저녁 시간대에도 최적의 환경을 제공하며, 서울 도심 내에서 드물게 고급 야외 행사가 가능한 오픈 스페이스로 기능합니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        The Podium Garden at IOTA Seoul offers an open-air venue with direct views of Namsan seamlessly connected to the hotel’s function spaces and lounges.<br className="hidden md:block" />It is designed to accommodate private events, receptions, and weddings, with refined landscape and lighting systems providing optimal conditions after dusk.<br className="hidden md:block" />The space serves as one of Seoul’s few high-end outdoor venues capable of hosting premium events within the city’s urban core.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Sixth Image Area */}
+                    <HoverImage src="./img/iotaone_06.jpg" alt="The Hotel Podium Garden at Dusk" />
+
+                    <div className="mt-8 md:mt-12 w-full">
+                        <HoverImage src="./img/iotaone_07.jpg" alt="The Hotel Podium Garden at Dusk 2" />
+                    </div>
+
+                    {/* Seventh Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            An Expansive Lobby Experience<br className="md:hidden" /> at the Heart of the City
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        IOTA ONE의 오피스 메인 로비는 약 15미터의 층고와 전면유리 파사드를 통해 도심 한가운데에서도 개방감과 투명성을 극대화한 공간입니다.<br className="hidden md:block" />남산의 녹지와 시각적으로 연결되는 이 로비는 단순한 진입 공간을 넘어, 입주 기업과 방문객 모두에게 도시적 품격과 상징적 첫인상을 제공합니다.<br className="hidden md:block" />견고한 소재, 절제된 디테일, 그리고 자연광이 조화된 공간 구성은 IOTA ONE이 지향하는 '모던 헤리티지'의 정수를 보여줍니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        The main office lobby of IOTA ONE features a soaring 15-meter ceiling and full-height glass façades, creating a sense of openness and transparency rarely achieved in the urban core.<br className="hidden md:block" />Visually connected to the greenery of Namsan, the lobby serves not only as an entryway but as a spatial statement of prestige and identity for its tenants and visitors.<br className="hidden md:block" />Defined by robust materials, refined detailing, and natural light, it embodies the architectural essence of modern heritage that defines IOTA Seoul.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Seventh Image Area */}
+                    <HoverImage src="./img/iotaone_08.jpg" alt="Expansive Lobby Experience" />
+
+                    {/* Eighth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            Core Access:<br className="md:hidden" /> 수직적 깊이감이 만든 정제된 입면
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        IOTA 서울의 코어 진입부는 수직적 비례감과 리듬감 있는 입면 디자인을 통해 건축의 정제된 질서를 시각적으로 구현한 공간입니다. 불필요한 장식을 배제하고 소재의 질감과 빛의 방향성을 강조함으로써,<br className="hidden md:block" />입주자와 방문객 모두에게 단단한 구조미와 절제된 긴장감을 전달합니다. 이곳은 단순한 이동의 통로가 아니라, IOTA 서울이 지향하는 품격과 정체성을 매일의 경험 속에서 체화하게 하는 상징적 공간으로 작동합니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        The core access of IOTA Seoul embodies refined architectural order through its vertical proportions and rhythmic façade composition.<br className="hidden md:block" />By eliminating unnecessary ornamentation and emphasizing the texture of materials and the direction of light,<br className="hidden md:block" />the space conveys a sense of structural solidity and restrained tension to both occupants and visitors.<br className="hidden md:block" />More than a circulation path, it serves as a symbolic space where the dignity and identity that define IOTA Seoul are internalized through everyday experience.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Eighth Image Area */}
+                    <HoverImage src="./img/iotaone_09.jpg" alt="Core Access" />
+
                 </div>
             </section>
         </>
