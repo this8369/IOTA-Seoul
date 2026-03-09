@@ -70,6 +70,9 @@ export default function Header() {
                             <a href="#section-hotel" onClick={(e) => handleScrollTo(e, 'section-hotel')} className="hover:text-gray-500 transition-colors duration-200">
                                 Ritz-Carlton
                             </a>
+                            <a href="#section-iotaone" onClick={(e) => handleScrollTo(e, 'section-iotaone')} className="hover:text-gray-500 transition-colors duration-200">
+                                IOTA One
+                            </a>
                             <a href="#" className="hover:text-gray-500 transition-colors duration-200">
                                 Insights
                             </a>
@@ -112,6 +115,7 @@ export default function Header() {
                 <a href="#section-nextgen" onClick={(e) => handleScrollTo(e, 'section-nextgen')} className="text-[16px] font-normal text-gray-800">Next-Gen</a>
                 <a href="#section-design" onClick={(e) => handleScrollTo(e, 'section-design')} className="text-[16px] font-normal text-gray-800">Design</a>
                 <a href="#section-hotel" onClick={(e) => handleScrollTo(e, 'section-hotel')} className="text-[16px] font-normal text-gray-800">Ritz-Carlton</a>
+                <a href="#section-iotaone" onClick={(e) => handleScrollTo(e, 'section-iotaone')} className="text-[16px] font-normal text-gray-800">IOTA One</a>
                 <a href="#" className="text-[16px] font-normal text-gray-800">Insights</a>
                 <a href="#" className="text-[16px] font-normal text-gray-800">Careers</a>
                 <a href="#" className="text-[16px] font-normal text-gray-800">News</a>
