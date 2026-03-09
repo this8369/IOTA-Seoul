@@ -32,6 +32,7 @@ const HoverImage = ({ src, alt, onClick }) => (
 export default function SectionIotaOne() {
     const { lang } = useLanguage();
     const [modalImage, setModalImage] = useState(null);
+    const [isZoomed, setIsZoomed] = useState(false);
 
     // Close modal on escape key
     useEffect(() => {
@@ -170,24 +171,33 @@ export default function SectionIotaOne() {
             {/* Image Modal */}
             {modalImage && (
                 <div
-                    className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-4 md:p-10 cursor-pointer bs-fade-up"
-                    onClick={() => setModalImage(null)}
+                    className={`fixed inset-0 z-[100] flex ${isZoomed ? 'items-start justify-start overflow-auto p-0' : 'items-center justify-center p-4 md:p-10'} bg-black/95 cursor-zoom-out bs-fade-up`}
+                    onClick={() => { setModalImage(null); setIsZoomed(false); }}
                 >
                     <img
                         src={modalImage}
                         alt="Enlarged view"
-                        className="max-w-full max-h-full object-contain cursor-default"
-                        onClick={(e) => e.stopPropagation()}
+                        className={`${isZoomed ? "max-w-none flex-shrink-0" : "max-w-full max-h-full object-contain"} ${isZoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'} transition-all duration-300`}
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            setIsZoomed(!isZoomed);
+                        }}
+                        title={isZoomed ? "축소하기" : "원본 크기로 확대하기"}
                     />
                     <button
-                        className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors duration-300"
-                        onClick={() => setModalImage(null)}
+                        className="fixed top-6 right-6 text-white/50 hover:text-white transition-colors duration-300 z-[110]"
+                        onClick={() => { setModalImage(null); setIsZoomed(false); }}
                         aria-label="Close modal"
                     >
-                        <svg className="w-10 h-10 md:w-12 md:h-12 border rounded-full p-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                        <svg className="w-10 h-10 md:w-12 md:h-12 border border-white/30 rounded-full p-2 bg-black/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
+                    {!isZoomed && (
+                        <div className="fixed bottom-10 left-1/2 -translate-x-1/2 text-white/70 text-sm font-light tracking-wide pointer-events-none">
+                            클릭 시 원본 해상도로 확대됩니다
+                        </div>
+                    )}
                 </div>
             )}
         </>
