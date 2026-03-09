@@ -49,7 +49,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* First Image Area */}
-                    <HoverImage src="./img/iotaone_01.jpg" alt="Central Plaza" onClick={setModalImage} />
+                    <HoverImage src="./img/iotaone_01.jpg" alt="Central Plaza" />
 
                     {/* Second Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
@@ -81,7 +81,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Second Image Area */}
-                    <HoverImage src="./img/iotaone_02.jpg" alt="Rooftop Garden" onClick={setModalImage} />
+                    <HoverImage src="./img/iotaone_02.jpg" alt="Rooftop Garden" />
 
                     {/* Third Item Area (Title Only) */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
@@ -91,7 +91,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Third Image Area */}
-                    <HoverImage src="./img/iotaone_03.jpg" alt="Rooftop Garden View" onClick={setModalImage} />
+                    <HoverImage src="./img/iotaone_03.jpg" alt="Rooftop Garden View" />
 
                     {/* Fourth Item Area (UAM) */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
