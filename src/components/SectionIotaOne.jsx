@@ -233,6 +233,62 @@ export default function SectionIotaOne() {
                     {/* Eighth Image Area */}
                     <HoverImage src="./img/iotaone_09.jpg" alt="Core Access" />
 
+                    <div className="mt-8 md:mt-12 w-full">
+                        <HoverImage src="./img/iotaone_10.jpg" alt="Core Access Details" />
+                    </div>
+
+                    {/* Ninth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            An Open Lounge for<br className="md:hidden" /> Collaboration and Inspiration
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        오피스 오픈라운지는 업무와 휴식, 개인과 조직의 경계를 유연하게 잇는 공간입니다.<br className="hidden md:block" />비공식 미팅, 협업, 리프레시 등 다양한 목적의 활동을 수용하며, 입주 기업 간의 자연스러운 교류와 창의적 사고를 촉진합니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        The Office Open Lounge at IOTA Seoul connects work, rest, and collaboration within a single, fluid environment.<br className="hidden md:block" />Designed to accommodate informal meetings, team discussions, and moments of refreshment, it fosters natural interaction and creative synergy among tenants.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Ninth Image Area */}
+                    <HoverImage src="./img/iotaone_11.jpg" alt="An Open Lounge for Collaboration and Inspiration" />
+
+                    {/* Tenth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            Main Hotel Lobby:<br className="md:hidden" /> {lang === 'kr' ? "남산의 풍경과 리츠칼튼의 품격이 만나는 공간" : "Where Namsan's Scenery Meets The Ritz-Carlton's Prestige"}
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        IOTA 서울의 호텔 메인 로비는 남산의 녹지와 시각적으로 이어지는 탁월한 개방감을 통해, 도심 속에서도 자연과의 조화를 경험할 수 있는 환대의 무대를 제공합니다.<br className="hidden md:block" />리츠칼튼이 지향하는 절제된 품격과 세련된 서비스 철학은 자연광, 조경, 소재의 질감이 어우러진 로비 공간에 녹아 있습니다. 서울의 중심에서 휴식과 영감이 공존하는 새로운 럭셔리의 시작점입니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        The main hotel lobby of IOTA Seoul offers a rare sense of openness, seamlessly connected to the greenery of Namsan.<br className="hidden md:block" />It embodies the refined hospitality philosophy of The Ritz-Carlton, where nature, light, and material texture converge to create a calm yet sophisticated atmosphere.<br className="hidden md:block" />More than a point of arrival, it serves as a new threshold of urban luxury — a place where rest and inspiration coexist in the heart of Seoul.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Tenth Image Area */}
+                    <HoverImage src="./img/iotaone_12.jpg" alt="Main Hotel Lobby" />
+
                 </div>
             </section>
         </>
