@@ -39,7 +39,7 @@ export default function SectionHotel() {
                     </div>
 
                     {/* Logo Area */}
-                    <div className="w-full md:w-auto flex justify-end bs-fade-up delay-200">
+                    <div className="w-full md:w-auto flex justify-center md:justify-end bs-fade-up delay-200">
                         <img src="./img/logo_ritzcarlton.png" alt="The Ritz-Carlton Logo" className="w-[120px] md:w-[160px] object-contain" />
                     </div>
                 </div>
