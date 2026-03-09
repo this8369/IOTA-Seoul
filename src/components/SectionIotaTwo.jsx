@@ -58,7 +58,7 @@ export default function SectionIotaTwo() {
                     <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] break-keep mb-6 md:mb-8">
                         Gateway Park:<br className="md:hidden" /> Connecting City and Nature
                     </h2>
-                    
+
                     <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter">
                         {lang === 'kr' ? (
                             <div className="break-keep">
@@ -86,7 +86,7 @@ export default function SectionIotaTwo() {
                 </div>
 
                 <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-start">
-                    
+
                     {/* Third Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
@@ -115,6 +115,98 @@ export default function SectionIotaTwo() {
 
                     {/* Third Image Area */}
                     <HoverImage src="./img/iotatwo_03.jpg" alt="Corporate Multi-Use Arena" />
+
+                    {/* Fourth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            Sky Garden:<br className="md:hidden" /> Where Nature Meets Skyline
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        이오타서울의 32층부터 34층을 자연스럽게 연결하는 스카이가든은 녹지와 쉼터가 어우러진 입체 보행 동선을 따라 누구나 자유롭게 걷고 휴식할 수 있는 오픈 공간입니다.<br className="hidden md:block" />
+                                        입주사 임직원은 물론 외부 방문객도 이용 가능한 이 공간은 서울역과 남산을 동시에 조망할 수 있는 파노라믹 시티뷰를 제공하며, 도심 한복판에서 자연과 일상이 만나는 경험을 제공합니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        Spanning the 32nd to 34th floors of IOTA Seoul, the Sky Garden is a continuous, landscaped walkway open to both tenants and the public.<br className="hidden md:block" />
+                                        Its intuitive vertical circulation and lush greenery create an elevated sanctuary where visitors can relax, recharge, and reconnect with nature. Framed by sweeping panoramic views of Namsan and Seoul Station,<br className="hidden md:block" />
+                                        this rooftop garden redefines what it means to pause and breathe—right in the heart of the city.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Fourth Image Area */}
+                    <HoverImage src="./img/iotatwo_04.jpg" alt="Sky Garden" />
+
+                    <div className="mt-8 md:mt-12 w-full">
+                        <HoverImage src="./img/iotatwo_05.jpg" alt="Sky Garden Details" />
+                    </div>
+
+                    {/* Fifth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            Event Space:<br className="md:hidden" /> Where Brands Shine, Culture Thrives, and the City Connects.
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        IOTA Two 최상층에 위치한 이벤트 스페이스는 서울 도심을 한눈에 내려다보는 파노라믹 시티뷰와 몰입형 미디어 월, 무빙 라이트 시스템 등 최첨단 무대 인프라를 갖춘 복합 문화 공간입니다.<br className="hidden md:block" />
+                                        브랜드 런칭, 컨퍼런스, 공연, 아트쇼 등 다양한 행사를 유치할 수 있으며, 토라노몬 힐스의 ‘Tokyo Node’처럼 비즈니스와 문화가 교차하는 도시의 새로운 상징이 될 것입니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        Located at the top of IOTA Seoul, the event space offers a panoramic skyline view and immersive media infrastructure—including full-surround digital walls and adaptive lighting systems.<br className="hidden md:block" />
+                                        Designed to host everything from brand showcases and corporate forums to live performances and digital art installations, this venue aspires to become a cultural landmark, much like 'Tokyo Node' at Toranomon Hills.<br className="hidden md:block" />
+                                        It’s where business meets creativity, and where Seoul’s future is staged.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Fifth Image Area */}
+                    <HoverImage src="./img/iotatwo_06.jpg" alt="Event Space" />
+
+                    {/* Sixth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            Sky Garden & Event Space:<br className="md:hidden" /> An Elevated Cultural Destination Above the City
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        IOTA 서울의 스카이가든과 이벤트 스페이스는 도심의 가장 높은 지점에서 자연과 예술, 그리고 도시의 풍경을 함께 경험할 수 있는 열린 문화 공간입니다.<br className="hidden md:block" />
+                                        남산과 서울 전경이 한눈에 펼쳐지는 이곳은 비즈니스 행사, 브랜드 런칭, 프라이빗 리셉션 등 다양한 프로그램을 통해 도심 속 새로운 커뮤니티 허브이자 상징적 랜드마크로 자리합니다.<br className="hidden md:block" />
+                                        야간에는 투명한 파빌리온 구조가 빛으로 물들어 서울 도심의 스카이라인을 완성하는 <strong>빛의 정원(Luminous Garden)</strong>으로 변모합니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        The Sky Garden and Event Space at IOTA Seoul serve as an open cultural venue above the city, where nature, art, and panoramic urban views come together in one extraordinary setting.<br className="hidden md:block" />
+                                        Overlooking both Namsan and the Seoul skyline, this elevated venue hosts business gatherings, brand events, and private receptions, becoming a new community hub and architectural landmark within the city.<br className="hidden md:block" />
+                                        By night, the glass pavilion glows softly against the skyline, transforming into a luminous garden in the sky that defines Seoul’s new horizon.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Sixth Image Area */}
+                    <HoverImage src="./img/iotatwo_07.jpg" alt="Sky Garden and Event Space" />
 
                 </div>
 
