@@ -16,7 +16,7 @@ export default function SectionNextGen() {
                 {/* TEXT CONTENT - CENTER ALIGNED */}
                 <div className="w-full max-w-[1000px] flex flex-col items-center text-center">
 
-                    <h2 className="text-[50px] md:text-[80px] lg:text-[100px] font-bold text-[#203225] leading-[0.9] tracking-tight mt-[80px] mb-[80px] font-inter bs-slide-left delay-200"
+                    <h2 className="text-[50px] md:text-[80px] lg:text-[100px] font-bold text-[#203225] leading-[0.9] tracking-[-0.03em] mt-[80px] mb-[80px] font-inter bs-slide-left delay-200"
                         style={{ fontWeight: 'bold' }}>
                         Next-Gen<br />Workplace
                     </h2>

@@ -21,7 +21,7 @@ export default function SectionHVAC() {
                         </div>
                     ) : (
                         <div className="w-full flex flex-col items-start text-left">
-                            <h2 className="text-[28px] md:text-[36px] lg:text-[42px] font-bold text-[#4B7053] tracking-[-0.01em] font-inter break-keep">
+                            <h2 className="text-[28px] md:text-[36px] lg:text-[42px] font-bold text-[#4B7053] tracking-[-0.03em] font-inter break-keep">
                                 AI-Driven Building HVAC +<br />Dedicated Zone Control Capabilities
                             </h2>
                         </div>

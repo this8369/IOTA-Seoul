@@ -17,7 +17,7 @@ export default function SectionSkyline() {
             <div className="w-full max-w-[1600px] mx-auto px-6 md:px-0 flex flex-col items-center text-center mb-12 bs-fade-up">
 
                 {/* Title styled identical to other pages without kr-target-text which removes boldness */}
-                <h2 className="text-[35px] md:text-[50px] lg:text-[60px] font-extrabold leading-[1.05] tracking-[-0.02em] font-inter mb-8 text-black"
+                <h2 className="text-[35px] md:text-[50px] lg:text-[60px] font-extrabold leading-[1.05] tracking-[-0.03em] font-inter mb-8 text-black"
                     data-en="2032 Projected Skyline"
                     data-kr="2032 Projected Skyline">
                     2032 Projected Skyline

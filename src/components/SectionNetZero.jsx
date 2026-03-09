@@ -10,7 +10,7 @@ export default function SectionNetZero() {
 
                 {/* BIG ENGLISH TITLE (Center Aligned) */}
                 <div className="w-full text-center mb-16 bs-fade-up delay-100">
-                    <h2 className="text-[50px] md:text-[80px] lg:text-[100px] font-extrabold tracking-tight leading-none font-inter text-gradient-wave">
+                    <h2 className="text-[50px] md:text-[80px] lg:text-[100px] font-extrabold tracking-[-0.03em] leading-none font-inter text-gradient-wave">
                         Net-Zero Ready
                     </h2>
                 </div>

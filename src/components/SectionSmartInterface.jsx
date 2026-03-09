@@ -12,7 +12,7 @@ export default function SectionSmartInterface() {
                 <div className="w-full max-w-[1100px] mx-auto flex flex-col bs-fade-up delay-100">
                     {lang === 'kr' ? (
                         <div className="w-full flex flex-col items-start text-left mb-10">
-                            <h2 className="text-[26px] md:text-[36px] lg:text-[42px] font-bold text-[#1a65a4] tracking-tight leading-tight mb-2 break-keep">
+                            <h2 className="text-[26px] md:text-[36px] lg:text-[42px] font-bold text-[#1a65a4] tracking-[-0.03em] leading-tight mb-2 break-keep">
                                 IOTA 전용 인터페이스를 통한 매끄러운 사용자 경험
                             </h2>
                             <h3 className="text-[28px] md:text-[32px] lg:text-[36px] font-bold text-[#333] tracking-[-0.01em] font-inter leading-[1.2]">
@@ -21,7 +21,7 @@ export default function SectionSmartInterface() {
                         </div>
                     ) : (
                         <div className="w-full flex flex-col items-start text-left mb-10">
-                            <h2 className="text-[36px] md:text-[46px] lg:text-[52px] font-bold text-[#1a65a4] tracking-[-0.01em] font-inter leading-[1.15] break-keep">
+                            <h2 className="text-[36px] md:text-[46px] lg:text-[52px] font-bold text-[#1a65a4] tracking-[-0.03em] font-inter leading-[1.15] break-keep">
                                 Seamless User Experience<br />through the IOTA Smart Interface
                             </h2>
                         </div>

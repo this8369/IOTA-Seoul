@@ -18,7 +18,7 @@ export default function SectionConstruction() {
                 {/* Text Overlay Box (Right side) */}
                 <div className="absolute right-0 top-0 bottom-0 w-[55%] flex flex-col justify-center pr-[5%] xl:pr-[10%] pl-8 z-10">
                     <div className="w-full max-w-[800px] bs-fade-up delay-100">
-                        <h2 className="text-[36px] xl:text-[46px] font-bold text-black tracking-[-0.01em] leading-tight mb-6 font-inter break-keep">
+                        <h2 className="text-[36px] xl:text-[46px] font-bold text-black tracking-[-0.03em] leading-tight mb-6 font-inter break-keep">
                             Global Top-Tier<br />Construction Company
                         </h2>
 
@@ -74,7 +74,7 @@ export default function SectionConstruction() {
                 {/* Text Section */}
                 <div className="w-full px-6 pt-[60px] flex flex-col bs-fade-up bg-white">
                     <div className="w-full max-w-[1000px] mx-auto text-center md:text-left">
-                        <h2 className="text-[32px] md:text-[42px] font-bold text-black tracking-[-0.01em] leading-tight mb-6 font-inter break-keep">
+                        <h2 className="text-[32px] md:text-[42px] font-bold text-black tracking-[-0.03em] leading-tight mb-6 font-inter break-keep">
                             Global Top-Tier<br className="hidden md:block" />Construction Company
                         </h2>
 

@@ -6,7 +6,7 @@ export default function Section3() {
             <div className="w-full max-w-[1600px] mx-auto">
                 <div className="w-full text-white flex flex-col pb-[50px] md:pb-[90px] px-6 md:px-0">
                     <h2
-                        className="text-[28px] md:text-[36px] font-extrabold tracking-normal mb-[60px] bs-fade-up font-inter">
+                        className="text-[28px] md:text-[36px] font-extrabold tracking-[-0.03em] mb-[60px] bs-fade-up font-inter">
                         <span data-en="PROPERTY OVERVIEW" data-kr="PROPERTY OVERVIEW">PROPERTY OVERVIEW</span>
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-y-[115px] md:gap-x-[63px]">

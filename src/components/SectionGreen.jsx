@@ -18,7 +18,7 @@ export default function SectionGreen() {
 
                 {/* TEXT CONTENT */}
                 <div className="w-full flex flex-col items-center mb-12 bs-fade-up">
-                    <h2 className="text-[40px] md:text-[50px] lg:text-[59px] font-extrabold text-[#2F4F4F] mb-2 leading-tight tracking-[-0.02em] font-inter text-center"
+                    <h2 className="text-[40px] md:text-[50px] lg:text-[59px] font-extrabold text-[#2F4F4F] mb-2 leading-tight tracking-[-0.03em] font-inter text-center"
                         data-en="Directly Connected to Namsan Park"
                         data-kr="Directly Connected to Namsan Park">
                         Directly Connected to Namsan Park

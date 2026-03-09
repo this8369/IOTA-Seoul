@@ -11,7 +11,7 @@ export default function Section4() {
                 className="w-full md:w-1/2 bg-[#1b2a1f] text-white flex flex-col justify-center px-8 md:px-12 lg:px-24 py-24 md:py-32 green-panel relative z-10">
                 <div className="max-w-2xl text-content-wrapper">
                     <h2
-                        className="text-[38px] md:text-[50px] font-bold tracking-normal font-inter mb-16 bs-fade-up delay-100">
+                        className="text-[38px] md:text-[50px] font-bold tracking-[-0.03em] font-inter mb-16 bs-fade-up delay-100">
                         Brand
                         Guidelines</h2>
                     <div className="space-y-12 text-[16px] md:text-[18px] leading-[1.8] font-inter">

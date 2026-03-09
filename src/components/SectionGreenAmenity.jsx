@@ -29,7 +29,7 @@ export default function SectionGreenAmenity() {
 
                 {/* TEXT CONTENT */}
                 <div className="w-full flex flex-col mb-16 bs-fade-up items-center">
-                    <h2 className="text-[40px] md:text-[50px] lg:text-[59px] font-extrabold text-[#2F4F4F] mb-2 leading-tight tracking-[-0.02em] font-inter text-center"
+                    <h2 className="text-[40px] md:text-[50px] lg:text-[59px] font-extrabold text-[#2F4F4F] mb-2 leading-tight tracking-[-0.03em] font-inter text-center"
                         data-en="Urban Office Meets Immersive Nature"
                         data-kr="Urban Office Meets Immersive Nature">
                         Urban Office Meets Immersive Nature

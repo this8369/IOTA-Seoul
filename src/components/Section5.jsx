@@ -21,9 +21,9 @@ export default function Section5() {
                                 className="font-bold text-[20px] md:text-[22px] text-gray-800 mb-2 font-inter tracking-tight">
                                 New Economy Cluster</div>
                             <h2
-                                className="text-[40px] md:text-[60px] lg:text-[84px] font-extrabold leading-none mb-10 text-black tracking-[-0.02em] font-inter">
+                                className="text-[40px] md:text-[60px] lg:text-[84px] font-extrabold leading-none mb-10 text-black tracking-[-0.03em] font-inter">
                                 SYBD <span
-                                    className="text-[11px] md:text-[13px] font-normal text-gray-500 align-middle tracking-normal">*Seoul
+                                    className="text-[11px] md:text-[13px] font-normal text-gray-500 align-middle tracking-[-0.03em]">*Seoul
                                     Yongsan Business District</span>
                             </h2>
                             <div className="mb-4">
@@ -106,7 +106,7 @@ export default function Section5() {
                                 data-kr="Unrivaled Accessibility" data-en="Unrivaled Accessibility">
                                 Unrivaled Accessibility</div>
                             <h2
-                                className="text-[40px] md:text-[50px] lg:text-[60px] font-extrabold leading-[1.05] mb-2 text-black tracking-[-0.02em] font-inter mt-4">
+                                className="text-[40px] md:text-[50px] lg:text-[60px] font-extrabold leading-[1.05] mb-2 text-black tracking-[-0.03em] font-inter mt-4">
                                 Korea's Central Station<br />and Mega Transport Hub
                             </h2>
                             <div className="mb-4 mt-6">
@@ -163,8 +163,8 @@ export default function Section5() {
                 <div className="w-full flex flex-col pt-16 px-6 md:px-12 bs-fade-up">
                     <div className="font-bold text-[18px] text-gray-800 mb-2 font-inter tracking-tight">
                         New Economy Cluster</div>
-                    <h2 className="text-[32px] md:text-[45px] font-extrabold leading-none mb-6 text-black tracking-[-0.02em] font-inter">
-                        SYBD <span className="text-[11px] md:text-[13px] font-normal text-gray-500 align-middle tracking-normal">*Seoul Yongsan Business District</span>
+                    <h2 className="text-[32px] md:text-[45px] font-extrabold leading-none mb-6 text-black tracking-[-0.03em] font-inter">
+                        SYBD <span className="text-[11px] md:text-[13px] font-normal text-gray-500 align-middle tracking-[-0.03em]">*Seoul Yongsan Business District</span>
                     </h2>
                     <div className="mb-4">
                         <h3 className="text-[16px] md:text-[20px] font-bold text-[#3B7062] tracking-[-0.02em]"
@@ -245,7 +245,7 @@ export default function Section5() {
                     <div className="font-bold text-[18px] md:text-[22px] text-gray-800 mb-2 font-inter tracking-tight"
                         data-kr="Unrivaled Accessibility" data-en="Unrivaled Accessibility">
                         Unrivaled Accessibility</div>
-                    <h2 className="text-[32px] md:text-[45px] font-extrabold leading-[1.1] mb-4 text-black tracking-[-0.02em] font-inter">
+                    <h2 className="text-[32px] md:text-[45px] font-extrabold leading-[1.1] mb-4 text-black tracking-[-0.03em] font-inter">
                         Korea's Central Station<br />and Mega Transport Hub
                     </h2>
                     <div className="mb-4">

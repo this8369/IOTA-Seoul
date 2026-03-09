@@ -9,7 +9,7 @@ export default function SectionNextGenStandard() {
                 {/* TEXT CONTENT - LEFT ALIGNED AS IN DESIGN */}
                 <div className="w-full max-w-[1400px] flex flex-col justify-start bs-fade-up delay-200 mb-8 md:mb-12">
 
-                    <h2 className="text-[32px] md:text-[50px] lg:text-[60px] font-bold text-[#203225] leading-[1.1] tracking-tight mb-2 md:mb-4 font-inter"
+                    <h2 className="text-[32px] md:text-[50px] lg:text-[60px] font-bold text-[#203225] leading-[1.1] tracking-[-0.03em] mb-2 md:mb-4 font-inter"
                         style={{ fontWeight: 'bold' }}>
                         A New Office Standard for the AI Era
                     </h2>

@@ -21,7 +21,7 @@ export default function SectionScale() {
             {/* MARQUEE TEXT */}
             <div className="w-full relative mb-12 md:mb-20 bs-fade-up">
                 <div className="flex w-fit animate-marquee">
-                    <h2 className="text-[120px] md:text-[200px] lg:text-[250px] font-black text-white tracking-tighter leading-none whitespace-nowrap">
+                    <h2 className="text-[120px] md:text-[200px] lg:text-[250px] font-black text-white tracking-[-0.03em]er leading-none whitespace-nowrap">
                         Unmatched Scale Unmatched Scale Unmatched Scale Unmatched Scale Unmatched Scale&nbsp;
                     </h2>
                 </div>

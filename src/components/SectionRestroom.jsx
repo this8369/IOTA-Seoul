@@ -21,7 +21,7 @@ export default function SectionRestroom() {
                         </div>
                     ) : (
                         <div className="w-full flex flex-col items-start text-left">
-                            <h2 className="text-[28px] md:text-[38px] lg:text-[46px] font-bold text-[#6B3F3A] tracking-[-0.01em] font-inter break-keep">
+                            <h2 className="text-[28px] md:text-[38px] lg:text-[46px] font-bold text-[#6B3F3A] tracking-[-0.03em] font-inter break-keep">
                                 Privacy-Focused Restroom Design
                             </h2>
                         </div>

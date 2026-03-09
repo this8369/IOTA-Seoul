@@ -44,7 +44,7 @@ export default function SectionElevator() {
                             </div>
                         ) : (
                             <div className="w-full flex flex-col items-start text-left">
-                                <h2 className="text-[32px] md:text-[38px] lg:text-[46px] font-bold text-[#4a342a] tracking-[-0.01em] font-inter leading-[1.25] mb-8 break-keep">
+                                <h2 className="text-[32px] md:text-[38px] lg:text-[46px] font-bold text-[#4a342a] tracking-[-0.03em] font-inter leading-[1.25] mb-8 break-keep">
                                     Korea's Largest Elevator with<br />Direct Vehicle & Heavy-Equipment Access
                                 </h2>
 

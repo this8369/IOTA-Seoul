@@ -14,7 +14,7 @@ export default function SectionAIReady() {
 
                         {/* Title - right above the image */}
                         <div className="w-full mb-[30px] shrink-0 text-center">
-                            <h2 className="text-[32px] md:text-[45px] lg:text-[46px] xl:text-[50px] font-extrabold text-black tracking-[-0.02em] font-inter leading-tight">
+                            <h2 className="text-[32px] md:text-[45px] lg:text-[46px] xl:text-[50px] font-extrabold text-black tracking-[-0.03em] font-inter leading-tight">
                                 AI Driven Biomorphic Workplace Framework
                             </h2>
                         </div>
@@ -78,7 +78,7 @@ export default function SectionAIReady() {
                 <div id="ai-scroll-area-m" className="lg:hidden w-full relative h-[300vh] bs-fade-up delay-200">
                     <div className="w-full h-[100vh] sticky top-0 left-0 flex flex-col justify-center overflow-hidden py-[5vh]">
                         <div className="w-full mb-[20px] shrink-0 text-center">
-                            <h2 className="text-[28px] md:text-[36px] font-extrabold text-black tracking-[-0.02em] font-inter leading-tight">
+                            <h2 className="text-[28px] md:text-[36px] font-extrabold text-black tracking-[-0.03em] font-inter leading-tight">
                                 AI Driven Biomorphic Workplace Framework
                             </h2>
                         </div>
