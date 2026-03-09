@@ -25,7 +25,7 @@ export default function SectionIotaOne() {
                             A Grand Stage Between City and Nature
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -57,7 +57,7 @@ export default function SectionIotaOne() {
                             Rooftop Garden:<br className="md:hidden" /> Nature at Your Office Doorstep
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -99,7 +99,7 @@ export default function SectionIotaOne() {
                             UAM Vertiport
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -131,7 +131,7 @@ export default function SectionIotaOne() {
                             Hotel Podium Garden:<br className="md:hidden" /> A Private Oasis Framed by Namsan
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -157,7 +157,7 @@ export default function SectionIotaOne() {
                             The Hotel Podium Garden at Dusk
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -187,7 +187,7 @@ export default function SectionIotaOne() {
                             An Expansive Lobby Experience<br className="md:hidden" /> at the Heart of the City
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -213,7 +213,7 @@ export default function SectionIotaOne() {
                             Core Access:<br className="md:hidden" /> {lang === 'kr' ? "수직적 깊이감이 만든 정제된 입면" : "A Refined Façade Forged by Vertical Depth"}
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -243,7 +243,7 @@ export default function SectionIotaOne() {
                             An Open Lounge for<br className="md:hidden" /> Collaboration and Inspiration
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -269,7 +269,7 @@ export default function SectionIotaOne() {
                             Main Hotel Lobby:<br className="md:hidden" /> {lang === 'kr' ? "남산의 풍경과 리츠칼튼의 품격이 만나는 공간" : "Where Namsan's Scenery Meets The Ritz-Carlton's Prestige"}
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -295,7 +295,7 @@ export default function SectionIotaOne() {
                             Hotel VIP Lounge:<br className="md:hidden" /> {lang === 'kr' ? "도심의 정점에서 누리는 프라이빗 럭셔리" : "Private Luxury at the Pinnacle of the City"}
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -342,7 +342,7 @@ export default function SectionIotaOne() {
                             A Wellness Center<br className="md:hidden" /> for Immersion and Recovery
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -372,7 +372,7 @@ export default function SectionIotaOne() {
                             Wellness Center Innovation Hub<br className="md:hidden" /> – Where Collaboration Inspires Innovation
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -400,7 +400,7 @@ export default function SectionIotaOne() {
                             Wellness Center Member's Club<br className="md:hidden" /> – A Private Hub for Rest and Connection
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -430,7 +430,7 @@ export default function SectionIotaOne() {
                             Immersive Gallery:<br className="md:hidden" /> A Convergence of Art, Tech, and Emotion
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">

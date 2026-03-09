@@ -28,7 +28,7 @@ export default function SectionIotaTwo() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -59,7 +59,7 @@ export default function SectionIotaTwo() {
                         Gateway Park:<br className="md:hidden" /> Connecting City and Nature
                     </h2>
 
-                    <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter">
+                    <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter">
                         {lang === 'kr' ? (
                             <div className="break-keep">
                                 <p className="mb-4">
@@ -93,7 +93,7 @@ export default function SectionIotaTwo() {
                             Corporate Multi-Use Arena:<br className="md:hidden" /> Versatile, Urban, Inspiring
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -122,7 +122,7 @@ export default function SectionIotaTwo() {
                             Sky Garden:<br className="md:hidden" /> Where Nature Meets Skyline
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -155,7 +155,7 @@ export default function SectionIotaTwo() {
                             Event Space:<br className="md:hidden" /> Where Brands Shine, Culture Thrives, and the City Connects.
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -184,7 +184,7 @@ export default function SectionIotaTwo() {
                             Sky Garden & Event Space:<br className="md:hidden" /> An Elevated Cultural Destination Above the City
                         </h2>
 
-                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep">
                                     <p className="mb-4">
@@ -207,6 +207,120 @@ export default function SectionIotaTwo() {
 
                     {/* Sixth Image Area */}
                     <HoverImage src="./img/iotatwo_07.jpg" alt="Sky Garden and Event Space" />
+
+                    <div className="mt-8 md:mt-12 w-full">
+                        <HoverImage src="./img/iotatwo_08.jpg" alt="Sky Garden and Event Space Details" />
+                    </div>
+
+                    {/* Seventh Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            {lang === 'kr' ? (
+                                <>IOTA Two 메인 로비:<br className="md:hidden" /> 도시의 흐름이 만나는 건물의 중심</>
+                            ) : (
+                                <>IOTA Two Main Lobby:<br className="md:hidden" /> Where the City's Flow Meets Architecture</>
+                            )}
+                        </h2>
+
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        IOTA Two의 메인로비는 외부 도시 레벨과 자연스럽게 연결되는 개방형 진입공간(Open Urban Lobby)으로 설계되었습니다.<br className="hidden md:block" />
+                                        남산에서 내려오는 녹지와 서울역으로 이어지는 보행축이 내부로 스며들며, 실내에서도 자연과 도시의 흐름을 동시에 느낄 수 있는 공간적 연속성을 구현합니다.<br className="hidden md:block" />
+                                        수직으로 확장된 천정고와 자연광, 그리고 그린 마감재의 조화는 입주자에게 도시 속에서도 여유와 품격을 동시에 경험하게 하는 환영의 공간을 완성합니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        The Main Lobby of IOTA Two is conceived as an open urban gateway, seamlessly integrating the flow of the city into the architecture.<br className="hidden md:block" />
+                                        Greenery descending from Namsan extends inward, merging with the pedestrian axis toward Seoul Station, creating a sense of spatial continuity between nature and the urban realm.<br className="hidden md:block" />
+                                        The grand vertical height, natural light, and refined green finishes offer tenants a tranquil yet sophisticated arrival experience at the heart of the city.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Seventh Image Area */}
+                    <HoverImage src="./img/iotatwo_09.jpg" alt="IOTA Two Main Lobby" />
+
+                </div>
+
+                {/* Full Width Image Area (iotatwo_10) */}
+                <div className="w-full mt-24 md:mt-32">
+                    <HoverImage src="./img/iotatwo_10.jpg" alt="Main Lobby View" className="w-full h-auto object-cover block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
+                </div>
+
+                {/* Reopen restricted container */}
+                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-start pt-24 md:pt-32">
+
+                    {/* Eighth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            {lang === 'kr' ? (
+                                <>IOTA Two 메인 로비:<br className="md:hidden" /> 정제된 개방감과 건축적 질서</>
+                            ) : (
+                                <>IOTA Two Main Lobby:<br className="md:hidden" /> Refined Openness and Architectural Order</>
+                            )}
+                        </h2>
+
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        IOTA Two의 Core Access는 건축의 구조미와 재료의 질감을 통해 공간의 '이동'을 '경험'으로 확장시킨 구간입니다.<br className="hidden md:block" />
+                                        엄선된 소재의 깊은 결, 수직 리듬을 이루는 패널, 자연광의 미묘한 반사는 기능과 미학이 균형을 이루는 정제된 질서감을 만들어냅니다.<br className="hidden md:block" />
+                                        단순한 진입 통로가 아니라, IOTA Two의 정체성과 품격을 시각적으로 인식하게 하는 첫 번째 순간으로 작동합니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        The Core Access Zone of IOTA Two transforms movement into a refined architectural experience.<br className="hidden md:block" />
+                                        The interplay of carefully selected materials, rhythmic panels, and shifting natural light creates a composed balance between function and form.<br className="hidden md:block" />
+                                        Here, order and material craft converge, defining the building's architectural identity.<br className="hidden md:block" />
+                                        It is not merely a passage, but the first visual encounter with IOTA Two's precision and dignity.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Eighth Image Area */}
+                    <HoverImage src="./img/iotatwo_11.jpg" alt="Main Lobby Core Access" />
+
+                    {/* Ninth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            Office Open Lounge:<br className="md:hidden" /> Where Connection Meets Calm
+                        </h2>
+
+                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        IOTA Two의 오픈라운지는 업무의 긴장감과 도심의 밀도를 완화하는 쉼의 공간으로 설계되었습니다.<br className="hidden md:block" />
+                                        자연광이 깊숙이 스며드는 투명한 파사드와 녹음이 가득한 내부 조경은, 사람 중심의 웰니스 오피스라는 IOTA의 철학을 드러냅니다.<br className="hidden md:block" />
+                                        이곳은 자유로운 미팅, 비공식적 교류, 짧은 휴식이 공존하는 하이브리드 공간으로, 입주자들에게 생산성과 감성적 회복을 동시에 제공하는 오피스의 새로운 유형을 제시합니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        The Open Lounge at IOTA Two is designed as a serene retreat within the city's dynamic rhythm.<br className="hidden md:block" />
+                                        Natural light floods through the transparent façade, while lush greenery softens the spatial tension, embodying the essence of a human-centered wellness workplace.<br className="hidden md:block" />
+                                        It serves as a flexible zone for informal meetings, quiet reflection, and spontaneous collaboration<br className="hidden md:block" />
+                                        —a space that balances productivity with emotional restoration, redefining what modern office life can be.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Ninth Image Area */}
+                    <HoverImage src="./img/iotatwo_12.jpg" alt="Office Open Lounge" />
 
                 </div>
 
