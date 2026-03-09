@@ -334,6 +334,128 @@ export default function SectionIotaOne() {
                     <HoverImage src="./img/iotaone_15.jpg" alt="Hotel EV Hall Details" />
                 </div>
 
+                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-start">
+
+                    {/* Fourteenth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            A Wellness Center<br className="md:hidden" /> for Immersion and Recovery
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        IOTA 서울의 웰니스 센터는 현대 비즈니스 리더를 위한 신체적 회복과 정신적 리셋의 균형 공간으로 설계되었습니다.<br className="hidden md:block" />
+                                        자연과 연결된 명상실(Meditation Room)은 몰입과 정화를 돕는 디지털 환경을 구현하며, 피트니스 존은 채광, 공기질, 리듬감 있는 조명 설계를 통해 최적의 컨디션을 유지할 수 있는 공간을 제공합니다.<br className="hidden md:block" />
+                                        단순한 운동 시설을 넘어, 조직의 지속 가능성과 개인의 집중력을 함께 강화하는 하이엔드 워크플레이스 웰니스 허브로 기능합니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        The Wellness Center at IOTA Seoul is designed as a space for both physical renewal and mental clarity, catering to modern business leaders seeking balance.<br className="hidden md:block" />
+                                        The Meditation Room, connected to digital landscapes inspired by nature, enhances focus and mindfulness, while the fitness zone optimizes performance through natural light, clean air, and rhythmically controlled lighting design.<br className="hidden md:block" />
+                                        The center serves as a high-end workplace wellness hub, empowering both individual concentration and organizational sustainability.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Fourteenth Image Area */}
+                    <HoverImage src="./img/iotaone_16.jpg" alt="A Wellness Center for Immersion and Recovery" />
+
+                    {/* Fifteenth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            Wellness Center Innovation Hub<br className="md:hidden" /> – Where Collaboration Inspires Innovation
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        자연광과 녹지, 디지털 인터페이스가 결합된 이 공간은 정신적 여유와 창의적 몰입을 동시에 자극하는 환경을 제공합니다.<br className="hidden md:block" />
+                                        입주 기업들은 이곳에서 워크숍, 브랜딩 세션, 공동 연구를 통해 조직의 경계를 넘어서는 새로운 시너지를 창출하게 됩니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        Blending natural light, greenery, and digital interfaces, the space stimulates both mental clarity and creative engagement.<br className="hidden md:block" />
+                                        Tenant companies utilize this environment for workshops, branding sessions, and joint projects, fostering synergies that transcend organizational boundaries.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Fifteenth Image Area */}
+                    <HoverImage src="./img/iotaone_17.jpg" alt="Wellness Center Innovation Hub" />
+
+                    {/* Sixteenth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            Wellness Center Member's Club<br className="md:hidden" /> – A Private Hub for Rest and Connection
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        IOTA 서울의 <strong>멤버스 클럽(Member's Club)</strong>은 입주 기업과 핵심 구성원을 위한 프라이빗 커뮤니티 라운지로, 비즈니스와 휴식이 자연스럽게 이어지는 새로운 형태의 워크·라이프 플랫폼입니다.<br className="hidden md:block" />
+                                        남산의 녹지를 향한 개방감 속에서, 이용자들은 사적 미팅, 브랜딩 이벤트, 네트워킹 세션 등을 통해 기업 간 교류와 협업을 심화시킬 수 있습니다.<br className="hidden md:block" />
+                                        AI 기반 서비스, 로봇 어시스턴트 등 첨단 기술이 더해져, 정제된 프라이버시와 최첨단 편의가 공존하는 비즈니스 오아시스를 완성합니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        The Member's Club at IOTA Seoul is a private community lounge designed for tenants and key executives, offering a seamless blend of business interaction and personal retreat.<br className="hidden md:block" />
+                                        With panoramic views of Namsan's greenery, the space enables private meetings, branding events, and cross-company networking sessions in a relaxed yet sophisticated environment.<br className="hidden md:block" />
+                                        Enhanced by AI-driven concierge services and robotic assistance, it embodies a refined balance between privacy, intelligence, and connection — a true business oasis in the heart of the city.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Sixteenth Image Area */}
+                    <HoverImage src="./img/iotaone_18.jpg" alt="Wellness Center Member's Club" />
+
+                    {/* Seventeenth Item Area */}
+                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                            Immersive Gallery:<br className="md:hidden" /> A Convergence of Art, Tech, and Emotion
+                        </h2>
+
+                        <div className="w-full max-w-[1300px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                            {lang === 'kr' ? (
+                                <div className="break-keep">
+                                    <p className="mb-4">
+                                        IOTA 서울의 이머시브 갤러리(Immersive Gallery)는 예술과 기술, 그리고 공간이 하나로 융합되는 체험 중심의 미디어 아트 플랫폼입니다.<br className="hidden md:block" />
+                                        디지털 인터랙션, 빛, 사운드, 데이터 시각화가 결합되어, 방문객은 예술을 '관람'하는 것이 아니라 직접 '경험'하고 '몰입'하게 됩니다.<br className="hidden md:block" />
+                                        오피스와 호텔, 웰니스센터를 잇는 감성적 축으로서, 도심 속에서도 예술적 휴식과 창의적 영감을 동시에 제공하는 IOTA 서울의 문화적 아이콘으로 자리할 것입니다.
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <p className="mb-4">
+                                        The Immersive Gallery at IOTA Seoul is a media art platform where art, technology, and architecture converge into a unified sensory experience.<br className="hidden md:block" />
+                                        Through dynamic integrations of light, sound, and data visualization, visitors do not merely observe art—they enter and become part of it.<br className="hidden md:block" />
+                                        As an emotional and cultural axis linking the Ritz-Carlton Hotel, Offices, and Wellness Center, the gallery provides both aesthetic respite and creative inspiration, establishing itself as a cultural landmark within IOTA Seoul.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Seventeenth Image Area */}
+                    <HoverImage src="./img/iotaone_19.jpg" alt="Immersive Gallery" />
+
+                </div>
+
             </section>
         </>
     );
