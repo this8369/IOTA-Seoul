@@ -172,7 +172,7 @@ export default function SectionIotaOne() {
             {/* Image Modal */}
             {modalImage && createPortal(
                 <div
-                    className={`fixed inset-0 z-[99999] flex ${isZoomed ? 'items-start justify-start overflow-auto p-0' : 'items-center justify-center p-4 md:p-10'} bg-black/95 cursor-zoom-out bs-fade-up`}
+                    className={`fixed inset-0 z-[99999] flex ${isZoomed ? 'items-start justify-start overflow-auto p-0' : 'items-center justify-center p-4 md:p-10'} bg-black/95 cursor-zoom-out`}
                     onClick={() => { setModalImage(null); setIsZoomed(false); }}
                 >
                     <img
