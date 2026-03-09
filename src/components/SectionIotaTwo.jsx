@@ -302,26 +302,6 @@ export default function SectionIotaTwo() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[14px] md:text-[17px] font-extralight text-gray-600 leading-[1.8] tracking-[-0.01em] font-inter mb-10 md:mb-14">
-                            {lang === 'kr' ? (
-                                <div className="break-keep">
-                                    <p className="mb-4">
-                                        IOTA Two의 Core Access는 건축의 구조미와 재료의 질감을 통해 공간의 '이동'을 '경험'으로 확장시킨 구간입니다.<br className="hidden md:block" />
-                                        엄선된 소재의 깊은 결, 수직 리듬을 이루는 패널, 자연광의 미묘한 반사는 기능과 미학이 균형을 이루는 정제된 질서감을 만들어냅니다.<br className="hidden md:block" />
-                                        단순한 진입 통로가 아니라, IOTA Two의 정체성과 품격을 시각적으로 인식하게 하는 첫 번째 순간으로 작동합니다.
-                                    </p>
-                                </div>
-                            ) : (
-                                <div>
-                                    <p className="mb-4">
-                                        The Core Access Zone of IOTA Two transforms movement into a refined architectural experience.<br className="hidden md:block" />
-                                        The interplay of carefully selected materials, rhythmic panels, and shifting natural light creates a composed balance between function and form.<br className="hidden md:block" />
-                                        Here, order and material craft converge, defining the building's architectural identity.<br className="hidden md:block" />
-                                        It is not merely a passage, but the first visual encounter with IOTA Two's precision and dignity.
-                                    </p>
-                                </div>
-                            )}
-                        </div>
                     </div>
 
                     {/* Eighth Image Area */}
