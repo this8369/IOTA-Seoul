@@ -10,13 +10,12 @@ export default function SectionIotaOne() {
 
                 {/* Text Area */}
                 <div className="flex flex-col w-full bs-fade-up">
-                    <h2 className="text-[32px] md:text-[52px] xl:text-[60px] font-inter font-bold text-white tracking-[-0.03em] leading-[1.15] mb-8 break-keep">
+                    <h2 className="text-[22px] md:text-[42px] xl:text-[50px] font-inter font-bold text-white tracking-[-0.03em] leading-[1.15] mb-8 break-keep">
                         Central Plaza:<br />
-                        A Grand Stage Between<br />
-                        City and Nature
+                        A Grand Stage Between City and Nature
                     </h2>
 
-                    <div className="w-full max-w-[1200px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-12 md:mb-16">
+                    <div className="w-full max-w-[1000px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-12 md:mb-16">
                         {lang === 'kr' ? (
                             <div className="break-keep">
                                 <p className="mb-4">
@@ -44,6 +43,44 @@ export default function SectionIotaOne() {
                     <img
                         src="./img/iotaone_01.jpg"
                         alt="Central Plaza"
+                        className="w-full aspect-[4/3] md:aspect-auto md:h-auto object-cover block transform transition-transform duration-[2s] group-hover:scale-[1.03]"
+                    />
+                </div>
+
+                {/* Second Item Area */}
+                <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                    <h2 className="text-[22px] md:text-[42px] xl:text-[50px] font-inter font-bold text-white tracking-[-0.03em] leading-[1.15] mb-8 break-keep">
+                        Rooftop Garden:<br className="md:hidden" /> Nature at Your Office Doorstep
+                    </h2>
+
+                    <div className="w-full max-w-[1000px] text-[14px] md:text-[17px] font-extralight text-stone-300 leading-[1.8] tracking-[-0.01em] font-inter mb-12 md:mb-16">
+                        {lang === 'kr' ? (
+                            <div className="break-keep">
+                                <p className="mb-4">
+                                    이오타1의 옥상정원은 사방이 녹지로 둘러싸인 조경형 휴식 공간으로, 업무 중에도 마치 남산 자락에 올라온 듯한 자연을 누릴 수 있습니다.
+                                </p>
+                                <p>
+                                    서울 도심 한복판에서 진정한 '그린 리트릿'을 경험하며, 탁 트인 남산 전망과 함께 재충전과 영감을 동시에 얻을 수 있는 특별한 장소입니다.
+                                </p>
+                            </div>
+                        ) : (
+                            <div>
+                                <p className="mb-4">
+                                    The rooftop garden of IOTA One offers a lush, landscaped retreat surrounded by greenery. It provides a serene atmosphere where tenants can recharge as if they've stepped into the hills of Namsan—without ever leaving the office.
+                                </p>
+                                <p>
+                                    With unobstructed views of Namsan Park and an immersive natural setting, this space brings wellness, inspiration, and tranquility into the everyday work experience.
+                                </p>
+                            </div>
+                        )}
+                    </div>
+                </div>
+
+                {/* Second Image Area */}
+                <div className="w-full relative overflow-hidden group bs-fade-up delay-200 mb-10 md:mb-0">
+                    <img
+                        src="./img/iotaone_02.jpg"
+                        alt="Rooftop Garden"
                         className="w-full aspect-[4/3] md:aspect-auto md:h-auto object-cover block transform transition-transform duration-[2s] group-hover:scale-[1.03]"
                     />
                 </div>
