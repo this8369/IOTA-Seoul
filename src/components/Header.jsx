@@ -73,11 +73,8 @@ export default function Header() {
                             <a href="#section-iotaone" onClick={(e) => handleScrollTo(e, 'section-iotaone')} className="hover:text-gray-500 transition-colors duration-200">
                                 IOTA One
                             </a>
-                            <a href="#" className="hover:text-gray-500 transition-colors duration-200">
-                                Insights
-                            </a>
-                            <a href="#" className="hover:text-gray-500 transition-colors duration-200">
-                                Careers
+                            <a href="#section-iotatwo" onClick={(e) => handleScrollTo(e, 'section-iotatwo')} className="hover:text-gray-500 transition-colors duration-200">
+                                IOTA Two
                             </a>
                             <a href="#" className="hover:text-gray-500 transition-colors duration-200">
                                 News
@@ -116,8 +113,7 @@ export default function Header() {
                 <a href="#section-design" onClick={(e) => handleScrollTo(e, 'section-design')} className="text-[16px] font-normal text-gray-800">Design</a>
                 <a href="#section-hotel" onClick={(e) => handleScrollTo(e, 'section-hotel')} className="text-[16px] font-normal text-gray-800">Ritz-Carlton</a>
                 <a href="#section-iotaone" onClick={(e) => handleScrollTo(e, 'section-iotaone')} className="text-[16px] font-normal text-gray-800">IOTA One</a>
-                <a href="#" className="text-[16px] font-normal text-gray-800">Insights</a>
-                <a href="#" className="text-[16px] font-normal text-gray-800">Careers</a>
+                <a href="#section-iotatwo" onClick={(e) => handleScrollTo(e, 'section-iotatwo')} className="text-[16px] font-normal text-gray-800">IOTA Two</a>
                 <a href="#" className="text-[16px] font-normal text-gray-800">News</a>
                 <div className="flex space-x-6 pt-4 border-t border-gray-200 justify-center">
                     <button className="text-sm font-bold text-gray-800 hover:text-gray-500" onClick={() => switchLang('en')}>EN</button>

@@ -26,6 +26,7 @@ import SectionDesign from './components/SectionDesign';
 import SectionConstruction from './components/SectionConstruction';
 import SectionHotel from './components/SectionHotel';
 import SectionIotaOne from './components/SectionIotaOne';
+import SectionIotaTwo from './components/SectionIotaTwo';
 import { useAnimations } from './hooks/useAnimations';
 
 export default function App() {
@@ -60,6 +61,7 @@ export default function App() {
       <SectionConstruction />
       <SectionHotel />
       <SectionIotaOne />
+      <SectionIotaTwo />
     </div>
   );
 }
