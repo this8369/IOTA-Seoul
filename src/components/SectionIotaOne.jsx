@@ -316,6 +316,24 @@ export default function SectionIotaOne() {
                     <HoverImage src="./img/iotaone_13.jpg" alt="Hotel VIP Lounge" />
 
                 </div>
+
+                {/* Twelfth Item Area - Hotel EV Hall */}
+                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-start bs-fade-up mt-24 md:mt-32 mb-6 md:mb-8">
+                    <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] break-keep">
+                        Hotel EV Hall
+                    </h2>
+                </div>
+
+                {/* Twelfth Image Area (Full Width) */}
+                <div className="w-full">
+                    <HoverImage src="./img/iotaone_14.jpg" alt="Hotel EV Hall" className="w-full h-auto object-cover block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
+                </div>
+
+                {/* Thirteenth Image Area (1000px Width) */}
+                <div className="w-[calc(100%-48px)] md:w-full max-w-[1000px] mx-auto mt-8 md:mt-12">
+                    <HoverImage src="./img/iotaone_15.jpg" alt="Hotel EV Hall Details" />
+                </div>
+
             </section>
         </>
     );
