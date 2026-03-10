@@ -164,9 +164,9 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                         </div>
                     </div>
                     <div className="min-[1100px]:hidden flex items-center space-x-4">
-                        <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="focus:outline-none w-8 h-8 flex flex-col justify-center items-end gap-[6px]">
-                            <span className="block w-[26px] h-[2px] bg-black"></span>
-                            <span className="block w-[26px] h-[2px] bg-black"></span>
+                        <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="focus:outline-none w-[40px] h-10 flex flex-col justify-center items-end gap-[8px]">
+                            <span className="block w-[39px] h-[2px] bg-black"></span>
+                            <span className="block w-[39px] h-[2px] bg-black"></span>
                         </button>
                     </div>
                 </div>
