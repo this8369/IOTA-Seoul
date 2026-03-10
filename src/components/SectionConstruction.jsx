@@ -75,7 +75,7 @@ export default function SectionConstruction() {
                 <div className="w-full px-6 pt-[60px] flex flex-col bs-fade-up bg-white">
                     <div className="w-full max-w-[1000px] mx-auto text-center md:text-left">
                         <h2 className="text-[32px] md:text-[42px] font-bold text-black tracking-[-0.03em] leading-tight mb-6 font-inter break-keep">
-                            Global Top-Tier<br className="hidden md:block" />Construction Company
+                            Global Top-Tier<br />Construction Company
                         </h2>
 
                         {lang === 'kr' ? (

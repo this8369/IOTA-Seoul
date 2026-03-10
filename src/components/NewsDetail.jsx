@@ -3,7 +3,8 @@ import React, { useEffect } from 'react';
 export default function NewsDetail({ article, onBack }) {
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, []);
+        setTimeout(() => window.scrollTo(0, 0), 100);
+    }, [article]);
 
     if (!article) return null;
 

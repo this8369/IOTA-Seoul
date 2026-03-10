@@ -40,7 +40,7 @@ export default function SectionScale() {
 
                     <h3 className="text-[32px] md:text-[45px] lg:text-[55px] font-extrabold text-white tracking-tight font-inter leading-tight mt-[30px]"
                         data-en="Iconic Trophy Asset in Seoul"
-                        data-kr="도심 핵심지에서의 초대형 복합 사업">
+                        data-kr="도심 핵심지에서의<br class='md:hidden' /> 초대형 복합 사업">
                         Iconic Trophy Asset in Seoul
                     </h3>
 
