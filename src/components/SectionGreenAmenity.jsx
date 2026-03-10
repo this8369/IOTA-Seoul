@@ -69,7 +69,7 @@ export default function SectionGreenAmenity() {
                                         style={{ transitionDelay: `${i * 300}ms` }}>
                                     </div>
                                     {/* Image */}
-                                    <img src={`./img/green_0${num}.png`} alt={`Green Amenity ${num}`}
+                                    <img src={`./img/green_0${num}.jpg`} alt={`Green Amenity ${num}`}
                                         className={`amenity-image absolute inset-0 w-full h-full object-cover z-0 ${stage >= 2 ? 'opacity-100' : 'opacity-0 duration-0'}`} />
                                 </div>
                                 <div className={`text-center transition-all ${stage === 2 ? 'opacity-100 translate-y-0 duration-[1000ms] ease-out' : 'opacity-0 translate-y-4 duration-0'}`} style={{ transitionDelay: stage === 2 ? '1800ms' : '0ms' }}>
