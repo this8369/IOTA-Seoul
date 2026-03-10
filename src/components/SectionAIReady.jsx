@@ -84,11 +84,11 @@ export default function SectionAIReady() {
 
                         <div className="relative w-[100vw] ml-[calc(50%-50vw)] flex-1 min-h-0 flex items-center justify-center">
                             <img src="./img/AI_ready_building_m_01.jpg" alt="AI Ready Mobile 1" id="ai-img-m-1"
-                                className="absolute object-cover w-full h-full transition-opacity duration-1000 ease-in-out" />
+                                className="absolute object-contain w-full h-full transition-opacity duration-1000 ease-in-out" />
                             <img src="./img/AI_ready_building_m_02.jpg" alt="AI Ready Mobile 2" id="ai-img-m-2"
-                                className="absolute object-cover w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out" />
+                                className="absolute object-contain w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out" />
                             <img src="./img/AI_ready_building_m_03.jpg" alt="AI Ready Mobile 3" id="ai-img-m-3"
-                                className="absolute object-cover w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out" />
+                                className="absolute object-contain w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out" />
                         </div>
 
                         <div className="w-full max-w-[1100px] mx-auto flex flex-col mt-[20px] shrink-0 text-left px-4 md:px-0">
