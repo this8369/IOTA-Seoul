@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
-    const [lang, setLang] = useState('en');
+    const [lang, setLang] = useState('kr');
 
     // Utility to toggle font styles globally or optionally use state in components
     useEffect(() => {
