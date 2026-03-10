@@ -111,7 +111,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
     return (
         <>
             <header id="main-header"
-                className="fixed top-0 left-0 bg-white text-black z-50 py-[35px] transition-transform ease-in-out"
+                className="fixed top-0 left-0 bg-white text-black z-50 py-[25px] md:py-[35px] transition-transform ease-in-out"
                 style={{ transform: 'translateY(-100%)', width: 'calc(100vw - var(--scrollbar-width, 0px))' }}>
                 <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex justify-between items-center transition-all duration-300">
                     <a href="#"
@@ -173,7 +173,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
             </header>
 
             <div id="mobile-menu"
-                className={`fixed top-[90px] left-0 w-full bg-white shadow-lg flex-col py-6 space-y-4 z-40 transition-transform ${mobileMenuOpen ? 'flex' : 'hidden'} min-[1100px]:hidden text-center justify-center items-center`}>
+                className={`fixed top-[74px] md:top-[90px] left-0 w-full bg-white shadow-lg flex-col py-6 space-y-4 z-40 transition-transform ${mobileMenuOpen ? 'flex' : 'hidden'} min-[1100px]:hidden text-center justify-center items-center`}>
                 <a href="#section2" onClick={(e) => handleScrollTo(e, 'section2')} className={`text-[16px] text-gray-800 ${activeSection === 'section2' ? 'font-bold' : 'font-normal'}`}>Location</a>
                 <a href="#section-green" onClick={(e) => handleScrollTo(e, 'section-green')} className={`text-[16px] text-gray-800 ${activeSection === 'section-green' ? 'font-bold' : 'font-normal'}`}>Green</a>
                 <a href="#section-scale" onClick={(e) => handleScrollTo(e, 'section-scale')} className={`text-[16px] text-gray-800 ${activeSection === 'section-scale' ? 'font-bold' : 'font-normal'}`}>Scale</a>

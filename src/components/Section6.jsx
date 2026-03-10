@@ -3,7 +3,7 @@ import React from 'react';
 export default function Section6() {
     return (
         <section
-            className="section content-section w-full h-auto bg-black text-white relative flex flex-col pt-[100px] md:pt-[200px] pb-[100px] md:pb-[150px]"
+            className="section content-section w-full h-auto bg-black text-white relative flex flex-col pt-[100px] md:pt-[200px] pb-[20px] md:pb-[150px]"
             id="section6">
             <div className="w-full max-w-[1600px] mx-auto flex flex-col-reverse">
 
@@ -17,8 +17,7 @@ export default function Section6() {
                 </div>
 
                 {/* TEXT PANELS (Text below image) */}
-                {/* TEXT PANELS (Text below image) */}
-                <div className="w-full h-auto flex flex-col items-center justify-center text-center px-6 md:px-0 pt-16 md:pt-24 pb-[54px] md:pb-[86px]">
+                <div className="w-full h-auto flex flex-col items-center justify-center text-center px-6 md:px-0 pt-16 md:pt-24 pb-[20px] md:pb-[86px]">
 
                     <div className="bs-fade-up delay-100">
                         <div className="font-bold text-[16px] md:text-[20px] text-gray-400 mb-2 font-inter tracking-tight">
