@@ -44,6 +44,8 @@ export default function SectionFoster() {
                             src="./img/foster+partners.jpg"
                             alt="Foster + Partners Video"
                             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                            fetchPriority="high"
+                            loading="eager"
                         />
                         {/* Overlay play button */}
                         <div className="absolute bottom-6 right-6 md:bottom-12 md:right-12 w-14 h-14 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110 shadow-lg">
