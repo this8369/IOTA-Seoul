@@ -28,7 +28,7 @@ export default function NewsList({ onSelectArticle }) {
                                     || news.content.find(item => item.type === 'paragraph')?.text;
                                 if (preview) {
                                     return (
-                                        <p className="text-[15px] md:text-[16px] pr-5 text-gray-500 mt-3 font-medium tracking-[-0.01em] leading-snug line-clamp-2">
+                                        <p className="text-[19px] md:text-[20px] pr-5 text-gray-500 mt-3 font-medium tracking-[-0.01em] leading-snug line-clamp-2">
                                             {preview}
                                         </p>
                                     );
