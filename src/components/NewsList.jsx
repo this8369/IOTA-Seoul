@@ -14,7 +14,7 @@ export default function NewsList({ onSelectArticle }) {
                 </h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-[30px] gap-y-[80px]">
-                    {newsData.map((news) => (
+                    {[...newsData].sort((a, b) => new Date(b.date) - new Date(a.date)).map((news) => (
                         <div
                             key={news.id}
                             className="flex flex-col cursor-pointer group"
