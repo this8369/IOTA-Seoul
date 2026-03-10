@@ -10,7 +10,7 @@ export default function SectionAirQuality() {
 
                 {/* Title */}
                 <div className="w-full max-w-[800px] mx-auto text-left mb-10 bs-fade-up px-4 md:px-0">
-                    <h2 className="text-[38px] md:text-[55px] lg:text-[64px] font-extrabold text-black tracking-[-0.03em] font-inter leading-[1.57]">
+                    <h2 className="text-[38px] md:text-[55px] lg:text-[64px] font-extrabold text-black tracking-[-0.03em] font-inter leading-[1.18]">
                         AI-Driven Indoor<br />Air Quality Management
                     </h2>
                 </div>

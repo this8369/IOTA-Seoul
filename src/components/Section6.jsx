@@ -27,7 +27,7 @@ export default function Section6() {
 
                     <div className="bs-fade-up delay-200">
                         <h2
-                            className="text-[35px] md:text-[50px] lg:text-[60px] font-extrabold leading-[1.57] mb-8 text-white tracking-[-0.03em] font-inter">
+                            className="text-[35px] md:text-[50px] lg:text-[60px] font-extrabold leading-tight mb-8 text-white tracking-[-0.03em] font-inter">
                             Seoul's Business Core Hub
                         </h2>
                     </div>

@@ -27,7 +27,7 @@ export default function NewsDetail({ article, onBack }) {
 
                     {/* Middle Column - Title & Content */}
                     <div className="w-full max-w-[800px] lg:max-w-[900px] mx-auto flex flex-col">
-                        <h1 className="text-[42px] md:text-[62px] lg:text-[70px] font-sans font-normal text-black leading-[1.57] tracking-[-0.04em] text-center w-full mb-[60px] md:mb-[80px] break-keep">
+                        <h1 className="text-[42px] md:text-[62px] lg:text-[70px] font-sans font-normal text-black leading-tight tracking-[-0.04em] text-center w-full mb-[60px] md:mb-[80px] break-keep">
                             {article.title}
                         </h1>
 

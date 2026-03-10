@@ -44,7 +44,7 @@ export default function SectionNetZero() {
                         </div>
                     ) : (
                         <div className="w-full flex flex-col items-start text-left">
-                            <h3 className="text-[24px] md:text-[32px] lg:text-[38px] font-bold text-[#1a65a4] tracking-[-0.01em] mb-10 font-inter leading-[1.57] break-keep">
+                            <h3 className="text-[24px] md:text-[32px] lg:text-[38px] font-bold text-[#1a65a4] tracking-[-0.01em] mb-10 font-inter leading-tight break-keep">
                                 30% Below National Carbon Baseline,<br />Fully Compliant with CRREM 2030
                             </h3>
 

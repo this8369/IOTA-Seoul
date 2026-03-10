@@ -10,10 +10,10 @@ export default function SectionFoster() {
                 {/* Titles and Descriptions in one row on lg size */}
                 <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-12 bs-fade-up">
                     <div className="flex flex-col shrink-0">
-                        <h2 className="text-[31px] md:text-[54px] lg:text-[67px] font-bold leading-[1.57] font-inter tracking-[-0.03em]">
+                        <h2 className="text-[31px] md:text-[54px] lg:text-[67px] font-bold leading-tight font-inter tracking-[-0.03em]">
                             Build with
                         </h2>
-                        <h2 className="text-[31px] md:text-[54px] lg:text-[67px] font-bold leading-[1.57] font-inter tracking-[-0.03em] lg:ml-24">
+                        <h2 className="text-[31px] md:text-[54px] lg:text-[67px] font-bold leading-tight font-inter tracking-[-0.03em] lg:ml-24">
                             Foster + Partners
                         </h2>
                     </div>

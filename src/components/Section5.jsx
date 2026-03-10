@@ -106,7 +106,7 @@ export default function Section5() {
                                 data-kr="Unrivaled Accessibility" data-en="Unrivaled Accessibility">
                                 Unrivaled Accessibility</div>
                             <h2
-                                className="text-[40px] md:text-[50px] lg:text-[60px] font-extrabold leading-[1.57] mb-2 text-black tracking-[-0.03em] font-inter mt-4">
+                                className="text-[40px] md:text-[50px] lg:text-[60px] font-extrabold leading-tight mb-2 text-black tracking-[-0.03em] font-inter mt-4">
                                 Korea's Central Station<br />and Mega Transport Hub
                             </h2>
                             <div className="mb-4 mt-6">
@@ -245,7 +245,7 @@ export default function Section5() {
                     <div className="font-bold text-[18px] md:text-[22px] text-gray-800 mb-2 font-inter tracking-tight"
                         data-kr="Unrivaled Accessibility" data-en="Unrivaled Accessibility">
                         Unrivaled Accessibility</div>
-                    <h2 className="text-[32px] md:text-[45px] font-extrabold leading-[1.57] mb-4 text-black tracking-[-0.03em] font-inter">
+                    <h2 className="text-[32px] md:text-[45px] font-extrabold leading-tight mb-4 text-black tracking-[-0.03em] font-inter">
                         Korea's Central Station<br />and Mega Transport Hub
                     </h2>
                     <div className="mb-4">

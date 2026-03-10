@@ -79,7 +79,7 @@ export default function SectionHotel() {
                             <>
                                 {/* Left: Title */}
                                 <div className="w-full lg:w-[32%] shrink-0">
-                                    <h3 className="text-[20px] md:text-[24px] font-bold text-gray-800 tracking-[-0.03em] leading-[1.57] break-keep">
+                                    <h3 className="text-[20px] md:text-[24px] font-bold text-gray-800 tracking-[-0.03em] leading-tight break-keep">
                                         리츠칼튼 서울,<br />
                                         도시의 정점을 정의하는 호텔
                                     </h3>
@@ -99,7 +99,7 @@ export default function SectionHotel() {
                             <>
                                 {/* Left: Title */}
                                 <div className="w-full lg:w-[32%] shrink-0">
-                                    <h3 className="text-[20px] md:text-[24px] font-bold text-gray-800 tracking-[-0.01em] leading-[1.57] font-inter">
+                                    <h3 className="text-[20px] md:text-[24px] font-bold text-gray-800 tracking-[-0.01em] leading-tight font-inter">
                                         The Ritz-Carlton Seoul,<br />
                                         Defining the Pinnacle of Urban Luxury
                                     </h3>
