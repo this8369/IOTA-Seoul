@@ -27,7 +27,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         이오타1의 중앙광장은 남산과 직접 연결되는 서울 도심 최대 규모의 오픈 플라자입니다. 탁 트인 공간에서는 브랜드 이벤트, 플리마켓, 공연 등 다양한 프로그램 운영이 가능하며, 서울역과의 연결로 뛰어난 접근성과 유동인구 확보가 가능합니다.
                                     </p>
@@ -59,7 +59,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         이오타1의 옥상정원은 사방이 녹지로 둘러싸인 조경형 휴식 공간으로, 업무 중에도 마치 남산 자락에 올라온 듯한 자연을 누릴 수 있습니다.
                                     </p>
@@ -101,7 +101,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         도심항공교통(UAM) 시대를 대비하여, 옥상에 UAM 이착륙이 가능한 헬리포트형 선착장을 선제적으로 설계하였습니다.<br className="hidden md:block" />향후 모빌리티 기술 발전과 함께 하늘길이 열리면, 이오타서울은 서울 도심에서 가장 빠르게 UAM 정류가 가능한 오피스로 기능하게 됩니다.
                                     </p>
@@ -133,7 +133,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         이오타서울 호텔과 연결된 포디움 가든은 남산을 바로 마주한 조망과 고급 조경이 어우러진 야외 공간입니다.<br className="hidden md:block" />기업의 프라이빗 행사, 리셉션, 웨딩 등 다양한 이벤트가 가능한 서울 도심 내 보기 드문 고품격 오픈 스페이스로, 도시의 중심에서 자연과 함께하는 특별한 경험을 제공합니다.
                                     </p>
@@ -159,7 +159,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA 서울의 호텔 포디엄 가든은 남산 조망을 확보한 야외 공간으로, 호텔의 연회장 및 라운지와 직접 연결되어 프라이빗 이벤트, 리셉션, 웨딩 등 다양한 형태의 행사를 수용할 수 있도록 설계되었습니다.<br className="hidden md:block" />정제된 조명과 조경 디자인을 통해 저녁 시간대에도 최적의 환경을 제공하며, 서울 도심 내에서 드물게 고급 야외 행사가 가능한 오픈 스페이스로 기능합니다.
                                     </p>
@@ -189,7 +189,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA ONE의 오피스 메인 로비는 약 15미터의 층고와 전면유리 파사드를 통해 도심 한가운데에서도 개방감과 투명성을 극대화한 공간입니다.<br className="hidden md:block" />남산의 녹지와 시각적으로 연결되는 이 로비는 단순한 진입 공간을 넘어, 입주 기업과 방문객 모두에게 도시적 품격과 상징적 첫인상을 제공합니다.<br className="hidden md:block" />견고한 소재, 절제된 디테일, 그리고 자연광이 조화된 공간 구성은 IOTA ONE이 지향하는 '모던 헤리티지'의 정수를 보여줍니다.
                                     </p>
@@ -215,7 +215,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA 서울의 코어 진입부는 수직적 비례감과 리듬감 있는 입면 디자인을 통해 건축의 정제된 질서를 시각적으로 구현한 공간입니다. 불필요한 장식을 배제하고 소재의 질감과 빛의 방향성을 강조함으로써,<br className="hidden md:block" />입주자와 방문객 모두에게 단단한 구조미와 절제된 긴장감을 전달합니다. 이곳은 단순한 이동의 통로가 아니라, IOTA 서울이 지향하는 품격과 정체성을 매일의 경험 속에서 체화하게 하는 상징적 공간으로 작동합니다.
                                     </p>
@@ -245,7 +245,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         오피스 오픈라운지는 업무와 휴식, 개인과 조직의 경계를 유연하게 잇는 공간입니다.<br className="hidden md:block" />비공식 미팅, 협업, 리프레시 등 다양한 목적의 활동을 수용하며, 입주 기업 간의 자연스러운 교류와 창의적 사고를 촉진합니다.
                                     </p>
@@ -271,7 +271,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA 서울의 호텔 메인 로비는 남산의 녹지와 시각적으로 이어지는 탁월한 개방감을 통해, 도심 속에서도 자연과의 조화를 경험할 수 있는 환대의 무대를 제공합니다.<br className="hidden md:block" />리츠칼튼이 지향하는 절제된 품격과 세련된 서비스 철학은 자연광, 조경, 소재의 질감이 어우러진 로비 공간에 녹아 있습니다. 서울의 중심에서 휴식과 영감이 공존하는 새로운 럭셔리의 시작점입니다.
                                     </p>
@@ -297,7 +297,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA 서울의 VIP 라운지는 남산의 파노라믹 뷰를 배경으로, IOTA 서울과 리츠칼튼이 추구하는 가장 세련된 형태의 환대를 구현한 공간입니다.
                                     </p>
@@ -344,7 +344,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA 서울의 웰니스 센터는 현대 비즈니스 리더를 위한 신체적 회복과 정신적 리셋의 균형 공간으로 설계되었습니다.<br className="hidden md:block" />
                                         자연과 연결된 명상실(Meditation Room)은 몰입과 정화를 돕는 디지털 환경을 구현하며, 피트니스 존은 채광, 공기질, 리듬감 있는 조명 설계를 통해 최적의 컨디션을 유지할 수 있는 공간을 제공합니다.<br className="hidden md:block" />
@@ -374,7 +374,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         자연광과 녹지, 디지털 인터페이스가 결합된 이 공간은 정신적 여유와 창의적 몰입을 동시에 자극하는 환경을 제공합니다.<br className="hidden md:block" />
                                         입주 기업들은 이곳에서 워크숍, 브랜딩 세션, 공동 연구를 통해 조직의 경계를 넘어서는 새로운 시너지를 창출하게 됩니다.
@@ -402,7 +402,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA 서울의 <strong>멤버스 클럽(Member's Club)</strong>은 입주 기업과 핵심 구성원을 위한 프라이빗 커뮤니티 라운지로, 비즈니스와 휴식이 자연스럽게 이어지는 새로운 형태의 워크·라이프 플랫폼입니다.<br className="hidden md:block" />
                                         남산의 녹지를 향한 개방감 속에서, 이용자들은 사적 미팅, 브랜딩 이벤트, 네트워킹 세션 등을 통해 기업 간 교류와 협업을 심화시킬 수 있습니다.<br className="hidden md:block" />
@@ -432,7 +432,7 @@ export default function SectionIotaOne() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA 서울의 이머시브 갤러리(Immersive Gallery)는 예술과 기술, 그리고 공간이 하나로 융합되는 체험 중심의 미디어 아트 플랫폼입니다.<br className="hidden md:block" />
                                         디지털 인터랙션, 빛, 사운드, 데이터 시각화가 결합되어, 방문객은 예술을 '관람'하는 것이 아니라 직접 '경험'하고 '몰입'하게 됩니다.<br className="hidden md:block" />

@@ -30,7 +30,7 @@ export default function SectionIotaTwo() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA Two의 1층 진입부는 건물을 들어올린 듯한 파일로티 구조로 계획되어, 남산의 녹지축에서 서울역 광장으로 이어지는 도심 보행 네트워크를 끊임없이 연결합니다.<br className="hidden md:block" />
                                         이 열린 도시 레벨의 설계는 건축물 하나의 '경계'가 아닌 '흐름'으로 해석하며, 이오타 서울 전역에 걸친 공공적 연속성(Public Continuity)을 강화합니다.<br className="hidden md:block" />
@@ -61,7 +61,7 @@ export default function SectionIotaTwo() {
 
                     <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter">
                         {lang === 'kr' ? (
-                            <div className="break-keep">
+                            <div className="break-keep font-normal">
                                 <p className="mb-4">
                                     IOTA Two의 게이트웨이 파크(Gateway Park)는 남산의 녹지와 서울역 광장을 유기적으로 연결하는 도심 속 개방형 공공 공간입니다.<br className="hidden md:block" />
                                     계단형 테라스와 다층적 식재 구조를 통해 이용자는 자연스럽게 도심의 레벨 차를 따라 이동하며, 남산에서 서울역까지 이어지는 녹지 흐름(Green Continuum)을 경험합니다.<br className="hidden md:block" />
@@ -95,7 +95,7 @@ export default function SectionIotaTwo() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA Two에 위치한 다목적 아레나는 서울역 시티뷰를 배경으로, 농구, 배드민턴, 테니스 등 단체 스포츠는 물론 기업의 타운홀 미팅, 발표 행사 등 다양한 활동에 맞춰 유연하게 변모할 수 있는 입주사 전용 공간입니다.<br className="hidden md:block" />
                                         탁 트인 공간감과 개방형 구조는 뉴욕 시그램 빌딩의 멀티홀을 연상시키며, 도심 속에서 에너지와 소통을 모두 아우르는 ‘워크 앤 플레이’ 공간으로 기능합니다.
@@ -124,7 +124,7 @@ export default function SectionIotaTwo() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         이오타서울의 32층부터 34층을 자연스럽게 연결하는 스카이가든은 녹지와 쉼터가 어우러진 입체 보행 동선을 따라 누구나 자유롭게 걷고 휴식할 수 있는 오픈 공간입니다.<br className="hidden md:block" />
                                         입주사 임직원은 물론 외부 방문객도 이용 가능한 이 공간은 서울역과 남산을 동시에 조망할 수 있는 파노라믹 시티뷰를 제공하며, 도심 한복판에서 자연과 일상이 만나는 경험을 제공합니다.
@@ -157,7 +157,7 @@ export default function SectionIotaTwo() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA Two 최상층에 위치한 이벤트 스페이스는 서울 도심을 한눈에 내려다보는 파노라믹 시티뷰와 몰입형 미디어 월, 무빙 라이트 시스템 등 최첨단 무대 인프라를 갖춘 복합 문화 공간입니다.<br className="hidden md:block" />
                                         브랜드 런칭, 컨퍼런스, 공연, 아트쇼 등 다양한 행사를 유치할 수 있으며, 토라노몬 힐스의 ‘Tokyo Node’처럼 비즈니스와 문화가 교차하는 도시의 새로운 상징이 될 것입니다.
@@ -186,7 +186,7 @@ export default function SectionIotaTwo() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA 서울의 스카이가든과 이벤트 스페이스는 도심의 가장 높은 지점에서 자연과 예술, 그리고 도시의 풍경을 함께 경험할 수 있는 열린 문화 공간입니다.<br className="hidden md:block" />
                                         남산과 서울 전경이 한눈에 펼쳐지는 이곳은 비즈니스 행사, 브랜드 런칭, 프라이빗 리셉션 등 다양한 프로그램을 통해 도심 속 새로운 커뮤니티 허브이자 상징적 랜드마크로 자리합니다.<br className="hidden md:block" />
@@ -224,7 +224,7 @@ export default function SectionIotaTwo() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA Two의 메인로비는 외부 도시 레벨과 자연스럽게 연결되는 개방형 진입공간(Open Urban Lobby)으로 설계되었습니다.<br className="hidden md:block" />
                                         남산에서 내려오는 녹지와 서울역으로 이어지는 보행축이 내부로 스며들며, 실내에서도 자연과 도시의 흐름을 동시에 느낄 수 있는 공간적 연속성을 구현합니다.<br className="hidden md:block" />
@@ -256,7 +256,7 @@ export default function SectionIotaTwo() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA Two의 Core Access는 건축의 구조미와 재료의 질감을 통해 공간의 '이동'을 '경험'으로 확장시킨 구간입니다.<br className="hidden md:block" />
                                         엄선된 소재의 깊은 결, 수직 리듬을 이루는 패널, 자연광의 미묘한 반사는 기능과 미학이 균형을 이루는 정제된 질서감을 만들어냅니다.<br className="hidden md:block" />
@@ -293,7 +293,7 @@ export default function SectionIotaTwo() {
 
                         <div className="w-full text-[17px] font-extralight text-stone-200 leading-[1.8] tracking-[-0.01em] font-inter">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4 opacity-100">
                                         IOTA Two의 Core Access는 건축의 구조미와 재료의 질감을 통해 공간의 '이동'을 '경험'으로 확장시킨 구간입니다.<br />
                                         엄선된 소재의 깊은 결, 수직 리듬을 이루는 패널, 자연광의 미묘한 반사는 기능과 미학이 균형을 이루는 정제된 질서감을 만들어냅니다.<br />
@@ -340,7 +340,7 @@ export default function SectionIotaTwo() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA Two의 오픈라운지는 업무의 긴장감과 도심의 밀도를 완화하는 쉼의 공간으로 설계되었습니다.<br className="hidden md:block" />
                                         자연광이 깊숙이 스며드는 투명한 파사드와 녹음이 가득한 내부 조경은, 사람 중심의 웰니스 오피스라는 IOTA의 철학을 드러냅니다.<br className="hidden md:block" />
@@ -377,7 +377,7 @@ export default function SectionIotaTwo() {
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
-                                <div className="break-keep">
+                                <div className="break-keep font-normal">
                                     <p className="mb-4">
                                         IOTA Two의 오피스 EV 홀은 글로벌 기업들이 추구하는 정제된 감성과 기능적 완결성을 동시에 담았습니다.<br className="hidden md:block" />
                                         벽면을 감싸는 자연석 질감의 엄선된 소재는 차가운 금속과 빛의 반사 속에서도 따뜻한 안정감을 전하며, 수직적으로 구성된 공간 리듬은 기술과 인간, 속도와 여유의 균형을 표현합니다.<br className="hidden md:block" />
