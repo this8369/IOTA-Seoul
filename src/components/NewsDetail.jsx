@@ -57,6 +57,13 @@ export default function NewsDetail({ article, onBack }) {
                                         </p>
                                     );
                                 }
+                                if (block.type === 'heading') {
+                                    return (
+                                        <h2 key={idx} className="text-[22px] md:text-[26px] font-bold text-black mt-8 mb-2 tracking-[-0.02em]">
+                                            {block.text}
+                                        </h2>
+                                    );
+                                }
                                 return null;
                             })}
 
