@@ -36,8 +36,17 @@ export default function NewsDetail({ article, onBack }) {
                                 if (block.type === 'bullet') {
                                     return (
                                         <div key={idx} className="flex gap-4 items-start pl-4 md:pl-0">
-                                            <span className="text-[12px] mt-1 relative top-[1px]">▪</span>
-                                            <p className="text-[15px] md:text-[16px] text-[#222] font-inter italic font-light leading-[1.6]">
+                                            <span className="text-[16px] mt-1 relative top-[1px]">▪</span>
+                                            <p className="text-[19px] md:text-[20px] text-[#222] font-inter italic font-light leading-[1.6]">
+                                                {block.text}
+                                            </p>
+                                        </div>
+                                    );
+                                }
+                                if (block.type === 'subtitle') {
+                                    return (
+                                        <div key={idx} className="flex gap-4 items-start pl-4 md:pl-0 mb-2">
+                                            <p className="text-[19px] md:text-[20px] text-[#222] font-inter italic font-light leading-[1.6]">
                                                 {block.text}
                                             </p>
                                         </div>
@@ -45,14 +54,14 @@ export default function NewsDetail({ article, onBack }) {
                                 }
                                 if (block.type === 'paragraph') {
                                     return (
-                                        <p key={idx} className="text-[15px] md:text-[15px] text-[#222] font-inter font-normal leading-[1.8] tracking-[-0.01em]">
+                                        <p key={idx} className="text-[19px] md:text-[19px] text-[#222] font-inter font-normal leading-[1.8] tracking-[-0.01em]">
                                             {block.text}
                                         </p>
                                     );
                                 }
                                 if (block.type === 'quote') {
                                     return (
-                                        <p key={idx} className="text-[15px] md:text-[15px] text-[#222] font-inter italic font-light leading-[1.8] tracking-[-0.01em] my-4 px-4 border-l-2 border-gray-300">
+                                        <p key={idx} className="text-[19px] md:text-[19px] text-[#222] font-inter italic font-light leading-[1.8] tracking-[-0.01em] my-4 px-4 border-l-2 border-gray-300">
                                             {block.text}
                                         </p>
                                     );
@@ -73,7 +82,7 @@ export default function NewsDetail({ article, onBack }) {
                                         href={article.originalUrl}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="text-blue-600 hover:text-blue-800 underline underline-offset-4 text-[15px] font-bold"
+                                        className="text-[#222] hover:text-[#555] underline underline-offset-4 text-[19px] font-bold"
                                     >
                                         Read original press release
                                     </a>
