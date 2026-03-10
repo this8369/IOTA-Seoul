@@ -171,8 +171,8 @@ export default function Section3() {
                     </div>
                 </div>
 
-                <div className="w-full flex flex-col gap-y-[20px] pb-[50px] md:pb-[100px]">
-                    <div className="w-full flex flex-col gap-y-[20px]">
+                <div className="w-full flex flex-col gap-y-[10px] md:gap-y-[20px] pb-[10px] md:pb-[100px]">
+                    <div className="w-full flex flex-col gap-y-[10px] md:gap-y-[20px]">
                         <div className="full-image-container relative overflow-hidden group">
                             <img src="./img/iota_full_2.jpg" alt="IOTA Property Details"
                                 className="w-full h-auto block transform origin-center transition-transform duration-[2s] group-hover:scale-105" />
