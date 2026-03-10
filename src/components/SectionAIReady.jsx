@@ -75,9 +75,9 @@ export default function SectionAIReady() {
 
                 {/* MOBILE ANIMATED IMAGE AREA (iPad & below) */}
                 <div id="ai-scroll-area-m" className="lg:hidden w-full relative h-[300vh] bs-fade-up delay-200">
-                    <div className="w-full h-[100vh] sticky top-0 left-0 flex flex-col justify-center overflow-hidden py-[5vh]">
-                        <div className="w-full mb-[20px] shrink-0 text-center">
-                            <h2 className="text-[28px] md:text-[36px] font-extrabold text-black tracking-[-0.03em] font-inter leading-tight">
+                    <div className="w-full h-[100dvh] sticky top-0 left-0 flex flex-col justify-between overflow-hidden py-4 md:py-8">
+                        <div className="w-full mb-2 shrink-0 text-center">
+                            <h2 className="text-[26px] md:text-[34px] font-extrabold text-black tracking-[-0.03em] font-inter leading-tight">
                                 AI Driven Biomorphic Workplace Framework
                             </h2>
                         </div>
@@ -91,18 +91,18 @@ export default function SectionAIReady() {
                                 className="absolute object-contain w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out" />
                         </div>
 
-                        <div className="w-full max-w-[1100px] mx-auto flex flex-col mt-[20px] shrink-0 text-left px-4 md:px-0">
+                        <div className="w-full max-w-[1100px] mx-auto flex flex-col mt-2 md:mt-4 shrink-0 text-left">
                             {lang === 'kr' ? (
                                 <>
-                                    <h3 className="text-[16px] md:text-[20px] font-bold text-[#1a65a4] tracking-[-0.03em] mb-2 leading-tight break-keep">
+                                    <h3 className="text-[15px] md:text-[18px] font-bold text-[#1a65a4] tracking-[-0.03em] mb-1 leading-tight break-keep">
                                         AI Ready Building : 데이터 기반 의사결정과 자동화를 구현하는 지능형 빌딩 운영체계
                                     </h3>
-                                    <h4 className="text-[13px] md:text-[15px] font-bold text-gray-700 tracking-[-0.01em] mb-4 font-inter">
+                                    <h4 className="text-[13px] md:text-[14px] font-bold text-gray-700 tracking-[-0.01em] mb-3 font-inter">
                                         An AI-Driven Building Ecosystem Enabling Autonomous Operations<br />and Data-Based Decisions
                                     </h4>
 
-                                    <div className="w-full text-[17px] md:text-[19px] font-extralight text-black leading-[1.55] tracking-[-0.02em] break-keep">
-                                        <p className="mb-2">
+                                    <div className="w-full text-[15px] md:text-[17px] font-normal text-black leading-[1.6] tracking-[-0.02em] break-keep">
+                                        <p className="mb-1">
                                             IOTA Seoul은 AI 기반의 데이터 순환 구조를 통해 건물이 스스로 학습하고 운영되는 지능형 오피스로 진화합니다. IoT 센서와 디지털 트윈을 통해 실시간 데이터를 수집하고, AI Agent가 이를 분석하여 건물의 에너지, 공기질, 보안, 이동, 유지보수를 자동으로 제어합니다.
                                         </p>
                                         <p>
@@ -112,12 +112,12 @@ export default function SectionAIReady() {
                                 </>
                             ) : (
                                 <>
-                                    <h3 className="text-[14px] md:text-[16px] font-bold text-[#1a65a4] tracking-[-0.01em] mb-4 font-inter leading-tight">
+                                    <h3 className="text-[13px] md:text-[15px] font-bold text-[#1a65a4] tracking-[-0.01em] mb-3 font-inter leading-tight">
                                         An AI-Driven Building Ecosystem Enabling Autonomous Operations<br />and Data-Based Decisions
                                     </h3>
 
                                     <div className="w-full text-[17px] md:text-[19px] font-extralight text-gray-800 leading-[1.55] tracking-[-0.01em] font-inter">
-                                        <p className="mb-2">
+                                        <p className="mb-1">
                                             IOTA Seoul evolves into an intelligent office that learns and operates autonomously through an AI-driven data ecosystem. Through IoT sensors and digital twins, the building continuously collects real-time data, which the AI Agent analyzes to automatically manage energy, air quality, security, mobility, and maintenance.
                                         </p>
                                         <p>
