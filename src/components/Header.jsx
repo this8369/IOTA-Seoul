@@ -107,9 +107,9 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                 if (target || checkCount > 50) {
                     clearInterval(checkInterval);
                     if (targetId === 'top') {
-window.scrollTo({ top: 0, behavior: 'auto' });
+window.scrollTo({ top: 0, behavior: 'instant' });
                     } else if (target) {
-                        target.scrollIntoView({ behavior: 'auto', block: 'start' });
+                        target.scrollIntoView({ behavior: 'instant', block: 'start' });
                     }
                 }
             }, 50);
@@ -117,11 +117,11 @@ window.scrollTo({ top: 0, behavior: 'auto' });
         }
 
         if (targetId === 'top') {
-window.scrollTo({ top: 0, behavior: 'auto' });
+window.scrollTo({ top: 0, behavior: 'instant' });
         } else {
             const target = document.getElementById(targetId);
             if (target) {
-                target.scrollIntoView({ behavior: 'auto', block: 'start' });
+                target.scrollIntoView({ behavior: 'instant', block: 'start' });
             }
         }
     };
