@@ -60,6 +60,13 @@ export default function NewsDetail({ article, onBack }) {
                                         </p>
                                     );
                                 }
+                                if (block.type === 'image') {
+                                    return (
+                                        <div key={idx} className="w-full my-8">
+                                            <img src={block.url} alt="News Graphic" className="w-full h-auto object-contain" />
+                                        </div>
+                                    );
+                                }
                                 if (block.type === 'quote') {
                                     return (
                                         <p key={idx} className="text-[19px] md:text-[19px] text-[#222] font-inter italic font-light leading-[1.57] tracking-[-0.01em] my-4 px-4 border-l-2 border-gray-300">
