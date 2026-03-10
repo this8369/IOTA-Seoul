@@ -456,3 +456,9 @@
     }
 
 }
+
+html[lang="kr"] .font-thin,
+html[lang="kr"] .font-extralight,
+html[lang="kr"] .font-light {
+    font-weight: 400 !important;
+}

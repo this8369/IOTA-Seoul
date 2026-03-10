@@ -7,6 +7,8 @@ export function LanguageProvider({ children }) {
 
     // Utility to toggle font styles globally or optionally use state in components
     useEffect(() => {
+        document.documentElement.lang = lang;
+
         const krTargetTexts = document.querySelectorAll(".kr-target-text");
         const enOnlyTexts = document.querySelectorAll(".en-only-text");
         const dualTexts = document.querySelectorAll("[data-en][data-kr]");
