@@ -58,7 +58,7 @@ export default function Section5() {
                                             className="absolute -top-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-b-[6px] border-l-transparent border-r-transparent border-b-black animate-arrow-top">
                                         </div>
                                         <div
-                                            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 whitespace-nowrap text-center leading-[1.2] isolate before:absolute before:inset-0 before:bg-white before:opacity-80 before:-z-10 rounded">
+                                            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 whitespace-nowrap text-center leading-[1.57] isolate before:absolute before:inset-0 before:bg-white before:opacity-80 before:-z-10 rounded">
                                             3km<br /><span className="font-normal text-[10px]">(10,000 feet)</span>
                                         </div>
                                     </div>
@@ -86,7 +86,7 @@ export default function Section5() {
                                             className="absolute -bottom-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-t-[6px] border-l-transparent border-r-transparent border-t-black animate-arrow-bottom">
                                         </div>
                                         <div
-                                            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 whitespace-nowrap text-center leading-[1.2] isolate before:absolute before:inset-0 before:bg-white before:opacity-80 before:-z-10 rounded">
+                                            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 whitespace-nowrap text-center leading-[1.57] isolate before:absolute before:inset-0 before:bg-white before:opacity-80 before:-z-10 rounded">
                                             2.7km<br /><span className="font-normal text-[10px]">(9,000 feet)</span>
                                         </div>
                                     </div>
@@ -106,7 +106,7 @@ export default function Section5() {
                                 data-kr="Unrivaled Accessibility" data-en="Unrivaled Accessibility">
                                 Unrivaled Accessibility</div>
                             <h2
-                                className="text-[40px] md:text-[50px] lg:text-[60px] font-extrabold leading-[1.05] mb-2 text-black tracking-[-0.03em] font-inter mt-4">
+                                className="text-[40px] md:text-[50px] lg:text-[60px] font-extrabold leading-[1.57] mb-2 text-black tracking-[-0.03em] font-inter mt-4">
                                 Korea's Central Station<br />and Mega Transport Hub
                             </h2>
                             <div className="mb-4 mt-6">
@@ -196,7 +196,7 @@ export default function Section5() {
                                     className="absolute -top-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-b-[6px] border-l-transparent border-r-transparent border-b-black animate-arrow-top">
                                 </div>
                                 <div
-                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 whitespace-nowrap text-center leading-[1.2] isolate before:absolute before:inset-0 before:bg-white before:opacity-80 before:-z-10 rounded">
+                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 whitespace-nowrap text-center leading-[1.57] isolate before:absolute before:inset-0 before:bg-white before:opacity-80 before:-z-10 rounded">
                                     3km<br /><span className="font-normal text-[10px]">(10,000 feet)</span>
                                 </div>
                             </div>
@@ -224,7 +224,7 @@ export default function Section5() {
                                     className="absolute -bottom-[1px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-t-[6px] border-l-transparent border-r-transparent border-t-black animate-arrow-bottom">
                                 </div>
                                 <div
-                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 whitespace-nowrap text-center leading-[1.2] isolate before:absolute before:inset-0 before:bg-white before:opacity-80 before:-z-10 rounded">
+                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 whitespace-nowrap text-center leading-[1.57] isolate before:absolute before:inset-0 before:bg-white before:opacity-80 before:-z-10 rounded">
                                     2.7km<br /><span className="font-normal text-[10px]">(9,000 feet)</span>
                                 </div>
                             </div>
@@ -245,7 +245,7 @@ export default function Section5() {
                     <div className="font-bold text-[18px] md:text-[22px] text-gray-800 mb-2 font-inter tracking-tight"
                         data-kr="Unrivaled Accessibility" data-en="Unrivaled Accessibility">
                         Unrivaled Accessibility</div>
-                    <h2 className="text-[32px] md:text-[45px] font-extrabold leading-[1.1] mb-4 text-black tracking-[-0.03em] font-inter">
+                    <h2 className="text-[32px] md:text-[45px] font-extrabold leading-[1.57] mb-4 text-black tracking-[-0.03em] font-inter">
                         Korea's Central Station<br />and Mega Transport Hub
                     </h2>
                     <div className="mb-4">

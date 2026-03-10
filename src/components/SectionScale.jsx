@@ -50,7 +50,7 @@ export default function SectionScale() {
                         A flagship trophy mixed-use asset in the heart of Seoul
                     </h4>
 
-                    <div className="text-[15px] md:text-[17px] lg:text-[19px] font-medium text-gray-300 leading-[1.5] md:leading-[1.6] tracking-[-0.01em] max-w-[900px] mb-[30px]">
+                    <div className="text-[15px] md:text-[17px] lg:text-[19px] font-medium text-gray-300 leading-[1.57] md:leading-[1.57] tracking-[-0.01em] max-w-[900px] mb-[30px]">
                         <p className="kr-target-text transition-all duration-300 break-keep"
                             data-kr="이오타 서울은 초대형 남산 녹지를 앞마당에 둔 대형 오피스 2개동과 6성급 호텔 1개동 (리츠칼튼 예정), 다양한 웰니스 리테일 시설이 결합된 초대형 복합시설로 서울을 대표하는 트로피 에셋을 지향합니다."
                             data-en="IOTA Seoul is a massive mixed-use development, made up of 2 state-of-the-art, custom-designed office spaces and 1 ultra-luxury hotel (The Ritz-Carlton).">
@@ -104,7 +104,7 @@ export default function SectionScale() {
                             >
                                 Largest Asset in CBD as of May 2025 &amp; Comparison with Future Pipelines through 2032
                             </h4>
-                            <p className="text-[12px] md:text-[14px] text-gray-300 mt-1 kr-target-text leading-[1.3] md:leading-[1.4]"
+                            <p className="text-[12px] md:text-[14px] text-gray-300 mt-1 kr-target-text leading-[1.57] md:leading-[1.57]"
                                 data-en="Scheduled for Completion in H1 2032<br/>As of May 2025, IOTA Seoul is the largest asset under development in the CBD, both in current and projected scale through 2032."
                                 data-kr="Scheduled for Completion in H1 2032<br/>As of May 2025, IOTA Seoul is the largest asset under development in the CBD, both in current and projected scale through 2032.">
                                 Scheduled for Completion in H1 2032<br className="hidden sm:block" />

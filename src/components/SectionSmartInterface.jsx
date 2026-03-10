@@ -15,13 +15,13 @@ export default function SectionSmartInterface() {
                             <h2 className="text-[26px] md:text-[36px] lg:text-[42px] font-bold text-[#1a65a4] tracking-[-0.03em] leading-tight mb-2 break-keep">
                                 IOTA 전용 인터페이스를 통한 매끄러운 사용자 경험
                             </h2>
-                            <h3 className="text-[28px] md:text-[32px] lg:text-[36px] font-bold text-[#333] tracking-[-0.01em] font-inter leading-[1.2]">
+                            <h3 className="text-[28px] md:text-[32px] lg:text-[36px] font-bold text-[#333] tracking-[-0.01em] font-inter leading-[1.57]">
                                 Seamless User Experience<br />through the IOTA Smart Interface
                             </h3>
                         </div>
                     ) : (
                         <div className="w-full flex flex-col items-start text-left mb-10">
-                            <h2 className="text-[36px] md:text-[46px] lg:text-[52px] font-bold text-[#1a65a4] tracking-[-0.03em] font-inter leading-[1.15] break-keep">
+                            <h2 className="text-[36px] md:text-[46px] lg:text-[52px] font-bold text-[#1a65a4] tracking-[-0.03em] font-inter leading-[1.57] break-keep">
                                 Seamless User Experience<br />through the IOTA Smart Interface
                             </h2>
                         </div>
@@ -40,7 +40,7 @@ export default function SectionSmartInterface() {
                 {/* DESCRIPTION TEXT AREA */}
                 <div className="w-full max-w-[1100px] mx-auto flex flex-col bs-fade-up delay-300">
                     {lang === 'kr' ? (
-                        <div className="text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.75] tracking-[-0.02em] break-keep text-left">
+                        <div className="text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.57] tracking-[-0.02em] break-keep text-left">
                             <p className="mb-4">
                                 IOTA Seoul은 사용자가 건물과 상호작용하는 모든 순간을 직관적이고 매끄럽게 설계했습니다.<br className="hidden lg:block" />
                                 공기질, 온습도, 조명, 에너지 사용량 등 환경 데이터를 실시간으로 시각화하여 사용자가 환경 상태를 한눈에 확인할 수 있으며,<br className="hidden lg:block" />
@@ -52,7 +52,7 @@ export default function SectionSmartInterface() {
                             </p>
                         </div>
                     ) : (
-                        <div className="text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.75] tracking-[-0.01em] font-inter text-left">
+                        <div className="text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.57] tracking-[-0.01em] font-inter text-left">
                             <p className="mb-4">
                                 IOTA Seoul redefines how users interact with buildings by creating a seamless, intuitive experience across all touchpoints. Key environmental data—such as air quality, temperature, humidity, and energy usage—are visualized in real time, while the AI Agent autonomously manages HVAC, ventilation, and lighting systems to ensure continuous comfort.
                             </p>

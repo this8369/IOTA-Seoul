@@ -27,7 +27,7 @@ export default function NewsDetail({ article, onBack }) {
 
                     {/* Middle Column - Title & Content */}
                     <div className="w-full max-w-[800px] lg:max-w-[900px] mx-auto flex flex-col">
-                        <h1 className="text-[42px] md:text-[62px] lg:text-[70px] font-sans font-normal text-black leading-[1.1] tracking-[-0.04em] text-center w-full mb-[60px] md:mb-[80px] break-keep">
+                        <h1 className="text-[42px] md:text-[62px] lg:text-[70px] font-sans font-normal text-black leading-[1.57] tracking-[-0.04em] text-center w-full mb-[60px] md:mb-[80px] break-keep">
                             {article.title}
                         </h1>
 
@@ -37,7 +37,7 @@ export default function NewsDetail({ article, onBack }) {
                                     return (
                                         <div key={idx} className="flex gap-4 items-start pl-4 md:pl-0">
                                             <span className="text-[16px] mt-1 relative top-[1px]">▪</span>
-                                            <p className="text-[19px] md:text-[20px] text-[#222] font-inter italic font-light leading-[1.6]">
+                                            <p className="text-[19px] md:text-[20px] text-[#222] font-inter italic font-light leading-[1.57]">
                                                 {block.text}
                                             </p>
                                         </div>
@@ -46,7 +46,7 @@ export default function NewsDetail({ article, onBack }) {
                                 if (block.type === 'subtitle') {
                                     return (
                                         <div key={idx} className="flex gap-4 items-start pl-4 md:pl-0 mb-2">
-                                            <p className="text-[19px] md:text-[20px] text-[#222] font-inter italic font-light leading-[1.6]">
+                                            <p className="text-[19px] md:text-[20px] text-[#222] font-inter italic font-light leading-[1.57]">
                                                 {block.text}
                                             </p>
                                         </div>
@@ -54,14 +54,14 @@ export default function NewsDetail({ article, onBack }) {
                                 }
                                 if (block.type === 'paragraph') {
                                     return (
-                                        <p key={idx} className="text-[19px] md:text-[19px] text-[#222] font-inter font-normal leading-[1.8] tracking-[-0.01em]">
+                                        <p key={idx} className="text-[19px] md:text-[19px] text-[#222] font-inter font-normal leading-[1.57] tracking-[-0.01em]">
                                             {block.text}
                                         </p>
                                     );
                                 }
                                 if (block.type === 'quote') {
                                     return (
-                                        <p key={idx} className="text-[19px] md:text-[19px] text-[#222] font-inter italic font-light leading-[1.8] tracking-[-0.01em] my-4 px-4 border-l-2 border-gray-300">
+                                        <p key={idx} className="text-[19px] md:text-[19px] text-[#222] font-inter italic font-light leading-[1.57] tracking-[-0.01em] my-4 px-4 border-l-2 border-gray-300">
                                             {block.text}
                                         </p>
                                     );

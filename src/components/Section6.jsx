@@ -27,7 +27,7 @@ export default function Section6() {
 
                     <div className="bs-fade-up delay-200">
                         <h2
-                            className="text-[35px] md:text-[50px] lg:text-[60px] font-extrabold leading-[1.05] mb-8 text-white tracking-[-0.03em] font-inter">
+                            className="text-[35px] md:text-[50px] lg:text-[60px] font-extrabold leading-[1.57] mb-8 text-white tracking-[-0.03em] font-inter">
                             Seoul's Business Core Hub
                         </h2>
                     </div>
@@ -41,7 +41,7 @@ export default function Section6() {
                     </div>
 
                     <div
-                        className="text-[17px] md:text-[19px] font-medium text-gray-300 leading-[1.55] tracking-[-0.02em] space-y-4 bs-fade-up delay-400 break-keep">
+                        className="text-[17px] md:text-[19px] font-medium text-gray-300 leading-[1.57] tracking-[-0.02em] space-y-4 bs-fade-up delay-400 break-keep">
                         <p className="kr-target-text transition-all duration-300"
                             data-kr="GTX-A(서울역-삼성, 2028년 개통 예정)는 <span class='font-bold text-white'>강남권까지 약 10분 내 접근</span>을, GTX-B(2031년 개통 예정)는 <span class='font-bold text-white'>여의도까지 약 10분 내 이동</span>을 가능하게 합니다.<br />서울역은 GTX-A와 B 노선이 교차하는 <span class='font-bold text-[#5FD0A8]'>유일한 지점</span>이자 CBD 내 <span class='font-bold text-[#5FD0A8]'>유일한 GTX 역</span>입니다. 이를 통해 수도권 외곽의 주요 거점과 서울의 핵심 업무지구를 하나의 생활권으로 묶어 비즈니스 시너지를 극대화합니다."
                             data-en="GTX-A (Seoul-Samseong, opening 2028) will link the CBD and <span class='font-bold text-white'>Gangnam within ten minutes</span>, while GTX-B (opening 2031) will connect <span class='font-bold text-white'>Seoul Station and Yeouido in under ten minutes</span>.<br />As <span class='font-bold text-[#5FD0A8]'>the only intersection of GTX-A and GTX-B lines</span> and the sole GTX station within the CBD, Seoul Station seamlessly integrates major metropolitan hubs with Seoul's core business districts, creating a unified economic zone.">

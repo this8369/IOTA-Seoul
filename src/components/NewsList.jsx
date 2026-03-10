@@ -20,7 +20,7 @@ export default function NewsList({ onSelectArticle }) {
                             className="flex flex-col cursor-pointer group"
                             onClick={() => onSelectArticle(news)}
                         >
-                            <h3 className="text-[21px] md:text-[23px] pr-5 leading-[1.4] text-[#222] font-inter font-normal tracking-[-0.01em] group-hover:text-blue-700 transition-colors duration-200">
+                            <h3 className="text-[21px] md:text-[23px] pr-5 leading-[1.57] text-[#222] font-inter font-normal tracking-[-0.01em] group-hover:text-blue-700 transition-colors duration-200">
                                 {news.title}
                             </h3>
                             <p className="text-[14px] md:text-[15px] text-[#333] mt-6 font-inter tracking-[0.02em] font-thin">

@@ -10,7 +10,7 @@ export default function SectionAirQuality() {
 
                 {/* Title */}
                 <div className="w-full max-w-[800px] mx-auto text-left mb-10 bs-fade-up px-4 md:px-0">
-                    <h2 className="text-[38px] md:text-[55px] lg:text-[64px] font-extrabold text-black tracking-[-0.03em] font-inter leading-[1.18]">
+                    <h2 className="text-[38px] md:text-[55px] lg:text-[64px] font-extrabold text-black tracking-[-0.03em] font-inter leading-[1.57]">
                         AI-Driven Indoor<br />Air Quality Management
                     </h2>
                 </div>
@@ -39,7 +39,7 @@ export default function SectionAirQuality() {
                                 Achieving Continuous Clean Air and Optimal Comfort through Real-Time Sensing
                             </h4>
 
-                            <div className="w-full text-[17px] md:text-[19px] font-extralight text-black leading-[1.55] tracking-[-0.02em] break-keep flex flex-col items-center">
+                            <div className="w-full text-[17px] md:text-[19px] font-extralight text-black leading-[1.57] tracking-[-0.02em] break-keep flex flex-col items-center">
                                 <p className="mb-2">
                                     IOTA Seoul은 빌딩 내 전 구역의 공기질을 상시 모니터링하고, AI 알고리즘이 온도·습도·미세먼지·유해가스 등 실내 공기질 항목을 자동 제어합니다.
                                 </p>
@@ -57,7 +57,7 @@ export default function SectionAirQuality() {
                                 Achieving Continuous Clean Air and Optimal Comfort through Real-Time Sensing
                             </h3>
 
-                            <div className="w-full text-[17px] md:text-[19px] font-extralight text-gray-800 leading-[1.55] tracking-[-0.01em] font-inter flex flex-col items-center">
+                            <div className="w-full text-[17px] md:text-[19px] font-extralight text-gray-800 leading-[1.57] tracking-[-0.01em] font-inter flex flex-col items-center">
                                 <p className="mb-2">
                                     IOTA Seoul continuously monitors air quality across all zones, with AI algorithms autonomously controlling temperature, humidity, fine dust, and harmful gases.
                                 </p>

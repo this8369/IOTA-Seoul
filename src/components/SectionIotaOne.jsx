@@ -20,12 +20,12 @@ export default function SectionIotaOne() {
 
                     {/* First Item Area */}
                     <div className="flex flex-col w-full bs-fade-up">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Central Plaza:<br />
                             A Grand Stage Between City and Nature
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -53,11 +53,11 @@ export default function SectionIotaOne() {
 
                     {/* Second Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Rooftop Garden:<br className="md:hidden" /> Nature at Your Office Doorstep
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -85,7 +85,7 @@ export default function SectionIotaOne() {
 
                     {/* Third Item Area (Title Only) */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Rooftop Garden:<br className="md:hidden" /> Nature at Your Office Doorstep
                         </h2>
                     </div>
@@ -95,11 +95,11 @@ export default function SectionIotaOne() {
 
                     {/* Fourth Item Area (UAM) */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             UAM Vertiport
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -127,11 +127,11 @@ export default function SectionIotaOne() {
 
                     {/* Fifth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Hotel Podium Garden:<br className="md:hidden" /> A Private Oasis Framed by Namsan
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -153,11 +153,11 @@ export default function SectionIotaOne() {
 
                     {/* Sixth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             The Hotel Podium Garden at Dusk
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -183,11 +183,11 @@ export default function SectionIotaOne() {
 
                     {/* Seventh Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             An Expansive Lobby Experience<br className="md:hidden" /> at the Heart of the City
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -209,11 +209,11 @@ export default function SectionIotaOne() {
 
                     {/* Eighth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Core Access:<br className="md:hidden" /> {lang === 'kr' ? "수직적 깊이감이 만든 정제된 입면" : "A Refined Façade Forged by Vertical Depth"}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -239,11 +239,11 @@ export default function SectionIotaOne() {
 
                     {/* Ninth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             An Open Lounge for<br className="md:hidden" /> Collaboration and Inspiration
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -265,11 +265,11 @@ export default function SectionIotaOne() {
 
                     {/* Tenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Main Hotel Lobby:<br className="md:hidden" /> {lang === 'kr' ? "남산의 풍경과 리츠칼튼의 품격이 만나는 공간" : "Where Namsan's Scenery Meets The Ritz-Carlton's Prestige"}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -291,11 +291,11 @@ export default function SectionIotaOne() {
 
                     {/* Eleventh Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Hotel VIP Lounge:<br className="md:hidden" /> {lang === 'kr' ? "도심의 정점에서 누리는 프라이빗 럭셔리" : "Private Luxury at the Pinnacle of the City"}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -319,7 +319,7 @@ export default function SectionIotaOne() {
 
                 {/* Twelfth Item Area - Hotel EV Hall */}
                 <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-start bs-fade-up mt-24 md:mt-32 mb-6 md:mb-8">
-                    <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] break-keep">
+                    <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] break-keep">
                         Hotel EV Hall
                     </h2>
                 </div>
@@ -338,11 +338,11 @@ export default function SectionIotaOne() {
 
                     {/* Fourteenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             A Wellness Center<br className="md:hidden" /> for Immersion and Recovery
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -368,11 +368,11 @@ export default function SectionIotaOne() {
 
                     {/* Fifteenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Wellness Center Innovation Hub<br className="md:hidden" /> – Where Collaboration Inspires Innovation
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -396,11 +396,11 @@ export default function SectionIotaOne() {
 
                     {/* Sixteenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Wellness Center Member's Club<br className="md:hidden" /> – A Private Hub for Rest and Connection
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -426,11 +426,11 @@ export default function SectionIotaOne() {
 
                     {/* Seventeenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Immersive Gallery:<br className="md:hidden" /> A Convergence of Art, Tech, and Emotion
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">

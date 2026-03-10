@@ -17,13 +17,13 @@ export default function SectionSkyline() {
             <div className="w-full max-w-[1600px] mx-auto px-6 md:px-0 flex flex-col items-center text-center mb-12 bs-fade-up">
 
                 {/* Title styled identical to other pages without kr-target-text which removes boldness */}
-                <h2 className="text-[35px] md:text-[50px] lg:text-[60px] font-extrabold leading-[1.05] tracking-[-0.03em] font-inter mb-8 text-black"
+                <h2 className="text-[35px] md:text-[50px] lg:text-[60px] font-extrabold leading-[1.57] tracking-[-0.03em] font-inter mb-8 text-black"
                     data-en="2032 Projected Skyline"
                     data-kr="2032 Projected Skyline">
                     2032 Projected Skyline
                 </h2>
 
-                <div className="text-[17px] md:text-[19px] font-extralight text-[#8d8d94] leading-[1.55] tracking-[-0.02em] space-y-6 w-full mt-8 mb-[20px] max-w-[1200px]">
+                <div className="text-[17px] md:text-[19px] font-extralight text-[#8d8d94] leading-[1.57] tracking-[-0.02em] space-y-6 w-full mt-8 mb-[20px] max-w-[1200px]">
                     <p className="transition-all duration-300"
                         data-kr="2032년, 서울역을 중심으로 형성되는 새로운 도심 스카이라인은<br/><span class='text-black font-bold'>'IOTA ONE'과 'IOTA TWO'를 핵심 축으로 새로운 비즈니스 클러스터로 완성됩니다.</span><br/><br/>IOTA 서울은 서울역을 기점으로 CBD, YBD, GBD를 연결하는 3대 업무 축의 중심에 위치하며,<br/><span class='text-black font-bold'>서울 도심의 새로운 스카이라인과 경제 흐름을 선도하는 핵심 앵커 자산으로 자리 잡을 것입니다.</span>"
                         data-en="By 2032, the Seoul Station district will redefine the city's skyline<br/><span class='text-black font-bold'>anchored by IOTA One and IOTA Two, forming the core of a next-generation business cluster.</span><br/><br/>Situated at the intersection of Seoul's three major business axes<br/><span class='text-black font-bold'>CBD, YBD, and GBD — IOTA Seoul stands at the heart of the capital's new economic network.</span><br/><br/>At the meeting point of heritage, innovation, and global enterprise,<br/><span class='text-black font-bold'>IOTA Seoul emerges as the new center of gravity for Seoul's future business landscape.</span>">

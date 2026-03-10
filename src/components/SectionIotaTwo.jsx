@@ -20,7 +20,7 @@ export default function SectionIotaTwo() {
 
                     {/* First Item Area */}
                     <div className="flex flex-col w-full bs-fade-up">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
                                 <>1층 진입부:<br className="md:hidden" /> 도시의 흐름을 잇는 개방형 진입 구조</>
                             ) : (
@@ -28,7 +28,7 @@ export default function SectionIotaTwo() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -55,11 +55,11 @@ export default function SectionIotaTwo() {
 
                 {/* Second Item Area (Full Width) */}
                 <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-start bs-fade-up mt-24 md:mt-32 mb-6 md:mb-8">
-                    <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] break-keep mb-6 md:mb-8">
+                    <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.57] break-keep mb-6 md:mb-8">
                         Gateway Park:<br className="md:hidden" /> Connecting City and Nature
                     </h2>
 
-                    <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter">
+                    <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter">
                         {lang === 'kr' ? (
                             <div className="break-keep font-normal">
                                 <p className="mb-4">
@@ -89,11 +89,11 @@ export default function SectionIotaTwo() {
 
                     {/* Third Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Corporate Multi-Use Arena:<br className="md:hidden" /> Versatile, Urban, Inspiring
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -118,11 +118,11 @@ export default function SectionIotaTwo() {
 
                     {/* Fourth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Sky Garden:<br className="md:hidden" /> Where Nature Meets Skyline
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -151,11 +151,11 @@ export default function SectionIotaTwo() {
 
                     {/* Fifth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Event Space:<br className="md:hidden" /> Where Brands Shine, Culture Thrives, and the City Connects.
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -180,11 +180,11 @@ export default function SectionIotaTwo() {
 
                     {/* Sixth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Sky Garden & Event Space:<br className="md:hidden" /> An Elevated Cultural Destination Above the City
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -214,7 +214,7 @@ export default function SectionIotaTwo() {
 
                     {/* Seventh Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
                                 <>IOTA Two Main Lobby:<br className="md:hidden" /> Where the City's Flow Meets Architecture</>
                             ) : (
@@ -222,7 +222,7 @@ export default function SectionIotaTwo() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -250,11 +250,11 @@ export default function SectionIotaTwo() {
 
                     {/* Eighth Item Area - Mobile Text */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32 md:hidden">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Main Lobby Core Access:<br className="md:hidden" /> Architectural Rhythm in Motion
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -287,11 +287,11 @@ export default function SectionIotaTwo() {
 
                     {/* Desktop Text Overlay */}
                     <div className="absolute bottom-10 left-10 lg:bottom-20 lg:left-24 z-20 text-white hidden md:flex flex-col max-w-[1200px] pointer-events-none pr-10">
-                        <h2 className="text-[40px] font-inter font-light tracking-[-0.03em] leading-[1.2] mb-8 break-keep">
+                        <h2 className="text-[40px] font-inter font-light tracking-[-0.03em] leading-[1.57] mb-8 break-keep">
                             Main Lobby Core Access: Architectural Rhythm in Motion
                         </h2>
 
-                        <div className="w-full text-[17px] font-extralight text-stone-200 leading-[1.8] tracking-[-0.01em] font-inter">
+                        <div className="w-full text-[17px] font-extralight text-stone-200 leading-[1.57] tracking-[-0.01em] font-inter">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4 opacity-100">
@@ -319,7 +319,7 @@ export default function SectionIotaTwo() {
 
                     {/* Eighth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
                                 <>IOTA Two 메인 로비:<br className="md:hidden" /> 정제된 개방감과 건축적 질서</>
                             ) : (
@@ -334,11 +334,11 @@ export default function SectionIotaTwo() {
 
                     {/* Ninth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             Office Open Lounge:<br className="md:hidden" /> Where Connection Meets Calm
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -367,7 +367,7 @@ export default function SectionIotaTwo() {
 
                     {/* Tenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
-                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.2] mb-6 md:mb-8 break-keep">
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-[1.57] mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
                                 <>Office Elevator Hall:<br className="md:hidden" /> 기술과 자연의 균형, 정제된 환대의 공간</>
                             ) : (
@@ -375,7 +375,7 @@ export default function SectionIotaTwo() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.75] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
