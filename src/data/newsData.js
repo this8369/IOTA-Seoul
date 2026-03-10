@@ -56,7 +56,7 @@ export const newsData = [
             { type: "paragraph", text: "아울러 이지스는 향후 도심 오피스 시장의 중심축이 CBD에서 SYBD(Seoul-Yongsan station Building District)로 이동할 가능성이 충분하다고 판단하고 있습니다. 우선 서울역은 기존의 지하철 1호선과 4호선뿐만 아니라 GTX A,B 노선, KTX, 공항철도, 경의중앙선 등이 연결되는 교통의 결절지입니다. 이 같은 교통 허브가 가진 장점을 바탕으로 현재 서울역 일대는 여러 오피스 개발 프로젝트들이 동시에 진행되고 있습니다." },
             { type: "paragraph", text: "서울역뿐만 아니라 향후 용산역 주변에는 용산국제업무지구 개발이 추진될 예정입니다. 이지스는 서울역과 용산역 일대 대규모 개발 프로젝트들이 완성되는 시점에는 CBD가 아니라 SYBD라는 새로운 업무 지구가 형성될 것으로 예상하고 있습니다." }
         ],
-        originalUrl: "#"
+        originalUrl: "https://seoulpi.io/article/00369273995516755968"
     },
     {
         id: 4,
