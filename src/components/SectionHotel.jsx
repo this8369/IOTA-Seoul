@@ -85,7 +85,7 @@ export default function SectionHotel() {
                                     </h3>
                                 </div>
                                 {/* Right: Description */}
-                                <div className="w-full lg:w-[68%] text-[17px] md:text-[19px] font-extralight text-black leading-[1.57] tracking-[-0.02em] break-keep">
+                                <div className="w-full lg:w-[68%] text-[19px] md:text-[21px] font-extralight text-black leading-[1.57] tracking-[-0.02em] break-keep">
                                     <p className="mb-5">
                                         IOTA 서울에 입점하는 리츠칼튼 서울은 세계 최고의 럭셔리 호텔 브랜드로서 130여 년 간의 유산과 정교한 서비스 문화를 바탕으로, 서울의 새로운 도심 아이콘으로 자리할 것입니다.<br />
                                         리츠칼튼은 "삶의 가장 의미 있는 여정을 영감으로 이끈다"는 브랜드 비전 아래, 탁월한 서비스 표준(Gold Standards)과 글로벌 네트워크를 통해 IOTA 서울을 단순한 호텔 그 이상으로 격상시킵니다.
@@ -105,7 +105,7 @@ export default function SectionHotel() {
                                     </h3>
                                 </div>
                                 {/* Right: Description */}
-                                <div className="w-full lg:w-[68%] text-[17px] md:text-[19px] font-extralight text-black leading-[1.57] tracking-[-0.01em] font-inter">
+                                <div className="w-full lg:w-[68%] text-[19px] md:text-[21px] font-extralight text-black leading-[1.57] tracking-[-0.01em] font-inter">
                                     <p className="mb-5">
                                         Located within IOTA Seoul, The Ritz-Carlton Seoul embodies over a century of heritage and the legendary service culture that has defined <strong className="font-semibold">the world's most respected luxury hospitality brand</strong>. Guided by its vision to "Inspire Life's Most Meaningful Journeys," The Ritz-Carlton transforms IOTA Seoul into more than a hotel — a symbolic urban landmark representing Korean craftsmanship and global excellence.
                                     </p>

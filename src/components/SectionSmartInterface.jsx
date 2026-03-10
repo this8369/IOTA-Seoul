@@ -43,12 +43,12 @@ export default function SectionSmartInterface() {
                         <div className="text-[17px] md:text-[19px]  font-bold text-[#7b7b7d] leading-[1.57] tracking-[-0.02em] break-keep text-left">
                             <p className="mb-4">
                                 IOTA Seoul은 사용자가 건물과 상호작용하는 모든 순간을 직관적이고 매끄럽게 설계했습니다.<br className="hidden lg:block" />
-                                공기질, 온습도, 조명, 에너지 사용량 등 환경 데이터를 실시간으로 시각화하여 사용자가 환경 상태를 한눈에 확인할 수 있으며,<br className="hidden lg:block" />
+                                공기질, 온습도, 조명, 에너지 사용량 등 <span class='text-black font-extrabold'>환경 데이터를 실시간으로 시각화</span>하여 사용자가 환경 상태를 한눈에 확인할 수 있으며,<br className="hidden lg:block" />
                                 Building OS는 이를 기반으로 공조·환기·조명 시스템을 자동 제어합니다.
                             </p>
                             <p>
                                 또한 방문객과 입주자는 스마트폰 또는 AR 기반 인터페이스를 통해 위치 안내, 회의실 예약, 출입 인증, 주차 정보,<br className="hidden lg:block" />
-                                그리고 개인 맞춤형 길찾기까지 하나의 통합 플랫폼 안에서 손쉽게 이용할 수 있습니다.
+                                그리고 개인 맞춤형 길찾기까지 <span class='text-black font-extrabold'>하나의 통합 플랫폼</span> 안에서 손쉽게 이용할 수 있습니다.
                             </p>
                         </div>
                     ) : (

@@ -31,14 +31,14 @@ export default function SectionElevator() {
 
                                 <div className="text-[17px] md:text-[19px]  font-bold text-[#7b7b7d] leading-[1.57] tracking-[-0.02em] break-keep">
                                     <p className="mb-4">
-                                        IOTA Two는 국내 최고 사양의 <span className="font-bold underline underline-offset-4 decoration-stone-300">초대형 화물 엘리베이터</span>를 갖추고 있습니다.<br className="hidden lg:block" />
-                                        지하층부터 최상층 이벤트 스페이스까지 대형 전시물을 직접 운반할 수 있어, 대형 세단 공개 행사, 초대형 설치물 전시, 기술 데모, 럭셔리 제품 쇼케이스 등 프리미엄 이벤트 <span className="font-bold underline underline-offset-4 decoration-stone-300">운영이 가능합니다</span>.
+                                        IOTA Two는 국내 최고 사양의 <span className="font-bold  -offset-4 decoration-stone-300"><span class='text-black font-extrabold'>초대형 화물 엘리베이터</span></span>를 갖추고 있습니다.<br className="hidden lg:block" />
+                                        지하층부터 최상층 이벤트 스페이스까지 대형 전시물을 직접 운반할 수 있어, 대형 세단 공개 행사, 초대형 설치물 전시, 기술 데모, 럭셔리 제품 쇼케이스 등 프리미엄 이벤트 <span className="font-bold  -offset-4 decoration-stone-300">운영이 가능합니다</span>.
                                     </p>
                                     <p className="mb-4">
-                                        해당 엘리베이터는 최대 <span className="font-bold underline underline-offset-4 decoration-stone-300">16,000kg 적재</span>가 가능하며, 이는 최신 트로피 빌딩인 도쿄 토라노몬 힐즈의 8,000kg급 초대형 엘리베이터 대비 <span className="font-bold underline underline-offset-4 decoration-stone-300">2배 규모입니다</span>.
+                                        해당 엘리베이터는 최대 <span className="font-bold  -offset-4 decoration-stone-300"><span class='text-black font-extrabold'>16,000kg</span> 적재</span>가 가능하며, 이는 최신 트로피 빌딩인 도쿄 토라노몬 힐즈의 8,000kg급 초대형 엘리베이터 대비 <span className="font-bold  -offset-4 decoration-stone-300"><span class='text-black font-extrabold'>2배 규모</span>입니다</span>.
                                     </p>
                                     <p>
-                                        또한 기업 임차층에서도 대형 장비 및 설비 <span className="font-bold underline underline-offset-4 decoration-stone-300">이동이 가능해</span> 입주사의 운영 효율성을 <span className="font-bold underline underline-offset-4 decoration-stone-300">극대화합니다</span>.
+                                        또한 기업 임차층에서도 대형 장비 및 설비 <span className="font-bold  -offset-4 decoration-stone-300">이동이 가능해</span> 입주사의 운영 효율성을 <span className="font-bold  -offset-4 decoration-stone-300">극대화합니다</span>.
                                     </p>
                                 </div>
                             </div>

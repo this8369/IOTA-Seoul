@@ -27,7 +27,7 @@ export default function SectionNextGen() {
                     <h3 className="text-[20px] md:text-[26px] lg:text-[32px] font-bold text-[#4B7053] leading-tight tracking-tight mb-4 md:mb-6 kr-target-text break-keep bs-fade-up delay-300"
                         style={{ fontWeight: 'bold' }}
                         data-en="AI Ready & GREEN — The New Standard for Future Workplaces"
-                        data-kr="<span class='font-bold text-[#7b7b7d]'>차세대 오피스의 표준: AI Ready & Green Infra</span>">
+                        data-kr="<span class='font-bold text-[#7b7b7d]'><span class='text-black font-extrabold'>차세대 오피스의 표준: AI Ready & Green Infra</span></span>">
                         AI Ready & GREEN — The New Standard for Future Workplaces
                     </h3>
 

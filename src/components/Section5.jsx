@@ -28,9 +28,9 @@ export default function Section5() {
                             </h2>
                             <div className="mb-4">
                                 <h3 className="text-[18px] md:text-[22px] font-bold text-[#3B7062] tracking-[-0.02em]"
-                                    data-kr="<span class='font-bold text-[#7b7b7d]'>글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상</span>"
+                                    data-kr="<span class='font-bold text-[#7b7b7d]'><span class='text-black font-extrabold'>글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상</span></span>"
                                     data-en="Becoming the New Business District for Global Talent and Innovative Companies">
-                                    글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상
+                                    <span class='text-black font-extrabold'>글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상</span>
                                 </h3>
                                 <div
                                     className="text-[14px] md:text-[16px] text-black mt-[10px] font-inter font-bold tracking-tight">
@@ -111,7 +111,7 @@ export default function Section5() {
                             </h2>
                             <div className="mb-4 mt-6">
                                 <h3 className="text-[18px] md:text-[22px] font-bold text-[#3B7062] tracking-[-0.02em] leading-snug"
-                                    data-kr="<span class='font-bold text-[#7b7b7d]'>국가중앙역 + 광역교통 중심지의 독보적 접근성 제공</span>"
+                                    data-kr="<span class='font-bold text-[#7b7b7d]'><span class='text-black font-extrabold'>국가중앙역 + 광역교통 중심지의 독보적 접근성 제공</span></span>"
                                     data-en="The Nation's Ultimate Transit Hub - Unmatched, Unrivaled">
                                     The Nation's Ultimate Transit Hub - Unmatched, Unrivaled
                                 </h3>
@@ -119,11 +119,11 @@ export default function Section5() {
                             <div
                                 className="text-[17px] md:text-[19px] font-medium text-black leading-[1.57] tracking-[-0.02em] space-y-4 mb-8">
                                 <p className="kr-target-text transition-all duration-300"
-                                    data-kr="<span class='font-bold text-[#7b7b7d]'>서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 최적의 입지 조건을 갖추고 있습니다.</span>"
+                                    data-kr="<span class='font-bold text-[#7b7b7d]'>서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />또한, <span class='text-black font-extrabold'>GTX-A/B, 신분당선 개발</span>로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 <span class='text-black font-extrabold'>최적의 입지 조건</span>을 갖추고 있습니다.</span>"
                                     data-en="Seoul Station is Korea's foremost transportation hub, directly connected to 11 transit lines, including KTX, airport rail, and multiple metro routes. Together with nearby Yongsan Station, it forms an exceptional multimodal infrastructure at the center of the capital. With the addition of GTX-A/B and the Shinbundang Line, the site offers 30-minute access to key southeastern districts such as Gangnam, Bundang, and Pangyo. It also enables direct connections to both Incheon and Gimpo International Airports, making it an ideal location for global innovation-driven enterprises.">
                                     서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />
-                                    또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />
-                                    인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 최적의 입지 조건을 갖추고 있습니다.
+                                    또한, <span class='text-black font-extrabold'>GTX-A/B, 신분당선 개발</span>로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />
+                                    인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 <span class='text-black font-extrabold'>최적의 입지 조건</span>을 갖추고 있습니다.
                                 </p>
                             </div>
                             <div className="w-full max-w-[350px] flex flex-col gap-2 mt-2">
@@ -168,9 +168,9 @@ export default function Section5() {
                     </h2>
                     <div className="mb-4">
                         <h3 className="text-[18px] md:text-[20px] font-bold text-[#3B7062] tracking-[-0.02em]"
-                            data-kr="<span class='font-bold text-[#7b7b7d]'>글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상</span>"
+                            data-kr="<span class='font-bold text-[#7b7b7d]'><span class='text-black font-extrabold'>글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상</span></span>"
                             data-en="Becoming the New Business District for Global Talent and Innovative Companies">
-                            글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상
+                            <span class='text-black font-extrabold'>글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상</span>
                         </h3>
                         <div className="text-[15px] md:text-[16px] text-black mt-[10px] font-inter font-bold tracking-tight">
                             Seoul's Next Global Business Hub</div>
@@ -250,18 +250,18 @@ export default function Section5() {
                     </h2>
                     <div className="mb-4">
                         <h3 className="text-[18px] md:text-[20px] font-bold text-[#3B7062] tracking-[-0.02em] leading-snug"
-                            data-kr="<span class='font-bold text-[#7b7b7d]'>국가중앙역 + 광역교통 중심지의 독보적 접근성 제공</span>"
+                            data-kr="<span class='font-bold text-[#7b7b7d]'><span class='text-black font-extrabold'>국가중앙역 + 광역교통 중심지의 독보적 접근성 제공</span></span>"
                             data-en="The Nation's Ultimate Transit Hub - Unmatched, Unrivaled">
                             The Nation's Ultimate Transit Hub - Unmatched, Unrivaled
                         </h3>
                     </div>
                     <div className="text-[17px] md:text-[19px] font-medium text-black leading-[1.57] tracking-[-0.02em] mb-6">
                         <p className="kr-target-text transition-all duration-300"
-                            data-kr="<span class='font-bold text-[#7b7b7d]'>서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 최적의 입지 조건을 갖추고 있습니다.</span>"
+                            data-kr="<span class='font-bold text-[#7b7b7d]'>서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />또한, <span class='text-black font-extrabold'>GTX-A/B, 신분당선 개발</span>로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 <span class='text-black font-extrabold'>최적의 입지 조건</span>을 갖추고 있습니다.</span>"
                             data-en="Seoul Station is Korea's foremost transportation hub, directly connected to 11 transit lines, including KTX, airport rail, and multiple metro routes. Together with nearby Yongsan Station, it forms an exceptional multimodal infrastructure at the center of the capital. With the addition of GTX-A/B and the Shinbundang Line, the site offers 30-minute access to key southeastern districts such as Gangnam, Bundang, and Pangyo. It also enables direct connections to both Incheon and Gimpo International Airports, making it an ideal location for global innovation-driven enterprises.">
                             서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />
-                            또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />
-                            인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 최적의 입지 조건을 갖추고 있습니다.
+                            또한, <span class='text-black font-extrabold'>GTX-A/B, 신분당선 개발</span>로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />
+                            인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 <span class='text-black font-extrabold'>최적의 입지 조건</span>을 갖추고 있습니다.
                         </p>
                     </div>
                     <div className="w-full max-w-[300px] flex flex-col gap-2 mb-8">
