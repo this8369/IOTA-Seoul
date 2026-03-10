@@ -82,7 +82,7 @@ export default function SectionAIReady() {
                             </h2>
                         </div>
 
-                        <div className="relative w-[100vw] ml-[calc(50%-50vw)] flex-1 min-h-0 flex items-center justify-center">
+                        <div className="relative w-[calc(100%+48px)] -ml-[24px] md:w-[calc(100%+100px)] md:-ml-[50px] flex-1 min-h-0 flex items-center justify-center">
                             <img src="./img/AI_ready_building_m_01.jpg" alt="AI Ready Mobile 1" id="ai-img-m-1"
                                 className="absolute object-contain w-full h-full transition-opacity duration-1000 ease-in-out" />
                             <img src="./img/AI_ready_building_m_02.jpg" alt="AI Ready Mobile 2" id="ai-img-m-2"
