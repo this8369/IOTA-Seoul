@@ -98,7 +98,7 @@ export default function SectionScale() {
 
                     <div className="w-full flex justify-between items-end mb-4 px-2 space-x-2">
                         <div className="flex flex-col text-left">
-                            <h4 className="font-bold text-white text-[16px] md:text-[20px] tracking-tight break-keep"
+                            <h4 className="font-bold text-white text-[17px] md:text-[20px] tracking-tight break-keep"
                                 data-kr="2025년 5월 현재 CBD 최대규모 자산 &amp; 2032년까지 개발예정 자산 규모 비교"
                                 data-en="Largest Asset in CBD as of May 2025 &amp; Comparison with Future Pipelines through 2032"
                             >

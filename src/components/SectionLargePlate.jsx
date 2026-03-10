@@ -27,7 +27,7 @@ export default function SectionLargePlate() {
                             The Most Spacious Floor Area in CBD
                         </h3>
 
-                        <h4 className="text-[16px] md:text-[20px] lg:text-[24px] font-bold text-[#111] tracking-tight leading-snug kr-target-text break-keep font-inter bs-fade-up delay-400"
+                        <h4 className="text-[17px] md:text-[20px] lg:text-[24px] font-bold text-[#111] tracking-tight leading-snug kr-target-text break-keep font-inter bs-fade-up delay-400"
                             data-en="Empowering Teamwork and Creativity on the City's Most Expansive Office Floors"
                             data-kr="Empowering Teamwork and Creativity on the City's Most Expansive Office Floors">
                             Empowering Teamwork and Creativity on the City's Most Expansive Office Floors

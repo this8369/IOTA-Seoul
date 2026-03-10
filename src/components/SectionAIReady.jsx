@@ -35,7 +35,7 @@ export default function SectionAIReady() {
                                     <h3 className="text-[18px] md:text-[22px] lg:text-[24px] xl:text-[26px] font-bold text-[#1a65a4] tracking-[-0.03em] mb-2 leading-tight break-keep">
                                         AI Ready Building : 데이터 기반 의사결정과 자동화를 구현하는 지능형 빌딩 운영체계
                                     </h3>
-                                    <h4 className="text-[14px] md:text-[15px] lg:text-[16px] xl:text-[18px] font-bold text-gray-700 tracking-[-0.01em] mb-6 font-inter">
+                                    <h4 className="text-[17px] md:text-[19px] lg:text-[19px] xl:text-[19px] font-bold text-gray-700 tracking-[-0.01em] mb-6 font-inter">
                                         An AI-Driven Building Ecosystem Enabling Autonomous Operations<br />and Data-Based Decisions
                                     </h4>
 
@@ -52,7 +52,7 @@ export default function SectionAIReady() {
                                 </>
                             ) : (
                                 <>
-                                    <h3 className="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[26px] font-bold text-[#1a65a4] tracking-[-0.01em] mb-6 font-inter leading-tight">
+                                    <h3 className="text-[17px] md:text-[20px] lg:text-[24px] xl:text-[26px] font-bold text-[#1a65a4] tracking-[-0.01em] mb-6 font-inter leading-tight">
                                         An AI-Driven Building Ecosystem Enabling Autonomous Operations<br />and Data-Based Decisions
                                     </h3>
 
@@ -94,10 +94,10 @@ export default function SectionAIReady() {
                         <div className="w-full max-w-[1100px] mx-auto flex flex-col mt-2 md:mt-4 shrink-0 text-left">
                             {lang === 'kr' ? (
                                 <>
-                                    <h3 className="text-[15px] md:text-[18px] font-bold text-[#1a65a4] tracking-[-0.03em] mb-1 leading-tight break-keep">
+                                    <h3 className="text-[17px] md:text-[19px] font-bold text-[#1a65a4] tracking-[-0.03em] mb-1 leading-tight break-keep">
                                         AI Ready Building : 데이터 기반 의사결정과 자동화를 구현하는 지능형 빌딩 운영체계
                                     </h3>
-                                    <h4 className="text-[13px] md:text-[14px] font-bold text-gray-700 tracking-[-0.01em] mb-3 font-inter">
+                                    <h4 className="text-[17px] md:text-[19px] font-bold text-gray-700 tracking-[-0.01em] mb-3 font-inter">
                                         An AI-Driven Building Ecosystem Enabling Autonomous Operations<br />and Data-Based Decisions
                                     </h4>
 
@@ -112,7 +112,7 @@ export default function SectionAIReady() {
                                 </>
                             ) : (
                                 <>
-                                    <h3 className="text-[13px] md:text-[15px] font-bold text-[#1a65a4] tracking-[-0.01em] mb-3 font-inter leading-tight">
+                                    <h3 className="text-[17px] md:text-[19px] font-bold text-[#1a65a4] tracking-[-0.01em] mb-3 font-inter leading-tight">
                                         An AI-Driven Building Ecosystem Enabling Autonomous Operations<br />and Data-Based Decisions
                                     </h3>
 

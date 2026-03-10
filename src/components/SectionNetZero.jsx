@@ -26,7 +26,7 @@ export default function SectionNetZero() {
                             <h3 className="text-[22px] md:text-[28px] lg:text-[32px] font-bold text-[#1a65a4] tracking-tight leading-tight mb-2 break-keep">
                                 CRREM 2030 목표에 부합하는 Net-Zero Ready 오피스
                             </h3>
-                            <h4 className="text-[16px] md:text-[20px] lg:text-[24px] font-bold text-[#333] tracking-[-0.01em] mb-10 font-inter leading-tight">
+                            <h4 className="text-[17px] md:text-[20px] lg:text-[24px] font-bold text-[#333] tracking-[-0.01em] mb-10 font-inter leading-tight">
                                 30% Below National Carbon Baseline,<br />Fully Compliant with CRREM 2030
                             </h4>
 
