@@ -46,6 +46,29 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
     }, [currentPage, activeSection]);
 
     const switchLang = (newLang) => {
+        if (lang === newLang) return;
+
+        // Visual blink effect
+        const overlay = document.createElement('div');
+        overlay.style.position = 'fixed';
+        overlay.style.top = '0';
+        overlay.style.left = '0';
+        overlay.style.width = '100vw';
+        overlay.style.height = '100vh';
+        overlay.style.backgroundColor = 'black';
+        overlay.style.opacity = '0.3';
+        overlay.style.zIndex = '999999';
+        overlay.style.pointerEvents = 'none';
+        overlay.style.transition = 'opacity 0.3s ease-out';
+        document.body.appendChild(overlay);
+
+        setTimeout(() => {
+            overlay.style.opacity = '0';
+            setTimeout(() => {
+                document.body.removeChild(overlay);
+            }, 300);
+        }, 150);
+
         setLang(newLang);
         setMobileMenuOpen(false);
         // Keep header during programmatic language switch
