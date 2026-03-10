@@ -19,7 +19,7 @@ export default function SectionFoster() {
                     </div>
 
                     {/* Description Texts moved to the right with adjusted size and width */}
-                    <div className="mt-8 lg:mt-0 text-[17px] md:text-[19px] font-light text-gray-300 leading-[1.6] space-y-4 lg:max-w-[676px] xl:max-w-[772px] bs-fade-up delay-200 break-keep">
+                    <div className="mt-8 lg:mt-0 text-[17px] md:text-[19px] font-light text-gray-300 leading-[1.55] space-y-4 lg:max-w-[676px] xl:max-w-[772px] bs-fade-up delay-200 break-keep">
                         <p className="kr-target-text transition-all duration-300"
                             data-en="Designs have been revealed for IOTA Seoul I, a mixed-use development on a landmark site between Seoul Station and Namsan, a 270-metre-high peak in Jung-Gu.<br/>Historically, the site acted as an important gateway to Seoul when arriving by train."
                             data-kr="IOTA 서울 I은 서울역과 남산 사이의 상징적인 부지에 조성되는 대규모 복합개발 프로젝트입니다. 이 부지는 과거 철도를 통해 서울로 진입하는 관문이었던 역사적 장소로, 도시의 중요한 축을 형성해 왔습니다.">

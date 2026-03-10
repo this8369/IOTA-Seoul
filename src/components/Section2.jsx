@@ -13,7 +13,7 @@ export default function Section2() {
                         <h1 className="text-[31px] md:text-[55px] lg:text-[67px] font-bold leading-tight text-black tracking-[-0.02em] font-inter bs-fade-up delay-100"
                             data-en="New Heart of Seoul" data-kr="New Heart of Seoul">New Heart of Seoul</h1>
                         <div id="desc-text"
-                            className="font-inter w-full mt-6 md:mt-8 text-[17px] md:text-[19px] tracking-[-0.02em] font-light text-black leading-relaxed space-y-6 bs-fade-up delay-200">
+                            className="font-inter w-full mt-6 md:mt-8 text-[17px] md:text-[19px] tracking-[-0.02em] font-light text-black leading-[1.57] space-y-6 bs-fade-up delay-200">
                             <p className="kr-target-text transition-all duration-300"
                                 data-en="<strong class='font-bold text-black'>IOTA Seoul</strong> is the <strong class='font-bold text-black'>next-generation landmark</strong> redefining the heart of Korea’s capital. Perfectly positioned between the iconic Namsan and Seoul Station, this architectural masterpiece seamlessly bridges Seoul’s rich heritage with its <strong class='font-bold text-black'>dynamic future.</strong>"
                                 data-kr="<strong class='font-bold text-black'>이오타 서울</strong>은 최첨단 오피스와 최고급 호텔, 프리미엄 주거가 결합된 연면적 14만 평 규모의 <strong class='font-bold text-black'>대규모 복합개발 프로젝트</strong>입니다. 남산의 광활한 녹지와 광역 교통의 허브인 서울역과 인접한 입지에 자리하며, 지속가능한 설계를 기반으로 문화 매식 리테일 엔터테인먼트가 유기적으로 어우러진 복합 환경을 구현합니다. 이를 통해 글로벌 기업과 인재들에게 <strong class='font-bold text-black'>비즈니스와 라이프스타일이 자연스럽게 연결되는 최적의 업무 생활 플랫폼</strong>을 제공합니다.">

@@ -39,7 +39,7 @@ export default function SectionAirQuality() {
                                 Achieving Continuous Clean Air and Optimal Comfort through Real-Time Sensing
                             </h4>
 
-                            <div className="w-full text-[17px] md:text-[19px] font-extralight text-black leading-[1.7] tracking-[-0.02em] break-keep flex flex-col items-center">
+                            <div className="w-full text-[17px] md:text-[19px] font-extralight text-black leading-[1.55] tracking-[-0.02em] break-keep flex flex-col items-center">
                                 <p className="mb-2">
                                     IOTA Seoul은 빌딩 내 전 구역의 공기질을 상시 모니터링하고, AI 알고리즘이 온도·습도·미세먼지·유해가스 등 실내 공기질 항목을 자동 제어합니다.
                                 </p>
@@ -57,7 +57,7 @@ export default function SectionAirQuality() {
                                 Achieving Continuous Clean Air and Optimal Comfort through Real-Time Sensing
                             </h3>
 
-                            <div className="w-full text-[17px] md:text-[19px] font-extralight text-gray-800 leading-[1.7] tracking-[-0.01em] font-inter flex flex-col items-center">
+                            <div className="w-full text-[17px] md:text-[19px] font-extralight text-gray-800 leading-[1.55] tracking-[-0.01em] font-inter flex flex-col items-center">
                                 <p className="mb-2">
                                     IOTA Seoul continuously monitors air quality across all zones, with AI algorithms autonomously controlling temperature, humidity, fine dust, and harmful gases.
                                 </p>

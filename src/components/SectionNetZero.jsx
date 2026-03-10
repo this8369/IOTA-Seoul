@@ -30,7 +30,7 @@ export default function SectionNetZero() {
                                 30% Below National Carbon Baseline,<br />Fully Compliant with CRREM 2030
                             </h4>
 
-                            <div className="text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.8] tracking-[-0.02em] break-keep">
+                            <div className="text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.75] tracking-[-0.02em] break-keep">
                                 <p className="mb-4">
                                     이오타서울은 국내 탄소배출 허용기준 대비 30% 낮은 에너지 집약도를 구현하며, CRREM 2030 글로벌 에너지 효율 목표를 충족하는 Net-Zero Ready 오피스로 설계되었습니다.
                                 </p>
@@ -48,7 +48,7 @@ export default function SectionNetZero() {
                                 30% Below National Carbon Baseline,<br />Fully Compliant with CRREM 2030
                             </h3>
 
-                            <div className="text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.8] tracking-[-0.01em] font-inter">
+                            <div className="text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.75] tracking-[-0.01em] font-inter">
                                 <p className="mb-4">
                                     IOTA Seoul achieves an energy intensity 30% below Korea's carbon emission baseline, fully compliant with the CRREM 2030 global energy efficiency target, establishing itself as a Net-Zero Ready workplace designed for the future.
                                 </p>

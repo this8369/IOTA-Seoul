@@ -37,7 +37,7 @@ export default function Section5() {
                                     Seoul's Next Global Business Hub</div>
                             </div>
                             <div
-                                className="text-[17px] md:text-[19px] text-black leading-relaxed tracking-[-0.02em] space-y-4 mb-10 font-normal kr-target-text">
+                                className="text-[17px] md:text-[19px] text-black leading-[1.57] tracking-[-0.02em] space-y-4 mb-10 font-normal kr-target-text">
                                 <p className="kr-target-text transition-all duration-300"
                                     data-kr="서울역과 용산역을 잇는 교통의 결절지인 SYBD는 뉴욕의 그랜드 센트럴에서 허드슨 야드를 아우르는 글로벌 업무지구와 같이 서울의 차기 글로벌 비즈니스 허브로 도약할 것입니다."
                                     data-en="Connecting Seoul Station and Yongsan Station, SYBD (Seoul Yongsan Business District) is becoming the most desired retail and office locations within the city. Just as Hudson Yards extends from Grand Central Terminal in New York to form a world-class business cluster, SYBD is poised to become Seoul's next-generation global business hub, seamlessly integrating transit, commerce, and innovation.">
@@ -117,7 +117,7 @@ export default function Section5() {
                                 </h3>
                             </div>
                             <div
-                                className="text-[17px] md:text-[19px] font-medium text-black leading-relaxed tracking-[-0.02em] space-y-4 mb-8">
+                                className="text-[17px] md:text-[19px] font-medium text-black leading-[1.57] tracking-[-0.02em] space-y-4 mb-8">
                                 <p className="kr-target-text transition-all duration-300"
                                     data-kr="서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 최적의 입지 조건을 갖추고 있습니다."
                                     data-en="Seoul Station is Korea's foremost transportation hub, directly connected to 11 transit lines, including KTX, airport rail, and multiple metro routes. Together with nearby Yongsan Station, it forms an exceptional multimodal infrastructure at the center of the capital. With the addition of GTX-A/B and the Shinbundang Line, the site offers 30-minute access to key southeastern districts such as Gangnam, Bundang, and Pangyo. It also enables direct connections to both Incheon and Gimpo International Airports, making it an ideal location for global innovation-driven enterprises.">
@@ -175,7 +175,7 @@ export default function Section5() {
                         <div className="text-[15px] md:text-[16px] text-black mt-[10px] font-inter font-bold tracking-tight">
                             Seoul's Next Global Business Hub</div>
                     </div>
-                    <div className="text-[17px] md:text-[19px] text-black leading-relaxed tracking-[-0.02em] mb-8 font-normal kr-target-text">
+                    <div className="text-[17px] md:text-[19px] text-black leading-[1.57] tracking-[-0.02em] mb-8 font-normal kr-target-text">
                         <p className="kr-target-text transition-all duration-300"
                             data-kr="서울역과 용산역을 잇는 교통의 결절지인 SYBD는 뉴욕의 그랜드 센트럴에서 허드슨 야드를 아우르는 글로벌 업무지구와 같이 서울의 차기 글로벌 비즈니스 허브로 도약할 것입니다."
                             data-en="Connecting Seoul Station and Yongsan Station, SYBD (Seoul Yongsan Business District) is becoming the most desired retail and office locations within the city. Just as Hudson Yards extends from Grand Central Terminal in New York to form a world-class business cluster, SYBD is poised to become Seoul's next-generation global business hub, seamlessly integrating transit, commerce, and innovation.">
@@ -255,7 +255,7 @@ export default function Section5() {
                             The Nation's Ultimate Transit Hub - Unmatched, Unrivaled
                         </h3>
                     </div>
-                    <div className="text-[17px] md:text-[19px] font-medium text-black leading-relaxed tracking-[-0.02em] mb-6">
+                    <div className="text-[17px] md:text-[19px] font-medium text-black leading-[1.57] tracking-[-0.02em] mb-6">
                         <p className="kr-target-text transition-all duration-300"
                             data-kr="서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 최적의 입지 조건을 갖추고 있습니다."
                             data-en="Seoul Station is Korea's foremost transportation hub, directly connected to 11 transit lines, including KTX, airport rail, and multiple metro routes. Together with nearby Yongsan Station, it forms an exceptional multimodal infrastructure at the center of the capital. With the addition of GTX-A/B and the Shinbundang Line, the site offers 30-minute access to key southeastern districts such as Gangnam, Bundang, and Pangyo. It also enables direct connections to both Incheon and Gimpo International Airports, making it an ideal location for global innovation-driven enterprises.">

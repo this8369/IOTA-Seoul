@@ -83,7 +83,7 @@ export default function SectionConstruction() {
                                 <h3 className="text-[17px] md:text-[20px] font-bold text-black tracking-[-0.01em] mb-6 break-keep">
                                     국내 최상위 시공사 현대건설과 삼성물산의 시공
                                 </h3>
-                                <div className="text-[17px] md:text-[19px] font-extralight text-gray-800 leading-[1.8] tracking-[-0.02em] break-keep mb-10 text-left">
+                                <div className="text-[17px] md:text-[19px] font-extralight text-gray-800 leading-[1.75] tracking-[-0.02em] break-keep mb-10 text-left">
                                     <p className="mb-4">
                                         세계적인 랜드마크 프로젝트를 성공적으로 수행해 온 국내 최고 건설사인 현대건설과 삼성물산의 참여는, IOTA 서울을 단순한 오피스 복합시설을 넘어서는 상징적 자산으로 격상시킵니다.
                                     </p>
@@ -97,7 +97,7 @@ export default function SectionConstruction() {
                                 <h3 className="text-[17px] md:text-[20px] font-bold text-black tracking-[-0.01em] mb-6 font-inter leading-snug">
                                     Construction by Korea's Top-ranked Contractor :<br />Hyundai E&C, Samsung C&T
                                 </h3>
-                                <div className="text-[17px] md:text-[19px] font-extralight text-gray-800 leading-[1.8] tracking-[-0.01em] font-inter mb-10 text-left">
+                                <div className="text-[17px] md:text-[19px] font-extralight text-gray-800 leading-[1.75] tracking-[-0.01em] font-inter mb-10 text-left">
                                     <p className="mb-4">
                                         The involvement of Korea's two most prestigious construction firms — Hyundai Engineering & Construction and Samsung Construction & Trading — both renowned for delivering landmark projects worldwide, positions IOTA Seoul as more than just an office complex.
                                     </p>
