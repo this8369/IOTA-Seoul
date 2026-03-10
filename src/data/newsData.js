@@ -18,12 +18,27 @@ export const newsData = [
     },
     {
         id: 2,
-        title: "IGIS Asset Management Announces Expansion of Midstream Joint Venture",
-        date: "March 02, 2026",
+        title: "'이오타 서울' AI 시대 오피스 공간 변화 '선두' 달린다",
+        date: "May 19, 2025",
         content: [
-            { type: "paragraph", text: "Detailed news content will be updated soon." }
+            { type: "paragraph", text: "[이데일리 김성수 기자] 이지스자산운용이 추진하는 '이오타 서울'(IOTA Seoul) 프로젝트가 인공지능(AI) 시대 오피스 공간 변화의 선두를 달리고 있다.\n이제 AI가 오피스의 일상이 되는 시대가 본격적으로 열리고 있는 것." },
+            { type: "subtitle", text: "국내 최초 'AI-레디' 오피스...새로운 업무환경 '시작'" },
+            { type: "paragraph", text: "19일 부동산업계에 따르면 이오타 서울은 국내 최초로 'AI-레디' 오피스를 표방하며 새로운 업무 환경의 시작을 알리고 있다.\nAI-레디란 조직이나 데이터, 시스템 등이 AI 기술을 효과적으로 도입하고 활용할 수 있도록 준비된 상태를 의미한다." },
+            { type: "paragraph", text: "이오타 서울은 옛 남산 밀레니엄 힐튼 호텔 부지 일원을 재개발해 미래형 오피스와 국내 최초의 6성급 호텔, 리테일이 결합된 미래지향적 복합 랜드마크를 조성하는 대규모 도시 재생 프로젝트다.\n인근 메트로타워, 서울로타워와 통합해서 개발 중이며, 오는 2031년 준공 예정이다." },
+            { type: "paragraph", text: "약 2만7537㎡(8330평) 부지 위에 연면적 약 46만㎡(13만9000평) 규모의 3개 빌딩으로 조성된다. 이오타 서울은 서울역과 용산역을 연결하는 핵심 비즈니스 지역인 SYBD(Seoul Yongsan Business District)의 중심에 위치한다.\n또한 서울역과 남산 녹지 지역을 연결하고 옛 힐튼호텔 유산을 보존하며 도시와 자연, 과거와 미래를 잇는 서울의 대표적 트로피 에셋으로 자리매김할 예정이다." },
+            { type: "subtitle", text: "AI 시대 오피스, 상상 아닌 현실...첨단 IT 기업 '주목'" },
+            { type: "paragraph", text: "일하는 방식과 문화가 변화하며 전 세계적으로 오피스 환경 업그레이드 경쟁이 치열하다. 마이크로소프트(MS)와 구글, 아마존 등 빅테크 기업들은 각자의 본사 건물에 AI 기반 자동화 시스템을 도입했다.\n국내에서 이런 글로벌 오피스 트렌드를 실체화해 나가는 것은 이오타 서울이 처음이다." },
+            { type: "paragraph", text: "이오타 서울 개발 팀은 AI 시대가 도래하며 변화될 업무 환경을 연구하면서 오피스의 차별화된 인프라와 서비스를 개발하고 있다. AI 관리 시스템을 도입해 오피스 빌딩의 에너지 효율을 높이고, 환경·사회·지배구조(ESG) 품질을 극대화하고 있다.\n또한 AI를 업무에 본격 도입하는 기업들을 위한 '디지털 어메니티'를 준비하고 있다. 디지털 어메니티란 상업용부동산이 임차 기업의 AI-레디 환경을 위해 지원하는 디지털 인프라를 말한다. 대표적인 예로 데이터센터 환경이 있다." },
+            { type: "paragraph", text: "전 산업군에 걸쳐 AI 기반 사업 강화가 보편화되면서 기업들의 데이터센터 수요가 증가하는데, 이에 대비한 새로운 개념의 오피스 인프라다.\n이지스자산운용은 이를 위해 △빌딩 내 구축하는 인 빌딩(In-Building) 방식 △이지스자산운용이 개발 중인 하이퍼스케일 데이터센터를 임차사 전용으로 연계해 지원하는 아웃 빌딩(Out-Building) 방식을 동시에 계획하고 있다." },
+            { type: "paragraph", text: "AI 시대를 위한 디지털 어메니티 트렌드는 글로벌 시장에서 이미 대세로 자리잡고 있다. 미국 플로리다주 마이애미시에 있는 '600 브릭켈' 빌딩의 경우 건물 내부에 입주 기업들만을 위한 데이터 센터를 구축, 어메니티로 제공 중이다.\n또한 일본의 대형 디벨로퍼인 미쓰비시지쇼는 도쿄 핵심 지역 입주사들을 위해 오테마치 데이터센터를 준공해서 임차사들을 위한 거점 데이터센터를 운영 및 서비스 중이다." },
+            { type: "paragraph", text: "이지스자산운용 관계자는 '우리 회사는 오피스 및 데이터센터 모두에서 최고의 경쟁력을 가지고 있기 때문에 더 원활한 협업 구조 구현이 가능하다'며 '이를 통해 AI 시대 기업들을 위한 최적의 업무 환경을 구현하려 한다'고 설명했다." },
+            { type: "subtitle", text: "대면 협업 시대...이오타서울, 한층 350명 이상 수용" },
+            { type: "paragraph", text: "AI 시대가 본격화할수록 혼자서 단순 업무를 반복하는 일은 줄어들고 모여서 소통하고 협력하는 기능이 더욱 중요해진다. 이에 따라 오피스가 창의적 협업을 위한 공간으로 기능하게 된다.\n글로벌 기업들이 다시 오피스 출근(Return To Office·RTO)을 강조하는 것도 대면 협업을 통한 혁신이 필수적이기 때문이다." },
+            { type: "paragraph", text: "이오타 서울은 창의적 협업을 위해 최대 350명 이상 임직원을 한 층에 수용할 수 있는 넓은 바닥면적(최대 3798㎡, 약 1149평)을 갖추고 있다.\n또한 쾌적한 업무 환경을 위해 별도의 웰니스 시설을 갖추고, 이오타 서울 단지 내 9917㎡(약 3000평) 규모 녹지를 조성할 예정이다." },
+            { type: "paragraph", text: "이에 따라 주요 기업들이 이오타 서울에 높은 관심을 보이고 있다. AI 연산 사용량이 증가할 법무, 금융, 전자, AI 응용 기업 등에서 임차 문의가 이어지고 있다.\n국내 IT 기업의 AI 담당 임원은 '오피스 임대료 외에도 데이터센터 사용량 및 비용이 지속 증가하고 있다'며 '이오타 서울이 계획 중인 디지털 어메니티가 기업들에 매력적인 조건이 될 것 같다'고 말했다." },
+            { type: "paragraph", text: "이오타 서울 프로젝트는 최근 메트로타워, 서울로타워가 사업시행계획인가를 받으면서 오는 7월 착공을 목표로 하고 있다.\n개발이 끝나면 연면적 46만㎡(13만9000평) 규모 초대형 복합단지로 탈바꿈해 서울의 도시 경쟁력을 높일 것으로 기대된다." }
         ],
-        originalUrl: "#"
+        originalUrl: "https://marketin.edaily.co.kr/News/Read?newsId=01505526642170560"
     },
     {
         id: 3,
@@ -56,6 +71,24 @@ export const newsData = [
         id: 6,
         title: "IOTA Infrastructure and Global Partners to acquire EcoSolutions",
         date: "February 12, 2026",
+        content: [
+            { type: "paragraph", text: "Detailed news content will be updated soon." }
+        ],
+        originalUrl: "#"
+    },
+    {
+        id: 7,
+        title: "IOTA Seoul Unveils Groundbreaking ESG Framework with Target to Achieve Net Zero by 2030",
+        date: "February 05, 2026",
+        content: [
+            { type: "paragraph", text: "Detailed news content will be updated soon." }
+        ],
+        originalUrl: "#"
+    },
+    {
+        id: 8,
+        title: "IGIS Asset Management Outlines Commitment to Support Sustainable Developments in Urban Seoul",
+        date: "February 01, 2026",
         content: [
             { type: "paragraph", text: "Detailed news content will be updated soon." }
         ],
