@@ -119,7 +119,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                         className="text-xl font-bold tracking-normal cursor-pointer hover:opacity-80 transition-opacity">
                         IOTA Seoul
                     </a>
-                    <div className="hidden md:flex items-center space-x-10">
+                    <div className="hidden min-[1100px]:flex items-center space-x-10">
                         <nav className="flex space-x-8 text-[16px] font-normal text-gray-800">
                             <a href="#section2" onClick={(e) => handleScrollTo(e, 'section2')} className={`${activeSection === 'section2' ? 'text-black font-bold' : 'hover:text-gray-500'} transition-colors duration-200`}>
                                 Location
@@ -163,18 +163,17 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                             </div>
                         </div>
                     </div>
-                    <div className="md:hidden flex items-center space-x-4">
-                        <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="focus:outline-none">
-                            <svg className="w-6 h-6 border rounded" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg>
+                    <div className="min-[1100px]:hidden flex items-center space-x-4">
+                        <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="focus:outline-none w-8 h-8 flex flex-col justify-center items-end gap-[6px]">
+                            <span className="block w-[26px] h-[2px] bg-black"></span>
+                            <span className="block w-[26px] h-[2px] bg-black"></span>
                         </button>
                     </div>
                 </div>
             </header>
 
             <div id="mobile-menu"
-                className={`fixed top-[90px] left-0 w-full bg-white shadow-lg flex-col py-6 space-y-4 z-40 transition-transform md:hidden text-center justify-center items-center ${mobileMenuOpen ? 'flex' : 'hidden'}`}>
+                className={`fixed top-[90px] left-0 w-full bg-white shadow-lg flex-col py-6 space-y-4 z-40 transition-transform ${mobileMenuOpen ? 'flex' : 'hidden'} min-[1100px]:hidden text-center justify-center items-center`}>
                 <a href="#section2" onClick={(e) => handleScrollTo(e, 'section2')} className={`text-[16px] text-gray-800 ${activeSection === 'section2' ? 'font-bold' : 'font-normal'}`}>Location</a>
                 <a href="#section-green" onClick={(e) => handleScrollTo(e, 'section-green')} className={`text-[16px] text-gray-800 ${activeSection === 'section-green' ? 'font-bold' : 'font-normal'}`}>Green</a>
                 <a href="#section-scale" onClick={(e) => handleScrollTo(e, 'section-scale')} className={`text-[16px] text-gray-800 ${activeSection === 'section-scale' ? 'font-bold' : 'font-normal'}`}>Scale</a>
