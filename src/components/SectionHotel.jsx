@@ -15,10 +15,10 @@ export default function SectionHotel() {
 
                         {lang === 'kr' ? (
                             <>
-                                <h3 className="text-[17px] md:text-[20px] font-bold text-[#8a5d4a] tracking-[-0.01em] mb-4 break-keep">
+                                <h3 className="text-[17px] md:text-[22px] font-bold text-[#8a5d4a] tracking-[-0.01em] mb-4 break-keep">
                                     세계에서 가장 럭셔리한 호텔 브랜드 '리츠칼튼 서울' 입점
                                 </h3>
-                                <div className="text-[14px] md:text-[16px] xl:text-[17px] font-extralight text-black leading-[1.57] tracking-[-0.02em] break-keep">
+                                <div className="text-[14px] md:text-[18px] xl:text-[19px] font-extralight text-black leading-[1.57] tracking-[-0.02em] break-keep">
                                     <p>
                                         이오타서울 오피스 입주사와 임직원들은 호텔 컨시어지 서비스를 기반으로 웰니스 라운지, 프라이빗 비즈니스 라운지, 예약형 회의실, 리프레시 공간 등<br className="hidden xl:block" />리츠칼튼의 서비스 노하우가 녹아든 어메니티를 일상적으로 누리게 됩니다.
                                     </p>
@@ -26,10 +26,10 @@ export default function SectionHotel() {
                             </>
                         ) : (
                             <>
-                                <h3 className="text-[17px] md:text-[20px] font-bold text-[#8a5d4a] tracking-[-0.01em] mb-4 font-inter">
+                                <h3 className="text-[17px] md:text-[22px] font-bold text-[#8a5d4a] tracking-[-0.01em] mb-4 font-inter">
                                     Grand Opening is IOTA : The Ritz-Carlton - where World-Class Luxury Arrives
                                 </h3>
-                                <div className="text-[14px] md:text-[16px] xl:text-[17px] font-extralight text-black leading-[1.57] tracking-[-0.01em] font-inter">
+                                <div className="text-[14px] md:text-[18px] xl:text-[19px] font-extralight text-black leading-[1.57] tracking-[-0.01em] font-inter">
                                     <p>
                                         Tenants and their employees will enjoy daily access to amenities infused with The Ritz-Carlton's signature service philosophy—including hotel-style concierge services,<br className="hidden xl:block" />a wellness lounge, private business lounges, reservable meeting rooms, and refresh zones.
                                     </p>
