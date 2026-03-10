@@ -36,7 +36,6 @@ export default function HoverImage({
                     alt={alt}
                     className={className}
                     style={style}
-                    loading="lazy"
                 />
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.5)_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
 
