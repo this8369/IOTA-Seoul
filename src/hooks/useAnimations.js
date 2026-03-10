@@ -14,6 +14,15 @@ export function useAnimations(currentPage) {
             }, 2000);
         }
 
+        const updateScrollbarWidth = () => {
+            if (scrollContainer) {
+                const scrollbarWidth = window.innerWidth - scrollContainer.clientWidth;
+                document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+            }
+        };
+        updateScrollbarWidth();
+        window.addEventListener('resize', updateScrollbarWidth);
+
         const handleScroll = () => {
             if (!scrollContainer || !header) return;
             let st = scrollContainer.scrollTop;
@@ -154,6 +163,7 @@ export function useAnimations(currentPage) {
         }, 150);
 
         return () => {
+            window.removeEventListener('resize', updateScrollbarWidth);
             if (scrollContainer) {
                 scrollContainer.removeEventListener('scroll', handleScroll);
             }
