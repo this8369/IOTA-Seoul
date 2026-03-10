@@ -75,14 +75,14 @@ export default function SectionAIReady() {
 
                 {/* MOBILE ANIMATED IMAGE AREA (iPad & below) */}
                 <div id="ai-scroll-area-m" className="lg:hidden w-full relative h-[300vh] bs-fade-up delay-200">
-                    <div className="w-full h-[100dvh] sticky top-0 left-0 flex flex-col justify-between overflow-hidden py-4 md:py-8">
+                    <div className="w-full min-h-[100dvh] sticky top-0 left-0 flex flex-col justify-center py-4 md:py-8">
                         <div className="w-full mb-2 shrink-0 text-center">
                             <h2 className="text-[26px] md:text-[34px] font-extrabold text-black tracking-[-0.03em] font-inter leading-tight">
                                 AI Driven Biomorphic Workplace Framework
                             </h2>
                         </div>
 
-                        <div className="relative w-[calc(100%+48px)] -ml-[24px] md:w-[calc(100%+100px)] md:-ml-[50px] flex-1 min-h-0 flex items-center justify-center">
+                        <div className="relative w-[calc(100%+48px)] -ml-[24px] md:w-[calc(100%+100px)] md:-ml-[50px] aspect-[2200/2569] max-h-[45vh] md:max-h-[50vh] mx-auto flex items-center justify-center">
                             <img src="./img/AI_ready_building_m_01.jpg" alt="AI Ready Mobile 1" id="ai-img-m-1"
                                 className="absolute object-contain w-full h-full transition-opacity duration-1000 ease-in-out" />
                             <img src="./img/AI_ready_building_m_02.jpg" alt="AI Ready Mobile 2" id="ai-img-m-2"
