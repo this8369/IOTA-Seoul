@@ -75,20 +75,18 @@ export default function SectionAIReady() {
 
                 <style>
                     {`
-                        @keyframes mobileCrossfade1 {
+                        @keyframes mobileSeq1 {
                             0%, 25% { opacity: 1; }
-                            33.33%, 91.66% { opacity: 0; }
-                            100% { opacity: 1; }
+                            35%, 100% { opacity: 0; }
                         }
-                        @keyframes mobileCrossfade2 {
+                        @keyframes mobileSeq2 {
                             0%, 25% { opacity: 0; }
-                            33.33%, 58.33% { opacity: 1; }
-                            66.66%, 100% { opacity: 0; }
+                            35%, 60% { opacity: 1; }
+                            70%, 100% { opacity: 0; }
                         }
-                        @keyframes mobileCrossfade3 {
-                            0%, 58.33% { opacity: 0; }
-                            66.66%, 91.66% { opacity: 1; }
-                            100% { opacity: 0; }
+                        @keyframes mobileSeq3 {
+                            0%, 60% { opacity: 0; }
+                            70%, 100% { opacity: 1; }
                         }
                     `}
                 </style>
@@ -105,13 +103,13 @@ export default function SectionAIReady() {
                     <div className="relative w-[110%] -ml-[5%] mx-auto mb-8">
                         <img src="./img/AI_ready_building_m_01.jpg" alt="AI Ready Mobile 1"
                             className="relative w-full h-auto object-contain"
-                            style={{ animation: 'mobileCrossfade1 12s infinite' }} />
+                            style={{ animation: 'mobileSeq1 3s forwards' }} />
                         <img src="./img/AI_ready_building_m_02.jpg" alt="AI Ready Mobile 2"
                             className="absolute top-0 left-0 w-full h-full object-contain"
-                            style={{ animation: 'mobileCrossfade2 12s infinite' }} />
+                            style={{ animation: 'mobileSeq2 3s forwards' }} />
                         <img src="./img/AI_ready_building_m_03.jpg" alt="AI Ready Mobile 3"
                             className="absolute top-0 left-0 w-full h-full object-contain"
-                            style={{ animation: 'mobileCrossfade3 12s infinite' }} />
+                            style={{ animation: 'mobileSeq3 3s forwards' }} />
                     </div>
 
                     <div className="w-full max-w-[1100px] mx-auto flex flex-col shrink-0 text-left px-4">

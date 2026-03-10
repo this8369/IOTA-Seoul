@@ -215,9 +215,9 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                 <a href="#section-iotaone" onClick={(e) => handleScrollTo(e, 'section-iotaone')} className={`text-[16px] text-gray-800 ${activeSection === 'section-iotaone' ? 'font-bold' : 'font-normal'}`}>IOTA One</a>
                 <a href="#section-iotatwo" onClick={(e) => handleScrollTo(e, 'section-iotatwo')} className={`text-[16px] text-gray-800 ${activeSection === 'section-iotatwo' ? 'font-bold' : 'font-normal'}`}>IOTA Two</a>
                 <a href="#" onClick={handleNewsClick} className={`text-[16px] text-gray-800 ${activeSection === 'news' ? 'font-bold' : 'font-normal'}`}>News</a>
-                <div className="flex space-x-6 pt-4 border-t border-gray-200 justify-center">
-                    <button className="text-sm font-bold text-gray-800 hover:text-gray-500" onClick={() => switchLang('en')}>EN</button>
-                    <button className="text-sm font-bold text-gray-800 hover:text-gray-500" onClick={() => switchLang('kr')}>KR</button>
+                <div className="flex space-x-8 pt-6 border-t border-gray-200 justify-center">
+                    <button className="text-[20px] font-bold text-gray-800 hover:text-gray-500" onClick={() => switchLang('en')}>EN</button>
+                    <button className="text-[20px] font-bold text-gray-800 hover:text-gray-500" onClick={() => switchLang('kr')}>KR</button>
                 </div>
             </div>
         </>
