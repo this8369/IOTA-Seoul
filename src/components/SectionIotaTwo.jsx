@@ -28,7 +28,7 @@ export default function SectionIotaTwo() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -54,7 +54,7 @@ export default function SectionIotaTwo() {
                 </div>
 
                 {/* Second Item Area (Full Width) */}
-                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-start bs-fade-up mt-24 md:mt-32 mb-6 md:mb-8">
+                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-start bs-fade-up mt-[106px] md:mt-32 mb-6 md:mb-8">
                     <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight break-keep mb-6 md:mb-8">
                         Gateway Park:<br className="md:hidden" /> Connecting City and Nature
                     </h2>
@@ -88,12 +88,12 @@ export default function SectionIotaTwo() {
                 <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-start">
 
                     {/* Third Item Area */}
-                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                    <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             Corporate Multi-Use Arena:<br className="md:hidden" /> Versatile, Urban, Inspiring
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -117,12 +117,12 @@ export default function SectionIotaTwo() {
                     <HoverImage src="./img/iotatwo_03.jpg" alt="Corporate Multi-Use Arena" />
 
                     {/* Fourth Item Area */}
-                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                    <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             Sky Garden:<br className="md:hidden" /> Where Nature Meets Skyline
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -150,12 +150,12 @@ export default function SectionIotaTwo() {
                     </div>
 
                     {/* Fifth Item Area */}
-                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                    <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             Event Space:<br className="md:hidden" /> Where Brands Shine, Culture Thrives, and the City Connects.
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -179,12 +179,12 @@ export default function SectionIotaTwo() {
                     <HoverImage src="./img/iotatwo_06.jpg" alt="Event Space" />
 
                     {/* Sixth Item Area */}
-                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                    <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             Sky Garden & Event Space:<br className="md:hidden" /> An Elevated Cultural Destination Above the City
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -213,7 +213,7 @@ export default function SectionIotaTwo() {
                     </div>
 
                     {/* Seventh Item Area */}
-                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                    <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
                                 <>IOTA Two Main Lobby:<br className="md:hidden" /> Where the City's Flow Meets Architecture</>
@@ -222,7 +222,7 @@ export default function SectionIotaTwo() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -249,12 +249,12 @@ export default function SectionIotaTwo() {
                     </div>
 
                     {/* Eighth Item Area - Mobile Text */}
-                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32 md:hidden">
+                    <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32 md:hidden">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             Main Lobby Core Access:<br className="md:hidden" /> Architectural Rhythm in Motion
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -333,12 +333,12 @@ export default function SectionIotaTwo() {
                     <HoverImage src="./img/iotatwo_11.jpg" alt="Main Lobby Core Access" />
 
                     {/* Ninth Item Area */}
-                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                    <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             Office Open Lounge:<br className="md:hidden" /> Where Connection Meets Calm
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -366,7 +366,7 @@ export default function SectionIotaTwo() {
 
 
                     {/* Tenth Item Area */}
-                    <div className="flex flex-col w-full bs-fade-up mt-24 md:mt-32">
+                    <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
                                 <>Office Elevator Hall:<br className="md:hidden" /> 기술과 자연의 균형, 정제된 환대의 공간</>
@@ -375,7 +375,7 @@ export default function SectionIotaTwo() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-10 md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -408,7 +408,7 @@ export default function SectionIotaTwo() {
                     </div>
 
                     {/* Image Area (iotatwo_14) - Header Width */}
-                    <div className="w-full mt-24 md:mt-32">
+                    <div className="w-full mt-[106px] md:mt-32">
                         <HoverImage src="./img/iotatwo_14.jpg" alt="Office Elevator Hall View" className="w-full h-auto object-cover block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
                     </div>
 

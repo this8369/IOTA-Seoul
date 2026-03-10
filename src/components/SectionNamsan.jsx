@@ -15,7 +15,7 @@ export default function SectionNamsan() {
                 <div className="w-full flex flex-col md:flex-row justify-between items-start gap-8 md:gap-16 bs-fade-up delay-200">
 
                     <div className="w-full md:w-[calc(35%-30px)] shrink-0">
-                        <h4 className="text-[18px] md:text-[20px] lg:text-[24px] font-extrabold text-[#6B3F3A] leading-snug tracking-[-0.02em] break-keep"
+                        <h4 className="text-[20px] md:text-[20px] lg:text-[24px] font-extrabold text-[#6B3F3A] leading-snug tracking-[-0.02em] break-keep"
                             data-kr="남산 인접성, 조직의 지속가능성과<br/>생산성을 강화하는 공간적 요인"
                             data-en="Namsan's Proximity as a Structural Driver<br/>of Sustainable Productivity">
                             Namsan's Proximity as a Structural Driver<br />of Sustainable Productivity
