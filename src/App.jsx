@@ -40,7 +40,7 @@ export default function App() {
           if (target || checkCount > 50) {
             clearInterval(checkInterval);
             if (targetId === 'top') {
-window.scrollTo({ top: 0, behavior: 'instant' });
+              window.scrollTo({ top: 0, behavior: 'instant' });
             } else if (target) {
               target.scrollIntoView({ behavior: 'instant', block: 'start' });
             }
@@ -54,8 +54,6 @@ window.scrollTo({ top: 0, behavior: 'instant' });
     // Initial load handling
     if (window.location.hash) {
       handlePopState();
-    } else {
-      window.history.replaceState(null, '', '#');
     }
 
     return () => window.removeEventListener('popstate', handlePopState);
@@ -119,7 +117,7 @@ window.scrollTo({ top: 0, behavior: 'instant' });
 
   const handleNavigateToHome = () => {
     setCurrentPage('home');
-    window.history.pushState(null, '', '#');
+    window.history.pushState(null, '', window.location.pathname);
   };
 
   return (

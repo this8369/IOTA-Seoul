@@ -83,9 +83,12 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
         e.preventDefault();
         setMobileMenuOpen(false);
 
-        const newHash = targetId === 'top' ? '#' : `#${targetId}`;
-        if (window.location.hash !== newHash) {
-            window.history.pushState(null, '', newHash);
+        const isTop = targetId === 'top';
+        const newUrl = isTop ? window.location.pathname : `#${targetId}`;
+        const currentCheck = isTop ? window.location.pathname : window.location.hash;
+
+        if (window.location.hash !== (isTop ? '' : `#${targetId}`)) {
+            window.history.pushState(null, '', newUrl);
         }
 
         // Keep header during programmatic scroll
@@ -107,7 +110,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                 if (target || checkCount > 50) {
                     clearInterval(checkInterval);
                     if (targetId === 'top') {
-window.scrollTo({ top: 0, behavior: 'instant' });
+                        window.scrollTo({ top: 0, behavior: 'instant' });
                     } else if (target) {
                         target.scrollIntoView({ behavior: 'instant', block: 'start' });
                     }
@@ -117,7 +120,7 @@ window.scrollTo({ top: 0, behavior: 'instant' });
         }
 
         if (targetId === 'top') {
-window.scrollTo({ top: 0, behavior: 'instant' });
+            window.scrollTo({ top: 0, behavior: 'instant' });
         } else {
             const target = document.getElementById(targetId);
             if (target) {
