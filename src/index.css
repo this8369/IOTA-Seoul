@@ -21,7 +21,7 @@
         background-color: #ffffff;
         color: #ffffff;
         scroll-behavior: smooth;
-        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
     }
 
     #root {
