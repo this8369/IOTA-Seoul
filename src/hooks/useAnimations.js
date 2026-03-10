@@ -25,7 +25,7 @@ export function useAnimations(currentPage) {
 
         const handleScroll = () => {
             if (!scrollContainer || !header) return;
-            let st = scrollContainer.scrollTop;
+            let st = window.scrollY || document.documentElement.scrollTop;
 
             // Header visibility
             if (window.isNavigating) {
@@ -143,9 +143,7 @@ export function useAnimations(currentPage) {
             applyAiScroll('ai-scroll-area-m', 'ai-img-m-2', 'ai-img-m-3');
         };
 
-        if (scrollContainer) {
-            scrollContainer.addEventListener("scroll", handleScroll, { passive: true });
-        }
+        window.addEventListener("scroll", handleScroll, { passive: true });
 
         let observer = null;
         let observerTimeout = setTimeout(() => {

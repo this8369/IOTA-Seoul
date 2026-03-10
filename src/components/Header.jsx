@@ -28,7 +28,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                     }
                 }
             }
-            if (scrollContainer.scrollTop === 0) {
+            if (window.scrollY === 0) {
                 current = '';
             }
             if (current !== activeSection) {
@@ -36,7 +36,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
             }
         };
 
-        const scroller = document.getElementById('scroll-container');
+        const scroller = window;
         if (scroller) {
             scroller.addEventListener('scroll', checkScroll, { passive: true });
             // Small delay to allow initial render
@@ -107,9 +107,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                 if (target || checkCount > 50) {
                     clearInterval(checkInterval);
                     if (targetId === 'top') {
-                        const scrollContainer = document.getElementById('scroll-container');
-                        if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'auto' });
-                        else window.scrollTo({ top: 0, behavior: 'auto' });
+window.scrollTo({ top: 0, behavior: 'auto' });
                     } else if (target) {
                         target.scrollIntoView({ behavior: 'auto', block: 'start' });
                     }
@@ -119,9 +117,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
         }
 
         if (targetId === 'top') {
-            const scrollContainer = document.getElementById('scroll-container');
-            if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'auto' });
-            else window.scrollTo({ top: 0, behavior: 'auto' });
+window.scrollTo({ top: 0, behavior: 'auto' });
         } else {
             const target = document.getElementById(targetId);
             if (target) {

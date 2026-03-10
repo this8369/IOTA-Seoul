@@ -40,8 +40,7 @@ export default function App() {
           if (target || checkCount > 50) {
             clearInterval(checkInterval);
             if (targetId === 'top') {
-              const scrollContainer = document.getElementById('scroll-container');
-              if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'auto' });
+window.scrollTo({ top: 0, behavior: 'auto' });
             } else if (target) {
               target.scrollIntoView({ behavior: 'auto', block: 'start' });
             }
