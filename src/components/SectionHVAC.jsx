@@ -37,7 +37,7 @@ export default function SectionHVAC() {
                 {/* DESCRIPTION TEXT AREA */}
                 <div className="w-full max-w-[1400px] mx-auto flex flex-col items-end bs-fade-up delay-300">
                     {lang === 'kr' ? (
-                        <div className="w-full max-w-[700px] text-[14px] md:text-[17px] font-extralight text-[#222] leading-[1.8] tracking-[-0.02em] break-keep text-left">
+                        <div className="w-full max-w-[700px] text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.8] tracking-[-0.02em] break-keep text-left">
                             <p className="mb-4">
                                 이오타 서울은 AI 기반 중앙 공조 시스템을 통해 실내 환경을 자동으로 최적화합니다.<br className="hidden lg:block" />
                                 하지만, 입주사의 특수 수요를 반영하여 <span className="font-bold underline underline-offset-4 decoration-stone-300 transform decoration-2 block md:inline">전용면적의 약 30%까지 별도 실외기 설치가 가능한 공간을 제공</span>함으로써, 임원 공간, 프라이빗 오피스, 서버룸 및 연구 공간 등<br className="hidden lg:block" />
@@ -45,7 +45,7 @@ export default function SectionHVAC() {
                             </p>
                         </div>
                     ) : (
-                        <div className="w-full max-w-[700px] text-[14px] md:text-[17px] font-extralight text-[#222] leading-[1.8] tracking-[-0.01em] font-inter text-left">
+                        <div className="w-full max-w-[700px] text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.8] tracking-[-0.01em] font-inter text-left">
                             <p className="mb-4">
                                 IOTA Seoul's AI-driven central HVAC system automatically optimizes indoor comfort and energy efficiency.<br className="hidden lg:block" />
                                 To support specialized tenant requirements, the building reserves <span className="font-bold underline underline-offset-4 decoration-stone-300 transform decoration-2 inline">outdoor unit allocation capacity equivalent to approximately 30% of each tenant's floor area</span>,<br className="hidden lg:block" />
