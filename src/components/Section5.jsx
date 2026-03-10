@@ -28,7 +28,7 @@ export default function Section5() {
                             </h2>
                             <div className="mb-4">
                                 <h3 className="text-[18px] md:text-[22px] font-bold text-[#3B7062] tracking-[-0.02em]"
-                                    data-kr="글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상"
+                                    data-kr="<span class='font-bold text-[#7b7b7d]'>글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상</span>"
                                     data-en="Becoming the New Business District for Global Talent and Innovative Companies">
                                     글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상
                                 </h3>
@@ -39,7 +39,7 @@ export default function Section5() {
                             <div
                                 className="text-[17px] md:text-[19px] text-black leading-[1.57] tracking-[-0.02em] space-y-4 mb-10 font-normal kr-target-text">
                                 <p className="kr-target-text transition-all duration-300"
-                                    data-kr="서울역과 용산역을 잇는 교통의 결절지인 SYBD는 뉴욕의 그랜드 센트럴에서 허드슨 야드를 아우르는 글로벌 업무지구와 같이 서울의 차기 글로벌 비즈니스 허브로 도약할 것입니다."
+                                    data-kr="<span class='font-bold text-[#7b7b7d]'>서울역과 용산역을 잇는 교통의 결절지인 SYBD는 뉴욕의 그랜드 센트럴에서 허드슨 야드를 아우르는 글로벌 업무지구와 같이 서울의 차기 글로벌 비즈니스 허브로 도약할 것입니다.</span>"
                                     data-en="Connecting Seoul Station and Yongsan Station, SYBD (Seoul Yongsan Business District) is becoming the most desired retail and office locations within the city. Just as Hudson Yards extends from Grand Central Terminal in New York to form a world-class business cluster, SYBD is poised to become Seoul's next-generation global business hub, seamlessly integrating transit, commerce, and innovation.">
                                     서울역과 용산역을 잇는 교통의 결절지인 SYBD는 뉴욕의 그랜드 센트럴에서 허드슨 야드를 아우르는 글로벌 업무지구와 같이 서울의 차기 글로벌 비즈니스
                                     허브로 도약할 것입니다.
@@ -103,7 +103,7 @@ export default function Section5() {
                             className="sybd-step down-in absolute top-0 left-0 w-full h-full flex flex-col justify-center px-6 md:px-[60px] lg:pl-[150px] lg:pr-[60px] bg-transparent">
 
                             <div className="font-bold text-[20px] md:text-[22px] text-gray-800 mb-2 font-inter tracking-tight"
-                                data-kr="Unrivaled Accessibility" data-en="Unrivaled Accessibility">
+                                data-kr="<span class='font-bold text-[#7b7b7d]'>Unrivaled Accessibility</span>" data-en="Unrivaled Accessibility">
                                 Unrivaled Accessibility</div>
                             <h2
                                 className="text-[40px] md:text-[50px] lg:text-[60px] font-extrabold leading-tight mb-2 text-black tracking-[-0.03em] font-inter mt-4">
@@ -111,7 +111,7 @@ export default function Section5() {
                             </h2>
                             <div className="mb-4 mt-6">
                                 <h3 className="text-[18px] md:text-[22px] font-bold text-[#3B7062] tracking-[-0.02em] leading-snug"
-                                    data-kr="국가중앙역 + 광역교통 중심지의 독보적 접근성 제공"
+                                    data-kr="<span class='font-bold text-[#7b7b7d]'>국가중앙역 + 광역교통 중심지의 독보적 접근성 제공</span>"
                                     data-en="The Nation's Ultimate Transit Hub - Unmatched, Unrivaled">
                                     The Nation's Ultimate Transit Hub - Unmatched, Unrivaled
                                 </h3>
@@ -119,7 +119,7 @@ export default function Section5() {
                             <div
                                 className="text-[17px] md:text-[19px] font-medium text-black leading-[1.57] tracking-[-0.02em] space-y-4 mb-8">
                                 <p className="kr-target-text transition-all duration-300"
-                                    data-kr="서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 최적의 입지 조건을 갖추고 있습니다."
+                                    data-kr="<span class='font-bold text-[#7b7b7d]'>서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 최적의 입지 조건을 갖추고 있습니다.</span>"
                                     data-en="Seoul Station is Korea's foremost transportation hub, directly connected to 11 transit lines, including KTX, airport rail, and multiple metro routes. Together with nearby Yongsan Station, it forms an exceptional multimodal infrastructure at the center of the capital. With the addition of GTX-A/B and the Shinbundang Line, the site offers 30-minute access to key southeastern districts such as Gangnam, Bundang, and Pangyo. It also enables direct connections to both Incheon and Gimpo International Airports, making it an ideal location for global innovation-driven enterprises.">
                                     서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />
                                     또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />
@@ -168,7 +168,7 @@ export default function Section5() {
                     </h2>
                     <div className="mb-4">
                         <h3 className="text-[18px] md:text-[20px] font-bold text-[#3B7062] tracking-[-0.02em]"
-                            data-kr="글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상"
+                            data-kr="<span class='font-bold text-[#7b7b7d]'>글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상</span>"
                             data-en="Becoming the New Business District for Global Talent and Innovative Companies">
                             글로벌 인재, 혁신 기업을 위한 새로운 업무 지구로의 부상
                         </h3>
@@ -177,7 +177,7 @@ export default function Section5() {
                     </div>
                     <div className="text-[17px] md:text-[19px] text-black leading-[1.57] tracking-[-0.02em] mb-8 font-normal kr-target-text">
                         <p className="kr-target-text transition-all duration-300"
-                            data-kr="서울역과 용산역을 잇는 교통의 결절지인 SYBD는 뉴욕의 그랜드 센트럴에서 허드슨 야드를 아우르는 글로벌 업무지구와 같이 서울의 차기 글로벌 비즈니스 허브로 도약할 것입니다."
+                            data-kr="<span class='font-bold text-[#7b7b7d]'>서울역과 용산역을 잇는 교통의 결절지인 SYBD는 뉴욕의 그랜드 센트럴에서 허드슨 야드를 아우르는 글로벌 업무지구와 같이 서울의 차기 글로벌 비즈니스 허브로 도약할 것입니다.</span>"
                             data-en="Connecting Seoul Station and Yongsan Station, SYBD (Seoul Yongsan Business District) is becoming the most desired retail and office locations within the city. Just as Hudson Yards extends from Grand Central Terminal in New York to form a world-class business cluster, SYBD is poised to become Seoul's next-generation global business hub, seamlessly integrating transit, commerce, and innovation.">
                             서울역과 용산역을 잇는 교통의 결절지인 SYBD는 뉴욕의 그랜드 센트럴에서 허드슨 야드를 아우르는 글로벌 업무지구와 같이 서울의 차기 글로벌 비즈니스
                             허브로 도약할 것입니다.
@@ -243,21 +243,21 @@ export default function Section5() {
                 {/* STEP 2: Korea's Central Station Text & Image */}
                 <div className="w-full flex flex-col pt-16 px-6 md:px-12 bs-fade-up">
                     <div className="font-bold text-[18px] md:text-[22px] text-gray-800 mb-2 font-inter tracking-tight"
-                        data-kr="Unrivaled Accessibility" data-en="Unrivaled Accessibility">
+                        data-kr="<span class='font-bold text-[#7b7b7d]'>Unrivaled Accessibility</span>" data-en="Unrivaled Accessibility">
                         Unrivaled Accessibility</div>
                     <h2 className="text-[32px] md:text-[45px] font-extrabold leading-tight mb-4 text-black tracking-[-0.03em] font-inter">
                         Korea's Central Station<br />and Mega Transport Hub
                     </h2>
                     <div className="mb-4">
                         <h3 className="text-[18px] md:text-[20px] font-bold text-[#3B7062] tracking-[-0.02em] leading-snug"
-                            data-kr="국가중앙역 + 광역교통 중심지의 독보적 접근성 제공"
+                            data-kr="<span class='font-bold text-[#7b7b7d]'>국가중앙역 + 광역교통 중심지의 독보적 접근성 제공</span>"
                             data-en="The Nation's Ultimate Transit Hub - Unmatched, Unrivaled">
                             The Nation's Ultimate Transit Hub - Unmatched, Unrivaled
                         </h3>
                     </div>
                     <div className="text-[17px] md:text-[19px] font-medium text-black leading-[1.57] tracking-[-0.02em] mb-6">
                         <p className="kr-target-text transition-all duration-300"
-                            data-kr="서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 최적의 입지 조건을 갖추고 있습니다."
+                            data-kr="<span class='font-bold text-[#7b7b7d]'>서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />인천공항, 김포공항 까지 직접 연결되어 글로벌 혁신기업을 위한 최적의 입지 조건을 갖추고 있습니다.</span>"
                             data-en="Seoul Station is Korea's foremost transportation hub, directly connected to 11 transit lines, including KTX, airport rail, and multiple metro routes. Together with nearby Yongsan Station, it forms an exceptional multimodal infrastructure at the center of the capital. With the addition of GTX-A/B and the Shinbundang Line, the site offers 30-minute access to key southeastern districts such as Gangnam, Bundang, and Pangyo. It also enables direct connections to both Incheon and Gimpo International Airports, making it an ideal location for global innovation-driven enterprises.">
                             서울역은 총 11개 노선을 보유한 명실상부한 교통의 중심지로 인근에 위치한 용산역과 함께 우수한 광역 교통 인프라를 형성합니다.<br />
                             또한, GTX-A/B, 신분당선 개발로 수도권 동남부 권역(강남-분당-판교 인근)으로부터 30분 내 접근이 가능하며<br />

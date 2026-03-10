@@ -39,12 +39,12 @@ export default function SectionAirQuality() {
                                 Achieving Continuous Clean Air and Optimal Comfort through Real-Time Sensing
                             </h4>
 
-                            <div className="w-full text-[17px] md:text-[19px] font-extralight text-black leading-[1.57] tracking-[-0.02em] break-keep flex flex-col items-center">
+                            <div className="w-full text-[17px] md:text-[19px] font-bold text-[#7b7b7d] leading-[1.4] tracking-[-0.02em] break-keep flex flex-col items-center">
                                 <p className="mb-2">
                                     IOTA Seoul은 빌딩 내 전 구역의 공기질을 상시 모니터링하고, AI 알고리즘이 온도·습도·미세먼지·유해가스 등 실내 공기질 항목을 자동 제어합니다.
                                 </p>
                                 <p className="mb-2">
-                                    재실 시간의 <span className="font-bold">95% 이상에서 쾌적 상태를 유지</span>하며, 실시간 센서 데이터는 중앙 Building OS와 연동되어 공조 시스템을 지능 조정합니다.
+                                    재실 시간의 <strong className="font-extrabold text-[#1a65a4]">95% 이상에서 쾌적 상태를 유지</strong>하며, 실시간 센서 데이터는 중앙 Building OS와 연동되어 공조 시스템을 지능 조정합니다.
                                 </p>
                                 <p>
                                     이를 통해 사용자는 항상 최적의 공기질 환경에서 업무 집중도와 웰빙 환경을 유지할 수 있습니다.
@@ -57,7 +57,7 @@ export default function SectionAirQuality() {
                                 Achieving Continuous Clean Air and Optimal Comfort through Real-Time Sensing
                             </h3>
 
-                            <div className="w-full text-[17px] md:text-[19px] font-extralight text-gray-800 leading-[1.57] tracking-[-0.01em] font-inter flex flex-col items-center">
+                            <div className="w-full text-[17px] md:text-[19px] font-extralight text-gray-800 leading-[1.4] tracking-[-0.01em] font-inter flex flex-col items-center">
                                 <p className="mb-2">
                                     IOTA Seoul continuously monitors air quality across all zones, with AI algorithms autonomously controlling temperature, humidity, fine dust, and harmful gases.
                                 </p>

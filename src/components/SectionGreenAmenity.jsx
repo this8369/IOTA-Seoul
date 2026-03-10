@@ -31,19 +31,19 @@ export default function SectionGreenAmenity() {
                 <div className="w-full flex flex-col mb-16 bs-fade-up items-center">
                     <h2 className="text-[40px] md:text-[50px] lg:text-[59px] font-extrabold text-[#2F4F4F] mb-2 leading-tight tracking-[-0.03em] font-inter text-center"
                         data-en="Urban Office Meets Immersive Nature"
-                        data-kr="Urban Office Meets Immersive Nature">
+                        data-kr="<span class='font-bold text-[#7b7b7d]'>Urban Office Meets Immersive Nature</span>">
                         Urban Office Meets Immersive Nature
                     </h2>
 
                     <h3 className="text-[17px] md:text-[20px] lg:text-[22px] font-bold text-[#3B7062] mb-12 tracking-tight leading-snug text-center"
-                        data-kr="서울에서 가장 큰 그린 어메니티"
+                        data-kr="<span class='font-bold text-[#7b7b7d]'>서울에서 가장 큰 그린 어메니티</span>"
                         data-en="Experience Seoul's Most Expansive Green Amenity">
                         Experience Seoul's Most Expansive Green Amenity
                     </h3>
 
                     <div className="text-[17px] md:text-[19px] font-medium text-black leading-[1.57] md:leading-[1.57] tracking-[-0.02em] max-w-[1300px]">
                         <p className="kr-target-text transition-all duration-300"
-                            data-kr="이오타 서울은 3,130평 규모의 자체 공원형 녹지와 87만 평 규모의 남산공원이 마치 하나의 어메니티처럼 연결되어 있습니다.<br/>이는 단순한 조망권을 넘어, 남산공원이 마치 <span class='font-bold'>IOTA의 프라이빗 정원</span>처럼 기능하도록 설계되었습니다.<br/>글로벌 트렌드인 웰니스 중심의 업무환경 구현에 최적화된 조건으로, 프리미엄 테넌트에게 최고의 자산 가치를 제공합니다."
+                            data-kr="<span class='font-bold text-[#7b7b7d]'>이오타 서울은 3,130평 규모의 자체 공원형 녹지와 87만 평 규모의 남산공원이 마치 하나의 어메니티처럼 연결되어 있습니다.<br/>이는 단순한 조망권을 넘어, 남산공원이 마치 <strong class='font-extrabold text-black'>IOTA의 프라이빗 정원</strong>처럼 기능하도록 설계되었습니다.<br/>글로벌 트렌드인 웰니스 중심의 업무환경 구현에 최적화된 조건으로, 프리미엄 테넌트에게 최고의 자산 가치를 제공합니다.</span>"
                             data-en="IOTA Seoul seamlessly connects 111,375 SF of dedicated open green space with the 710 AC expanse of Namsan Park, creating an unmatched urban green ecosystem.<br/>More than a scenic view, <span class='font-bold'>Namsan functions as an extension of IOTA's private landscape</span>—a true integration of nature into daily work life.<br/>This environment offers the ideal foundation for wellness-oriented workplace strategies, aligning with global tenant demands and maximizing long-term asset value.">
                             IOTA Seoul seamlessly connects 111,375 SF of dedicated open green space with the 710 AC expanse of Namsan Park, creating an unmatched urban green ecosystem.<br />
                             More than a scenic view, <span className="font-bold">Namsan functions as an extension of IOTA's private landscape</span>—a true integration of nature into daily work life.<br />

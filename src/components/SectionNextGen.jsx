@@ -27,13 +27,13 @@ export default function SectionNextGen() {
                     <h3 className="text-[20px] md:text-[26px] lg:text-[32px] font-bold text-[#4B7053] leading-tight tracking-tight mb-4 md:mb-6 kr-target-text break-keep bs-fade-up delay-300"
                         style={{ fontWeight: 'bold' }}
                         data-en="AI Ready & GREEN — The New Standard for Future Workplaces"
-                        data-kr="차세대 오피스의 표준: AI Ready & Green Infra">
+                        data-kr="<span class='font-bold text-[#7b7b7d]'>차세대 오피스의 표준: AI Ready & Green Infra</span>">
                         AI Ready & GREEN — The New Standard for Future Workplaces
                     </h3>
 
                     <div className="text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.57] md:leading-[1.57] tracking-[-0.01em] w-full max-w-[900px] bs-fade-up delay-400">
                         <p className="kr-target-text transition-all duration-300 break-keep"
-                            data-kr="이오타서울은 기술과 인간의 협력을 기반으로 한 AI Ready 인프라와 지속 가능한 웰빙 환경을 조성하는 Green 인프라를 결합하여 <span class='font-bold underline underline-offset-4 decoration-1 decoration-gray-400'>'Biomorphic Workplace'</span>라는 새로운 오피스 표준을 제시합니다.<br/><br/>AI 기반 빌딩 운영, 디지털 트윈, 사이버 보안, 로보틱스 제어 시스템을 통해 지능형 업무 환경을 구현하며, 에너지 절감형 설비와 웰니스 공간을 통해 인간 중심의 지속 가능한 워크플레이스를 완성합니다."
+                            data-kr="<span class='font-bold text-[#7b7b7d]'>이오타서울은 기술과 인간의 협력을 기반으로 한 AI Ready 인프라와 지속 가능한 웰빙 환경을 조성하는 Green 인프라를 결합하여 <strong class='font-extrabold text-black'>'Biomorphic Workplace'</strong>라는 새로운 오피스 표준을 제시합니다.<br/><br/>AI 기반 빌딩 운영, 디지털 트윈, 사이버 보안, 로보틱스 제어 시스템을 통해 지능형 업무 환경을 구현하며, 에너지 절감형 설비와 웰니스 공간을 통해 인간 중심의 지속 가능한 워크플레이스를 완성합니다.</span>"
                             data-en="IOTA Seoul establishes a new benchmark for future workplaces through its <span class='font-bold'>AI Ready Infrastructure</span> and <span class='font-bold'>Green Sustainable Environment</span>, collectively forming the <span class='font-bold underline underline-offset-4 decoration-1 decoration-gray-400'>&quot;Biomorphic Workplace.&quot;</span><br/><br/>By integrating AI-powered building operations, digital twin systems, robotics, and advanced cybersecurity, the development enables a highly intelligent and automated work environment.<br/><br/>At the same time, its green infrastructure—featuring energy-efficient systems, open green areas, and wellness-oriented amenities—creates a human-centered and sustainable workplace for the next generation.">
                             IOTA Seoul establishes a new benchmark for future workplaces through its <span className="font-bold">AI Ready Infrastructure</span> and <span className="font-bold">Green Sustainable Environment</span>, collectively forming the <span className="font-bold underline underline-offset-4 decoration-1 decoration-gray-400">"Biomorphic Workplace."</span><br /><br />
                             By integrating AI-powered building operations, digital twin systems, robotics, and advanced cybersecurity, the development enables a highly intelligent and automated work environment.<br /><br />

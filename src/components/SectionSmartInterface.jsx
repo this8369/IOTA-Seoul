@@ -40,7 +40,7 @@ export default function SectionSmartInterface() {
                 {/* DESCRIPTION TEXT AREA */}
                 <div className="w-full max-w-[1100px] mx-auto flex flex-col bs-fade-up delay-300">
                     {lang === 'kr' ? (
-                        <div className="text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.57] tracking-[-0.02em] break-keep text-left">
+                        <div className="text-[17px] md:text-[19px]  font-bold text-[#7b7b7d] leading-[1.57] tracking-[-0.02em] break-keep text-left">
                             <p className="mb-4">
                                 IOTA Seoul은 사용자가 건물과 상호작용하는 모든 순간을 직관적이고 매끄럽게 설계했습니다.<br className="hidden lg:block" />
                                 공기질, 온습도, 조명, 에너지 사용량 등 환경 데이터를 실시간으로 시각화하여 사용자가 환경 상태를 한눈에 확인할 수 있으며,<br className="hidden lg:block" />

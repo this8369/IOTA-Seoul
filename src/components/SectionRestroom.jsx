@@ -37,12 +37,12 @@ export default function SectionRestroom() {
                 {/* DESCRIPTION TEXT AREA */}
                 <div className="w-full max-w-[1100px] mx-auto flex flex-col bs-fade-up delay-300 mb-12">
                     {lang === 'kr' ? (
-                        <div className="text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.57] tracking-[-0.02em] break-keep text-left">
+                        <div className="text-[17px] md:text-[19px]  font-bold text-[#7b7b7d] leading-[1.57] tracking-[-0.02em] break-keep text-left">
                             <p className="mb-4">
-                                IOTA One 화장실은 <span className="font-bold">프라이버시</span>와 위생을 극대화하기 위해 <span className="font-bold">공간 분리</span>와 공기 흐름을 정교하게 설계했습니다. 소변기와 대변기 칸막이가 교차 배치되어 사적인 공간을 확보하며, 하부에서 <span className="font-bold">신선한 공기</span>를 끌어올려 상부로 배출하는 일방향 환기 시스템을 적용해 항상 깨끗하고 쾌적한 환경을 유지합니다.
+                                IOTA One 화장실은 <strong className="font-extrabold text-[#6B3F3A]">프라이버시</strong>와 위생을 극대화하기 위해 <strong className="font-extrabold text-[#6B3F3A]">공간 분리</strong>와 공기 흐름을 정교하게 설계했습니다. 소변기와 대변기 칸막이가 교차 배치되어 사적인 공간을 확보하며, 하부에서 <strong className="font-extrabold text-[#6B3F3A]">신선한 공기</strong>를 끌어올려 상부로 배출하는 일방향 환기 시스템을 적용해 항상 깨끗하고 쾌적한 환경을 유지합니다.
                             </p>
                             <p>
-                                또한 별도의 <span className="font-bold">Grooming Room(치카룸)</span>을 두어 개인 위생과 사용 편의를 강화했습니다.
+                                또한 별도의 <strong className="font-extrabold text-[#6B3F3A]">Grooming Room(치카룸)</strong>을 두어 개인 위생과 사용 편의를 강화했습니다.
                             </p>
                         </div>
                     ) : (

@@ -26,16 +26,16 @@ export default function SectionNetZero() {
                             <h3 className="text-[22px] md:text-[28px] lg:text-[32px] font-bold text-[#1a65a4] tracking-tight leading-tight mb-2 break-keep">
                                 CRREM 2030 목표에 부합하는 Net-Zero Ready 오피스
                             </h3>
-                            <h4 className="text-[17px] md:text-[20px] lg:text-[24px] font-bold text-[#333] tracking-[-0.01em] mb-10 font-inter leading-tight">
+                            <h4 className="text-[17px] md:text-[20px] lg:text-[24px] font-bold text-[#7b7b7d] tracking-[-0.01em] mb-10 font-inter leading-tight">
                                 30% Below National Carbon Baseline,<br />Fully Compliant with CRREM 2030
                             </h4>
 
-                            <div className="text-[17px] md:text-[19px] font-extralight text-[#222] leading-[1.57] tracking-[-0.02em] break-keep">
+                            <div className="text-[17px] md:text-[19px]  font-bold text-[#7b7b7d] leading-[1.57] tracking-[-0.02em] break-keep">
                                 <p className="mb-4">
                                     이오타서울은 국내 탄소배출 허용기준 대비 30% 낮은 에너지 집약도를 구현하며, CRREM 2030 글로벌 에너지 효율 목표를 충족하는 Net-Zero Ready 오피스로 설계되었습니다.
                                 </p>
                                 <p className="mb-4">
-                                    건물 내 모든 물리적 설비(HVAC, 기계설비, 조명, 전력, 재생에너지 등)에서 발생하는 <span className="font-bold">데이터를 자동으로 수집하고 항목별로 세분화하여</span> AI 기반 Net-Zero 관리 시스템으로 통합합니다. 중앙 대시보드에서는 에너지 소비, 온실가스 배출, 운영 효율, 유지보수 상태를 <span className="font-bold">실시간 분석 및 최적화하며</span>, 이를 통해 기업은 <span className="font-bold">탄소 절감·비용 효율·ESG 보고 자동화를</span> 동시에 실현합니다.
+                                    건물 내 모든 물리적 설비(HVAC, 기계설비, 조명, 전력, 재생에너지 등)에서 발생하는 <strong className="font-extrabold text-[#1a65a4]">데이터를 자동으로 수집하고 항목별로 세분화하여</strong> AI 기반 Net-Zero 관리 시스템으로 통합합니다. 중앙 대시보드에서는 에너지 소비, 온실가스 배출, 운영 효율, 유지보수 상태를 <strong className="font-extrabold text-[#1a65a4]">실시간 분석 및 최적화하며</strong>, 이를 통해 기업은 <strong className="font-extrabold text-[#1a65a4]">탄소 절감·비용 효율·ESG 보고 자동화를</strong> 동시에 실현합니다.
                                 </p>
                                 <p>
                                     이오타서울은 국내 기준을 넘어 글로벌 표준에 부합하는 지능형 Net-Zero 플랫폼으로, AI 기반 데이터 관리와 운영 최적화를 통해 지속가능한 오피스의 새로운 기준을 제시합니다.
