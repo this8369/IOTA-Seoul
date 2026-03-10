@@ -92,7 +92,7 @@ export default function SectionAIReady() {
                 </style>
 
                 {/* MOBILE ANIMATED IMAGE AREA (iPad Portrait & Mobile) */}
-                <div id="ai-scroll-area-m" className="md:hidden w-full relative flex flex-col pt-12 pb-16 bg-white bs-fade-up delay-200">
+                <div id="ai-scroll-area-m" className="md:hidden w-full relative flex flex-col pt-12 pb-16 bg-white overflow-hidden bs-fade-up delay-200">
                     <div className="w-full shrink-0 text-center px-4 mb-4">
                         <h2 className="text-[26px] font-extrabold text-black tracking-[-0.03em] font-inter leading-tight">
                             AI Driven Biomorphic Workplace Framework
