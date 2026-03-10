@@ -60,6 +60,11 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
         e.preventDefault();
         setMobileMenuOpen(false);
 
+        const newHash = targetId === 'top' ? '#' : `#${targetId}`;
+        if (window.location.hash !== newHash) {
+            window.history.pushState(null, '', newHash);
+        }
+
         // Keep header during programmatic scroll
         window.isNavigating = true;
         clearTimeout(window.navigatingTimeout);
@@ -105,6 +110,10 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
     const handleNewsClick = (e) => {
         e.preventDefault();
         setMobileMenuOpen(false);
+        const newHash = '#news';
+        if (window.location.hash !== newHash) {
+            window.history.pushState(null, '', newHash);
+        }
         if (onNavigateToNews) onNavigateToNews();
     };
 

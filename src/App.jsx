@@ -3,6 +3,7 @@ import Header from './components/Header';
 import MainLayout from './components/MainLayout';
 import NewsList from './components/NewsList';
 import NewsDetail from './components/NewsDetail';
+import { newsData } from './data/newsData';
 import { useAnimations } from './hooks/useAnimations';
 import { useLanguage } from './context/LanguageContext';
 
@@ -11,6 +12,55 @@ export default function App() {
 
   useAnimations(currentPage);
   const [selectedArticle, setSelectedArticle] = React.useState(null);
+
+  React.useEffect(() => {
+    const handlePopState = () => {
+      const hash = window.location.hash;
+
+      if (hash === '#news') {
+        setCurrentPage('news');
+        setSelectedArticle(null);
+      } else if (hash.startsWith('#news-detail-')) {
+        const id = parseInt(hash.replace('#news-detail-', ''), 10);
+        const article = newsData.find((a) => a.id === id);
+        if (article) {
+          setCurrentPage('news_detail');
+          setSelectedArticle(article);
+        } else {
+          setCurrentPage('news');
+        }
+      } else {
+        setCurrentPage('home');
+
+        let targetId = hash === '#' || hash === '#top' || hash === '' ? 'top' : hash.substring(1);
+        let checkCount = 0;
+        const checkInterval = setInterval(() => {
+          const target = targetId === 'top' ? document.getElementById('scroll-container') : document.getElementById(targetId);
+          checkCount++;
+          if (target || checkCount > 50) {
+            clearInterval(checkInterval);
+            if (targetId === 'top') {
+              const scrollContainer = document.getElementById('scroll-container');
+              if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'auto' });
+            } else if (target) {
+              target.scrollIntoView({ behavior: 'auto', block: 'start' });
+            }
+          }
+        }, 50);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+
+    // Initial load handling
+    if (window.location.hash) {
+      handlePopState();
+    } else {
+      window.history.replaceState(null, '', '#');
+    }
+
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   React.useEffect(() => {
     window.isNewsPage = currentPage !== 'home';
@@ -60,14 +110,17 @@ export default function App() {
   const handleSelectArticle = (article) => {
     setSelectedArticle(article);
     setCurrentPage('news_detail');
+    window.history.pushState(null, '', `#news-detail-${article.id}`);
   };
 
   const handleBackToOptions = () => {
     setCurrentPage('news');
+    window.history.pushState(null, '', '#news');
   };
 
   const handleNavigateToHome = () => {
     setCurrentPage('home');
+    window.history.pushState(null, '', '#');
   };
 
   return (
