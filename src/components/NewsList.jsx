@@ -32,39 +32,46 @@ export default function NewsList({ onSelectArticle }) {
             {videoNews && (
                 <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto mb-[80px] md:mb-[120px]">
                     <div
-                        className={`w-full aspect-[21/9] md:aspect-[21/9] lg:aspect-[21/8] bg-black relative ${!playingVideoId || playingVideoId !== videoNews.id ? 'cursor-pointer group' : ''}`}
+                        className={`w-full flex-col ${!playingVideoId || playingVideoId !== videoNews.id ? 'cursor-pointer group' : ''}`}
                         onClick={() => {
                             if (videoNews.isVideoLink && playingVideoId !== videoNews.id) {
                                 setPlayingVideoId(videoNews.id);
                             }
                         }}
                     >
-                        {playingVideoId === videoNews.id && videoNews.isVideoLink ? (
-                            <iframe
-                                src={videoNews.videoUrl}
-                                className="w-full h-full border-none"
-                                allow="autoplay; fullscreen"
-                                allowFullScreen
-                            ></iframe>
-                        ) : (
-                            <>
-                                {videoNews.image && (
-                                    <img
-                                        src={videoNews.image}
-                                        alt={videoNews.title}
-                                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02] brightness-[0.85]"
-                                    />
-                                )}
-                                <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
-                                    <h2 className="text-white text-[28px] md:text-[40px] lg:text-[50px] font-inter font-light tracking-[-0.02em] text-center mb-6 leading-tight max-w-[1200px]">
-                                        {videoNews.title}
-                                    </h2>
-                                    <div className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-black bg-opacity-60 rounded-full flex items-center justify-center backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
-                                        <div className="w-0 h-0 border-t-[16px] border-t-transparent border-l-[26px] border-l-white border-b-[16px] border-b-transparent translate-x-1"></div>
+                        <div className="w-full aspect-[21/9] md:aspect-[21/9] lg:aspect-[21/8] bg-black relative overflow-hidden">
+                            {playingVideoId === videoNews.id && videoNews.isVideoLink ? (
+                                <iframe
+                                    src={`${videoNews.videoUrl}${videoNews.videoUrl.includes('?') ? '&' : '?'}autoplay=1`}
+                                    className="w-full h-full border-none"
+                                    allow="autoplay; fullscreen"
+                                    allowFullScreen
+                                ></iframe>
+                            ) : (
+                                <>
+                                    {videoNews.image && (
+                                        <img
+                                            src={videoNews.image}
+                                            alt={videoNews.title}
+                                            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02] brightness-[0.85]"
+                                        />
+                                    )}
+                                    <div className="absolute inset-0 flex items-center justify-center p-4">
+                                        <div className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-black bg-opacity-60 rounded-full flex items-center justify-center backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
+                                            <div className="w-0 h-0 border-t-[16px] border-t-transparent border-l-[26px] border-l-white border-b-[16px] border-b-transparent translate-x-1"></div>
+                                        </div>
                                     </div>
-                                </div>
-                            </>
-                        )}
+                                </>
+                            )}
+                        </div>
+                        {/* Video Title - Left Aligned Below */}
+                        <div className="w-full mt-4 md:mt-6">
+                            <h2 className="text-[24px] md:text-[32px] text-black font-inter font-normal tracking-[-0.02em] leading-tight text-left">
+                                <span className={`inline pb-[2px] bg-gradient-to-r from-black to-black bg-no-repeat [background-position:0_100%] [background-size:0%_1.5px] transition-all duration-500 ease-out ${playingVideoId !== videoNews.id ? 'group-hover:[background-size:100%_1.5px]' : ''}`}>
+                                    {videoNews.title}
+                                </span>
+                            </h2>
+                        </div>
                     </div>
                 </div>
             )}
