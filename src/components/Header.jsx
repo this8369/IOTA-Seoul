@@ -56,7 +56,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
             type: "lease",
             items: [
                 { label: "Lease Inquiry", id: "lease", type: "lease" },
-                { label: "Vision Book Download", id: "vision-book", type: "download", url: "./PDF/IOTA Seoul Visionbook_compressed.pdf" }
+                { label: "Vision Book Download", id: "vision-book", type: "alert", message: "Vision Book will be available soon." }
             ]
         }
     ];
@@ -81,7 +81,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
                 { label: "AI 시대의 새로운 오피스 표준", id: "section-nextgen-standard" },
                 { label: "초정밀 공기질 관리 시스템", id: "section-airquality" },
                 { label: "심리스 디지털 사용자 경험", id: "section-smartinterface" },
-                { label: "넷제로 친환경 빌딩 구현", id: "section-netzero" },
+                { label: "넷제로 친환경 빌딩", id: "section-netzero" },
                 { label: "프라이버시 집중형 화장실", id: "section-restroom" },
                 { label: "국내 최고 사양 엘리베이터", id: "section-elevator" },
                 { label: "입주사 맞춤형 공조 시스템", id: "section-hvac" }
@@ -108,7 +108,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
             type: "lease",
             items: [
                 { label: "임대차 문의", id: "lease", type: "lease" },
-                { label: "Vision Book Download", id: "vision-book", type: "download", url: "./PDF/IOTA Seoul Visionbook_compressed.pdf" }
+                { label: "Vision Book Download", id: "vision-book", type: "alert", message: "자료 준비 중입니다." }
             ]
         }
     ];
