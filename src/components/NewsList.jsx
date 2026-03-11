@@ -6,40 +6,86 @@ export default function NewsList({ onSelectArticle }) {
         window.scrollTo(0, 0);
     }, []);
 
+    // Filter to separate the featured article (ID 9) and the rest
+    const featuredNews = newsData.find(n => n.id === 9) || newsData[0];
+    const otherNews = newsData.filter(n => n.id !== featuredNews.id).sort((a, b) => {
+        // Handle custom date formats just in case, but standard parsing works for ours
+        return new Date(b.date) - new Date(a.date);
+    });
+
     return (
         <div className="w-full bg-white min-h-screen pt-[160px] pb-[100px]">
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto">
-                <h1 className="text-[40px] md:text-[50px] font-sans font-normal tracking-[-0.04em] text-black mb-[60px] md:mb-[100px]">
+                <h1 className="text-[40px] md:text-[50px] font-sans font-normal tracking-[-0.04em] text-black mb-[40px] md:mb-[80px]">
                     News
                 </h1>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-[30px] gap-y-[80px]">
-                    {[...newsData].sort((a, b) => new Date(b.date) - new Date(a.date)).map((news) => (
+                <div className="flex flex-col lg:flex-row gap-10 lg:gap-[60px] xl:gap-[80px] items-start">
+
+                    {/* Featured Article - Left Side */}
+                    {featuredNews && (
                         <div
-                            key={news.id}
-                            className="flex flex-col cursor-pointer group"
-                            onClick={() => onSelectArticle(news)}
+                            className="w-full lg:w-[50%] xl:w-[55%] flex flex-col cursor-pointer group"
+                            onClick={() => onSelectArticle(featuredNews)}
                         >
-                            <h3 className="text-[21px] md:text-[23px] pr-5 leading-tight text-[#222] font-inter font-normal tracking-[-0.01em] group-hover:text-blue-700 transition-colors duration-200">
-                                {news.title}
+                            <div className="w-full aspect-[16/10] bg-gray-100 overflow-hidden mb-6 relative">
+                                {featuredNews.image ? (
+                                    <img
+                                        src={featuredNews.image}
+                                        alt={featuredNews.title}
+                                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                                    />
+                                ) : (
+                                    <div className="w-full h-full bg-gray-200"></div>
+                                )}
+                            </div>
+
+                            <h3 className="text-[24px] md:text-[28px] lg:text-[32px] leading-tight text-black font-inter font-normal tracking-[-0.02em] mb-3">
+                                <span className="relative inline-block pb-[1px] after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1.5px] after:-bottom-[1px] after:left-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 group-hover:after:scale-x-100">
+                                    {featuredNews.title}
+                                </span>
                             </h3>
-                            {(() => {
-                                const preview = news.content.find(item => item.type === 'subtitle')?.text
-                                    || news.content.find(item => item.type === 'paragraph')?.text;
-                                if (preview) {
-                                    return (
-                                        <p className="text-[19px] md:text-[20px] pr-5 text-gray-500 mt-3 font-medium tracking-[-0.01em] leading-snug line-clamp-2">
-                                            {preview}
-                                        </p>
-                                    );
-                                }
-                                return null;
-                            })()}
-                            <p className="text-[14px] md:text-[15px] text-[#333] mt-4 font-inter tracking-[0.02em] font-thin">
-                                {news.date}
+
+                            <p className="text-[14px] md:text-[15px] text-[#333] font-inter tracking-[0.02em] font-light">
+                                {featuredNews.date}
                             </p>
                         </div>
-                    ))}
+                    )}
+
+                    {/* Other Articles Grid - Right Side */}
+                    <div className="w-full lg:w-[50%] xl:w-[45%] grid grid-cols-1 md:grid-cols-2 gap-x-[30px] lg:gap-x-[40px] gap-y-[50px] lg:gap-y-[60px]">
+                        {otherNews.map((news) => (
+                            <div
+                                key={news.id}
+                                className="flex flex-col cursor-pointer group h-full"
+                                onClick={() => onSelectArticle(news)}
+                            >
+                                <h3 className="text-[18px] md:text-[20px] pr-2 leading-[1.4] text-[#222] font-inter font-medium tracking-[-0.02em] mb-3">
+                                    <span className="relative inline-block pb-[1px] after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1.5px] after:-bottom-[1px] after:left-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 group-hover:after:scale-x-100">
+                                        {news.title}
+                                    </span>
+                                </h3>
+
+                                {(() => {
+                                    const preview = news.content.find(item => item.type === 'subtitle')?.text
+                                        || news.content.find(item => item.type === 'paragraph')?.text;
+                                    if (preview) {
+                                        return (
+                                            <p className="text-[15px] md:text-[15px] pr-2 text-gray-500 mb-4 font-normal tracking-[-0.01em] leading-[1.6] line-clamp-2">
+                                                {preview}
+                                            </p>
+                                        );
+                                    }
+                                    return null;
+                                })()}
+
+                                <p className="text-[13px] md:text-[14px] text-[#333] font-inter tracking-[0.02em] font-light mt-auto">
+                                    {news.date}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+
                 </div>
             </div>
         </div>
