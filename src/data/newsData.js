@@ -1,5 +1,18 @@
 export const newsData = [
     {
+        id: 12,
+        title: "Design Presentation by Luke Fox (Senior Executive Partner, Foster + Partners)",
+        date: "August 16, 2025",
+        image: "./img/foster_interview.jpg",
+        isVideoLink: true,
+        videoUrl: "https://drive.google.com/file/d/1NbDBy3PtDkJLEAZ1E55b6mw1U0ZKIwVj/preview",
+        content: [
+            { type: "paragraph", text: "Design presentation covering the architectural vision for IOTA Seoul." }
+        ],
+        originalUrl: "#"
+    },
+
+    {
         id: 11,
         title: "Transforming Namsan into a Global Landmark",
         date: "October 10, 2024",
