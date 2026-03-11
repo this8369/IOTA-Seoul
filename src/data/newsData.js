@@ -1,5 +1,16 @@
 export const newsData = [
     {
+        id: 10,
+        title: "Foster + Partners Reveals Design for Mixed-Use Development in Central Seoul, South Korea",
+        date: "August 14, 2025",
+        isDirectLink: true,
+        content: [
+            { type: "subtitle", text: "Foster + Partners has released images of the proposed design for IOTA Seoul I" }
+        ],
+        originalUrl: "https://www.archdaily.com/1033187/foster-plus-partners-reveals-design-for-mixed-use-development-in-central-seoul-south-korea"
+    },
+
+    {
         id: 9,
         title: "Designs for landmark mixed-used development in Seoul revealed",
         date: "15th August 2025",

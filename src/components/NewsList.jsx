@@ -26,7 +26,13 @@ export default function NewsList({ onSelectArticle }) {
                     {featuredNews && (
                         <div
                             className="w-full lg:w-[50%] xl:w-[55%] flex flex-col cursor-pointer group"
-                            onClick={() => onSelectArticle(featuredNews)}
+                            onClick={() => {
+                                if (featuredNews.isDirectLink) {
+                                    window.open(featuredNews.originalUrl, '_blank');
+                                } else {
+                                    onSelectArticle(featuredNews);
+                                }
+                            }}
                         >
                             <div className="w-full aspect-[16/10] bg-gray-100 overflow-hidden mb-6 relative">
                                 {featuredNews.image ? (
@@ -58,7 +64,13 @@ export default function NewsList({ onSelectArticle }) {
                             <div
                                 key={news.id}
                                 className="flex flex-col cursor-pointer group h-full"
-                                onClick={() => onSelectArticle(news)}
+                                onClick={() => {
+                                    if (news.isDirectLink) {
+                                        window.open(news.originalUrl, '_blank');
+                                    } else {
+                                        onSelectArticle(news);
+                                    }
+                                }}
                             >
                                 <h3 className="text-[22px] md:text-[24px] pr-2 leading-[1.35] text-[#222] font-inter font-medium tracking-[-0.02em] mb-3">
                                     <span className="inline pb-[2px] bg-gradient-to-r from-black to-black bg-no-repeat [background-position:0_100%] [background-size:0%_1.5px] group-hover:[background-size:100%_1.5px] transition-all duration-500 ease-out">
