@@ -257,7 +257,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                         >
                             {currentMenuData.map((col, idx) => (
                                 <div key={idx} className="relative group/menu py-2 cursor-pointer flex items-center">
-                                    <span className="hover:opacity-60 transition-opacity">{col.title}</span>
+                                    <span className="hover:underline underline-offset-8 decoration-[1.5px] transition-all duration-200 hover:text-black">{col.title}</span>
                                 </div>
                             ))}
 
@@ -266,11 +266,11 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                 className={`absolute left-0 top-[100%] w-full bg-white transition-all duration-300 overflow-hidden ${isMegaMenuOpen ? 'max-h-[600px] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'max-h-0 opacity-0'}`}
                                 style={{ zIndex: 40 }}
                             >
-                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto py-12 flex justify-start gap-12 xl:gap-20">
+                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto py-10 grid grid-cols-2 md:grid-cols-3 min-[1100px]:grid-cols-5 gap-8 xl:gap-12">
                                     {currentMenuData.map((col, idx) => (
-                                        <div key={idx} className="flex flex-col w-[260px] xl:w-[320px]">
-                                            <h4 className="text-[18px] xl:text-[20px] font-bold text-black mb-6 tracking-[-0.03em]">{col.title}</h4>
-                                            <ul className="flex flex-col space-y-4">
+                                        <div key={idx} className="flex flex-col w-full">
+                                            <h4 className="text-[16px] xl:text-[18px] font-semibold text-black mb-5 tracking-[-0.03em]">{col.title}</h4>
+                                            <ul className="flex flex-col space-y-3">
                                                 {col.items.map((item, itemIdx) => {
                                                     if (item.type === 'news') {
                                                         return (
@@ -281,7 +281,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                                                         setIsMegaMenuOpen(false);
                                                                         handleNewsClick(e);
                                                                     }}
-                                                                    className="text-[14px] xl:text-[16px] text-gray-700 hover:text-black font-light transition-all tracking-[-0.03em]"
+                                                                    className="text-[13px] xl:text-[15px] text-gray-700 hover:text-blue-600 font-light transition-colors duration-200 tracking-[-0.03em]"
                                                                 >
                                                                     {item.label}
                                                                 </a>
@@ -297,7 +297,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                                                         setIsMegaMenuOpen(false);
                                                                         alert(item.message);
                                                                     }}
-                                                                    className="text-[14px] xl:text-[16px] text-gray-700 hover:text-black font-light transition-all tracking-[-0.03em]"
+                                                                    className="text-[13px] xl:text-[15px] text-gray-700 hover:text-blue-600 font-light transition-colors duration-200 tracking-[-0.03em]"
                                                                 >
                                                                     {item.label}
                                                                 </a>
@@ -310,7 +310,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                                                     href={item.url}
                                                                     target="_blank"
                                                                     onClick={() => setIsMegaMenuOpen(false)}
-                                                                    className="text-[14px] xl:text-[16px] text-gray-700 hover:text-black font-light transition-all tracking-[-0.03em]"
+                                                                    className="text-[13px] xl:text-[15px] text-gray-700 hover:text-blue-600 font-light transition-colors duration-200 tracking-[-0.03em]"
                                                                 >
                                                                     {item.label}
                                                                 </a>
@@ -325,7 +325,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                                                         setIsMegaMenuOpen(false);
                                                                         handleScrollTo(e, item.id);
                                                                     }}
-                                                                    className="text-[14px] xl:text-[16px] text-gray-700 hover:text-black font-light transition-all tracking-[-0.03em]"
+                                                                    className="text-[13px] xl:text-[15px] text-gray-700 hover:text-blue-600 font-light transition-colors duration-200 tracking-[-0.03em]"
                                                                 >
                                                                     {item.label}
                                                                 </a>
