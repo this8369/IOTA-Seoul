@@ -250,9 +250,9 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                         className="text-xl font-bold tracking-normal cursor-pointer hover:opacity-80 transition-opacity">
                         IOTA Seoul
                     </a>
-                    <div className="hidden min-[1100px]:flex items-center">
+                    <div className="hidden min-[1100px]:flex items-center gap-[30px]">
                         <div
-                            className="flex space-x-8 text-[16px] font-normal text-black tracking-[-0.03em] font-sans"
+                            className="flex gap-[32px] text-[16px] font-normal text-black tracking-[-0.03em] font-sans"
                             onMouseEnter={() => setIsMegaMenuOpen(true)}
                             onMouseLeave={() => { setIsMegaMenuOpen(false); setHoveredIndex(null); }}
                         >
@@ -268,7 +268,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                         }
                                     }}
                                 >
-                                    <span className="relative pb-[2px] after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1.5px] after:-bottom-[1px] after:left-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 group-hover/menu:after:scale-x-100 transition-colors hover:text-black">
+                                    <span className="relative pb-0 after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1.5px] after:-bottom-[-2px] after:left-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 group-hover/menu:after:scale-x-100 transition-colors hover:text-black">
                                         {col.title}
                                     </span>
                                 </div>
@@ -279,7 +279,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                 className={`absolute left-0 !ml-0 top-[100%] w-full bg-white transition-all duration-300 overflow-hidden ${isMegaMenuOpen ? 'max-h-[600px] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'max-h-0 opacity-0'}`}
                                 style={{ zIndex: 40 }}
                             >
-                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto py-10 flex justify-start gap-[100px]">
+                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto py-10 flex justify-start gap-[150px]">
                                     {currentMenuData.map((col, idx) => (
                                         <div
                                             key={idx}
@@ -287,7 +287,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                             onMouseEnter={() => setHoveredIndex(idx)}
                                         >
                                             <h4 className="text-[16px] xl:text-[18px] font-semibold mb-5 tracking-[-0.03em] text-black w-fit">
-                                                <span className={`relative pb-[2px] after:content-[''] after:absolute after:w-full after:h-[1.5px] after:-bottom-[1px] after:left-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 ${hoveredIndex === idx ? 'after:scale-x-100' : 'after:scale-x-0'}`}>
+                                                <span className={`relative pb-0 after:content-[''] after:absolute after:w-full after:h-[1.5px] after:-bottom-[-2px] after:left-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 ${hoveredIndex === idx ? 'after:scale-x-100' : 'after:scale-x-0'}`}>
                                                     {col.title}
                                                 </span>
                                             </h4>
@@ -321,7 +321,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                                                 onClick={clickHandler}
                                                                 className="text-[13px] xl:text-[15px] text-gray-700 font-light tracking-[-0.03em] group/sub inline-block w-fit"
                                                             >
-                                                                <span className="relative pb-[1px] after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1px] after:-bottom-[1px] after:left-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 group-hover/sub:after:scale-x-100 group-hover/sub:text-black transition-colors">
+                                                                <span className="relative pb-0 after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1px] after:-bottom-[-1px] after:left-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 group-hover/sub:after:scale-x-100 group-hover/sub:text-black transition-colors">
                                                                     {item.label}
                                                                 </span>
                                                             </a>
@@ -334,8 +334,8 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                 </div>
                             </div>
                         </div>
-                        <div className="w-px h-4 bg-gray-300 ml-[30px]"></div>
-                        <div className="relative group text-[14px] ml-[30px]">
+                        <div className="w-px h-4 bg-gray-300"></div>
+                        <div className="relative group text-[14px]">
                             <button className="flex items-center space-x-1 font-bold text-gray-800 hover:text-gray-500 focus:outline-none pb-2 -mb-2 relative -top-[1px]">
                                 <span>{lang.toUpperCase()}</span>
                                 <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
