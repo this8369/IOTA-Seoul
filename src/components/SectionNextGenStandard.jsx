@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function SectionNextGenStandard() {
     return (
-        <section className="section w-full h-auto bg-white pt-[60px] md:pt-[100px] pb-[100px] text-[#111]" id="section-nextgen-standard">
+        <section className="section w-full h-auto bg-white pt-[60px] md:pt-[100px] pb-[100px] text-[#111] scroll-mt-[100px]" id="section-nextgen-standard">
 
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-center">
 

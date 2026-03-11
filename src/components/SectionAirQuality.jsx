@@ -5,7 +5,7 @@ export default function SectionAirQuality() {
     const { lang } = useLanguage();
 
     return (
-        <section className="section w-full h-auto bg-white pt-12 pb-[100px]" id="section-airquality">
+        <section className="section w-full h-auto bg-white pt-12 pb-[100px] scroll-mt-[100px]" id="section-airquality">
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto pt-4 md:pt-12 bs-fade-up">
 
                 {/* Title */}
