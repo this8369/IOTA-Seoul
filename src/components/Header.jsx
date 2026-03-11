@@ -250,7 +250,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                         className="text-xl font-bold tracking-normal cursor-pointer hover:opacity-80 transition-opacity">
                         IOTA Seoul
                     </a>
-                    <div className="hidden min-[1100px]:flex items-center space-x-8">
+                    <div className="hidden min-[1100px]:flex items-center">
                         <div
                             className="flex space-x-8 text-[16px] font-normal text-black tracking-[-0.03em] font-sans"
                             onMouseEnter={() => setIsMegaMenuOpen(true)}
@@ -334,8 +334,8 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                 </div>
                             </div>
                         </div>
-                        <div className="w-px h-4 bg-gray-300 ml-8"></div>
-                        <div className="relative group text-[14px] ml-8">
+                        <div className="w-px h-4 bg-gray-300 ml-[30px]"></div>
+                        <div className="relative group text-[14px] ml-[30px]">
                             <button className="flex items-center space-x-1 font-bold text-gray-800 hover:text-gray-500 focus:outline-none pb-2 -mb-2 relative -top-[1px]">
                                 <span>{lang.toUpperCase()}</span>
                                 <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
