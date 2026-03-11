@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Footer from './Footer';
 
 export default function NewsDetail({ article, onBack }) {
     useEffect(() => {
@@ -9,8 +10,8 @@ export default function NewsDetail({ article, onBack }) {
     if (!article) return null;
 
     return (
-        <div className="w-full bg-white min-h-screen pt-[160px] pb-[160px]">
-            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto">
+        <div className="w-full bg-white min-h-screen pt-[160px] flex flex-col">
+            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto pb-[160px] flex-grow">
                 <button
                     onClick={onBack}
                     className="text-gray-400 hover:text-black transition-colors duration-200 text-[13px] font-bold tracking-wider uppercase mb-[60px] md:mb-[100px] inline-flex items-center gap-2"
@@ -103,6 +104,7 @@ export default function NewsDetail({ article, onBack }) {
                     <div className="hidden xl:block w-[200px] flex-shrink-0"></div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }
