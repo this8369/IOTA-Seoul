@@ -7,6 +7,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
     const [activeSection, setActiveSection] = useState('');
     const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    const initialTransform = React.useRef((currentPage !== 'home') ? 'translateY(0)' : 'translateY(-100%)');
 
     const menuDataEn = [
         {
@@ -261,7 +262,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
         <>
             <header id="main-header"
                 className="fixed top-0 left-0 bg-white text-black z-50 py-[25px] md:py-[35px] transition-transform ease-in-out"
-                style={{ transform: (currentPage !== 'home') ? 'translateY(0)' : 'translateY(-100%)', width: 'calc(100vw - var(--scrollbar-width, 0px))' }}>
+                style={{ transform: initialTransform.current, width: 'calc(100vw - var(--scrollbar-width, 0px))' }}>
                 <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex justify-between items-center transition-all duration-300">
                     <a href="#"
                         onClick={(e) => handleScrollTo(e, 'top')}
