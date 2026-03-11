@@ -42,9 +42,9 @@ export default function NewsList({ onSelectArticle }) {
                         <div className="w-full aspect-[21/9] md:aspect-[21/9] lg:aspect-[21/8] bg-black relative overflow-hidden">
                             {playingVideoId === videoNews.id && videoNews.isVideoLink ? (
                                 <iframe
-                                    src={`${videoNews.videoUrl}${videoNews.videoUrl.includes('?') ? '&' : '?'}autoplay=1`}
+                                    src={videoNews.videoUrl}
                                     className="w-full h-full border-none"
-                                    allow="autoplay; fullscreen"
+                                    allow="fullscreen"
                                     allowFullScreen
                                 ></iframe>
                             ) : (
@@ -53,7 +53,7 @@ export default function NewsList({ onSelectArticle }) {
                                         <img
                                             src={videoNews.image}
                                             alt={videoNews.title}
-                                            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02] brightness-[0.85]"
+                                            className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.02] brightness-[0.85]"
                                         />
                                     )}
                                     <div className="absolute inset-0 flex items-center justify-center p-4">
@@ -66,7 +66,7 @@ export default function NewsList({ onSelectArticle }) {
                         </div>
                         {/* Video Title - Left Aligned Below */}
                         <div className="w-full mt-4 md:mt-6">
-                            <h2 className="text-[24px] md:text-[32px] text-black font-inter font-normal tracking-[-0.02em] leading-tight text-left">
+                            <h2 className="text-[28px] md:text-[36px] text-black font-inter font-normal tracking-[-0.02em] leading-tight text-left">
                                 <span className={`inline pb-[2px] bg-gradient-to-r from-black to-black bg-no-repeat [background-position:0_100%] [background-size:0%_1.5px] transition-all duration-500 ease-out ${playingVideoId !== videoNews.id ? 'group-hover:[background-size:100%_1.5px]' : ''}`}>
                                     {videoNews.title}
                                 </span>
