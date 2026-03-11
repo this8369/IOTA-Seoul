@@ -39,23 +39,36 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                 { label: "Global Top-Tier Construction Company", id: "section-construction" },
                 { label: "Upper Luxury Hospitality", id: "section-hotel" }
             ]
+        },
+        {
+            title: "News",
+            items: [
+                { label: "In the News", id: "news", type: "news" }
+            ]
+        },
+        {
+            title: "Lease",
+            items: [
+                { label: "Lease Inquiry", id: "lease-alert", type: "alert", message: "Lease page coming soon!" },
+                { label: "Vision Book Download", id: "vision-book", type: "download", url: "./PDF/IOTA Seoul Visionbook_compressed.pdf" }
+            ]
         }
     ];
 
     const menuDataKr = [
         {
-            title: "서울의 새로운 중심",
+            title: "New Heart of Seoul",
             items: [
                 { label: "포스터 앤 파트너스 설계", id: "section-foster" },
                 { label: "건축 개요", id: "section3" },
                 { label: "브랜드 아이덴티티", id: "section4" },
-                { label: "서울역 북부역세권 (SYBD)", id: "section2" },
+                { label: "글로벌 업무지구", id: "section2" },
                 { label: "도심 속 자연", id: "section-green" },
                 { label: "압도적인 스케일", id: "section-scale" }
             ]
         },
         {
-            title: "차세대 워크플레이스",
+            title: "Next-Gen Workplace",
             items: [
                 { label: "AI 시대의 새로운 오피스 표준", id: "section-nextgen-standard" },
                 { label: "AI 인프라 기반 어메니티", id: "section-aiready" },
@@ -64,15 +77,28 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                 { label: "넷제로 친환경 빌딩 구현", id: "section-netzero" },
                 { label: "프라이버시 집중형 화장실", id: "section-restroom" },
                 { label: "국내 최고 사양 엘리베이터", id: "section-elevator" },
-                { label: "AI 기반 빌딩 공조 시스템", id: "section-hvac" }
+                { label: "입주사 맞춤형 공조 시스템", id: "section-hvac" }
             ]
         },
         {
-            title: "디자인 & 서비스",
+            title: "Design & Service",
             items: [
                 { label: "세계적인 건축 거장의 만남", id: "section-design" },
                 { label: "글로벌 탑티어 건설사 참여", id: "section-construction" },
                 { label: "최상위 럭셔리 호스피탈리티", id: "section-hotel" }
+            ]
+        },
+        {
+            title: "News",
+            items: [
+                { label: "In the News", id: "news", type: "news" }
+            ]
+        },
+        {
+            title: "Lease",
+            items: [
+                { label: "임대차 문의", id: "lease-alert", type: "alert", message: "준비 중인 페이지입니다." },
+                { label: "Vision Book Download", id: "vision-book", type: "download", url: "./PDF/IOTA Seoul Visionbook_compressed.pdf" }
             ]
         }
     ];
@@ -225,7 +251,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                     </a>
                     <div className="hidden min-[1100px]:flex items-center space-x-10">
                         <div
-                            className="flex space-x-8 text-[17px] xl:text-[19px] font-normal text-black tracking-[-0.03em] font-sans"
+                            className="flex space-x-8 text-[16px] font-normal text-black tracking-[-0.03em] font-sans"
                             onMouseEnter={() => setIsMegaMenuOpen(true)}
                             onMouseLeave={() => setIsMegaMenuOpen(false)}
                         >
@@ -234,37 +260,79 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                     <span className="hover:opacity-60 transition-opacity">{col.title}</span>
                                 </div>
                             ))}
-                            <div className="relative group/menu py-2 cursor-pointer flex items-center">
-                                <a href="#news" onClick={handleNewsClick} className="hover:opacity-60 transition-opacity">{lang === 'kr' ? '뉴스' : 'News'}</a>
-                            </div>
-                            <div className="relative group/menu py-2 cursor-pointer flex items-center">
-                                <a href="#" onClick={(e) => { e.preventDefault(); alert(lang === 'kr' ? '준비 중인 페이지입니다.' : 'Lease page coming soon!'); }} className="hover:opacity-60 transition-opacity">{lang === 'kr' ? '임대' : 'Lease'}</a>
-                            </div>
 
                             {/* Dropdown Mega Menu */}
                             <div
                                 className={`absolute left-0 top-[100%] w-full bg-white transition-all duration-300 overflow-hidden ${isMegaMenuOpen ? 'max-h-[600px] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'max-h-0 opacity-0'}`}
                                 style={{ zIndex: 40 }}
                             >
-                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto py-12 flex justify-start pl-[50px] xl:pl-[120px] gap-12 xl:gap-20">
+                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto py-12 flex justify-start gap-12 xl:gap-20">
                                     {currentMenuData.map((col, idx) => (
                                         <div key={idx} className="flex flex-col w-[260px] xl:w-[320px]">
-                                            <h4 className="text-[20px] xl:text-[22px] font-bold text-black mb-6 tracking-[-0.03em]">{col.title}</h4>
+                                            <h4 className="text-[18px] xl:text-[20px] font-bold text-black mb-6 tracking-[-0.03em]">{col.title}</h4>
                                             <ul className="flex flex-col space-y-4">
-                                                {col.items.map((item, itemIdx) => (
-                                                    <li key={itemIdx}>
-                                                        <a
-                                                            href={`#${item.id}`}
-                                                            onClick={(e) => {
-                                                                setIsMegaMenuOpen(false);
-                                                                handleScrollTo(e, item.id);
-                                                            }}
-                                                            className="text-[15px] xl:text-[17px] text-gray-700 hover:text-black font-light transition-all tracking-[-0.03em]"
-                                                        >
-                                                            {item.label}
-                                                        </a>
-                                                    </li>
-                                                ))}
+                                                {col.items.map((item, itemIdx) => {
+                                                    if (item.type === 'news') {
+                                                        return (
+                                                            <li key={itemIdx}>
+                                                                <a
+                                                                    href="#news"
+                                                                    onClick={(e) => {
+                                                                        setIsMegaMenuOpen(false);
+                                                                        handleNewsClick(e);
+                                                                    }}
+                                                                    className="text-[14px] xl:text-[16px] text-gray-700 hover:text-black font-light transition-all tracking-[-0.03em]"
+                                                                >
+                                                                    {item.label}
+                                                                </a>
+                                                            </li>
+                                                        );
+                                                    } else if (item.type === 'alert') {
+                                                        return (
+                                                            <li key={itemIdx}>
+                                                                <a
+                                                                    href="#"
+                                                                    onClick={(e) => {
+                                                                        e.preventDefault();
+                                                                        setIsMegaMenuOpen(false);
+                                                                        alert(item.message);
+                                                                    }}
+                                                                    className="text-[14px] xl:text-[16px] text-gray-700 hover:text-black font-light transition-all tracking-[-0.03em]"
+                                                                >
+                                                                    {item.label}
+                                                                </a>
+                                                            </li>
+                                                        );
+                                                    } else if (item.type === 'download') {
+                                                        return (
+                                                            <li key={itemIdx}>
+                                                                <a
+                                                                    href={item.url}
+                                                                    target="_blank"
+                                                                    onClick={() => setIsMegaMenuOpen(false)}
+                                                                    className="text-[14px] xl:text-[16px] text-gray-700 hover:text-black font-light transition-all tracking-[-0.03em]"
+                                                                >
+                                                                    {item.label}
+                                                                </a>
+                                                            </li>
+                                                        );
+                                                    } else {
+                                                        return (
+                                                            <li key={itemIdx}>
+                                                                <a
+                                                                    href={`#${item.id}`}
+                                                                    onClick={(e) => {
+                                                                        setIsMegaMenuOpen(false);
+                                                                        handleScrollTo(e, item.id);
+                                                                    }}
+                                                                    className="text-[14px] xl:text-[16px] text-gray-700 hover:text-black font-light transition-all tracking-[-0.03em]"
+                                                                >
+                                                                    {item.label}
+                                                                </a>
+                                                            </li>
+                                                        );
+                                                    }
+                                                })}
                                             </ul>
                                         </div>
                                     ))}
@@ -301,23 +369,57 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                         <div key={idx} className="w-full mb-6">
                             <h4 className="text-[18px] font-bold text-black mb-3 border-b border-gray-100 pb-2">{col.title}</h4>
                             <div className="flex flex-col space-y-3">
-                                {col.items.map((item, itemIdx) => (
-                                    <a
-                                        key={itemIdx}
-                                        href={`#${item.id}`}
-                                        onClick={(e) => handleScrollTo(e, item.id)}
-                                        className={`text-[15px] text-gray-600 hover:text-black hover:font-bold transition-all tracking-tight`}
-                                    >
-                                        {item.label}
-                                    </a>
-                                ))}
+                                {col.items.map((item, itemIdx) => {
+                                    if (item.type === 'news') {
+                                        return (
+                                            <a
+                                                key={itemIdx}
+                                                href="#news"
+                                                onClick={(e) => handleNewsClick(e)}
+                                                className={`text-[15px] text-gray-600 hover:text-black hover:font-bold transition-all tracking-tight`}
+                                            >
+                                                {item.label}
+                                            </a>
+                                        );
+                                    } else if (item.type === 'alert') {
+                                        return (
+                                            <a
+                                                key={itemIdx}
+                                                href="#"
+                                                onClick={(e) => { e.preventDefault(); alert(item.message); setMobileMenuOpen(false); }}
+                                                className={`text-[15px] text-gray-600 hover:text-black hover:font-bold transition-all tracking-tight`}
+                                            >
+                                                {item.label}
+                                            </a>
+                                        );
+                                    } else if (item.type === 'download') {
+                                        return (
+                                            <a
+                                                key={itemIdx}
+                                                href={item.url}
+                                                target="_blank"
+                                                onClick={() => setMobileMenuOpen(false)}
+                                                className={`text-[15px] text-gray-600 hover:text-black hover:font-bold transition-all tracking-tight`}
+                                            >
+                                                {item.label}
+                                            </a>
+                                        );
+                                    } else {
+                                        return (
+                                            <a
+                                                key={itemIdx}
+                                                href={`#${item.id}`}
+                                                onClick={(e) => handleScrollTo(e, item.id)}
+                                                className={`text-[15px] text-gray-600 hover:text-black hover:font-bold transition-all tracking-tight`}
+                                            >
+                                                {item.label}
+                                            </a>
+                                        );
+                                    }
+                                })}
                             </div>
                         </div>
                     ))}
-                    <div className="w-full mb-6 mt-4">
-                        <a href="#" onClick={handleNewsClick} className={`text-[18px] font-bold text-black mb-4 block`}>{lang === 'kr' ? '뉴스' : 'News'}</a>
-                        <a href="#" onClick={(e) => { e.preventDefault(); alert(lang === 'kr' ? '준비 중인 페이지입니다.' : 'Lease page coming soon!'); setMobileMenuOpen(false); }} className={`text-[18px] font-bold text-black block`}>{lang === 'kr' ? '임대' : 'Lease'}</a>
-                    </div>
                 </div>
                 <div className="flex space-x-8 pt-6 border-t border-gray-200 justify-center">
                     <button className="text-[20px] font-bold text-gray-800 hover:text-gray-500" onClick={() => switchLang('en')}>EN</button>
