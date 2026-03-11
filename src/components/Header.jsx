@@ -394,14 +394,14 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
                         <div className="w-px h-4 bg-gray-300"></div>
                         <div className="relative group text-[14px]">
                             <button className="flex items-center space-x-1 font-bold text-gray-800 hover:text-gray-500 focus:outline-none pb-2 -mb-2 relative -top-[1px]">
-                                <span>{lang.toUpperCase()}</span>
+                                <span className={lang === 'kr' ? 'relative top-[1px]' : ''}>{lang.toUpperCase()}</span>
                                 <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
                             <div className="absolute right-0 mt-2 w-16 bg-white border border-gray-100 shadow-lg hidden group-hover:block py-1 z-50 rounded-sm">
                                 <button className="block w-full text-left px-3 py-1 hover:bg-gray-50 text-gray-600" onClick={() => switchLang('en')}>EN</button>
-                                <button className="block w-full text-left px-3 py-1 hover:bg-gray-50 text-gray-600" onClick={() => switchLang('kr')}>KR</button>
+                                <button className="block w-full text-left px-3 py-1 hover:bg-gray-50 text-gray-600" onClick={() => switchLang('kr')}><span className="relative top-[1px]">KR</span></button>
                             </div>
                         </div>
                     </div>
@@ -486,7 +486,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
                 </div>
                 <div className="flex space-x-8 pt-6 border-t border-gray-200 justify-center">
                     <button className="text-[20px] font-bold text-gray-800 hover:text-gray-500" onClick={() => switchLang('en')}>EN</button>
-                    <button className="text-[20px] font-bold text-gray-800 hover:text-gray-500" onClick={() => switchLang('kr')}>KR</button>
+                    <button className="text-[20px] font-bold text-gray-800 hover:text-gray-500" onClick={() => switchLang('kr')}><span className="relative top-[1px]">KR</span></button>
                 </div>
             </div>
         </>
