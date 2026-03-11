@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { newsData } from '../data/newsData';
+import Footer from './Footer';
 
 export default function NewsList({ onSelectArticle }) {
     useEffect(() => {
@@ -8,96 +9,105 @@ export default function NewsList({ onSelectArticle }) {
 
     const [playingVideoId, setPlayingVideoId] = useState(null);
 
-    // We now have two featured articles (ID 12 and ID 9) to display on the left side
-    const featuredNews = newsData.filter(n => n.id === 12 || n.id === 9).sort((a, b) => new Date(b.date) - new Date(a.date));
-    const featuredIds = featuredNews.map(n => n.id);
-
-    const otherNews = newsData.filter(n => !featuredIds.includes(n.id)).sort((a, b) => {
+    const videoNews = newsData.find(n => n.id === 12);
+    // Remove videoNews from list for the grid
+    const remainingNews = newsData.filter(n => n.id !== 12);
+    
+    // Featured ID 9
+    const featuredNews = remainingNews.find(n => n.id === 9) || remainingNews[0];
+    const otherNews = remainingNews.filter(n => n.id !== featuredNews.id).sort((a, b) => {
         return new Date(b.date) - new Date(a.date);
     });
 
     return (
-        <div className="w-full bg-white min-h-screen pt-[160px] pb-[100px]">
-            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto">
-                <h1 className="text-[40px] md:text-[50px] font-sans font-normal tracking-[-0.04em] text-black mb-[40px] md:mb-[80px]">
+        <div className="w-full bg-white min-h-screen pt-[160px] flex flex-col items-center">
+            {/* Title */}
+            <div className="w-full max-w-[1600px] px-6 md:px-[50px] mb-[40px] md:mb-[60px]">
+                <h1 className="text-[40px] md:text-[50px] font-sans font-normal tracking-[-0.04em] text-black">
                     News & Insights
                 </h1>
+            </div>
 
-                <div className="flex flex-col lg:flex-row gap-10 lg:gap-[60px] xl:gap-[80px] items-start">
-
-                    {/* Featured Articles - Left Side */}
-                    <div className="w-full lg:w-[50%] xl:w-[55%] flex flex-col gap-[60px] lg:gap-[80px]">
-                        {featuredNews.map(news => (
-                            <div
-                                key={news.id}
-                                className="w-full flex flex-col group"
-                            >
-                                <div
-                                    className={`w-full aspect-[16/10] bg-gray-100 overflow-hidden mb-6 relative ${!playingVideoId || playingVideoId !== news.id ? 'cursor-pointer' : ''}`}
-                                    onClick={() => {
-                                        if (news.isVideoLink && playingVideoId !== news.id) {
-                                            setPlayingVideoId(news.id);
-                                        } else if (!news.isVideoLink && playingVideoId !== news.id) {
-                                            if (news.isDirectLink) {
-                                                window.open(news.originalUrl, '_blank');
-                                            } else {
-                                                onSelectArticle(news);
-                                            }
-                                        }
-                                    }}
-                                >
-                                    {playingVideoId === news.id && news.isVideoLink ? (
-                                        <iframe
-                                            src={news.videoUrl}
-                                            className="w-full h-full border-none"
-                                            allow="autoplay; fullscreen"
-                                            allowFullScreen
-                                        ></iframe>
-                                    ) : (
-                                        <>
-                                            {news.image ? (
-                                                <img
-                                                    src={news.image}
-                                                    alt={news.title}
-                                                    className={`w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 ${news.isVideoLink ? 'brightness-90' : ''}`}
-                                                />
-                                            ) : (
-                                                <div className="w-full h-full bg-gray-200"></div>
-                                            )}
-                                            {news.isVideoLink && (
-                                                <div className="absolute inset-0 flex items-center justify-center">
-                                                    <div className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] bg-black bg-opacity-60 rounded-full flex items-center justify-center backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
-                                                        <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-white border-b-[12px] border-b-transparent translate-x-1"></div>
-                                                    </div>
-                                                </div>
-                                            )}
-                                        </>
-                                    )}
+            {/* Top Video block full width */}
+            {videoNews && (
+                <div className="w-full mb-[80px] md:mb-[120px]">
+                    <div 
+                        className={`w-full aspect-[21/9] md:aspect-[21/9] lg:aspect-[21/8] bg-black relative ${!playingVideoId || playingVideoId !== videoNews.id ? 'cursor-pointer group' : ''}`}
+                        onClick={() => {
+                            if (videoNews.isVideoLink && playingVideoId !== videoNews.id) {
+                                setPlayingVideoId(videoNews.id);
+                            }
+                        }}
+                    >
+                        {playingVideoId === videoNews.id && videoNews.isVideoLink ? (
+                            <iframe 
+                                src={videoNews.videoUrl} 
+                                className="w-full h-full border-none" 
+                                allow="autoplay; fullscreen"
+                                allowFullScreen
+                            ></iframe>
+                        ) : (
+                            <>
+                                {videoNews.image && (
+                                    <img 
+                                        src={videoNews.image} 
+                                        alt={videoNews.title} 
+                                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02] brightness-[0.85]" 
+                                    />
+                                )}
+                                <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
+                                    <h2 className="text-white text-[28px] md:text-[40px] lg:text-[50px] font-inter font-light tracking-[-0.02em] text-center mb-6 leading-tight max-w-[1200px]">
+                                        {videoNews.title}
+                                    </h2>
+                                    <div className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-black bg-opacity-60 rounded-full flex items-center justify-center backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
+                                        <div className="w-0 h-0 border-t-[16px] border-t-transparent border-l-[26px] border-l-white border-b-[16px] border-b-transparent translate-x-1"></div>
+                                    </div>
                                 </div>
-
-                                <h3
-                                    className="text-[24px] md:text-[28px] lg:text-[32px] leading-[1.2] text-black font-inter font-normal tracking-[-0.02em] mb-3 cursor-pointer"
-                                    onClick={() => {
-                                        if (news.isVideoLink) {
-                                            if (playingVideoId !== news.id) setPlayingVideoId(news.id);
-                                        } else if (news.isDirectLink) {
-                                            window.open(news.originalUrl, '_blank');
-                                        } else {
-                                            onSelectArticle(news);
-                                        }
-                                    }}
-                                >
-                                    <span className={`inline pb-[2px] bg-gradient-to-r from-black to-black bg-no-repeat [background-position:0_100%] [background-size:0%_1.5px] transition-all duration-500 ease-out ${playingVideoId !== news.id ? 'group-hover:[background-size:100%_1.5px]' : ''}`}>
-                                        {news.title}
-                                    </span>
-                                </h3>
-
-                                <p className="text-[14px] md:text-[15px] text-[#333] font-inter tracking-[0.02em] font-light">
-                                    {news.date}
-                                </p>
-                            </div>
-                        ))}
+                            </>
+                        )}
                     </div>
+                </div>
+            )}
+
+            {/* List */}
+            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto pb-[100px]">
+                <div className="flex flex-col lg:flex-row gap-10 lg:gap-[60px] xl:gap-[80px] items-start">
+                    
+                    {/* Featured Article - Left Side */}
+                    {featuredNews && (
+                        <div 
+                            className="w-full lg:w-[50%] xl:w-[55%] flex flex-col cursor-pointer group"
+                            onClick={() => {
+                                if (featuredNews.isDirectLink) {
+                                    window.open(featuredNews.originalUrl, '_blank');
+                                } else {
+                                    onSelectArticle(featuredNews);
+                                }
+                            }}
+                        >
+                            <div className="w-full aspect-[16/10] bg-gray-100 overflow-hidden mb-6 relative">
+                                {featuredNews.image ? (
+                                    <img 
+                                        src={featuredNews.image} 
+                                        alt={featuredNews.title} 
+                                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+                                    />
+                                ) : (
+                                    <div className="w-full h-full bg-gray-200"></div>
+                                )}
+                            </div>
+                            
+                            <h3 className="text-[24px] md:text-[28px] lg:text-[32px] leading-[1.2] text-black font-inter font-normal tracking-[-0.02em] mb-3">
+                                <span className="inline pb-[2px] bg-gradient-to-r from-black to-black bg-no-repeat [background-position:0_100%] [background-size:0%_1.5px] group-hover:[background-size:100%_1.5px] transition-all duration-500 ease-out">
+                                    {featuredNews.title}
+                                </span>
+                            </h3>
+
+                            <p className="text-[14px] md:text-[15px] text-[#333] font-inter tracking-[0.02em] font-light">
+                                {featuredNews.date}
+                            </p>
+                        </div>
+                    )}
 
                     {/* Other Articles Grid - Right Side */}
                     <div className="w-full lg:w-[50%] xl:w-[45%] grid grid-cols-1 md:grid-cols-2 gap-x-[30px] lg:gap-x-[40px] gap-y-[50px] lg:gap-y-[60px]">
@@ -118,7 +128,7 @@ export default function NewsList({ onSelectArticle }) {
                                         {news.title}
                                     </span>
                                 </h3>
-
+                                
                                 {(() => {
                                     const preview = news.content.find(item => item.type === 'subtitle')?.text
                                         || news.content.find(item => item.type === 'paragraph')?.text;
@@ -131,7 +141,7 @@ export default function NewsList({ onSelectArticle }) {
                                     }
                                     return null;
                                 })()}
-
+                                
                                 <p className="text-[13px] md:text-[14px] text-[#333] font-inter tracking-[0.02em] font-light mt-0">
                                     {news.date}
                                 </p>
@@ -141,6 +151,8 @@ export default function NewsList({ onSelectArticle }) {
 
                 </div>
             </div>
+
+            <Footer />
         </div>
     );
 }
