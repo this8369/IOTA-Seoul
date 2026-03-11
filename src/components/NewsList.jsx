@@ -12,7 +12,7 @@ export default function NewsList({ onSelectArticle }) {
     const videoNews = newsData.find(n => n.id === 12);
     // Remove videoNews from list for the grid
     const remainingNews = newsData.filter(n => n.id !== 12);
-    
+
     // Featured ID 9
     const featuredNews = remainingNews.find(n => n.id === 9) || remainingNews[0];
     const otherNews = remainingNews.filter(n => n.id !== featuredNews.id).sort((a, b) => {
@@ -22,7 +22,7 @@ export default function NewsList({ onSelectArticle }) {
     return (
         <div className="w-full bg-white min-h-screen pt-[160px] flex flex-col items-center">
             {/* Title */}
-            <div className="w-full max-w-[1600px] px-6 md:px-[50px] mb-[40px] md:mb-[60px]">
+            <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto mb-[40px] md:mb-[60px]">
                 <h1 className="text-[40px] md:text-[50px] font-sans font-normal tracking-[-0.04em] text-black">
                     News & Insights
                 </h1>
@@ -30,8 +30,8 @@ export default function NewsList({ onSelectArticle }) {
 
             {/* Top Video block full width */}
             {videoNews && (
-                <div className="w-full mb-[80px] md:mb-[120px]">
-                    <div 
+                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto mb-[80px] md:mb-[120px]">
+                    <div
                         className={`w-full aspect-[21/9] md:aspect-[21/9] lg:aspect-[21/8] bg-black relative ${!playingVideoId || playingVideoId !== videoNews.id ? 'cursor-pointer group' : ''}`}
                         onClick={() => {
                             if (videoNews.isVideoLink && playingVideoId !== videoNews.id) {
@@ -40,19 +40,19 @@ export default function NewsList({ onSelectArticle }) {
                         }}
                     >
                         {playingVideoId === videoNews.id && videoNews.isVideoLink ? (
-                            <iframe 
-                                src={videoNews.videoUrl} 
-                                className="w-full h-full border-none" 
+                            <iframe
+                                src={videoNews.videoUrl}
+                                className="w-full h-full border-none"
                                 allow="autoplay; fullscreen"
                                 allowFullScreen
                             ></iframe>
                         ) : (
                             <>
                                 {videoNews.image && (
-                                    <img 
-                                        src={videoNews.image} 
-                                        alt={videoNews.title} 
-                                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02] brightness-[0.85]" 
+                                    <img
+                                        src={videoNews.image}
+                                        alt={videoNews.title}
+                                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02] brightness-[0.85]"
                                     />
                                 )}
                                 <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
@@ -72,10 +72,10 @@ export default function NewsList({ onSelectArticle }) {
             {/* List */}
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto pb-[100px]">
                 <div className="flex flex-col lg:flex-row gap-10 lg:gap-[60px] xl:gap-[80px] items-start">
-                    
+
                     {/* Featured Article - Left Side */}
                     {featuredNews && (
-                        <div 
+                        <div
                             className="w-full lg:w-[50%] xl:w-[55%] flex flex-col cursor-pointer group"
                             onClick={() => {
                                 if (featuredNews.isDirectLink) {
@@ -87,16 +87,16 @@ export default function NewsList({ onSelectArticle }) {
                         >
                             <div className="w-full aspect-[16/10] bg-gray-100 overflow-hidden mb-6 relative">
                                 {featuredNews.image ? (
-                                    <img 
-                                        src={featuredNews.image} 
-                                        alt={featuredNews.title} 
-                                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+                                    <img
+                                        src={featuredNews.image}
+                                        alt={featuredNews.title}
+                                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                                     />
                                 ) : (
                                     <div className="w-full h-full bg-gray-200"></div>
                                 )}
                             </div>
-                            
+
                             <h3 className="text-[24px] md:text-[28px] lg:text-[32px] leading-[1.2] text-black font-inter font-normal tracking-[-0.02em] mb-3">
                                 <span className="inline pb-[2px] bg-gradient-to-r from-black to-black bg-no-repeat [background-position:0_100%] [background-size:0%_1.5px] group-hover:[background-size:100%_1.5px] transition-all duration-500 ease-out">
                                     {featuredNews.title}
@@ -128,7 +128,7 @@ export default function NewsList({ onSelectArticle }) {
                                         {news.title}
                                     </span>
                                 </h3>
-                                
+
                                 {(() => {
                                     const preview = news.content.find(item => item.type === 'subtitle')?.text
                                         || news.content.find(item => item.type === 'paragraph')?.text;
@@ -141,7 +141,7 @@ export default function NewsList({ onSelectArticle }) {
                                     }
                                     return null;
                                 })()}
-                                
+
                                 <p className="text-[13px] md:text-[14px] text-[#333] font-inter tracking-[0.02em] font-light mt-0">
                                     {news.date}
                                 </p>
