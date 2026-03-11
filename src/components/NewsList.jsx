@@ -53,7 +53,7 @@ export default function NewsList({ onSelectArticle }) {
                                         <img
                                             src={videoNews.image}
                                             alt={videoNews.title}
-                                            className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.02] brightness-[0.85]"
+                                            className="w-full h-full object-cover object-top transition-all duration-700 ease-out group-hover:scale-[1.02] brightness-100 group-hover:brightness-[0.70]"
                                         />
                                     )}
                                     <div className="absolute inset-0 flex items-center justify-center p-4">
