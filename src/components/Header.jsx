@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
-export default function Header({ onNavigateToNews, onNavigateToHome, currentPage }) {
+export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateToLease, currentPage }) {
     const { lang, setLang } = useLanguage();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('');
@@ -54,10 +54,9 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
         },
         {
             title: "Lease",
-            type: "alert",
-            message: "Lease page coming soon!",
+            type: "lease",
             items: [
-                { label: "Lease Inquiry", id: "lease-alert", type: "alert", message: "Lease page coming soon!" },
+                { label: "Lease Inquiry", id: "lease", type: "lease" },
                 { label: "Vision Book Download", id: "vision-book", type: "download", url: "./PDF/IOTA Seoul Visionbook_compressed.pdf" }
             ]
         }
@@ -108,10 +107,9 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
         },
         {
             title: "Lease",
-            type: "alert",
-            message: "준비 중인 페이지입니다.",
+            type: "lease",
             items: [
-                { label: "임대차 문의", id: "lease-alert", type: "alert", message: "준비 중인 페이지입니다." },
+                { label: "임대차 문의", id: "lease", type: "lease" },
                 { label: "Vision Book Download", id: "vision-book", type: "download", url: "./PDF/IOTA Seoul Visionbook_compressed.pdf" }
             ]
         }
@@ -258,6 +256,16 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
         if (onNavigateToNews) onNavigateToNews();
     };
 
+    const handleLeaseClick = (e) => {
+        e.preventDefault();
+        setMobileMenuOpen(false);
+        const newHash = '#lease';
+        if (window.location.hash !== newHash) {
+            window.history.pushState(null, '', newHash);
+        }
+        if (onNavigateToLease) onNavigateToLease();
+    };
+
     return (
         <>
             <header id="main-header"
@@ -285,6 +293,9 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                         if (col.type === 'news') {
                                             e.preventDefault();
                                             handleNewsClick(e);
+                                        } else if (col.type === 'lease') {
+                                            e.preventDefault();
+                                            handleLeaseClick(e);
                                         } else if (col.type === 'alert') {
                                             e.preventDefault();
                                             alert(col.message);
@@ -319,6 +330,9 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                                     if (col.type === 'news') {
                                                         e.preventDefault();
                                                         handleNewsClick(e);
+                                                    } else if (col.type === 'lease') {
+                                                        e.preventDefault();
+                                                        handleLeaseClick(e);
                                                     } else if (col.type === 'alert') {
                                                         e.preventDefault();
                                                         alert(col.message);
@@ -335,6 +349,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                             <ul className="flex flex-col space-y-3">
                                                 {col.items.map((item, itemIdx) => {
                                                     const isNews = item.type === 'news';
+                                                    const isLease = item.type === 'lease';
                                                     const isAlert = item.type === 'alert';
                                                     const isDownload = item.type === 'download';
 
@@ -342,6 +357,9 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                                         if (isNews) {
                                                             setIsMegaMenuOpen(false);
                                                             handleNewsClick(e);
+                                                        } else if (isLease) {
+                                                            setIsMegaMenuOpen(false);
+                                                            handleLeaseClick(e);
                                                         } else if (isAlert) {
                                                             e.preventDefault();
                                                             setIsMegaMenuOpen(false);
@@ -357,7 +375,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                                     return (
                                                         <li key={itemIdx}>
                                                             <a
-                                                                href={isNews ? "#news" : isAlert ? "#" : isDownload ? item.url : `#${item.id}`}
+                                                                href={isNews ? "#news" : isLease ? "#lease" : isAlert ? "#" : isDownload ? item.url : `#${item.id}`}
                                                                 target={isDownload ? "_blank" : undefined}
                                                                 onClick={clickHandler}
                                                                 className="text-[13px] xl:text-[15px] text-gray-700 font-light tracking-[-0.03em] group/sub inline-block w-fit"
@@ -412,6 +430,17 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                                 key={itemIdx}
                                                 href="#news"
                                                 onClick={(e) => handleNewsClick(e)}
+                                                className={`text-[15px] text-gray-600 hover:text-black hover:font-bold transition-all tracking-tight`}
+                                            >
+                                                {item.label}
+                                            </a>
+                                        );
+                                    } else if (item.type === 'lease') {
+                                        return (
+                                            <a
+                                                key={itemIdx}
+                                                href="#lease"
+                                                onClick={(e) => handleLeaseClick(e)}
                                                 className={`text-[15px] text-gray-600 hover:text-black hover:font-bold transition-all tracking-tight`}
                                             >
                                                 {item.label}

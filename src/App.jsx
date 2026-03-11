@@ -3,6 +3,7 @@ import Header from './components/Header';
 import MainLayout from './components/MainLayout';
 import NewsList from './components/NewsList';
 import NewsDetail from './components/NewsDetail';
+import Lease from './components/Lease';
 import { newsData } from './data/newsData';
 import { useAnimations } from './hooks/useAnimations';
 import { useLanguage } from './context/LanguageContext';
@@ -19,6 +20,9 @@ export default function App() {
 
       if (hash === '#news') {
         setCurrentPage('news');
+        setSelectedArticle(null);
+      } else if (hash === '#lease') {
+        setCurrentPage('lease');
         setSelectedArticle(null);
       } else if (hash.startsWith('#news-detail-')) {
         const id = parseInt(hash.replace('#news-detail-', ''), 10);
@@ -60,7 +64,8 @@ export default function App() {
   }, []);
 
   React.useEffect(() => {
-    window.isNewsPage = currentPage !== 'home';
+    window.isNewsPage = currentPage === 'news' || currentPage === 'news_detail';
+    window.isLeasePage = currentPage === 'lease';
   }, [currentPage]);
 
   const { lang } = useLanguage();
@@ -110,6 +115,11 @@ export default function App() {
     window.history.pushState(null, '', `#news-detail-${article.id}`);
   };
 
+  const handleNavigateToLease = () => {
+    setCurrentPage('lease');
+    setSelectedArticle(null);
+  };
+
   const handleBackToOptions = () => {
     setCurrentPage('news');
     window.history.pushState(null, '', '#news');
@@ -122,7 +132,7 @@ export default function App() {
 
   return (
     <div className="scroll-container font-sans" id="scroll-container">
-      <Header onNavigateToNews={handleNavigateToNews} onNavigateToHome={handleNavigateToHome} currentPage={currentPage} />
+      <Header onNavigateToNews={handleNavigateToNews} onNavigateToHome={handleNavigateToHome} onNavigateToLease={handleNavigateToLease} currentPage={currentPage} />
 
       {currentPage === 'home' && <MainLayout />}
 
@@ -133,6 +143,8 @@ export default function App() {
       {currentPage === 'news_detail' && (
         <NewsDetail article={selectedArticle} onBack={handleBackToOptions} />
       )}
+
+      {currentPage === 'lease' && <Lease />}
     </div>
   );
 }
