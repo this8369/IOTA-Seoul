@@ -205,6 +205,10 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
 
         // Keep header during programmatic scroll
         window.isNavigating = true;
+        const header = document.getElementById('main-header');
+        if (header) {
+            header.style.transform = "translateY(0)";
+        }
         clearTimeout(window.navigatingTimeout);
         window.navigatingTimeout = setTimeout(() => {
             window.isNavigating = false;
@@ -274,12 +278,11 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                     className="relative group/menu py-2 cursor-pointer flex items-center"
                                     onMouseEnter={() => setHoveredIndex(idx)}
                                     onClick={(e) => {
+                                        setIsMegaMenuOpen(false);
                                         if (col.type === 'news') {
-                                            setIsMegaMenuOpen(false);
                                             e.preventDefault();
                                             handleNewsClick(e);
                                         } else if (col.type === 'alert') {
-                                            setIsMegaMenuOpen(false);
                                             e.preventDefault();
                                             alert(col.message);
                                         } else if (col.id) {
