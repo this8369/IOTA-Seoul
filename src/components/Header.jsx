@@ -48,7 +48,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
             title: "News",
             type: "news",
             items: [
-                { label: "In the News", id: "news", type: "news" }
+                { label: "News & Insights", id: "news", type: "news" }
             ]
         },
         {
@@ -102,7 +102,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
             title: "News",
             type: "news",
             items: [
-                { label: "In the News", id: "news", type: "news" }
+                { label: "News & Insights", id: "news", type: "news" }
             ]
         },
         {
@@ -305,7 +305,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                             className="flex flex-col shrink-0 min-w-max"
                                             onMouseEnter={() => setHoveredIndex(idx)}
                                         >
-                                            <h4 
+                                            <h4
                                                 className="text-[16px] xl:text-[18px] font-semibold mb-5 tracking-[-0.03em] text-black w-fit cursor-pointer"
                                                 onClick={(e) => {
                                                     setIsMegaMenuOpen(false);
