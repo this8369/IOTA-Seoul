@@ -53,9 +53,11 @@ export default function NewsList({ onSelectArticle }) {
                                         <img
                                             src={videoNews.image}
                                             alt={videoNews.title}
-                                            className="w-full h-full object-cover object-top transition-all duration-700 ease-out group-hover:scale-[1.02] brightness-100 group-hover:brightness-[0.70]"
+                                            className="w-full h-full object-cover object-top transition-all duration-700 ease-out brightness-100"
                                         />
                                     )}
+                                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.5)_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+
                                     <div className="absolute inset-0 flex items-center justify-center p-4">
                                         <div className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-black bg-opacity-60 rounded-full flex items-center justify-center backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
                                             <div className="w-0 h-0 border-t-[16px] border-t-transparent border-l-[26px] border-l-white border-b-[16px] border-b-transparent translate-x-1"></div>
