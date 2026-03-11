@@ -157,40 +157,4 @@ export const newsData = [
         ],
         originalUrl: "https://core.asiae.co.kr/article/2025072816532155944"
     },
-    {
-        id: 5,
-        title: "IGIS Leads Funding of Over $1 Billion to Work Towards Building Asia's Leading AI Platform",
-        date: "February 15, 2026",
-        content: [
-            { type: "paragraph", text: "Detailed news content will be updated soon." }
-        ],
-        originalUrl: "#"
-    },
-    {
-        id: 6,
-        title: "IOTA Infrastructure and Global Partners to acquire EcoSolutions",
-        date: "February 12, 2026",
-        content: [
-            { type: "paragraph", text: "Detailed news content will be updated soon." }
-        ],
-        originalUrl: "#"
-    },
-    {
-        id: 7,
-        title: "IOTA Seoul Unveils Groundbreaking ESG Framework with Target to Achieve Net Zero by 2030",
-        date: "February 05, 2026",
-        content: [
-            { type: "paragraph", text: "Detailed news content will be updated soon." }
-        ],
-        originalUrl: "#"
-    },
-    {
-        id: 8,
-        title: "IGIS Asset Management Outlines Commitment to Support Sustainable Developments in Urban Seoul",
-        date: "February 01, 2026",
-        content: [
-            { type: "paragraph", text: "Detailed news content will be updated soon." }
-        ],
-        originalUrl: "#"
-    }
 ];

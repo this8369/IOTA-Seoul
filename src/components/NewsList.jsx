@@ -20,7 +20,7 @@ export default function NewsList({ onSelectArticle }) {
         <div className="w-full bg-white min-h-screen pt-[160px] pb-[100px]">
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto">
                 <h1 className="text-[40px] md:text-[50px] font-sans font-normal tracking-[-0.04em] text-black mb-[40px] md:mb-[80px]">
-                    News
+                    News & Insights
                 </h1>
 
                 <div className="flex flex-col lg:flex-row gap-10 lg:gap-[60px] xl:gap-[80px] items-start">
@@ -132,7 +132,7 @@ export default function NewsList({ onSelectArticle }) {
                                     return null;
                                 })()}
 
-                                <p className="text-[13px] md:text-[14px] text-[#333] font-inter tracking-[0.02em] font-light mt-auto">
+                                <p className="text-[13px] md:text-[14px] text-[#333] font-inter tracking-[0.02em] font-light mt-0">
                                     {news.date}
                                 </p>
                             </div>
