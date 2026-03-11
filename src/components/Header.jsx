@@ -274,11 +274,12 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                     className="relative group/menu py-2 cursor-pointer flex items-center"
                                     onMouseEnter={() => setHoveredIndex(idx)}
                                     onClick={(e) => {
-                                        setIsMegaMenuOpen(false);
                                         if (col.type === 'news') {
+                                            setIsMegaMenuOpen(false);
                                             e.preventDefault();
                                             handleNewsClick(e);
                                         } else if (col.type === 'alert') {
+                                            setIsMegaMenuOpen(false);
                                             e.preventDefault();
                                             alert(col.message);
                                         } else if (col.id) {
