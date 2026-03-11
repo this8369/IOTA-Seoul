@@ -274,6 +274,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                     className="relative group/menu py-2 cursor-pointer flex items-center"
                                     onMouseEnter={() => setHoveredIndex(idx)}
                                     onClick={(e) => {
+                                        setIsMegaMenuOpen(false);
                                         if (col.type === 'news') {
                                             e.preventDefault();
                                             handleNewsClick(e);
@@ -304,7 +305,22 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                             className="flex flex-col shrink-0 min-w-max"
                                             onMouseEnter={() => setHoveredIndex(idx)}
                                         >
-                                            <h4 className="text-[16px] xl:text-[18px] font-semibold mb-5 tracking-[-0.03em] text-black w-fit">
+                                            <h4 
+                                                className="text-[16px] xl:text-[18px] font-semibold mb-5 tracking-[-0.03em] text-black w-fit cursor-pointer"
+                                                onClick={(e) => {
+                                                    setIsMegaMenuOpen(false);
+                                                    if (col.type === 'news') {
+                                                        e.preventDefault();
+                                                        handleNewsClick(e);
+                                                    } else if (col.type === 'alert') {
+                                                        e.preventDefault();
+                                                        alert(col.message);
+                                                    } else if (col.id) {
+                                                        e.preventDefault();
+                                                        handleScrollTo(e, col.id);
+                                                    }
+                                                }}
+                                            >
                                                 <span className={`relative pb-0 after:content-[''] after:absolute after:w-full after:h-[1.5px] after:-bottom-[-2px] after:left-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 ${hoveredIndex === idx ? 'after:scale-x-100' : 'after:scale-x-0'}`}>
                                                     {col.title}
                                                 </span>
