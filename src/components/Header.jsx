@@ -6,6 +6,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('');
     const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+    const [hoveredIndex, setHoveredIndex] = useState(null);
 
     const menuDataEn = [
         {
@@ -249,27 +250,45 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                         className="text-xl font-bold tracking-normal cursor-pointer hover:opacity-80 transition-opacity">
                         IOTA Seoul
                     </a>
-                    <div className="hidden min-[1100px]:flex items-center space-x-10">
+                    <div className="hidden min-[1100px]:flex items-center space-x-8">
                         <div
                             className="flex space-x-8 text-[16px] font-normal text-black tracking-[-0.03em] font-sans"
                             onMouseEnter={() => setIsMegaMenuOpen(true)}
-                            onMouseLeave={() => setIsMegaMenuOpen(false)}
+                            onMouseLeave={() => { setIsMegaMenuOpen(false); setHoveredIndex(null); }}
                         >
                             {currentMenuData.map((col, idx) => (
-                                <div key={idx} className="relative group/menu py-2 cursor-pointer flex items-center">
-                                    <span className="hover:underline underline-offset-8 decoration-[1.5px] transition-all duration-200 hover:text-black">{col.title}</span>
+                                <div 
+                                    key={idx} 
+                                    className="relative group/menu py-2 cursor-pointer flex items-center"
+                                    onMouseEnter={() => setHoveredIndex(idx)}
+                                    onClick={() => {
+                                        if (col.items.length > 0 && col.items[0].id) {
+                                            const e = { preventDefault: () => {} };
+                                            handleScrollTo(e, col.items[0].id);
+                                        }
+                                    }}
+                                >
+                                    <span className="relative pb-1 after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1.5px] after:bottom-0 after:left-0 after:bg-black after:origin-bottom-right after:transition-transform after:duration-300 group-hover/menu:after:scale-x-100 group-hover/menu:after:origin-bottom-left transition-colors hover:text-black">
+                                        {col.title}
+                                    </span>
                                 </div>
                             ))}
 
                             {/* Dropdown Mega Menu */}
                             <div
-                                className={`absolute left-0 top-[100%] w-full bg-white transition-all duration-300 overflow-hidden ${isMegaMenuOpen ? 'max-h-[600px] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'max-h-0 opacity-0'}`}
+                                className={`absolute left-0 !ml-0 top-[100%] w-full bg-white transition-all duration-300 overflow-hidden ${isMegaMenuOpen ? 'max-h-[600px] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'max-h-0 opacity-0'}`}
                                 style={{ zIndex: 40 }}
                             >
-                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto py-10 grid grid-cols-2 md:grid-cols-3 min-[1100px]:grid-cols-5 gap-8 xl:gap-12">
+                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto py-10 flex gap-[50px]">
                                     {currentMenuData.map((col, idx) => (
-                                        <div key={idx} className="flex flex-col w-full">
-                                            <h4 className="text-[16px] xl:text-[18px] font-semibold text-black mb-5 tracking-[-0.03em]">{col.title}</h4>
+                                        <div 
+                                            key={idx} 
+                                            className="flex flex-col flex-1"
+                                            onMouseEnter={() => setHoveredIndex(idx)}
+                                        >
+                                            <h4 className={`text-[16px] xl:text-[18px] font-semibold mb-5 tracking-[-0.03em] transition-colors duration-300 ${hoveredIndex === idx ? 'text-blue-600' : 'text-black'}`}>
+                                                {col.title}
+                                            </h4>
                                             <ul className="flex flex-col space-y-3">
                                                 {col.items.map((item, itemIdx) => {
                                                     if (item.type === 'news') {
