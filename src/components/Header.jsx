@@ -216,6 +216,8 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
 
         if (currentPage !== 'home') {
             if (onNavigateToHome) onNavigateToHome();
+            window.isNewsPage = false;
+            window.isLeasePage = false;
 
             // Wait for DOM to render the home page sections before scrolling
             let checkCount = 0;
