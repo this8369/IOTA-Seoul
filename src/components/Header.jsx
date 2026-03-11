@@ -11,17 +11,19 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
     const menuDataEn = [
         {
             title: "New Heart of Seoul",
+            id: "section2",
             items: [
                 { label: "Build with Foster + Partners", id: "section-foster" },
                 { label: "Property Overview", id: "section3" },
                 { label: "Brand Guidelines", id: "section4" },
-                { label: "SYBD", id: "section2" },
+                { label: "SYBD", id: "section5" },
                 { label: "Green", id: "section-green" },
                 { label: "Unmatched Scale", id: "section-scale" }
             ]
         },
         {
             title: "Next-Gen Workplace",
+            id: "section-nextgen",
             items: [
                 { label: "New Office Standard for the AI Era", id: "section-nextgen-standard" },
                 { label: "AI Driven Workplace Framework", id: "section-aiready" },
@@ -35,6 +37,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
         },
         {
             title: "Design & Service",
+            id: "section-design",
             items: [
                 { label: "Architectural Legends", id: "section-design" },
                 { label: "Global Top-Tier Construction Company", id: "section-construction" },
@@ -43,12 +46,15 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
         },
         {
             title: "News",
+            type: "news",
             items: [
                 { label: "In the News", id: "news", type: "news" }
             ]
         },
         {
             title: "Lease",
+            type: "alert",
+            message: "Lease page coming soon!",
             items: [
                 { label: "Lease Inquiry", id: "lease-alert", type: "alert", message: "Lease page coming soon!" },
                 { label: "Vision Book Download", id: "vision-book", type: "download", url: "./PDF/IOTA Seoul Visionbook_compressed.pdf" }
@@ -59,17 +65,19 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
     const menuDataKr = [
         {
             title: "New Heart of Seoul",
+            id: "section2",
             items: [
                 { label: "포스터 앤 파트너스 설계", id: "section-foster" },
                 { label: "건축 개요", id: "section3" },
                 { label: "브랜드 아이덴티티", id: "section4" },
-                { label: "글로벌 업무지구", id: "section2" },
+                { label: "글로벌 업무지구", id: "section5" },
                 { label: "도심 속 자연", id: "section-green" },
                 { label: "압도적인 스케일", id: "section-scale" }
             ]
         },
         {
             title: "Next-Gen Workplace",
+            id: "section-nextgen",
             items: [
                 { label: "AI 시대의 새로운 오피스 표준", id: "section-nextgen-standard" },
                 { label: "AI 인프라 기반 어메니티", id: "section-aiready" },
@@ -83,6 +91,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
         },
         {
             title: "Design & Service",
+            id: "section-design",
             items: [
                 { label: "세계적인 건축 거장의 만남", id: "section-design" },
                 { label: "글로벌 탑티어 건설사 참여", id: "section-construction" },
@@ -91,12 +100,15 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
         },
         {
             title: "News",
+            type: "news",
             items: [
                 { label: "In the News", id: "news", type: "news" }
             ]
         },
         {
             title: "Lease",
+            type: "alert",
+            message: "준비 중인 페이지입니다.",
             items: [
                 { label: "임대차 문의", id: "lease-alert", type: "alert", message: "준비 중인 페이지입니다." },
                 { label: "Vision Book Download", id: "vision-book", type: "download", url: "./PDF/IOTA Seoul Visionbook_compressed.pdf" }
@@ -261,10 +273,16 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                     key={idx}
                                     className="relative group/menu py-2 cursor-pointer flex items-center"
                                     onMouseEnter={() => setHoveredIndex(idx)}
-                                    onClick={() => {
-                                        if (col.items.length > 0 && col.items[0].id) {
-                                            const e = { preventDefault: () => { } };
-                                            handleScrollTo(e, col.items[0].id);
+                                    onClick={(e) => {
+                                        if (col.type === 'news') {
+                                            e.preventDefault();
+                                            handleNewsClick(e);
+                                        } else if (col.type === 'alert') {
+                                            e.preventDefault();
+                                            alert(col.message);
+                                        } else if (col.id) {
+                                            e.preventDefault();
+                                            handleScrollTo(e, col.id);
                                         }
                                     }}
                                 >
