@@ -49,7 +49,7 @@ export default function SectionHotel() {
                     <img
                         src="./img/ritzcarlton01.jpg"
                         alt="The Ritz-Carlton Residence"
-                        className="w-full aspect-square md:aspect-auto md:h-auto object-cover block transform transition-transform duration-[2s] group-hover:scale-105"
+                        className="w-full aspect-square md:aspect-[21/9] object-cover block transform transition-transform duration-[2s] group-hover:scale-105"
                     />
                     <div className="absolute bottom-2 right-4 md:bottom-4 md:right-4 z-10 text-[6px] md:text-[10px] text-white/90 font-inter tracking-[0.1em] text-right font-extralight drop-shadow-md">
                         THE RITZ-CARLTON RESIDENCES SOUTH BEACH_MIAMI
@@ -62,7 +62,7 @@ export default function SectionHotel() {
                         <img
                             src="./img/ritzcarlton02.jpg"
                             alt="The Ritz-Carlton Philadelphia"
-                            className="w-full aspect-square md:aspect-auto md:h-auto object-cover block transform transition-transform duration-[2s] group-hover:scale-[1.03]"
+                            className="w-full aspect-square md:aspect-[21/9] object-cover block transform transition-transform duration-[2s] group-hover:scale-[1.03]"
                         />
                     </div>
                     <div className="text-right mt-3 text-[9px] md:text-[11px] text-gray-500 font-inter tracking-[0.05em] uppercase font-light">

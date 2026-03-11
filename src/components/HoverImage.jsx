@@ -5,7 +5,7 @@ export default function HoverImage({
     src,
     alt,
     id,
-    className = "w-full aspect-[4/3] md:aspect-auto md:h-auto object-cover block",
+    className = "w-full aspect-[4/3] md:aspect-[16/10] object-cover block",
     wrapperClassName = "w-full relative overflow-hidden group bs-fade-up delay-200 cursor-pointer",
     style,
     containerStyle
