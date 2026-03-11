@@ -40,7 +40,7 @@ export default function NewsList({ onSelectArticle }) {
                                 )}
                             </div>
 
-                            <h3 className="text-[24px] md:text-[28px] lg:text-[32px] leading-tight text-black font-inter font-normal tracking-[-0.02em] mb-3">
+                            <h3 className="text-[24px] md:text-[28px] lg:text-[32px] leading-[1.2] text-black font-inter font-normal tracking-[-0.02em] mb-3">
                                 <span className="inline pb-[2px] bg-gradient-to-r from-black to-black bg-no-repeat [background-position:0_100%] [background-size:0%_1.5px] group-hover:[background-size:100%_1.5px] transition-all duration-500 ease-out">
                                     {featuredNews.title}
                                 </span>
@@ -60,7 +60,7 @@ export default function NewsList({ onSelectArticle }) {
                                 className="flex flex-col cursor-pointer group h-full"
                                 onClick={() => onSelectArticle(news)}
                             >
-                                <h3 className="text-[22px] md:text-[24px] pr-2 leading-[1.4] text-[#222] font-inter font-medium tracking-[-0.02em] mb-3">
+                                <h3 className="text-[22px] md:text-[24px] pr-2 leading-[1.35] text-[#222] font-inter font-medium tracking-[-0.02em] mb-3">
                                     <span className="inline pb-[2px] bg-gradient-to-r from-black to-black bg-no-repeat [background-position:0_100%] [background-size:0%_1.5px] group-hover:[background-size:100%_1.5px] transition-all duration-500 ease-out">
                                         {news.title}
                                     </span>
@@ -71,7 +71,7 @@ export default function NewsList({ onSelectArticle }) {
                                         || news.content.find(item => item.type === 'paragraph')?.text;
                                     if (preview) {
                                         return (
-                                            <p className="text-[17px] md:text-[17px] pr-2 text-gray-500 mb-4 font-normal tracking-[-0.01em] leading-[1.6] line-clamp-2">
+                                            <p className="text-[17px] md:text-[17px] pr-2 text-gray-500 mb-4 font-normal tracking-[-0.01em] leading-[1.54] line-clamp-2">
                                                 {preview}
                                             </p>
                                         );
