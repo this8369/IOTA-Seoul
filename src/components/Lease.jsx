@@ -21,7 +21,7 @@ export default function Lease() {
 
         // Replace these with your actual EmailJS Service ID, Template ID, and Public Key
         // Example: emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formRef.current, 'YOUR_PUBLIC_KEY')
-        emailjs.sendForm('service_l80n3q9', 'template_p3f93s8', formRef.current, 'Lh9-MhXoT76_EwJ2m')
+        emailjs.sendForm('service_l80n3q9', 'template_gq5har4', formRef.current, 'vh-ovBANWDdS530In')
             .then((result) => {
                 alert(lang === 'kr' ? '문의가 성공적으로 접수되었습니다. 관리자 확인 후 연락드리겠습니다.' : 'Your inquiry has been successfully submitted. We will contact you shortly.');
                 formRef.current.reset();
