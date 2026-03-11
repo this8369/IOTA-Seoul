@@ -5,6 +5,42 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
     const { lang, setLang } = useLanguage();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('');
+    const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+
+    const menuData = [
+        {
+            title: "New Heart of Seoul",
+            items: [
+                { label: "Build with Foster + Partners", id: "section-foster" },
+                { label: "Property Overview", id: "section3" },
+                { label: "Brand Guidelines", id: "section4" },
+                { label: "SYBD", id: "section2" },
+                { label: "Green", id: "section-green" },
+                { label: "Unmatched Scale", id: "section-scale" }
+            ]
+        },
+        {
+            title: "Next-Gen Workplace",
+            items: [
+                { label: "New Office Standard for the AI Era", id: "section-nextgen-standard" },
+                { label: "AI Driven Workplace Framework", id: "section-aiready" },
+                { label: "Air Quality Management", id: "section-airquality" },
+                { label: "Seamless User Experience", id: "section-smartinterface" },
+                { label: "Net-Zero Ready", id: "section-netzero" },
+                { label: "Privacy-Focused Restroom", id: "section-restroom" },
+                { label: "Korea's Largest Elevator", id: "section-elevator" },
+                { label: "AI-Driven Building HVAC", id: "section-hvac" }
+            ]
+        },
+        {
+            title: "Design & Service",
+            items: [
+                { label: "Architectural Legends", id: "section-design" },
+                { label: "Global Top-Tier Construction Company", id: "section-construction" },
+                { label: "Upper Luxury Hospitality", id: "section-hotel" }
+            ]
+        }
+    ];
 
     React.useEffect(() => {
         if (currentPage !== 'home') {
@@ -151,35 +187,53 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                         IOTA Seoul
                     </a>
                     <div className="hidden min-[1100px]:flex items-center space-x-10">
-                        <nav className="flex space-x-8 text-[16px] font-normal text-gray-800">
-                            <a href="#section2" onClick={(e) => handleScrollTo(e, 'section2')} className={`${activeSection === 'section2' ? 'text-black font-bold' : 'hover:text-gray-500'} transition-colors duration-200`}>
-                                Location
-                            </a>
-                            <a href="#section-green" onClick={(e) => handleScrollTo(e, 'section-green')} className={`${activeSection === 'section-green' ? 'text-black font-bold' : 'hover:text-gray-500'} transition-colors duration-200`}>
-                                Green
-                            </a>
-                            <a href="#section-scale" onClick={(e) => handleScrollTo(e, 'section-scale')} className={`${activeSection === 'section-scale' ? 'text-black font-bold' : 'hover:text-gray-500'} transition-colors duration-200`}>
-                                Scale
-                            </a>
-                            <a href="#section-nextgen" onClick={(e) => handleScrollTo(e, 'section-nextgen')} className={`${activeSection === 'section-nextgen' ? 'text-black font-bold' : 'hover:text-gray-500'} transition-colors duration-200`}>
-                                Next-Gen
-                            </a>
-                            <a href="#section-design" onClick={(e) => handleScrollTo(e, 'section-design')} className={`${activeSection === 'section-design' ? 'text-black font-bold' : 'hover:text-gray-500'} transition-colors duration-200`}>
-                                Design
-                            </a>
-                            <a href="#section-hotel" onClick={(e) => handleScrollTo(e, 'section-hotel')} className={`${activeSection === 'section-hotel' ? 'text-black font-bold' : 'hover:text-gray-500'} transition-colors duration-200`}>
-                                Ritz-Carlton
-                            </a>
-                            <a href="#section-iotaone" onClick={(e) => handleScrollTo(e, 'section-iotaone')} className={`${activeSection === 'section-iotaone' ? 'text-black font-bold' : 'hover:text-gray-500'} transition-colors duration-200`}>
-                                IOTA One
-                            </a>
-                            <a href="#section-iotatwo" onClick={(e) => handleScrollTo(e, 'section-iotatwo')} className={`${activeSection === 'section-iotatwo' ? 'text-black font-bold' : 'hover:text-gray-500'} transition-colors duration-200`}>
-                                IOTA Two
-                            </a>
-                            <a href="#" onClick={handleNewsClick} className={`${activeSection === 'news' ? 'text-black font-bold' : 'hover:text-gray-500'} transition-colors duration-200`}>
-                                News
-                            </a>
-                        </nav>
+                                                <div 
+                            className="flex space-x-8 text-[17px] xl:text-[19px] font-normal text-black tracking-[-0.03em] font-sans"
+                            onMouseEnter={() => setIsMegaMenuOpen(true)}
+                            onMouseLeave={() => setIsMegaMenuOpen(false)}
+                        >
+                            {menuData.map((col, idx) => (
+                                <div key={idx} className="relative group/menu py-2 cursor-pointer flex items-center">
+                                    <span className="hover:opacity-60 transition-opacity">{col.title}</span>
+                                </div>
+                            ))}
+                            <div className="relative group/menu py-2 cursor-pointer flex items-center">
+                                <a href="#news" onClick={handleNewsClick} className="hover:opacity-60 transition-opacity">News</a>
+                            </div>
+                            <div className="relative group/menu py-2 cursor-pointer flex items-center">
+                                <a href="#" onClick={(e) => { e.preventDefault(); alert('Lease page coming soon!'); }} className="hover:opacity-60 transition-opacity">Lease</a>
+                            </div>
+
+                            {/* Dropdown Mega Menu */}
+                            <div 
+                                className={`absolute left-0 top-[100%] w-full bg-white transition-all duration-300 overflow-hidden ${isMegaMenuOpen ? 'max-h-[600px] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'max-h-0 opacity-0'}`}
+                                style={{ zIndex: 40 }}
+                            >
+                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto py-12 flex justify-start pl-[50px] xl:pl-[120px] gap-12 xl:gap-20">
+                                    {menuData.map((col, idx) => (
+                                        <div key={idx} className="flex flex-col w-[260px] xl:w-[320px]">
+                                            <h4 className="text-[20px] xl:text-[22px] font-bold text-black mb-6 tracking-[-0.03em]">{col.title}</h4>
+                                            <ul className="flex flex-col space-y-4">
+                                                {col.items.map((item, itemIdx) => (
+                                                    <li key={itemIdx}>
+                                                        <a 
+                                                            href={`#${item.id}`} 
+                                                            onClick={(e) => {
+                                                                setIsMegaMenuOpen(false);
+                                                                handleScrollTo(e, item.id);
+                                                            }}
+                                                            className="text-[15px] xl:text-[17px] text-gray-700 hover:text-black font-light transition-all tracking-[-0.03em]"
+                                                        >
+                                                            {item.label}
+                                                        </a>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
                         <div className="w-px h-4 bg-gray-300"></div>
                         <div className="relative group text-[14px]">
                             <button className="flex items-center space-x-1 font-bold text-gray-800 hover:text-gray-500 focus:outline-none pb-2 -mb-2">
@@ -205,15 +259,29 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
 
             <div id="mobile-menu"
                 className={`fixed top-[74px] md:top-[90px] left-0 w-full bg-white shadow-lg flex-col py-6 space-y-4 z-40 transition-transform ${mobileMenuOpen ? 'flex' : 'hidden'} min-[1100px]:hidden text-center justify-center items-center`}>
-                <a href="#section2" onClick={(e) => handleScrollTo(e, 'section2')} className={`text-[16px] text-gray-800 ${activeSection === 'section2' ? 'font-bold' : 'font-normal'}`}>Location</a>
-                <a href="#section-green" onClick={(e) => handleScrollTo(e, 'section-green')} className={`text-[16px] text-gray-800 ${activeSection === 'section-green' ? 'font-bold' : 'font-normal'}`}>Green</a>
-                <a href="#section-scale" onClick={(e) => handleScrollTo(e, 'section-scale')} className={`text-[16px] text-gray-800 ${activeSection === 'section-scale' ? 'font-bold' : 'font-normal'}`}>Scale</a>
-                <a href="#section-nextgen" onClick={(e) => handleScrollTo(e, 'section-nextgen')} className={`text-[16px] text-gray-800 ${activeSection === 'section-nextgen' ? 'font-bold' : 'font-normal'}`}>Next-Gen</a>
-                <a href="#section-design" onClick={(e) => handleScrollTo(e, 'section-design')} className={`text-[16px] text-gray-800 ${activeSection === 'section-design' ? 'font-bold' : 'font-normal'}`}>Design</a>
-                <a href="#section-hotel" onClick={(e) => handleScrollTo(e, 'section-hotel')} className={`text-[16px] text-gray-800 ${activeSection === 'section-hotel' ? 'font-bold' : 'font-normal'}`}>Ritz-Carlton</a>
-                <a href="#section-iotaone" onClick={(e) => handleScrollTo(e, 'section-iotaone')} className={`text-[16px] text-gray-800 ${activeSection === 'section-iotaone' ? 'font-bold' : 'font-normal'}`}>IOTA One</a>
-                <a href="#section-iotatwo" onClick={(e) => handleScrollTo(e, 'section-iotatwo')} className={`text-[16px] text-gray-800 ${activeSection === 'section-iotatwo' ? 'font-bold' : 'font-normal'}`}>IOTA Two</a>
-                <a href="#" onClick={handleNewsClick} className={`text-[16px] text-gray-800 ${activeSection === 'news' ? 'font-bold' : 'font-normal'}`}>News</a>
+                                <div className="w-full flex-col h-[70vh] overflow-y-auto px-6 py-4 hide-scrollbar flex items-start text-left">
+                    {menuData.map((col, idx) => (
+                        <div key={idx} className="w-full mb-6">
+                            <h4 className="text-[18px] font-bold text-black mb-3 border-b border-gray-100 pb-2">{col.title}</h4>
+                            <div className="flex flex-col space-y-3">
+                                {col.items.map((item, itemIdx) => (
+                                    <a 
+                                        key={itemIdx}
+                                        href={`#${item.id}`} 
+                                        onClick={(e) => handleScrollTo(e, item.id)} 
+                                        className={`text-[15px] text-gray-600 hover:text-black hover:font-bold transition-all tracking-tight`}
+                                    >
+                                        {item.label}
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                    <div className="w-full mb-6 mt-4">
+                        <a href="#" onClick={handleNewsClick} className={`text-[18px] font-bold text-black mb-4 block`}>News</a>
+                        <a href="#" onClick={(e) => { e.preventDefault(); alert('Lease page coming soon!'); setMobileMenuOpen(false); }} className={`text-[18px] font-bold text-black block`}>Lease</a>
+                    </div>
+                </div>
                 <div className="flex space-x-8 pt-6 border-t border-gray-200 justify-center">
                     <button className="text-[20px] font-bold text-gray-800 hover:text-gray-500" onClick={() => switchLang('en')}>EN</button>
                     <button className="text-[20px] font-bold text-gray-800 hover:text-gray-500" onClick={() => switchLang('kr')}>KR</button>
