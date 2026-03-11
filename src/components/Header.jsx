@@ -257,13 +257,13 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                             onMouseLeave={() => { setIsMegaMenuOpen(false); setHoveredIndex(null); }}
                         >
                             {currentMenuData.map((col, idx) => (
-                                <div 
-                                    key={idx} 
+                                <div
+                                    key={idx}
                                     className="relative group/menu py-2 cursor-pointer flex items-center"
                                     onMouseEnter={() => setHoveredIndex(idx)}
                                     onClick={() => {
                                         if (col.items.length > 0 && col.items[0].id) {
-                                            const e = { preventDefault: () => {} };
+                                            const e = { preventDefault: () => { } };
                                             handleScrollTo(e, col.items[0].id);
                                         }
                                     }}
@@ -279,10 +279,10 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                 className={`absolute left-0 !ml-0 top-[100%] w-full bg-white transition-all duration-300 overflow-hidden ${isMegaMenuOpen ? 'max-h-[600px] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'max-h-0 opacity-0'}`}
                                 style={{ zIndex: 40 }}
                             >
-                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto py-10 flex justify-start gap-[50px]">
+                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto py-10 flex justify-start gap-[100px]">
                                     {currentMenuData.map((col, idx) => (
-                                        <div 
-                                            key={idx} 
+                                        <div
+                                            key={idx}
                                             className="flex flex-col shrink-0 min-w-max"
                                             onMouseEnter={() => setHoveredIndex(idx)}
                                         >
@@ -296,7 +296,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                                     const isNews = item.type === 'news';
                                                     const isAlert = item.type === 'alert';
                                                     const isDownload = item.type === 'download';
-                                                    
+
                                                     const clickHandler = (e) => {
                                                         if (isNews) {
                                                             setIsMegaMenuOpen(false);
@@ -334,9 +334,9 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                 </div>
                             </div>
                         </div>
-                        <div className="w-px h-4 bg-gray-300"></div>
-                        <div className="relative group text-[14px]">
-                            <button className="flex items-center space-x-1 font-bold text-gray-800 hover:text-gray-500 focus:outline-none pb-2 -mb-2">
+                        <div className="w-px h-4 bg-gray-300 ml-8"></div>
+                        <div className="relative group text-[14px] ml-8">
+                            <button className="flex items-center space-x-1 font-bold text-gray-800 hover:text-gray-500 focus:outline-none pb-2 -mb-2 relative -top-[1px]">
                                 <span>{lang.toUpperCase()}</span>
                                 <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
