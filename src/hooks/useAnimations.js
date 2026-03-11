@@ -28,18 +28,16 @@ export function useAnimations(currentPage) {
             let st = window.scrollY || document.documentElement.scrollTop;
 
             // Header visibility
-            if (window.isNavigating) {
+            if (window.isNewsPage || window.isLeasePage) {
+                header.style.transform = "translateY(0)";
+                header.style.transitionDuration = "200ms";
+            } else if (window.isNavigating) {
                 lastScrollTop = st;
                 scrollHideThreshold = st + 150;
             } else {
                 if (st <= 50) {
-                    if (window.isNewsPage) {
-                        header.style.transform = "translateY(0)";
-                        header.style.transitionDuration = "200ms";
-                    } else {
-                        header.style.transform = "translateY(-100%)";
-                        header.style.transitionDuration = "200ms";
-                    }
+                    header.style.transform = "translateY(-100%)";
+                    header.style.transitionDuration = "200ms";
                     scrollHideThreshold = st;
                 } else {
                     if (st < lastScrollTop) {
