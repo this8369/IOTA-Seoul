@@ -268,7 +268,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                         }
                                     }}
                                 >
-                                    <span className="relative pb-1 after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1.5px] after:bottom-0 after:left-0 after:bg-black after:origin-bottom-right after:transition-transform after:duration-300 group-hover/menu:after:scale-x-100 group-hover/menu:after:origin-bottom-left transition-colors hover:text-black">
+                                    <span className="relative pb-[2px] after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1.5px] after:-bottom-[1px] after:left-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 group-hover/menu:after:scale-x-100 transition-colors hover:text-black">
                                         {col.title}
                                     </span>
                                 </div>
@@ -279,78 +279,54 @@ export default function Header({ onNavigateToNews, onNavigateToHome, currentPage
                                 className={`absolute left-0 !ml-0 top-[100%] w-full bg-white transition-all duration-300 overflow-hidden ${isMegaMenuOpen ? 'max-h-[600px] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'max-h-0 opacity-0'}`}
                                 style={{ zIndex: 40 }}
                             >
-                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto py-10 flex gap-[50px]">
+                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto py-10 flex justify-start gap-[50px]">
                                     {currentMenuData.map((col, idx) => (
                                         <div 
                                             key={idx} 
-                                            className="flex flex-col flex-1"
+                                            className="flex flex-col shrink-0 min-w-max"
                                             onMouseEnter={() => setHoveredIndex(idx)}
                                         >
-                                            <h4 className={`text-[16px] xl:text-[18px] font-semibold mb-5 tracking-[-0.03em] transition-colors duration-300 ${hoveredIndex === idx ? 'text-blue-600' : 'text-black'}`}>
-                                                {col.title}
+                                            <h4 className="text-[16px] xl:text-[18px] font-semibold mb-5 tracking-[-0.03em] text-black w-fit">
+                                                <span className={`relative pb-[2px] after:content-[''] after:absolute after:w-full after:h-[1.5px] after:-bottom-[1px] after:left-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 ${hoveredIndex === idx ? 'after:scale-x-100' : 'after:scale-x-0'}`}>
+                                                    {col.title}
+                                                </span>
                                             </h4>
                                             <ul className="flex flex-col space-y-3">
                                                 {col.items.map((item, itemIdx) => {
-                                                    if (item.type === 'news') {
-                                                        return (
-                                                            <li key={itemIdx}>
-                                                                <a
-                                                                    href="#news"
-                                                                    onClick={(e) => {
-                                                                        setIsMegaMenuOpen(false);
-                                                                        handleNewsClick(e);
-                                                                    }}
-                                                                    className="text-[13px] xl:text-[15px] text-gray-700 hover:text-blue-600 font-light transition-colors duration-200 tracking-[-0.03em]"
-                                                                >
+                                                    const isNews = item.type === 'news';
+                                                    const isAlert = item.type === 'alert';
+                                                    const isDownload = item.type === 'download';
+                                                    
+                                                    const clickHandler = (e) => {
+                                                        if (isNews) {
+                                                            setIsMegaMenuOpen(false);
+                                                            handleNewsClick(e);
+                                                        } else if (isAlert) {
+                                                            e.preventDefault();
+                                                            setIsMegaMenuOpen(false);
+                                                            alert(item.message);
+                                                        } else if (isDownload) {
+                                                            setIsMegaMenuOpen(false);
+                                                        } else {
+                                                            setIsMegaMenuOpen(false);
+                                                            handleScrollTo(e, item.id);
+                                                        }
+                                                    };
+
+                                                    return (
+                                                        <li key={itemIdx}>
+                                                            <a
+                                                                href={isNews ? "#news" : isAlert ? "#" : isDownload ? item.url : `#${item.id}`}
+                                                                target={isDownload ? "_blank" : undefined}
+                                                                onClick={clickHandler}
+                                                                className="text-[13px] xl:text-[15px] text-gray-700 font-light tracking-[-0.03em] group/sub inline-block w-fit"
+                                                            >
+                                                                <span className="relative pb-[1px] after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1px] after:-bottom-[1px] after:left-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 group-hover/sub:after:scale-x-100 group-hover/sub:text-black transition-colors">
                                                                     {item.label}
-                                                                </a>
-                                                            </li>
-                                                        );
-                                                    } else if (item.type === 'alert') {
-                                                        return (
-                                                            <li key={itemIdx}>
-                                                                <a
-                                                                    href="#"
-                                                                    onClick={(e) => {
-                                                                        e.preventDefault();
-                                                                        setIsMegaMenuOpen(false);
-                                                                        alert(item.message);
-                                                                    }}
-                                                                    className="text-[13px] xl:text-[15px] text-gray-700 hover:text-blue-600 font-light transition-colors duration-200 tracking-[-0.03em]"
-                                                                >
-                                                                    {item.label}
-                                                                </a>
-                                                            </li>
-                                                        );
-                                                    } else if (item.type === 'download') {
-                                                        return (
-                                                            <li key={itemIdx}>
-                                                                <a
-                                                                    href={item.url}
-                                                                    target="_blank"
-                                                                    onClick={() => setIsMegaMenuOpen(false)}
-                                                                    className="text-[13px] xl:text-[15px] text-gray-700 hover:text-blue-600 font-light transition-colors duration-200 tracking-[-0.03em]"
-                                                                >
-                                                                    {item.label}
-                                                                </a>
-                                                            </li>
-                                                        );
-                                                    } else {
-                                                        return (
-                                                            <li key={itemIdx}>
-                                                                <a
-                                                                    href={`#${item.id}`}
-                                                                    onClick={(e) => {
-                                                                        setIsMegaMenuOpen(false);
-                                                                        handleScrollTo(e, item.id);
-                                                                    }}
-                                                                    className="text-[13px] xl:text-[15px] text-gray-700 hover:text-blue-600 font-light transition-colors duration-200 tracking-[-0.03em]"
-                                                                >
-                                                                    {item.label}
-                                                                </a>
-                                                            </li>
-                                                        );
-                                                    }
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    );
                                                 })}
                                             </ul>
                                         </div>
