@@ -56,7 +56,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
             type: "lease",
             items: [
                 { label: "Lease Inquiry", id: "lease", type: "lease" },
-                { label: "Vision Book Download", id: "vision-book", type: "alert", message: "Vision Book will be available soon." }
+                { label: "Vision Book Download", id: "vision-book", type: "alert", message: "Vision Book will be available soon. Please use the Lease Inquiry page above." }
             ]
         }
     ];
@@ -108,7 +108,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
             type: "lease",
             items: [
                 { label: "임대차 문의", id: "lease", type: "lease" },
-                { label: "Vision Book Download", id: "vision-book", type: "alert", message: "자료 준비 중입니다." }
+                { label: "Vision Book Download", id: "vision-book", type: "alert", message: "자료 준비 중입니다. 상단의 임대차 문의를 활용해주세요." }
             ]
         }
     ];
