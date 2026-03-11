@@ -1,23 +1,51 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import Footer from './Footer';
+import emailjs from '@emailjs/browser';
 
 export default function Lease() {
     const { lang } = useLanguage();
     const [isChecked, setIsChecked] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const formRef = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        if (!isChecked) {
+            alert(lang === 'kr' ? '개인정보 수집 및 이용에 동의해주세요.' : 'Please agree to the privacy policy.');
+            return;
+        }
+
+        setIsSubmitting(true);
+
+        // Replace these with your actual EmailJS Service ID, Template ID, and Public Key
+        // Example: emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formRef.current, 'YOUR_PUBLIC_KEY')
+        emailjs.sendForm('service_l80n3q9', 'template_p3f93s8', formRef.current, 'Lh9-MhXoT76_EwJ2m')
+            .then((result) => {
+                alert(lang === 'kr' ? '문의가 성공적으로 접수되었습니다. 관리자 확인 후 연락드리겠습니다.' : 'Your inquiry has been successfully submitted. We will contact you shortly.');
+                formRef.current.reset();
+                setIsChecked(false);
+                setIsSubmitting(false);
+            }, (error) => {
+                alert(lang === 'kr' ? '시스템 오류로 전송에 실패했습니다. IOTATF_Team@igisam.com 으로 직접 문의 부탁드립니다.' : 'Failed to send inquiry due to a system error. Please contact us directly at IOTATF_Team@igisam.com.');
+                console.error(error);
+                setIsSubmitting(false);
+            });
+    };
 
     return (
         <div className="w-full min-h-screen bg-white text-black font-sans relative overflow-x-hidden pt-[110px] md:pt-[150px] flex flex-col items-center">
-            
+
             <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1000px] flex flex-col items-start min-h-[70vh]">
-                
+
                 {/* Title Section */}
                 <h1 className="text-[35px] md:text-[50px] font-bold tracking-[-0.03em] mb-4">
                     {lang === 'kr' ? '임대차 문의' : 'Lease Inquiry'}
                 </h1>
                 <p className="text-[15px] md:text-[17px] text-gray-600 mb-12 font-light">
-                    {lang === 'kr' 
-                        ? '임차에 대한 문의를 작성해주시면 관리자 확인 후 메일 혹은 유선으로 답변 드리겠습니다.' 
+                    {lang === 'kr'
+                        ? '임차에 대한 문의를 작성해주시면 관리자 확인 후 메일 혹은 유선으로 답변 드리겠습니다.'
                         : 'Please submit your leasing inquiry, and our management team will respond via email or phone after review.'}
                 </p>
 
@@ -69,7 +97,7 @@ IOTA SEOUL(이하 "본 서비스")은 다음의 목적을 위해 최소한의 �
 
 10. 고지의 의무
 본 방침은 2026년 3월 11일부터 적용됩니다. 내용의 수정이 있을 경우 최소 7일 전 홈페이지를 통해 고지하겠습니다.`
-                        : `[IOTA SEOUL] Privacy Policy (Updated Mar 11, 2026)
+                            : `[IOTA SEOUL] Privacy Policy (Updated Mar 11, 2026)
 
 1. Purpose of Collection and Use of Personal Information
 IOTA SEOUL processes the minimum personal information necessary for the following purposes:
@@ -113,11 +141,11 @@ We use cookies to enhance user convenience. You can decline cookie collection th
 Effective March 11, 2026. Changes will be announced 7 days in advance via website.`}
                     </div>
                     <label className="flex items-center gap-2 mt-4 cursor-pointer select-none">
-                        <input 
-                            type="checkbox" 
-                            className="w-4 h-4 cursor-pointer border-gray-300 rounded focus:ring-black accent-black" 
-                            checked={isChecked} 
-                            onChange={(e) => setIsChecked(e.target.checked)} 
+                        <input
+                            type="checkbox"
+                            className="w-4 h-4 cursor-pointer border-gray-300 rounded focus:ring-black accent-black"
+                            checked={isChecked}
+                            onChange={(e) => setIsChecked(e.target.checked)}
                         />
                         <span className="text-[14px] text-black">
                             {lang === 'kr' ? '개인정보 수집 및 이용에 동의합니다.' : 'I agree to the collection and use of my personal information.'}
@@ -126,39 +154,41 @@ Effective March 11, 2026. Changes will be announced 7 days in advance via websit
                 </div>
 
                 {/* Inquiry Form */}
-                <form className="w-full flex flex-col gap-6 mb-20" onSubmit={(e) => { e.preventDefault(); if(!isChecked) { alert(lang==='kr'?'개인정보 수집에 동의해주세요.':'Please agree to the privacy policy.'); return; } alert(lang==='kr'?'정상적으로 접수되었습니다.':'Successfully submitted.'); }}>
-                    
+                <form ref={formRef} className="w-full flex flex-col gap-6 mb-20" onSubmit={sendEmail}>
+
                     <div className="flex flex-col md:flex-row gap-6">
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-[14px] font-bold">{lang === 'kr' ? '작성자' : 'Name'}</label>
-                            <input type="text" required placeholder={lang === 'kr' ? '성함을 입력해주세요' : 'Enter your name'} className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-black transition-colors" />
+                            <input type="text" name="user_name" required placeholder={lang === 'kr' ? '성함을 입력해주세요' : 'Enter your name'} className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-black transition-colors" />
                         </div>
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-[14px] font-bold">{lang === 'kr' ? '소속(회사명)' : 'Company Name'}</label>
-                            <input type="text" placeholder={lang === 'kr' ? '소속을 입력해주세요' : 'Enter your company name'} className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-black transition-colors" />
+                            <input type="text" name="user_company" placeholder={lang === 'kr' ? '소속을 입력해주세요' : 'Enter your company name'} className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-black transition-colors" />
                         </div>
                     </div>
 
                     <div className="flex flex-col md:flex-row gap-6">
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-[14px] font-bold">{lang === 'kr' ? '이메일' : 'Email'}</label>
-                            <input type="email" required placeholder={lang === 'kr' ? '답변 받으실 이메일을 입력해주세요' : 'Enter your email address'} className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-black transition-colors" />
+                            <input type="email" name="user_email" required placeholder={lang === 'kr' ? '답변 받으실 이메일을 입력해주세요' : 'Enter your email address'} className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-black transition-colors" />
                         </div>
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-[14px] font-bold">{lang === 'kr' ? '연락처' : 'Phone Number'}</label>
-                            <input type="tel" required placeholder={lang === 'kr' ? '연락처를 입력해주세요' : 'Enter your phone number'} className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-black transition-colors" />
+                            <input type="tel" name="user_phone" required placeholder={lang === 'kr' ? '연락처를 입력해주세요' : 'Enter your phone number'} className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-black transition-colors" />
                         </div>
                     </div>
 
                     <div className="w-full flex flex-col gap-2">
                         <label className="text-[14px] font-bold">{lang === 'kr' ? '문의 내용' : 'Inquiry Details'}</label>
-                        <textarea required placeholder={lang === 'kr' ? '희망 면적, 입주 예정 시기 등 상세 문의 내용을 입력해주세요.' : 'Please enter target size, move-in schedule, and other details.'} className="w-full h-[150px] px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-black transition-colors resize-none"></textarea>
+                        <textarea name="message" required placeholder={lang === 'kr' ? '희망 면적, 입주 예정 시기 등 상세 문의 내용을 입력해주세요.' : 'Please enter target size, move-in schedule, and other details.'} className="w-full h-[150px] px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-black transition-colors resize-none"></textarea>
                     </div>
 
-                    <button type="submit" className="w-[150px] mt-4 self-center md:self-end bg-black text-white hover:bg-[#333] transition-colors py-4 px-6 rounded-md font-bold tracking-wide">
-                        {lang === 'kr' ? '제출하기' : 'Submit'}
+                    <button type="submit" disabled={isSubmitting} className={`w-[150px] mt-4 self-center md:self-end text-white py-4 px-6 rounded-md font-bold tracking-wide transition-colors ${isSubmitting ? 'bg-gray-400 cursor-not-allowed' : 'bg-black hover:bg-[#333]'}`}>
+                        {isSubmitting
+                            ? (lang === 'kr' ? '전송중...' : 'Sending...')
+                            : (lang === 'kr' ? '제출하기' : 'Submit')}
                     </button>
-                    
+
                 </form>
 
             </div>
