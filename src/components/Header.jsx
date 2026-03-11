@@ -27,7 +27,6 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
             id: "section-nextgen",
             items: [
                 { label: "New Office Standard for the AI Era", id: "section-nextgen-standard" },
-                { label: "AI Driven Workplace Framework", id: "section-aiready" },
                 { label: "Air Quality Management", id: "section-airquality" },
                 { label: "Seamless User Experience", id: "section-smartinterface" },
                 { label: "Net-Zero Ready", id: "section-netzero" },
@@ -80,7 +79,6 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
             id: "section-nextgen",
             items: [
                 { label: "AI 시대의 새로운 오피스 표준", id: "section-nextgen-standard" },
-                { label: "AI 인프라 기반 어메니티", id: "section-aiready" },
                 { label: "초정밀 공기질 관리 시스템", id: "section-airquality" },
                 { label: "심리스 디지털 사용자 경험", id: "section-smartinterface" },
                 { label: "넷제로 친환경 빌딩 구현", id: "section-netzero" },
