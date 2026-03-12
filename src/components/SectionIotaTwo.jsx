@@ -22,9 +22,11 @@ export default function SectionIotaTwo() {
                     <div className="flex flex-col w-full bs-fade-up">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
-                                <>1층 진입부:<br className="md:hidden" /> 도시의 흐름을 잇는 개방형 진입 구조</>
+                                <>오피스 엘리베이터 홀:<br className="md:hidden" />
+기술과 자연의 균형, 정제된 환대의 공간</>
                             ) : (
-                                <>Ground Level Entry:<br className="md:hidden" /> An Open Structure Linking the Urban Flow</>
+                                <>Office Elevator Hall:<br className="md:hidden" />
+Balanced Hospitality Driven by Nature and Detail</>
                             )}
                         </h2>
 
@@ -209,6 +211,14 @@ export default function SectionIotaTwo() {
                     <HoverImage  src="./img/iotatwo_07.jpg" width="3000" height="1692" alt="Sky Garden and Event Space" />
 
                     <div className="mt-8 md:mt-12 w-full">
+                        
+                        <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
+                            {lang === 'kr' ? (
+                                <>오피스 진입공간</>
+                            ) : (
+                                <>Office Entry Space</>
+                            )}
+                        </h2>
                         <HoverImage  src="./img/iotatwo_08.jpg" width="3000" height="1942" alt="Sky Garden and Event Space Details" />
                     </div>
 

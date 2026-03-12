@@ -21,8 +21,13 @@ export default function SectionIotaOne() {
                     {/* First Item Area */}
                     <div className="flex flex-col w-full bs-fade-up">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Central Plaza:<br />
-                            A Grand Stage Between City and Nature
+                            {lang === 'kr' ? (
+                                <>이머시브 갤러리:<br className="md:hidden" />
+예술과 기술, 그리고 감성의 경이로운 융합</>
+                            ) : (
+                                <>Immersive Gallery:<br className="md:hidden" />
+A Convergence of Art, Tech, and Emotion</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
