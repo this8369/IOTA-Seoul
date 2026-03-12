@@ -104,7 +104,7 @@ export default function NewsDetail({ article, onBack }) {
                     <div className="hidden xl:block w-[200px] flex-shrink-0"></div>
                 </div>
             </div>
-            <Footer />
+            <Footer className="w-full mt-auto" />
         </div>
     );
 }
