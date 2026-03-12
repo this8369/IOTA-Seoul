@@ -5,6 +5,8 @@ export default function HoverImage({
     src,
     alt,
     id,
+    width,
+    height,
     className = "w-full h-auto block",
     wrapperClassName = "w-full relative overflow-hidden group bs-fade-up delay-200 cursor-pointer",
     style,
@@ -34,6 +36,8 @@ export default function HoverImage({
                 <img
                     src={src}
                     alt={alt}
+                    width={width}
+                    height={height}
                     className={className}
                     style={style}
                 />

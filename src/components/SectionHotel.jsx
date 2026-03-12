@@ -40,7 +40,7 @@ export default function SectionHotel() {
 
                     {/* Logo Area */}
                     <div className="w-full md:w-auto flex justify-center md:justify-end bs-fade-up delay-200">
-                        <img src="./img/logo_ritzcarlton.png" alt="The Ritz-Carlton Logo" className="w-[120px] md:w-[160px] object-contain" />
+                        <img  src="./img/logo_ritzcarlton.png" width="432" height="304" alt="The Ritz-Carlton Logo" className="w-[120px] md:w-[160px] object-contain" />
                     </div>
                 </div>
 
@@ -74,7 +74,7 @@ export default function SectionHotel() {
 
                 {/* Second Text Area */}
                 <div className="w-full mt-16 md:mt-20 flex flex-col items-center bs-fade-up">
-                    <img src="./img/logo_ritzcarlton.png" alt="The Ritz-Carlton Logo" className="w-[120px] md:w-[160px] mb-12 md:mb-16 object-contain" />
+                    <img  src="./img/logo_ritzcarlton.png" width="432" height="304" alt="The Ritz-Carlton Logo" className="w-[120px] md:w-[160px] mb-12 md:mb-16 object-contain" />
 
                     <div className="w-full flex flex-col lg:flex-row justify-between items-start gap-8 md:gap-16">
                         {lang === 'kr' ? (

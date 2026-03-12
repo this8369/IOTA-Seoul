@@ -57,7 +57,7 @@ export default function SectionConstruction() {
 
                         {/* overlay image layer */}
                         <div className="w-full mt-2 bs-fade-up delay-300">
-                            <img src="./img/hyundai&samsung.png" alt="Hyundai & Samsung Logos and Ranking" className="w-[100%] max-w-[700px] h-auto object-contain block" />
+                            <img  src="./img/hyundai&samsung.png" width="1201" height="614" alt="Hyundai & Samsung Logos and Ranking" className="w-[100%] max-w-[700px] h-auto object-contain block" />
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ export default function SectionConstruction() {
             <div className="block lg:hidden w-full flex flex-col pb-[100px] bg-white">
                 {/* Image Section */}
                 <div className="w-full h-[55vh] min-h-[400px] relative shrink-0">
-                    <img src="./img/samsung_cnt.jpg" alt="Construction Background" className="absolute inset-0 w-full h-full object-cover object-bottom" />
+                    <img  src="./img/samsung_cnt.jpg" width="3000" height="1984" alt="Construction Background" className="absolute inset-0 w-full h-full object-cover object-bottom" />
                 </div>
 
                 {/* Text Section */}
@@ -113,7 +113,7 @@ export default function SectionConstruction() {
 
                         {/* overlay image layer */}
                         <div className="w-full mx-auto mt-4 bs-fade-up">
-                            <img src="./img/hyundai&samsung.png" alt="Hyundai & Samsung Logos and Ranking" className="w-full h-auto object-contain block mx-auto" />
+                            <img  src="./img/hyundai&samsung.png" width="1201" height="614" alt="Hyundai & Samsung Logos and Ranking" className="w-full h-auto object-contain block mx-auto" />
                         </div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@ export default function SectionConstruction() {
 
                     {/* Image 1 - Left (Using its natural aspect ratio so it doesn't crop its width) */}
                     <div className="w-full relative group overflow-hidden md:aspect-[2200/2630]">
-                        <img src="./img/construct_reference01.jpg" alt="Construction Reference 1" className="w-full h-auto md:absolute md:inset-0 md:h-full object-cover object-top block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                        <img  src="./img/construct_reference01.jpg" width="2200" height="2630" alt="Construction Reference 1" className="w-full h-auto md:absolute md:inset-0 md:h-full object-cover object-top block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                     </div>
 
                     {/* Images 2, 3, 4 - Right Column */}
@@ -133,16 +133,16 @@ export default function SectionConstruction() {
 
                         {/* Image 2 - Right Top */}
                         <div className="w-full group overflow-hidden relative flex-1 min-h-[250px] md:min-h-0">
-                            <img src="./img/construct_reference02.jpg" alt="Construction Reference 2" className="absolute inset-0 w-full h-full object-cover object-top block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                            <img  src="./img/construct_reference02.jpg" width="2070" height="1702" alt="Construction Reference 2" className="absolute inset-0 w-full h-full object-cover object-top block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                         </div>
 
                         {/* Images 3 & 4 - Right Bottom Split */}
                         <div className="w-full flex flex-row gap-[4px] flex-1 min-h-[250px] md:min-h-0">
                             <div className="w-1/2 group overflow-hidden relative">
-                                <img src="./img/construct_reference03.jpg" alt="Construction Reference 3" className="absolute inset-0 w-full h-full object-cover object-top block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                                <img  src="./img/construct_reference03.jpg" width="1058" height="1292" alt="Construction Reference 3" className="absolute inset-0 w-full h-full object-cover object-top block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                             </div>
                             <div className="w-1/2 group overflow-hidden relative">
-                                <img src="./img/construct_reference04.jpg" alt="Construction Reference 4" className="absolute inset-0 w-full h-full object-cover object-top block transform transition-transform duration-[1.5s] group-hover:scale-105" />
+                                <img  src="./img/construct_reference04.jpg" width="992" height="1292" alt="Construction Reference 4" className="absolute inset-0 w-full h-full object-cover object-top block transform transition-transform duration-[1.5s] group-hover:scale-105" />
                             </div>
                         </div>
                     </div>

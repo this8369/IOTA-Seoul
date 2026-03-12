@@ -24,7 +24,7 @@ export default function SectionDesign() {
                 {/* IMAGE AREA */}
                 <div className="w-full max-w-[600px] mx-auto flex items-center justify-center bs-fade-up delay-200">
                     <img
-                        src="./img/NormanFoster.jpg"
+                         src="./img/NormanFoster.jpg" width="1500" height="1011"
                         alt="Norman Foster"
                         className="w-full h-auto object-contain shadow-2xl"
                     />
@@ -81,12 +81,12 @@ export default function SectionDesign() {
                     <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-8 md:gap-12 lg:gap-16">
                         {/* Left Image */}
                         <div className="w-full md:w-[60%] shrink-0 relative overflow-hidden group">
-                            <img src="./img/Applepark.jpg" alt="Apple Park by Foster + Partners" className="w-full h-auto object-cover transform transition-transform duration-[2s] group-hover:scale-105" />
+                            <img  src="./img/Applepark.jpg" width="2098" height="1116" alt="Apple Park by Foster + Partners" className="w-full h-auto object-cover transform transition-transform duration-[2s] group-hover:scale-105" />
                         </div>
                         {/* Right Content */}
                         <div className="w-full md:w-[40%] flex flex-col items-start md:pt-[2%]">
                             <div className="mb-6">
-                                <img src="./img/foster-partners.jpg" alt="Foster + Partners Logo" className="h-[25px] md:h-[35px] lg:h-[40px] object-contain block" />
+                                <img  src="./img/foster-partners.jpg" width="394" height="54" alt="Foster + Partners Logo" className="h-[25px] md:h-[35px] lg:h-[40px] object-contain block" />
                             </div>
                             {lang === 'kr' ? (
                                 <div className="text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] break-keep">
@@ -114,12 +114,12 @@ export default function SectionDesign() {
                     <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-8 md:gap-12 lg:gap-16">
                         {/* Left Image */}
                         <div className="w-full md:w-[60%] shrink-0 relative overflow-hidden group">
-                            <img src="./img/Burjkhalifa.jpg" alt="Burj Khalifa by SOM" className="w-full h-auto object-cover transform transition-transform duration-[2s] group-hover:scale-105" />
+                            <img  src="./img/Burjkhalifa.jpg" width="2104" height="1110" alt="Burj Khalifa by SOM" className="w-full h-auto object-cover transform transition-transform duration-[2s] group-hover:scale-105" />
                         </div>
                         {/* Right Content */}
                         <div className="w-full md:w-[40%] flex flex-col items-start md:pt-[2%]">
                             <div className="mb-6">
-                                <img src="./img/som.jpg" alt="SOM Logo" className="h-[30px] md:h-[45px] lg:h-[50px] object-contain block" />
+                                <img  src="./img/som.jpg" width="192" height="72" alt="SOM Logo" className="h-[30px] md:h-[45px] lg:h-[50px] object-contain block" />
                             </div>
                             {lang === 'kr' ? (
                                 <div className="text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] break-keep">
