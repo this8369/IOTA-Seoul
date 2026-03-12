@@ -22,11 +22,9 @@ export default function SectionIotaOne() {
                     <div className="flex flex-col w-full bs-fade-up">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
-                                <>이머시브 갤러리:<br className="md:hidden" />
-예술과 기술, 그리고 감성의 경이로운 융합</>
+                                <>중앙광장:<br />도시와 자연을 잇는 웅장한 무대</>
                             ) : (
-                                <>Immersive Gallery:<br className="md:hidden" />
-A Convergence of Art, Tech, and Emotion</>
+                                <>Central Plaza:<br />A Grand Stage Between City and Nature</>
                             )}
                         </h2>
 
@@ -59,7 +57,11 @@ A Convergence of Art, Tech, and Emotion</>
                     {/* Second Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Rooftop Garden:<br className="md:hidden" /> Nature at Your Office Doorstep
+                            {lang === 'kr' ? (
+                                <>Rooftop Garden:<br className="md:hidden" /> 오피스 문 앞으로 다가온 자연</>
+                            ) : (
+                                <>Rooftop Garden:<br className="md:hidden" /> Nature at Your Office Doorstep</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -91,7 +93,11 @@ A Convergence of Art, Tech, and Emotion</>
                     {/* Third Item Area (Title Only) */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Rooftop Garden:<br className="md:hidden" /> Nature at Your Office Doorstep
+                            {lang === 'kr' ? (
+                            <>Rooftop Garden:<br className="md:hidden" /> 남산의 파노라마 뷰를 품은 사색의 공간</>
+                        ) : (
+                            <>Rooftop Garden:<br className="md:hidden" /> Nature at Your Office Doorstep</>
+                        )}
                         </h2>
                     </div>
 
@@ -101,7 +107,11 @@ A Convergence of Art, Tech, and Emotion</>
                     {/* Fourth Item Area (UAM) */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            UAM Vertiport
+                            {lang === 'kr' ? (
+                            <>UAM 버티포트:<br className="md:hidden" /> 미래 모빌리티를 향한 혁신적 허브</>
+                        ) : (
+                            <>UAM Vertiport</>
+                        )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -133,7 +143,11 @@ A Convergence of Art, Tech, and Emotion</>
                     {/* Fifth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Hotel Podium Garden:<br className="md:hidden" /> A Private Oasis Framed by Namsan
+                            {lang === 'kr' ? (
+                                <>호텔 포디움 가든:<br className="md:hidden" /> 남산으로 둘러쌓인 프라이빗 오아시스</>
+                            ) : (
+                                <>Hotel Podium Garden:<br className="md:hidden" /> A Private Oasis Framed by Namsan</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -159,7 +173,11 @@ A Convergence of Art, Tech, and Emotion</>
                     {/* Sixth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            The Hotel Podium Garden at Dusk
+                            {lang === 'kr' ? (
+                                <>남산의 석양으로 물드는 호텔 포디움 가든</>
+                            ) : (
+                                <>The Hotel Podium Garden at Dusk</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -180,16 +198,28 @@ A Convergence of Art, Tech, and Emotion</>
                     </div>
 
                     {/* Sixth Image Area */}
-                    <HoverImage  src="./img/iotaone_06.jpg" width="3000" height="1681" alt="The Hotel Podium Garden at Dusk" />
+                    <HoverImage  src="./img/iotaone_06.jpg" width="3000" height="1681" alt="{lang === 'kr' ? (
+                                <>남산의 석양으로 물드는 호텔 포디움 가든</>
+                            ) : (
+                                <>The Hotel Podium Garden at Dusk</>
+                            )}" />
 
                     <div className="mt-8 md:mt-12 w-full">
-                        <HoverImage  src="./img/iotaone_07.jpg" width="3000" height="2059" alt="The Hotel Podium Garden at Dusk 2" />
+                        <HoverImage  src="./img/iotaone_07.jpg" width="3000" height="2059" alt="{lang === 'kr' ? (
+                                <>남산의 석양으로 물드는 호텔 포디움 가든</>
+                            ) : (
+                                <>The Hotel Podium Garden at Dusk</>
+                            )} 2" />
                     </div>
 
                     {/* Seventh Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            An Expansive Lobby Experience<br className="md:hidden" /> at the Heart of the City
+                            {lang === 'kr' ? (
+                                <>도심 한가운데서 마주하는 압도적인 개방감의 로비 경험</>
+                            ) : (
+                                <>An Expansive Lobby Experience<br className="md:hidden" /> at the Heart of the City</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -215,7 +245,11 @@ A Convergence of Art, Tech, and Emotion</>
                     {/* Eighth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Core Access:<br className="md:hidden" /> {lang === 'kr' ? "수직적 깊이감이 만든 정제된 입면" : "A Refined Façade Forged by Vertical Depth"}
+                            {lang === 'kr' ? (
+                                <>코어 진입부:<br className="md:hidden" /> 수직적 깊이감으로 완성된 정제된 입면</>
+                            ) : (
+                                <>Core Access:<br className="md:hidden" /> A Refined Façade Forged by Vertical Depth</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -245,7 +279,11 @@ A Convergence of Art, Tech, and Emotion</>
                     {/* Ninth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            An Open Lounge for<br className="md:hidden" /> Collaboration and Inspiration
+                            {lang === 'kr' ? (
+                                <>협업과 영감을 깨우는 오픈 라운지</>
+                            ) : (
+                                <>An Open Lounge for<br className="md:hidden" /> Collaboration and Inspiration</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -271,7 +309,11 @@ A Convergence of Art, Tech, and Emotion</>
                     {/* Tenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Main Hotel Lobby:<br className="md:hidden" /> {lang === 'kr' ? "남산의 풍경과 리츠칼튼의 품격이 만나는 공간" : "Where Namsan's Scenery Meets The Ritz-Carlton's Prestige"}
+                            {lang === 'kr' ? (
+                                <>호텔 메인 로비:<br className="md:hidden" /> 남산의 풍경과 리츠칼튼의 품격이 닿는 곳</>
+                            ) : (
+                                <>Main Hotel Lobby:<br className="md:hidden" /> Where Namsan's Scenery Meets The Ritz-Carlton's Prestige</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -297,7 +339,11 @@ A Convergence of Art, Tech, and Emotion</>
                     {/* Eleventh Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Hotel VIP Lounge:<br className="md:hidden" /> {lang === 'kr' ? "도심의 정점에서 누리는 프라이빗 럭셔리" : "Private Luxury at the Pinnacle of the City"}
+                            {lang === 'kr' ? (
+                                <>Hotel VIP Lounge:<br className="md:hidden" /> 도심의 정점에서 누리는 프라이빗 럭셔리</>
+                            ) : (
+                                <>Hotel VIP Lounge:<br className="md:hidden" /> Private Luxury at the Pinnacle of the City</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -344,7 +390,11 @@ A Convergence of Art, Tech, and Emotion</>
                     {/* Fourteenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            A Wellness Center<br className="md:hidden" /> for Immersion and Recovery
+                            {lang === 'kr' ? (
+                                <>몰입과 회복을 돕는 웰니스 센터</>
+                            ) : (
+                                <>A Wellness Center<br className="md:hidden" /> for Immersion and Recovery</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -374,7 +424,11 @@ A Convergence of Art, Tech, and Emotion</>
                     {/* Fifteenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Wellness Center Innovation Hub<br className="md:hidden" /> – Where Collaboration Inspires Innovation
+                            {lang === 'kr' ? (
+                                <>웰니스 센터 이노베이션 허브 –<br className="md:hidden" /> 영감이 혁신으로 이어지는 교류의 장</>
+                            ) : (
+                                <>Wellness Center Innovation Hub<br className="md:hidden" /> – Where Collaboration Inspires Innovation</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -402,7 +456,11 @@ A Convergence of Art, Tech, and Emotion</>
                     {/* Sixteenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Wellness Center Member's Club<br className="md:hidden" /> – A Private Hub for Rest and Connection
+                            {lang === 'kr' ? (
+                                <>웰니스 센터 멤버스 클럽 –<br className="md:hidden" /> 최상위 비즈니스를 위한 프라이빗 라운지</>
+                            ) : (
+                                <>Wellness Center Member's Club<br className="md:hidden" /> – A Private Hub for Rest and Connection</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -432,7 +490,11 @@ A Convergence of Art, Tech, and Emotion</>
                     {/* Seventeenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Immersive Gallery:<br className="md:hidden" /> A Convergence of Art, Tech, and Emotion
+                            {lang === 'kr' ? (
+                                <>이머시브 갤러리:<br className="md:hidden" /> 예술과 기술, 그리고 감성의 경이로운 융합</>
+                            ) : (
+                                <>Immersive Gallery:<br className="md:hidden" /> A Convergence of Art, Tech, and Emotion</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">

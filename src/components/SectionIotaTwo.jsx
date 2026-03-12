@@ -22,11 +22,9 @@ export default function SectionIotaTwo() {
                     <div className="flex flex-col w-full bs-fade-up">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
-                                <>오피스 엘리베이터 홀:<br className="md:hidden" />
-기술과 자연의 균형, 정제된 환대의 공간</>
+                                <>지상 진입부:<br className="md:hidden" /> 도시의 흐름을 잇는 개방형 진입 구조</>
                             ) : (
-                                <>Office Elevator Hall:<br className="md:hidden" />
-Balanced Hospitality Driven by Nature and Detail</>
+                                <>Ground Level Entry:<br className="md:hidden" /> A Seamless Transition from City to Space</>
                             )}
                         </h2>
 
@@ -58,7 +56,11 @@ Balanced Hospitality Driven by Nature and Detail</>
                 {/* Second Item Area (Full Width) */}
                 <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-start bs-fade-up mt-[106px] md:mt-32 mb-6 md:mb-8">
                     <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight break-keep mb-6 md:mb-8">
-                        Gateway Park:<br className="md:hidden" /> Connecting City and Nature
+                        {lang === 'kr' ? (
+                        <>Gateway Park:<br className="md:hidden" /> 서울역에 열린 새로운 시민의 안식처</>
+                    ) : (
+                        <>Gateway Park:<br className="md:hidden" /> Connecting City and Nature</>
+                    )}
                     </h2>
 
                     <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter">
@@ -92,7 +94,11 @@ Balanced Hospitality Driven by Nature and Detail</>
                     {/* Third Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Corporate Multi-Use Arena:<br className="md:hidden" /> Versatile, Urban, Inspiring
+                            {lang === 'kr' ? (
+                                <>시티뷰 Multi-Use 아레나 :<br className="md:hidden" /> 도심의 조망을 담은 가변적 코트</>
+                            ) : (
+                                <>Corporate Multi-Use Arena:<br className="md:hidden" /> Versatile, Urban, Inspiring</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -121,7 +127,11 @@ Balanced Hospitality Driven by Nature and Detail</>
                     {/* Fourth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Sky Garden:<br className="md:hidden" /> Where Nature Meets Skyline
+                            {lang === 'kr' ? (
+                                <>Sky Garden:<br className="md:hidden" /> 자연의 녹음과 도심의 스카이라인이 교차하는 입체 정원</>
+                            ) : (
+                                <>Sky Garden:<br className="md:hidden" /> Where Nature Meets Skyline</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -154,7 +164,11 @@ Balanced Hospitality Driven by Nature and Detail</>
                     {/* Fifth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Event Space:<br className="md:hidden" /> Where Brands Shine, Culture Thrives, and the City Connects.
+                            {lang === 'kr' ? (
+                                <>Event Space:<br className="md:hidden" /> 브랜드와 문화, 그리고 도시가 만나는 접점</>
+                            ) : (
+                                <>Event Space:<br className="md:hidden" /> Where Brands Shine, Culture Thrives, and the City Connects.</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -183,7 +197,11 @@ Balanced Hospitality Driven by Nature and Detail</>
                     {/* Sixth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Sky Garden & Event Space:<br className="md:hidden" /> An Elevated Cultural Destination Above the City
+                            {lang === 'kr' ? (
+                                <>Sky Garden & Event Space:<br className="md:hidden" /> 서울의 스카이라인을 소유하는 특별한 경험</>
+                            ) : (
+                                <>Sky Garden & Event Space:<br className="md:hidden" /> An Elevated Cultural Destination Above the City</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -211,7 +229,6 @@ Balanced Hospitality Driven by Nature and Detail</>
                     <HoverImage  src="./img/iotatwo_07.jpg" width="3000" height="1692" alt="Sky Garden and Event Space" />
 
                     <div className="mt-8 md:mt-12 w-full">
-                        
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
                                 <>오피스 진입공간</>
@@ -226,7 +243,7 @@ Balanced Hospitality Driven by Nature and Detail</>
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
-                                <>IOTA Two Main Lobby:<br className="md:hidden" /> Where the City's Flow Meets Architecture</>
+                                <>IOTA Two Main Lobby:<br className="md:hidden" /> 도시의 활력과 자연의 여유가 만나는 곳</>
                             ) : (
                                 <>IOTA Two Main Lobby:<br className="md:hidden" /> Where the City's Flow Meets Architecture</>
                             )}
@@ -259,7 +276,11 @@ Balanced Hospitality Driven by Nature and Detail</>
                     {/* Eighth Item Area - Mobile Text */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32 md:hidden">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Main Lobby Core Access:<br className="md:hidden" /> Architectural Rhythm in Motion
+                            {lang === 'kr' ? (
+                                <>메인 로비 코어 진입부:<br className="md:hidden" /> 발걸음에 따라 전개되는 역동적인 건축 리듬</>
+                            ) : (
+                                <>Main Lobby Core Access:<br className="md:hidden" /> Architectural Rhythm in Motion</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -296,7 +317,11 @@ Balanced Hospitality Driven by Nature and Detail</>
                     {/* Desktop Text Overlay */}
                     <div className="absolute bottom-10 left-10 lg:bottom-20 lg:left-24 z-20 text-white hidden md:flex flex-col max-w-[1200px] pointer-events-none pr-10">
                         <h2 className="text-[40px] font-inter font-light tracking-[-0.03em] leading-tight mb-8 break-keep">
-                            Main Lobby Core Access: Architectural Rhythm in Motion
+                            {lang === 'kr' ? (
+                                <>메인 로비 코어 진입부: 발걸음에 따라 전개되는 역동적인 건축 리듬</>
+                            ) : (
+                                <>Main Lobby Core Access: Architectural Rhythm in Motion</>
+                            )}
                         </h2>
 
                         <div className="w-full text-[17px] font-extralight text-stone-200 leading-[1.57] tracking-[-0.01em] font-inter">
@@ -343,7 +368,11 @@ Balanced Hospitality Driven by Nature and Detail</>
                     {/* Ninth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-black tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
-                            Office Open Lounge:<br className="md:hidden" /> Where Connection Meets Calm
+                            {lang === 'kr' ? (
+                                <>오피스 오픈 라운지:<br className="md:hidden" /> 네트워킹과 평온한 사색이 공존하는 공간</>
+                            ) : (
+                                <>Office Open Lounge:<br className="md:hidden" /> Where Connection Meets Calm</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
