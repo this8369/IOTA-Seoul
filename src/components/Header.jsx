@@ -332,7 +332,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
                                 className={`absolute left-0 !ml-0 top-[100%] w-full bg-white transition-all duration-300 overflow-hidden ${isMegaMenuOpen ? 'max-h-[600px] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'max-h-0 opacity-0'}`}
                                 style={{ zIndex: 40 }}
                             >
-                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto pt-10 pb-[50px] flex justify-start gap-[140px]">
+                                <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto pt-10 pb-[50px] flex justify-start gap-[120px]">
                                     {currentMenuData.map((col, idx) => (
                                         <div
                                             key={idx}
