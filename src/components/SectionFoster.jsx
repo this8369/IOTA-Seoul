@@ -3,8 +3,9 @@ import React, { useState, useEffect, useRef } from 'react';
 export default function SectionFoster() {
     const [isIntersecting, setIsIntersecting] = useState(false);
     const [showThumbnail, setShowThumbnail] = useState(true);
-    const iframeRef = useRef(null);
     const videoRef = useRef(null);
+    const playerContainerRef = useRef(null);
+    const playerRef = useRef(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -24,40 +25,68 @@ export default function SectionFoster() {
         return () => observer.disconnect();
     }, []);
 
-    // Listen to YouTube player state changes via postMessage
     useEffect(() => {
-        const handleMessage = (event) => {
-            if (event.origin !== "https://www.youtube.com") return;
-            try {
-                const data = JSON.parse(event.data);
-                if (data.event === 'infoDelivery' && data.info && data.info.playerState !== undefined) {
-                    const state = data.info.playerState;
-                    if (state === 1 || state === 3) {
-                        // Playing or buffering
-                        setShowThumbnail(false);
-                    } else if (state === 2 || state === 0) {
-                        // Paused or ended
-                        setShowThumbnail(true);
+        if (!isIntersecting) return;
+
+        const initPlayer = () => {
+            if (!playerContainerRef.current) return;
+
+            playerRef.current = new window.YT.Player(playerContainerRef.current, {
+                videoId: 'vuxdaHaYbtY',
+                playerVars: {
+                    autoplay: 1,
+                    mute: 1,
+                    controls: 1,
+                    rel: 0,
+                    modestbranding: 1,
+                    playsinline: 1
+                },
+                events: {
+                    onReady: (event) => {
+                        event.target.playVideo();
+                    },
+                    onStateChange: (event) => {
+                        // 1 = playing, 3 = buffering
+                        if (event.data === 1 || event.data === 3) {
+                            setShowThumbnail(false);
+                        }
+                        // 2 = paused, 0 = ended
+                        else if (event.data === 2 || event.data === 0) {
+                            setShowThumbnail(true);
+                        }
                     }
                 }
-            } catch (e) {
-                // Ignore parse errors
+            });
+        };
+
+        if (window.YT && window.YT.Player) {
+            initPlayer();
+        } else {
+            if (!document.querySelector('script[src="https://www.youtube.com/iframe_api"]')) {
+                const script = document.createElement('script');
+                script.src = "https://www.youtube.com/iframe_api";
+                document.head.appendChild(script);
+            }
+            // Temporarily intercept the global callback
+            const prevCallback = window.onYouTubeIframeAPIReady;
+            window.onYouTubeIframeAPIReady = () => {
+                if (prevCallback) prevCallback();
+                initPlayer();
+            };
+        }
+
+        return () => {
+            if (playerRef.current && playerRef.current.destroy) {
+                // Safely destroy player when component unmounts
+                try { playerRef.current.destroy(); } catch (e) { }
             }
         };
-        window.addEventListener('message', handleMessage);
-        return () => window.removeEventListener('message', handleMessage);
-    }, []);
+    }, [isIntersecting]);
 
     const handlePlayClick = () => {
-        setIsIntersecting(true);
         setShowThumbnail(false);
-        // If iframe is already loaded, send play message
-        if (iframeRef.current && iframeRef.current.contentWindow) {
-            iframeRef.current.contentWindow.postMessage(JSON.stringify({
-                event: 'command',
-                func: 'playVideo',
-                args: []
-            }), 'https://www.youtube.com');
+        if (playerRef.current && playerRef.current.playVideo) {
+            playerRef.current.playVideo();
         }
     };
 
@@ -98,14 +127,10 @@ export default function SectionFoster() {
 
                 {/* Always render iframe once scrolled into view to keep state */}
                 {isIntersecting && (
-                    <iframe
-                        ref={iframeRef}
-                        className="w-full h-full absolute top-0 left-0"
-                        src="https://www.youtube.com/embed/vuxdaHaYbtY?enablejsapi=1&autoplay=1&mute=1"
-                        title="Foster + Partners YouTube video"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen>
-                    </iframe>
+                    <div className="w-full h-full absolute top-0 left-0">
+                        {/* The YouTube API replaces this exact div */}
+                        <div ref={playerContainerRef} className="w-full h-full"></div>
+                    </div>
                 )}
 
                 {/* Thumbnail Overlay that appears when paused/ended */}
