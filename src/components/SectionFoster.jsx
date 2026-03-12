@@ -1,7 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function SectionFoster() {
     const [isPlaying, setIsPlaying] = useState(false);
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsPlaying(true);
+                    observer.disconnect(); // Only trigger once
+                }
+            },
+            { threshold: 0.3 } // Trigger when 30% of the video is visible
+        );
+
+        if (videoRef.current) {
+            observer.observe(videoRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <section className="section w-full h-auto bg-black text-white pt-[100px] md:pt-[150px] pb-[30px] md:pb-[200px] scroll-mt-[100px]" id="section-foster">
@@ -36,10 +55,9 @@ export default function SectionFoster() {
             </div>
 
             {/* Video Container (Full width on mobile) */}
-            <div className="w-full md:w-[calc(100%-100px)] max-w-[1600px] mx-auto aspect-video relative bg-gray-900 group cursor-pointer overflow-hidden bs-fade-up delay-400" onClick={() => setIsPlaying(true)}>
+            <div ref={videoRef} className="w-full md:w-[calc(100%-100px)] max-w-[1600px] mx-auto aspect-video relative bg-gray-900 group cursor-pointer overflow-hidden bs-fade-up delay-400" onClick={() => setIsPlaying(true)}>
                 {!isPlaying ? (
                     <>
-                        {/* We use the custom thumbnail image requested by user */}
                         <img
                             src="./img/foster+partners.jpg"
                             alt="Foster + Partners Video"
@@ -47,7 +65,6 @@ export default function SectionFoster() {
                             fetchPriority="high"
                             loading="eager"
                         />
-                        {/* Overlay play button */}
                         <div className="absolute bottom-6 right-6 md:bottom-12 md:right-12 w-14 h-14 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110 shadow-lg">
                             <div className="w-0 h-0 border-t-[8px] border-b-[8px] border-l-[14px] md:border-t-[14px] md:border-b-[14px] md:border-l-[22px] border-t-transparent border-b-transparent border-l-black ml-1 md:ml-2"></div>
                         </div>
@@ -55,7 +72,7 @@ export default function SectionFoster() {
                 ) : (
                     <iframe
                         className="w-full h-full absolute top-0 left-0"
-                        src="https://www.youtube.com/embed/vuxdaHaYbtY?autoplay=1"
+                        src="https://www.youtube.com/embed/vuxdaHaYbtY?autoplay=1&mute=1"
                         title="Foster + Partners YouTube video"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen>
