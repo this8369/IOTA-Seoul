@@ -22,7 +22,7 @@ export default function SectionIotaOne() {
                     <div className="flex flex-col w-full bs-fade-up">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
-                                <>중앙광장:<br />도시와 자연을 잇는 웅장한 무대</>
+                                <>중앙광장: 도시와 자연을 잇는 웅장한 무대</>
                             ) : (
                                 <>Central Plaza:<br />A Grand Stage Between City and Nature</>
                             )}
@@ -52,7 +52,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* First Image Area */}
-                    <HoverImage  src="./img/iotaone_01.jpg" width="3000" height="1685" alt="Central Plaza" />
+                    <HoverImage src="./img/iotaone_01.jpg" width="3000" height="1685" alt="Central Plaza" />
 
                     {/* Second Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
@@ -88,30 +88,30 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Second Image Area */}
-                    <HoverImage  src="./img/iotaone_02.jpg" width="3000" height="1444" alt="Rooftop Garden" />
+                    <HoverImage src="./img/iotaone_02.jpg" width="3000" height="1444" alt="Rooftop Garden" />
 
                     {/* Third Item Area (Title Only) */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
-                            <>Rooftop Garden:<br className="md:hidden" /> 남산의 파노라마 뷰를 품은 사색의 공간</>
-                        ) : (
-                            <>Rooftop Garden:<br className="md:hidden" /> Nature at Your Office Doorstep</>
-                        )}
+                                <>Rooftop Garden:<br className="md:hidden" /> 남산의 파노라마 뷰를 품은 사색의 공간</>
+                            ) : (
+                                <>Rooftop Garden:<br className="md:hidden" /> Nature at Your Office Doorstep</>
+                            )}
                         </h2>
                     </div>
 
                     {/* Third Image Area */}
-                    <HoverImage  src="./img/iotaone_03.jpg" width="3000" height="1682" alt="Rooftop Garden View" />
+                    <HoverImage src="./img/iotaone_03.jpg" width="3000" height="1682" alt="Rooftop Garden View" />
 
                     {/* Fourth Item Area (UAM) */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
                         <h2 className="text-[28px] md:text-[40px] font-inter font-light text-white tracking-[-0.03em] leading-tight mb-6 md:mb-8 break-keep">
                             {lang === 'kr' ? (
-                            <>UAM 버티포트:<br className="md:hidden" /> 미래 모빌리티를 향한 혁신적 허브</>
-                        ) : (
-                            <>UAM Vertiport</>
-                        )}
+                                <>UAM 버티포트:<br className="md:hidden" /> 미래 모빌리티를 향한 혁신적 허브</>
+                            ) : (
+                                <>UAM Vertiport</>
+                            )}
                         </h2>
 
                         <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
@@ -138,7 +138,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Fourth Image Area */}
-                    <HoverImage  src="./img/iotaone_04.png" width="3000" height="1438" alt="UAM Vertiport" />
+                    <HoverImage src="./img/iotaone_04.png" width="3000" height="1438" alt="UAM Vertiport" />
 
                     {/* Fifth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
@@ -168,7 +168,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Fifth Image Area */}
-                    <HoverImage  src="./img/iotaone_05.jpg" width="3000" height="1673" alt="Hotel Podium Garden" />
+                    <HoverImage src="./img/iotaone_05.jpg" width="3000" height="1673" alt="Hotel Podium Garden" />
 
                     {/* Sixth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
@@ -198,14 +198,14 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Sixth Image Area */}
-                    <HoverImage  src="./img/iotaone_06.jpg" width="3000" height="1681" alt="{lang === 'kr' ? (
+                    <HoverImage src="./img/iotaone_06.jpg" width="3000" height="1681" alt="{lang === 'kr' ? (
                                 <>남산의 석양으로 물드는 호텔 포디움 가든</>
                             ) : (
                                 <>The Hotel Podium Garden at Dusk</>
                             )}" />
 
                     <div className="mt-8 md:mt-12 w-full">
-                        <HoverImage  src="./img/iotaone_07.jpg" width="3000" height="2059" alt="{lang === 'kr' ? (
+                        <HoverImage src="./img/iotaone_07.jpg" width="3000" height="2059" alt="{lang === 'kr' ? (
                                 <>남산의 석양으로 물드는 호텔 포디움 가든</>
                             ) : (
                                 <>The Hotel Podium Garden at Dusk</>
@@ -240,7 +240,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Seventh Image Area */}
-                    <HoverImage  src="./img/iotaone_08.jpg" width="3000" height="1669" alt="Expansive Lobby Experience" />
+                    <HoverImage src="./img/iotaone_08.jpg" width="3000" height="1669" alt="Expansive Lobby Experience" />
 
                     {/* Eighth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
@@ -270,10 +270,10 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Eighth Image Area */}
-                    <HoverImage  src="./img/iotaone_09.jpg" width="4514" height="2534" alt="Core Access" />
+                    <HoverImage src="./img/iotaone_09.jpg" width="4514" height="2534" alt="Core Access" />
 
                     <div className="mt-8 md:mt-12 w-full">
-                        <HoverImage  src="./img/iotaone_10.jpg" width="3000" height="2004" alt="Core Access Details" />
+                        <HoverImage src="./img/iotaone_10.jpg" width="3000" height="2004" alt="Core Access Details" />
                     </div>
 
                     {/* Ninth Item Area */}
@@ -304,7 +304,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Ninth Image Area */}
-                    <HoverImage  src="./img/iotaone_11.jpg" width="3000" height="2034" alt="An Open Lounge for Collaboration and Inspiration" />
+                    <HoverImage src="./img/iotaone_11.jpg" width="3000" height="2034" alt="An Open Lounge for Collaboration and Inspiration" />
 
                     {/* Tenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
@@ -334,7 +334,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Tenth Image Area */}
-                    <HoverImage  src="./img/iotaone_12.jpg" width="3000" height="1689" alt="Main Hotel Lobby" />
+                    <HoverImage src="./img/iotaone_12.jpg" width="3000" height="1689" alt="Main Hotel Lobby" />
 
                     {/* Eleventh Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
@@ -364,7 +364,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Eleventh Image Area */}
-                    <HoverImage  src="./img/iotaone_13.jpg" width="3000" height="1680" alt="Hotel VIP Lounge" />
+                    <HoverImage src="./img/iotaone_13.jpg" width="3000" height="1680" alt="Hotel VIP Lounge" />
 
                 </div>
 
@@ -377,12 +377,12 @@ export default function SectionIotaOne() {
 
                 {/* Twelfth Image Area (Full Width) */}
                 <div className="w-full">
-                    <HoverImage  src="./img/iotaone_14.jpg" width="3000" height="1056" alt="Hotel EV Hall" className="w-full h-auto object-cover block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
+                    <HoverImage src="./img/iotaone_14.jpg" width="3000" height="1056" alt="Hotel EV Hall" className="w-full h-auto object-cover block" wrapperClassName="w-full relative overflow-hidden group cursor-pointer" />
                 </div>
 
                 {/* Thirteenth Image Area (1000px Width) */}
                 <div className="w-[calc(100%-48px)] md:w-full max-w-[1000px] mx-auto mt-8 md:mt-12">
-                    <HoverImage  src="./img/iotaone_15.jpg" width="1764" height="1420" alt="Hotel EV Hall Details" />
+                    <HoverImage src="./img/iotaone_15.jpg" width="1764" height="1420" alt="Hotel EV Hall Details" />
                 </div>
 
                 <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex flex-col items-start">
@@ -419,7 +419,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Fourteenth Image Area */}
-                    <HoverImage  src="./img/iotaone_16.jpg" width="3000" height="1516" alt="A Wellness Center for Immersion and Recovery" />
+                    <HoverImage src="./img/iotaone_16.jpg" width="3000" height="1516" alt="A Wellness Center for Immersion and Recovery" />
 
                     {/* Fifteenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
@@ -451,7 +451,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Fifteenth Image Area */}
-                    <HoverImage  src="./img/iotaone_17.jpg" width="3000" height="1533" alt="Wellness Center Innovation Hub" />
+                    <HoverImage src="./img/iotaone_17.jpg" width="3000" height="1533" alt="Wellness Center Innovation Hub" />
 
                     {/* Sixteenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
@@ -485,7 +485,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Sixteenth Image Area */}
-                    <HoverImage  src="./img/iotaone_18.jpg" width="3000" height="1514" alt="Wellness Center Member's Club" />
+                    <HoverImage src="./img/iotaone_18.jpg" width="3000" height="1514" alt="Wellness Center Member's Club" />
 
                     {/* Seventeenth Item Area */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32">
@@ -519,7 +519,7 @@ export default function SectionIotaOne() {
                     </div>
 
                     {/* Seventeenth Image Area */}
-                    <HoverImage  src="./img/iotaone_19.jpg" width="3000" height="1646" alt="Immersive Gallery" />
+                    <HoverImage src="./img/iotaone_19.jpg" width="3000" height="1646" alt="Immersive Gallery" />
 
                 </div>
 
