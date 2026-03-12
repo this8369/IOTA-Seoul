@@ -45,6 +45,14 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
             ]
         },
         {
+            title: "IOTA Details",
+            id: "section-iotaone",
+            items: [
+                { label: "IOTA Seoul One", id: "section-iotaone" },
+                { label: "IOTA Seoul Two", id: "section-iotatwo" }
+            ]
+        },
+        {
             title: "News",
             type: "news",
             items: [
@@ -94,6 +102,14 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
                 { label: "세계적인 건축 거장의 만남", id: "section-design" },
                 { label: "글로벌 탑티어 건설사 참여", id: "section-construction" },
                 { label: "최상위 럭셔리 호스피탈리티", id: "section-hotel" }
+            ]
+        },
+        {
+            title: "IOTA Details",
+            id: "section-iotaone",
+            items: [
+                { label: "IOTA Seoul One", id: "section-iotaone" },
+                { label: "IOTA Seoul Two", id: "section-iotatwo" }
             ]
         },
         {
