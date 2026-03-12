@@ -4,12 +4,13 @@ import MainLayout from './components/MainLayout';
 import NewsList from './components/NewsList';
 import NewsDetail from './components/NewsDetail';
 import Lease from './components/Lease';
+import Partnership from './components/Partnership';
 import { newsData } from './data/newsData';
 import { useAnimations } from './hooks/useAnimations';
 import { useLanguage } from './context/LanguageContext';
 
 export default function App() {
-  const [currentPage, setCurrentPage] = React.useState('home'); // 'home', 'news', 'news_detail'
+  const [currentPage, setCurrentPage] = React.useState('home'); // 'home', 'news', 'news_detail', 'lease', 'partnership'
 
   useAnimations(currentPage);
   const [selectedArticle, setSelectedArticle] = React.useState(null);
@@ -23,6 +24,9 @@ export default function App() {
         setSelectedArticle(null);
       } else if (hash === '#lease') {
         setCurrentPage('lease');
+        setSelectedArticle(null);
+      } else if (hash === '#partnership') {
+        setCurrentPage('partnership');
         setSelectedArticle(null);
       } else if (hash.startsWith('#news-detail-')) {
         const id = parseInt(hash.replace('#news-detail-', ''), 10);
@@ -65,7 +69,7 @@ export default function App() {
 
   React.useEffect(() => {
     window.isNewsPage = currentPage === 'news' || currentPage === 'news_detail';
-    window.isLeasePage = currentPage === 'lease';
+    window.isLeasePage = currentPage === 'lease' || currentPage === 'partnership';
   }, [currentPage]);
 
   const { lang } = useLanguage();
@@ -120,6 +124,11 @@ export default function App() {
     setSelectedArticle(null);
   };
 
+  const handleNavigateToPartnership = () => {
+    setCurrentPage('partnership');
+    setSelectedArticle(null);
+  };
+
   const handleBackToOptions = () => {
     setCurrentPage('news');
     window.history.pushState(null, '', '#news');
@@ -132,7 +141,13 @@ export default function App() {
 
   return (
     <div className="scroll-container font-sans" id="scroll-container">
-      <Header onNavigateToNews={handleNavigateToNews} onNavigateToHome={handleNavigateToHome} onNavigateToLease={handleNavigateToLease} currentPage={currentPage} />
+      <Header
+        onNavigateToNews={handleNavigateToNews}
+        onNavigateToHome={handleNavigateToHome}
+        onNavigateToLease={handleNavigateToLease}
+        onNavigateToPartnership={handleNavigateToPartnership}
+        currentPage={currentPage}
+      />
 
       {currentPage === 'home' && <MainLayout />}
 
@@ -145,6 +160,7 @@ export default function App() {
       )}
 
       {currentPage === 'lease' && <Lease />}
+      {currentPage === 'partnership' && <Partnership />}
     </div>
   );
 }

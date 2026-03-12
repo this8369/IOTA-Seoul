@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
-export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateToLease, currentPage }) {
+export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateToLease, onNavigateToPartnership, currentPage }) {
     const { lang, setLang } = useLanguage();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('');
@@ -61,11 +61,11 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
             ]
         },
         {
-            title: "Lease",
-            type: "lease",
+            title: "Inquiry",
+            type: "inquiry",
             items: [
-                { label: "Lease Inquiry", id: "lease", type: "lease" },
-                { label: "Vision Book Download", id: "vision-book", type: "alert", message: "Vision Book will be available soon. Please use the Lease Inquiry page above." }
+                { label: "Leasing Inquiry", id: "lease", type: "lease" },
+                { label: "Partnership Inquiry", id: "partnership", type: "partnership" }
             ]
         }
     ];
@@ -122,11 +122,11 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
             ]
         },
         {
-            title: "Lease",
-            type: "lease",
+            title: "Inquiry",
+            type: "inquiry",
             items: [
                 { label: "임대차 문의", id: "lease", type: "lease" },
-                { label: "Vision Book Download", id: "vision-book", type: "alert", message: "자료 준비 중입니다. 상단의 임대차 문의를 활용해주세요." }
+                { label: "파트너십 문의", id: "partnership", type: "partnership" }
             ]
         }
     ];
@@ -282,6 +282,16 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
         if (onNavigateToLease) onNavigateToLease();
     };
 
+    const handlePartnershipClick = (e) => {
+        e.preventDefault();
+        setMobileMenuOpen(false);
+        const newHash = '#partnership';
+        if (window.location.hash !== newHash) {
+            window.history.pushState(null, '', newHash);
+        }
+        if (onNavigateToPartnership) onNavigateToPartnership();
+    };
+
     return (
         <>
             <header id="main-header"
@@ -309,7 +319,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
                                         if (col.type === 'news') {
                                             e.preventDefault();
                                             handleNewsClick(e);
-                                        } else if (col.type === 'lease') {
+                                        } else if (col.type === 'lease' || col.type === 'inquiry') {
                                             e.preventDefault();
                                             handleLeaseClick(e);
                                         } else if (col.type === 'alert') {
@@ -346,7 +356,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
                                                     if (col.type === 'news') {
                                                         e.preventDefault();
                                                         handleNewsClick(e);
-                                                    } else if (col.type === 'lease') {
+                                                    } else if (col.type === 'lease' || col.type === 'inquiry') {
                                                         e.preventDefault();
                                                         handleLeaseClick(e);
                                                     } else if (col.type === 'alert') {
@@ -366,6 +376,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
                                                 {col.items.map((item, itemIdx) => {
                                                     const isNews = item.type === 'news';
                                                     const isLease = item.type === 'lease';
+                                                    const isPartnership = item.type === 'partnership';
                                                     const isAlert = item.type === 'alert';
                                                     const isDownload = item.type === 'download';
 
@@ -376,6 +387,9 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
                                                         } else if (isLease) {
                                                             setIsMegaMenuOpen(false);
                                                             handleLeaseClick(e);
+                                                        } else if (isPartnership) {
+                                                            setIsMegaMenuOpen(false);
+                                                            handlePartnershipClick(e);
                                                         } else if (isAlert) {
                                                             e.preventDefault();
                                                             setIsMegaMenuOpen(false);
@@ -391,7 +405,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
                                                     return (
                                                         <li key={itemIdx}>
                                                             <a
-                                                                href={isNews ? "#news" : isLease ? "#lease" : isAlert ? "#" : isDownload ? item.url : `#${item.id}`}
+                                                                href={isNews ? "#news" : isLease ? "#lease" : isPartnership ? "#partnership" : isAlert ? "#" : isDownload ? item.url : `#${item.id}`}
                                                                 target={isDownload ? "_blank" : undefined}
                                                                 onClick={clickHandler}
                                                                 className="text-[13px] xl:text-[15px] text-gray-700 font-light tracking-[-0.03em] group/sub inline-block w-fit"
