@@ -28,7 +28,7 @@ export default function SectionIotaTwo() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[15px] md:mb-[41px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -93,7 +93,7 @@ export default function SectionIotaTwo() {
                             Corporate Multi-Use Arena:<br className="md:hidden" /> Versatile, Urban, Inspiring
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[15px] md:mb-[41px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -122,7 +122,7 @@ export default function SectionIotaTwo() {
                             Sky Garden:<br className="md:hidden" /> Where Nature Meets Skyline
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[15px] md:mb-[41px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -155,7 +155,7 @@ export default function SectionIotaTwo() {
                             Event Space:<br className="md:hidden" /> Where Brands Shine, Culture Thrives, and the City Connects.
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[15px] md:mb-[41px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -184,7 +184,7 @@ export default function SectionIotaTwo() {
                             Sky Garden & Event Space:<br className="md:hidden" /> An Elevated Cultural Destination Above the City
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[15px] md:mb-[41px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -222,7 +222,7 @@ export default function SectionIotaTwo() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[15px] md:mb-[41px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -254,7 +254,7 @@ export default function SectionIotaTwo() {
                             Main Lobby Core Access:<br className="md:hidden" /> Architectural Rhythm in Motion
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[15px] md:mb-[41px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -338,7 +338,7 @@ export default function SectionIotaTwo() {
                             Office Open Lounge:<br className="md:hidden" /> Where Connection Meets Calm
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[15px] md:mb-[41px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -375,7 +375,7 @@ export default function SectionIotaTwo() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[30px] md:mb-14">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-gray-600 leading-[1.57] tracking-[-0.01em] font-inter mb-[15px] md:mb-[41px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
