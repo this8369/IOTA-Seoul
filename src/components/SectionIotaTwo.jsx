@@ -244,9 +244,7 @@ export default function SectionIotaTwo() {
                     </div>
 
                     {/* Seventh Image Area */}
-                    <div className="w-full mt-0 md:mt-12 bs-fade-up">
-                        <HoverImage src="./img/iotatwo_09.jpg" alt="IOTA Two Main Lobby" />
-                    </div>
+                    <HoverImage src="./img/iotatwo_09.jpg" alt="IOTA Two Main Lobby" />
 
                     {/* Eighth Item Area - Mobile Text */}
                     <div className="flex flex-col w-full bs-fade-up mt-[106px] md:mt-32 md:hidden">
