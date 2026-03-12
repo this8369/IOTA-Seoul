@@ -1,14 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 export default function SectionFoster() {
-    const [isPlaying, setIsPlaying] = useState(false);
+    const [isIntersecting, setIsIntersecting] = useState(false);
+    const [showThumbnail, setShowThumbnail] = useState(true);
+    const iframeRef = useRef(null);
     const videoRef = useRef(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    setIsPlaying(true);
+                    setIsIntersecting(true);
                     observer.disconnect(); // Only trigger once
                 }
             },
@@ -21,6 +23,43 @@ export default function SectionFoster() {
 
         return () => observer.disconnect();
     }, []);
+
+    // Listen to YouTube player state changes via postMessage
+    useEffect(() => {
+        const handleMessage = (event) => {
+            if (event.origin !== "https://www.youtube.com") return;
+            try {
+                const data = JSON.parse(event.data);
+                if (data.event === 'infoDelivery' && data.info && data.info.playerState !== undefined) {
+                    const state = data.info.playerState;
+                    if (state === 1 || state === 3) {
+                        // Playing or buffering
+                        setShowThumbnail(false);
+                    } else if (state === 2 || state === 0) {
+                        // Paused or ended
+                        setShowThumbnail(true);
+                    }
+                }
+            } catch (e) {
+                // Ignore parse errors
+            }
+        };
+        window.addEventListener('message', handleMessage);
+        return () => window.removeEventListener('message', handleMessage);
+    }, []);
+
+    const handlePlayClick = () => {
+        setIsIntersecting(true);
+        setShowThumbnail(false);
+        // If iframe is already loaded, send play message
+        if (iframeRef.current && iframeRef.current.contentWindow) {
+            iframeRef.current.contentWindow.postMessage(JSON.stringify({
+                event: 'command',
+                func: 'playVideo',
+                args: []
+            }), 'https://www.youtube.com');
+        }
+    };
 
     return (
         <section className="section w-full h-auto bg-black text-white pt-[100px] md:pt-[150px] pb-[30px] md:pb-[200px] scroll-mt-[100px]" id="section-foster">
@@ -55,29 +94,36 @@ export default function SectionFoster() {
             </div>
 
             {/* Video Container (Full width on mobile) */}
-            <div ref={videoRef} className="w-full md:w-[calc(100%-100px)] max-w-[1600px] mx-auto aspect-video relative bg-gray-900 group cursor-pointer overflow-hidden bs-fade-up delay-400" onClick={() => setIsPlaying(true)}>
-                {!isPlaying ? (
-                    <>
-                        <img
-                            src="./img/foster+partners.jpg"
-                            alt="Foster + Partners Video"
-                            className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-                            fetchPriority="high"
-                            loading="eager"
-                        />
-                        <div className="absolute bottom-6 right-6 md:bottom-12 md:right-12 w-14 h-14 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110 shadow-lg">
-                            <div className="w-0 h-0 border-t-[8px] border-b-[8px] border-l-[14px] md:border-t-[14px] md:border-b-[14px] md:border-l-[22px] border-t-transparent border-b-transparent border-l-black ml-1 md:ml-2"></div>
-                        </div>
-                    </>
-                ) : (
+            <div ref={videoRef} className="w-full md:w-[calc(100%-100px)] max-w-[1600px] mx-auto aspect-video relative bg-gray-900 group overflow-hidden bs-fade-up delay-400">
+
+                {/* Always render iframe once scrolled into view to keep state */}
+                {isIntersecting && (
                     <iframe
+                        ref={iframeRef}
                         className="w-full h-full absolute top-0 left-0"
-                        src="https://www.youtube.com/embed/vuxdaHaYbtY?autoplay=1&mute=1"
+                        src="https://www.youtube.com/embed/vuxdaHaYbtY?enablejsapi=1&autoplay=1&mute=1"
                         title="Foster + Partners YouTube video"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen>
                     </iframe>
                 )}
+
+                {/* Thumbnail Overlay that appears when paused/ended */}
+                <div
+                    className={`absolute inset-0 cursor-pointer transition-opacity duration-300 ${showThumbnail ? 'opacity-100 z-10' : 'opacity-0 pointer-events-none -z-10'}`}
+                    onClick={handlePlayClick}
+                >
+                    <img
+                        src="./img/foster+partners.jpg"
+                        alt="Foster + Partners Video"
+                        className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                        fetchPriority="high"
+                        loading="eager"
+                    />
+                    <div className="absolute bottom-6 right-6 md:bottom-12 md:right-12 w-14 h-14 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110 shadow-lg">
+                        <div className="w-0 h-0 border-t-[8px] border-b-[8px] border-l-[14px] md:border-t-[14px] md:border-b-[14px] md:border-l-[22px] border-t-transparent border-b-transparent border-l-black ml-1 md:ml-2"></div>
+                    </div>
+                </div>
             </div>
 
         </section>
