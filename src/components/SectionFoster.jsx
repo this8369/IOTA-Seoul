@@ -110,7 +110,7 @@ export default function SectionFoster() {
 
                 {/* Thumbnail Overlay that appears when paused/ended */}
                 <div
-                    className={`absolute inset-0 cursor-pointer transition-opacity duration-300 ${showThumbnail ? 'opacity-100 z-10' : 'opacity-0 pointer-events-none -z-10'}`}
+                    className={`absolute inset-0 bg-black cursor-pointer transition-opacity duration-300 ${showThumbnail ? 'opacity-100 z-10' : 'opacity-0 pointer-events-none -z-10'}`}
                     onClick={handlePlayClick}
                 >
                     <img
