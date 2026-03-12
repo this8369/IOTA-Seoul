@@ -161,7 +161,7 @@ export default function NewsList({ onSelectArticle }) {
                 </div>
             </div>
 
-            <Footer className="w-full mt-auto" />
+            <Footer className="w-full mt-auto" variant="light" />
         </div>
     );
 }

@@ -193,7 +193,7 @@ Effective March 11, 2026. Changes will be announced 7 days in advance via websit
 
             </div>
 
-            <Footer className="w-full mt-auto" />
+            <Footer className="w-full mt-auto" variant="light" />
         </div>
     );
 }
