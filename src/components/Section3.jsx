@@ -175,13 +175,15 @@ export default function Section3() {
                     <div className="w-full flex flex-col gap-y-[10px] md:gap-y-[20px]">
                         <div className="full-image-container relative overflow-hidden group">
                             <img src="./img/iota_full_2.jpg" alt="IOTA Property Details"
-                                className="w-full aspect-[4/3] md:aspect-[4256/2540] object-cover block transform origin-center transition-transform duration-[2s] group-hover:scale-105" />
+                                width="4256" height="2540"
+                                className="w-full h-auto block transform origin-center transition-transform duration-[2s] group-hover:scale-105" />
                         </div>
                         {/* IOTA TWO */}
-                        <div className="w-full curtain-container relative bs-fade-up delay-700 overflow-hidden group aspect-[4/3] md:aspect-[3000/2546]">
+                        <div className="w-full curtain-container relative bs-fade-up delay-700 overflow-hidden group">
                             <div className="curtain-panel"></div>
                             <img src="./img/iota2.jpg" alt="IOTA TWO"
-                                className="curtain-img w-full h-full object-cover transform transition-transform duration-[2s] group-hover:scale-105" />
+                                width="3000" height="2546"
+                                className="curtain-img w-full h-auto block transform transition-transform duration-[2s] group-hover:scale-105" />
                         </div>
                     </div>
                 </div>
