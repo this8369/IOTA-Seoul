@@ -368,7 +368,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
                                                     }
                                                 }}
                                             >
-                                                <span className={`relative pb-0 px-1 -mx-1 rounded-sm transition-colors duration-300 after:content-[''] after:absolute after:w-[calc(100%-8px)] after:h-[1.5px] after:-bottom-[-2px] after:left-[4px] after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 ${hoveredIndex === idx ? 'bg-[#fbf268] after:scale-x-100' : 'bg-transparent after:scale-x-0'}`}>
+                                                <span className={`relative pb-0 px-1 -mx-1 rounded-sm transition-colors duration-300 after:content-[''] after:absolute after:w-[calc(100%-8px)] after:h-[1.5px] after:-bottom-[-2px] after:left-[4px] after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 ${hoveredIndex === idx ? 'bg-[#fbf167] after:scale-x-100' : 'bg-transparent after:scale-x-0'}`}>
                                                     {col.title}
                                                 </span>
                                             </h4>

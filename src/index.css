@@ -23,6 +23,11 @@
         -webkit-overflow-scrolling: touch;
     }
 
+    ::selection {
+        background-color: #fbf167;
+        color: #000;
+    }
+
     #root {
         width: 100%;
         display: flex;
@@ -464,6 +469,7 @@ html[lang="kr"] .font-extralight,
 html[lang="kr"] .font-light {
     font-weight: 400 !important;
 }
+
 @layer base {
     .is-windows {
         --font-inter: "Inter", "Pretendard Variable", Pretendard, sans-serif;
