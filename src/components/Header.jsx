@@ -49,7 +49,8 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
             id: "section-iotaone",
             items: [
                 { label: "IOTA Seoul One", id: "section-iotaone" },
-                { label: "IOTA Seoul Two", id: "section-iotatwo" }
+                { label: "IOTA Seoul Two", id: "section-iotatwo" },
+                { label: "Partnership", id: "section-partnership" }
             ]
         },
         {
@@ -109,7 +110,8 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
             id: "section-iotaone",
             items: [
                 { label: "IOTA Seoul One", id: "section-iotaone" },
-                { label: "IOTA Seoul Two", id: "section-iotatwo" }
+                { label: "IOTA Seoul Two", id: "section-iotatwo" },
+                { label: "Partnership", id: "section-partnership" }
             ]
         },
         {

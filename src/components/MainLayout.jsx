@@ -27,6 +27,7 @@ import SectionConstruction from './SectionConstruction';
 import SectionHotel from './SectionHotel';
 import SectionIotaOne from './SectionIotaOne';
 import SectionIotaTwo from './SectionIotaTwo';
+import SectionPartnership from './SectionPartnership';
 
 export default function MainLayout() {
     return (
@@ -58,7 +59,8 @@ export default function MainLayout() {
             <SectionHotel />
             <SectionIotaOne />
             <SectionIotaTwo />
-            <Footer />
+            <SectionPartnership />
+            <Footer className="mt-0" />
         </>
     );
 }
