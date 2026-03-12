@@ -34,7 +34,7 @@ export default function SectionLargePlate() {
                         </h4>
                     </div>
 
-                    <div className="text-[17px] md:text-[19px] font-extralight text-[#111] leading-[1.57] tracking-[-0.01em] w-full max-w-[1000px] text-center bs-fade-up delay-500">
+                    <div className="text-[17px] md:text-[19px] font-light text-black leading-[1.57] tracking-[-0.01em] w-full max-w-[1000px] text-center bs-fade-up delay-500">
                         <p className="kr-target-text transition-all duration-300 break-keep"
                             data-kr="<span class='font-semibold tracking-[-0.01em] text-[#7b7b7d]'>IOTA One은 <strong class='font-bold text-black'>1,149평 규모</strong>의 압도적인 오피스 바닥면적을 확보하여,<br class='hidden md:block' />서울 주요 프라임 빌딩들과 비교해도 독보적인 스케일을 자랑합니다.<br/><br/>IOTA One과 Two에서 모두 제공되는 기둥 없는 <strong class='font-bold text-black'>18m 리스 스팬 구조</strong>는 공간 활용의 유연성과 효율성을 극대화하여,<br class='hidden md:block' />팀 간 협업과 창의적 업무 환경을 촉진하는 최적의 레이아웃을 제공합니다.</span>"
                             data-en="IOTA One features an <span class='font-bold'>impressive floorplate of 3,798 m²</span>,<br class='hidden md:block'/>setting a new benchmark in scale even among Seoul's prime office towers.<br/><br/>Both IOTA One and IOTA Two are designed with a <span class='font-bold'>column-free 18-meter lease span</span>,<br class='hidden md:block'/>maximizing spatial flexibility and efficiency to foster collaboration and creativity within the workplace.">

@@ -39,7 +39,7 @@ export default function SectionAIReady() {
                                         An AI-Driven Building Ecosystem Enabling Autonomous Operations<br />and Data-Based Decisions
                                     </h4>
 
-                                    <div className="w-full text-[17px] md:text-[19px] font-extralight text-black leading-[1.57] tracking-[-0.02em] break-keep">
+                                    <div className="w-full text-[17px] md:text-[19px] font-semibold text-black leading-[1.57] tracking-[-0.02em] break-keep">
                                         <p className="mb-2">
                                             IOTA Seoul은 AI 기반의 데이터 순환 구조를 통해 건물이 스스로 학습하고 운영되는 지능형 오피스로 진화합니다.<br className="hidden md:block" />
                                             IoT 센서와 디지털 트윈을 통해 실시간 데이터를 수집하고, AI Agent가 이를 분석하여 건물의 에너지, 공기질, 보안, 이동, 유지보수를 자동으로 제어합니다.
@@ -56,7 +56,7 @@ export default function SectionAIReady() {
                                         An AI-Driven Building Ecosystem Enabling Autonomous Operations<br />and Data-Based Decisions
                                     </h3>
 
-                                    <div className="w-full text-[17px] md:text-[19px] font-extralight text-gray-800 leading-[1.57] tracking-[-0.01em] font-inter">
+                                    <div className="w-full text-[17px] md:text-[19px] font-light text-black leading-[1.57] tracking-[-0.02em] font-inter">
                                         <p className="mb-2">
                                             IOTA Seoul evolves into an intelligent office that learns and operates autonomously through an AI-driven data ecosystem.<br className="hidden md:block" />
                                             Through IoT sensors and digital twins, the building continuously collects real-time data, which the AI Agent analyzes to automatically manage energy, air quality, security, mobility, and maintenance.
@@ -122,7 +122,7 @@ export default function SectionAIReady() {
                                     An AI-Driven Building Ecosystem Enabling Autonomous Operations<br />and Data-Based Decisions
                                 </h4>
 
-                                <div className="w-full text-[17px] md:text-[19px] font-extralight text-black leading-[1.57] tracking-[-0.02em] break-keep">
+                                <div className="w-full text-[17px] md:text-[19px] font-semibold text-black leading-[1.57] tracking-[-0.02em] break-keep">
                                     <p className="mb-1">
                                         IOTA Seoul은 AI 기반의 데이터 순환 구조를 통해 건물이 스스로 학습하고 운영되는 지능형 오피스로 진화합니다. IoT 센서와 디지털 트윈을 통해 실시간 데이터를 수집하고, AI Agent가 이를 분석하여 건물의 에너지, 공기질, 보안, 이동, 유지보수를 자동으로 제어합니다.
                                     </p>
@@ -137,7 +137,7 @@ export default function SectionAIReady() {
                                     An AI-Driven Building Ecosystem Enabling Autonomous Operations<br />and Data-Based Decisions
                                 </h3>
 
-                                <div className="w-full text-[17px] md:text-[19px] font-extralight text-gray-800 leading-[1.57] tracking-[-0.01em] font-inter">
+                                <div className="w-full text-[17px] md:text-[19px] font-light text-black leading-[1.57] tracking-[-0.02em] font-inter">
                                     <p className="mb-1">
                                         IOTA Seoul evolves into an intelligent office that learns and operates autonomously through an AI-driven data ecosystem. Through IoT sensors and digital twins, the building continuously collects real-time data, which the AI Agent analyzes to automatically manage energy, air quality, security, mobility, and maintenance.
                                     </p>

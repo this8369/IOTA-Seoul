@@ -109,12 +109,12 @@ export default function SectionFoster() {
                     <div className="mt-8 lg:mt-0 text-[17px] md:text-[19px] font-light text-gray-300 leading-[1.57] space-y-4 lg:max-w-[676px] xl:max-w-[772px] bs-fade-up delay-200 break-keep">
                         <p className="kr-target-text transition-all duration-300"
                             data-en="Designs have been revealed for IOTA Seoul I, a mixed-use development on a landmark site between Seoul Station and Namsan, a 270-metre-high peak in Jung-Gu.<br/>Historically, the site acted as an important gateway to Seoul when arriving by train."
-                            data-kr="<span class=\'font-light text-white font-inter\'>Designs have been revealed for IOTA Seoul I, a mixed-use development on a landmark site between Seoul Station and Namsan, a 270-metre-high peak in Jung-Gu.<br/>Historically, the site acted as an important gateway to Seoul when arriving by train.</span>">
+                            data-kr="<span class=\'font-semibold text-white font-inter\'>Designs have been revealed for IOTA Seoul I, a mixed-use development on a landmark site between Seoul Station and Namsan, a 270-metre-high peak in Jung-Gu.<br/>Historically, the site acted as an important gateway to Seoul when arriving by train.</span>">
                             Designs have been revealed for IOTA Seoul I, a mixed-use development on a landmark site between Seoul Station and Namsan, a 270-metre-high peak in Jung-Gu.<br />Historically, the site acted as an important gateway to Seoul when arriving by train.
                         </p>
                         <p className="kr-target-text transition-all duration-300"
                             data-en="The project creates a green oasis in the heart of the city – and restores the area's historic connection with Namsan and its surrounding public park."
-                            data-kr="<span class=\'font-light text-white font-inter\'>The project creates a green oasis in the heart of the city – and restores the area's historic connection with Namsan and its surrounding public park.</span>">
+                            data-kr="<span class=\'font-semibold text-white font-inter\'>The project creates a green oasis in the heart of the city – and restores the area's historic connection with Namsan and its surrounding public park.</span>">
                             The project creates a green oasis in the heart of the city – and restores the area's historic connection with Namsan and its surrounding public park.
                         </p>
                     </div>

@@ -28,7 +28,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -64,7 +64,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -114,7 +114,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -150,7 +150,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -180,7 +180,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -222,7 +222,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -252,7 +252,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -286,7 +286,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -316,7 +316,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -346,7 +346,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -397,7 +397,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -431,7 +431,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -463,7 +463,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
@@ -497,7 +497,7 @@ export default function SectionIotaOne() {
                             )}
                         </h2>
 
-                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-extralight text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
+                        <div className="w-full max-w-full text-[17px] md:text-[19px] font-light text-stone-300 leading-[1.57] tracking-[-0.01em] font-inter mb-[10px] md:mb-[36px]">
                             {lang === 'kr' ? (
                                 <div className="break-keep font-normal">
                                     <p className="mb-4">
